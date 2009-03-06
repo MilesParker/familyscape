@@ -1,0 +1,5 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P High Condom Use Unmarried Factor Base	0.2
+Stop Period	1
+Input Data File	|data/NSFG_Unmarried.txt

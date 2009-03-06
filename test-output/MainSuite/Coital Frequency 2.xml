@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Coital Frequency 2" failures="1" tests="1" time="28.203" errors="0">
+  <properties/>
+  <testcase name="executeFileTest" time="27.951" classname="com.metascape.ecscape.test.RunATest">
+    <failure type="java.lang.OutOfMemoryError" message="Java heap space">
+      <![CDATA[java.lang.OutOfMemoryError: Java heap space
+]]>
+    </failure>
+  </testcase>
+</testsuite>

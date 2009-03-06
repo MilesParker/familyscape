@@ -1,0 +1,4 @@
+title	Contraception Sterilization 2m: Spot Check of Covariates Sterilization Equations Among Marrieds 
+comments	This test sets all SES factors equal to (-1*baseline) in the sterilization equations among marrieds, which should have the effect of eliminating sterilization in the simulation.
+Count Adult Sterilized Contraception Method	0	0					
+	

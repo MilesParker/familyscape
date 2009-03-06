@@ -1,0 +1,5 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	BaselineMarried
+P Sterilize Female Married Factor Base	1.0
+P Sterilize Male Married Factor Base	1.0
+Stop Period	1

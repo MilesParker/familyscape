@@ -1,0 +1,6 @@
+title	Coital Frequency Low Coit Threshold Married: Check of Married Low CoitFreq Thresholds 
+comments	This test assigns all married agents to the low coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should result in every agent having sex once a day.  This test also tests for whether married agents ever have sex more than once per day.
+Maximum Adult Sex Count in Lifetime	500	500
+Average Adult Sex Count in Lifetime	500	500
+Average Adult Sex Partners in Lifetime	1	1
+Count Adult Very Low Frequency Coital Behavior Type	4186	4186	

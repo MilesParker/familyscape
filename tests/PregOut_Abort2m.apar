@@ -1,0 +1,5 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	BaselineMarried
+P Abortion Married Factor Base	1.0
+Typical Abortion Period Start	300
+Typical Abortion Period End	360

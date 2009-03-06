@@ -1,0 +1,7 @@
+title	Pregnancy Outcome Abortion 2m: Second Check of Baseline Factor for Abortion among Marrieds
+comments	This test sets the baseline factor in the married abortion equation equal to one, and period of abortion to the same as birth which should eliminate births and miscarriages and increase the number of abortions relative to baseline.
+Sum Adult Pregnancies in Lifetime	750	1000				
+Sum Adult Abortions in Lifetime	550	1000				
+Sum Adult Miscarriages in Lifetime	0	0			
+Sum Adult Births in Lifetime	0	0			
+Sum Adult Poor Births in Lifetime	0	0		

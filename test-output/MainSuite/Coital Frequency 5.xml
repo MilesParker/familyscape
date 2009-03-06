@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Coital Frequency 5" failures="1" tests="1" time="22.412" errors="0">
+  <properties/>
+  <testcase name="executeFileTest" time="22.1" classname="com.metascape.ecscape.test.RunATest">
+    <failure type="java.lang.OutOfMemoryError" message="Java heap space">
+      <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at java.util.ArrayList.<init>(ArrayList.java:136)
+	at org.ascape.model.space.CollectionSpace.filter(CollectionSpace.java:1189)
+	at org.ascape.model.space.Array.findWithin(Array.java:218)
+	at org.ascape.model.space.Discrete.calculateNeighbors(Discrete.java:86)
+	at org.ascape.model.Cell.calculateNeighbors(Cell.java:172)
+	at org.ascape.model.Cell$3.execute(Cell.java:130)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.Scape.initialize(Scape.java:1168)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:252)
+	at org.ascape.runtime.Runner.run(Runner.java:720)
+	at org.ascape.runtime.Runner.run(Runner.java:605)
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:118)
+... Removed 5 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

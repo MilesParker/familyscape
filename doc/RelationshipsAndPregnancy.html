@@ -1,0 +1,4118 @@
+
+		<HTML>
+			<HEAD>
+				<TITLE>Relationships And Pregnancy</TITLE>
+				<STYLE TYPE="text/css">
+					body,
+					html {
+    					margin:0;
+    					padding:0;
+    					
+    					color:#000;
+    				}
+    				body {
+    					min-width:750px;
+    				}
+					#wrap {
+    					
+    					margin:0 auto;
+    					width:1024px;
+    				}
+    				#header {
+    					border-bottom: solid 1px #BEBFAA;   						
+    					left: 220px;
+    				}
+					#nav {
+    					
+    				}
+					#nav ul{
+   						margin:0;
+    					padding:0;
+    					list-style:none;
+    				}
+					#nav li{
+    					display:inline;
+    					margin:0;
+    					padding:0;
+    				}
+    				#main {
+    					border-left: solid 1px #BEBFAA;   						
+    					
+    					float:left;
+    					width:800px;
+    				}
+					#sidebarfake {
+      					float:left;
+    					width:200px;
+    				}
+					#sidebar {
+  						position: fixed;
+      					float:left;
+    					width:200px;
+    				}
+					#footer {
+    					border-top: solid 1px #BEBFAA;   						
+    					
+    					clear:both;
+    				}
+    				
+					#section {
+  						background: #FFFFDC;
+   						border-bottom: solid 1px black;
+   						border-left: solid 1px #BEBFAA;
+   						border-right: solid 1px black;
+   						border-top: solid 1px #BEBFAA;
+   						margin: 2em 1em 1em 2em;
+   						padding: 0.5em 2em 2em 2em;
+   						text-align: justify;
+					}
+					#section h1 {
+   						text-align: left;
+   						font-family: sans-serif;
+					}
+					#section p {
+   						text-indent: 2em;
+					}
+					#section p.noindent {
+   						text-indent: 0;
+					}
+					
+					#agent {
+  						border-bottom: solid 1px black;
+   						border-left: solid 1px #BEBFAA;
+   						border-right: solid 1px black;
+   						border-top: solid 1px #BEBFAA;
+   						margin: 2em 1em 1em 2em;
+   						padding: 0.5em 2em 2em 2em;
+   						text-align: justify;
+					}
+				</STYLE>
+			</HEAD>
+			<BODY>
+			<div id="wrap">
+    			<div id="header">
+    				<H1>Relationships And Pregnancy</H1>
+					<P></P>
+    			</div>
+    			<div id="sidebarfake">
+    				<H1>   </H1>
+    			</div>
+    			<div id="sidebar">
+			    <ul>
+    					<a href="#parlink"><li>Parameters</li></a>
+    					<a href="#behaviorlink"><li>Behaviors</li></a>
+    					<a href="#agentslink"><li>Agents</li></a>
+    					<ul>
+    				
+    					<a href="#adultlink"><li>Adult</li></a>
+    				
+    					<a href="#neighborhoodCelllink"><li>Neighborhood Cell</li></a>
+    				
+    					</ul>
+    					<a href="#projlink"><li>Projections</li></a>
+    				</ul>    				
+    			</div>
+    			<div id="main">
+    					<DIV id="agent">
+    					<a name="parlink"/><h3>Parameters</h3>
+								
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Name</TH><TH align="left">Description</TH><TH align="left">Type</TH><TH>Default Value</TH>
+		
+					<TR>
+						<TD><i>Adult Count</i></TD>
+						<TD WIDTH="200">The number of adults to create.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">500</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Minimum Age</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">15</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Typical Abortion Period Start</i></TD>
+						<TD WIDTH="200">The first day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">60</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Typical Abortion Period End</i></TD>
+						<TD WIDTH="200">The last day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">200</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Typical Birth Period Start</i></TD>
+						<TD WIDTH="200">The first day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">300</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Typical Birth Period End</i></TD>
+						<TD WIDTH="200">The last day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">360</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Fecundity by Day in Cycle</i></TD>
+						<TD WIDTH="200">The probability that a woman having unprotected sex (not using contraception) will concieve as a function of the day in her mentural cycle.</TD>
+						<TD WIDTH="80">double[]</TD>
+						<TD WIDTH="80">0.0001,0.0003,0.0006,0.0011,0.0022,0.0043,0.0085,0.0169,0.0333,0.0658,0.1299,0.2565,0.5065,1.0000,0.5065,0.0574,0.0138,0.0033,0.0008,0.0002,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Condom Failure Rate</i></TD>
+						<TD WIDTH="200">The rate at which condoms fail to prevent a pregnancy from occuring. (1 - efficacy.)</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.15</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pill Failure Rate</i></TD>
+						<TD WIDTH="200">The rate at which oral contraception fails to prevent a pregnancy from occuring. (1 - efficacy.)</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.05</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pill Condom Failure Rate</i></TD>
+						<TD WIDTH="200">The rate at which condom and oral contraception used together fail to prevent a given pregnancy from occuring. (1 - efficacy.)</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.0075</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Fecundity By Age</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double[]</TD>
+						<TD WIDTH="80">0.854,0.832,0.81,0.788,0.766,0.744,0.722,0.7,0.678,0.656,0.634,0.612,0.59,0.568,0.546,0.524,0.502,0.48,0.458,0.436,0.414,0.392,0.37,0.348,0.326,0.304,0.282,0.26,0.238,0.216</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Walk Toward Age</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Rhythm Method Bias for Day</i></TD>
+						<TD WIDTH="200">Given all other factors, the effect of a timing strategy on intercourse proclivity as a function of day of mentural cycle.</TD>
+						<TD WIDTH="80">double[]</TD>
+						<TD WIDTH="80">1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Portion Rhythm Method</i></TD>
+						<TD WIDTH="200">The probability that a woman will attempt to time intercourse given that they have not chose another contraception strategy.</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Agent Vision</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">6</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Periods in Year</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">365</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Minimum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Maximum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Female Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Female Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Male Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Male Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage 15 to 19 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage 15 to 19 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage 21 to 24 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage 21 to 24 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage 25 to 29 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage 25 to 29 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage 30 to 44 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage 30 to 44 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage NHS Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage NHS Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage PHS Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage PHS Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage HS Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage HS Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Other Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Other Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Black Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Black Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Hispanic Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Hispanic Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage White Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage White Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Category 1 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Category 1 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Category 3 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Category 3 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Category 2 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Category 2 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Category 4 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage Category 4 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Minimum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Maximum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Female Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Female Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Male Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Male Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce 15 to 19 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce 15 to 19 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce 20 to 24 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce 20 to 24 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce 25 to 29 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce 25 to 29 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce 30 to 44 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce 30 to 44 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce NHS Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce NHS Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce PHS Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce PHS Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce HS Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce HS Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Other Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Other Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Black Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Black Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Hispanic Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Hispanic Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce White Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce White Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Category 1 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Category 1 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Category 3 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Category 3 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Category 2 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Category 2 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Category 4 Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce Category 4 Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.33333</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Status Adjustment Minimum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Status Adjustment Maximum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Status Adjustment Never Pregnant Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Status Adjustment Never Pregnant Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Status Adjustment Currently Pregnant Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Status Adjustment Currently Pregnant Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Status Adjustment Was Pregnant Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Status Adjustment Was Pregnant Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Input Data File</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">String</TD>
+						<TD WIDTH="80">data/NSFG_Unmarried.txt</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Relationship End Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Relationship End Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.02</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Relationship Begin Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Relationship Begin Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Frequency Initial Modification</i></TD>
+						<TD WIDTH="200">The effect on likelihood of sex given that the couple has never had sex. For example, if an Adult's P Sex is 0.1 and this value is 0.2, then the probability of having sex on any given day is .02.</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">1.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Lunar Days</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">28</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Output Run File</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">String</TD>
+						<TD WIDTH="80">data/RunOut.txt</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Output Period File</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">String</TD>
+						<TD WIDTH="80">data/RunPeriod.txt</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Female Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Male Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.3</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Female Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Male Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Female Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Male Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Very Low Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.33333</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.33333</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Abortion Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.33333</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Miscarriage Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.5</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.5</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Poor Birth Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.3</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Female Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Male Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Coital Frequency Moderate Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">0.0</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>All Output File</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">String</TD>
+						<TD WIDTH="80">data/AllOutput.txt</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Output Data</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">boolean</TD>
+						<TD WIDTH="80">true</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Write Periods</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">String</TD>
+						<TD WIDTH="80">1365</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Married Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Married Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Male Unmarried Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sterilize Female Unmarried Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Married Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Pill Use Unmarried Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Value</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Unmarried Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Married Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Medium Condom Use Unmarried Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Married Minimum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Married Maximum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Married Very Low Frequency Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Married Very Low Frequency Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Married High Frequency Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Married High Frequency Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Married Moderate Frequency Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Married Moderate Frequency Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Unmarried Minimum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Unmarried Maximum Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Unmarried Very Low Frequency Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Unmarried Very Low Frequency Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Unmarried High Frequency Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Unmarried High Frequency Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Unmarried Moderate Frequency Minimum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Days Unmarried Moderate Frequency Maximum</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Factor Base</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married 15 to 19 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married 20 to 24 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married 25 to 29 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married 30 to 44 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married NHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married PHS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married HS Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Other Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Black Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Hispanic Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married White Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Category 1 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Category 3 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Category 2 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Category 4 Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Partner Sterilized Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Other Contraception Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Very Low Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married High Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P High Condom Use Married Moderate Frequency Factor</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+		</TABLE>
+
+    					<a name="behaviorlink"/><h3>Behaviors</h3>
+								
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Act</TH><TH align="left">Description</TH>
+		
+					<TR>
+						<TD><i>Build Model</i></TD>
+						<TD>Build internal state for Relationships And Pregnancy.</TD>
+					</TR>
+		
+		</TABLE>
+
+						</DIV>
+    					<a name="agentslink"/><h1><ul>Agents</ul></h1>
+							
+								<DIV id="agent">
+									<a name="adultlink"/><H2>Adult</H2>
+									
+									<H3>Attributes</H3>
+									
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Name</TH><TH align="left">Description</TH><TH align="left">Type</TH><TH>Default Value</TH>
+		
+					<TR>
+						<TD><i>Gender</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">GenderEnum</TD>
+						<TD WIDTH="80">Female</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Age in Years</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Age in Years Index</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Age Group</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">AgeGroupEnum</TD>
+						<TD WIDTH="80">15 to 19</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Education</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">EducationEnum</TD>
+						<TD WIDTH="80">HS</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>In Relationship</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">boolean</TD>
+						<TD WIDTH="80">false</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Marital Status</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">MaritalStatusEnum</TD>
+						<TD WIDTH="80">Single</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnant</i></TD>
+						<TD WIDTH="200">Am I currently pregnant?</TD>
+						<TD WIDTH="80">boolean</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Relationship Status</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">PregnancyRelationshipStatusEnum</TD>
+						<TD WIDTH="80">Never Pregnant</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Contraception Method</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">ContraceptionMethodEnum</TD>
+						<TD WIDTH="80">None</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Rhythm Method User</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">boolean</TD>
+						<TD WIDTH="80">false</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Projected Day of Birth</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Projected Day of Miscarriage</i></TD>
+						<TD WIDTH="200">The day on which last miscarriage occurs or will occur. Zero if no such event.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Projected Day of Abortion</i></TD>
+						<TD WIDTH="200">The day on which last abortion occurred or will occur. Zero if no such event.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Relationship Initial</i></TD>
+						<TD WIDTH="200">My desire to enter into a relationship with a member of the opposite sex, given that I am not currently in a relationship. </TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P End Relationship</i></TD>
+						<TD WIDTH="200">Given that I am currently in a relationship, the likelihood that I wish to remain in that relationship for the current period.</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Marriage</i></TD>
+						<TD WIDTH="200">The probability that this agent will become married on a given day, ignoring pregnancy status.</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Divorce</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sex</i></TD>
+						<TD WIDTH="200">Given that I am in a relationship with a partner with whom I have not had sex, the likilihood that I wish to engage in sex with that partner during given period.</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>P Sex Initial</i></TD>
+						<TD WIDTH="200">Given that I continue in a relationship with whom I've had sex, the likilihood that I wish to engage in sex with that same partner during given period.</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Sex Count in Relationship</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Day in Cycle</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Sex Count in Lifetime</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Days in Current Relationship</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Sex Partners in Lifetime</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Day of Last Sex</i></TD>
+						<TD WIDTH="200">The last day in which sex occurred.  Zero if no such event.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">-1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancies in Lifetime</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Births in Lifetime</i></TD>
+						<TD WIDTH="200">The total number of live birth events.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Abortions in Lifetime</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Miscarriages in Lifetime</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Ratio Pregnancies to Sex Events</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Poor Births in Lifetime</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Race</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">RaceEnum</TD>
+						<TD WIDTH="80">White</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>SES</i></TD>
+						<TD WIDTH="200">Socio-Economic Category. Currently defined by mother's education level, i.e. high school, high-school degree, some college, at least a college degree.</TD>
+						<TD WIDTH="80">SESEnum</TD>
+						<TD WIDTH="80">Category 4</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Coital Behavior Type</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">CoitalBehaviorTypeEnum</TD>
+						<TD WIDTH="80">Very Low Frequency</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Married Code</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">-1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Unmarried Code</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">-1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>ID</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Spouse ID</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Male Code</i></TD>
+						<TD WIDTH="200">0 for female, 1 for male.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">-1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Female Code</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">-1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Partner Contraception Method</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">PartnerContraceptionMethodEnum</TD>
+						<TD WIDTH="80">Other Contraception</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Sterilization Choices</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+		</TABLE>
+
+									<H3>Behaviors</H3>
+									
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Act</TH><TH align="left">Description</TH>
+		
+					<TR>
+						<TD><i>Initialize Location</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Initialize Behavior Values</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Initialize Ages</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Initialize Marital State</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Movement</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Update Dates</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Update Relationship</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Seek Partner</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Outcome</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Sex Potential</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Pregnancy Event</i></TD>
+						<TD>Watch for changes in Pregnant.</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Sex Event</i></TD>
+						<TD>Watch for changes in Sex Count in Lifetime.</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Sex in Relationship Event</i></TD>
+						<TD>Watch for changes in Sex Count in Relationship.</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Watch In Relationship</i></TD>
+						<TD>Watch for changes in In Relationship.</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Birth Event</i></TD>
+						<TD>Watch for changes in Births in Lifetime.</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Watch P Sex</i></TD>
+						<TD>Watch for changes in P Sex.</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Watch Coital Behavior Type</i></TD>
+						<TD>Watch for changes in Coital Behavior Type.</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Watch Gender</i></TD>
+						<TD>Watch for changes in Gender.</TD>
+					</TR>
+		
+		</TABLE>
+
+								</DIV>
+							
+								<DIV id="agent">
+									<a name="neighborhoodCelllink"/><H2>Neighborhood Cell</H2>
+									
+									<H3>Attributes</H3>
+									
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Name</TH><TH align="left">Description</TH><TH align="left">Type</TH><TH>Default Value</TH>
+		
+		</TABLE>
+
+									<H3>Behaviors</H3>
+									
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Act</TH><TH align="left">Description</TH>
+		
+		</TABLE>
+
+								</DIV>
+							
+						
+					<DIV id="section">
+						<a name="projlink"/><H2>Projections:</H2>
+						
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Name</TH><TH align="left">Description</TH><TH align="left">Type</TH>
+			
+					<TR>
+						<TD><i>Neighborhood</i></TD>
+						<TD></TD>
+						<TD>2-Dimensional Grid</TD>
+					</TR>
+			
+					<TR>
+						<TD><i>Partners</i></TD>
+						<TD></TD>
+						<TD>Network</TD>
+					</TR>
+			
+		</TABLE>
+
+					</DIV>			    			
+    			</div>
+			    
+    			<div id="footer">
+    				<P>Generated by metaabm system: Mar 4, 2009 8:11:41 PM PST.</P>
+    			</div>
+						</BODY>
+		</HTML>
+	

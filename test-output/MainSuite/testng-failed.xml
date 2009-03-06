@@ -1,0 +1,84 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [MainSuite]" junit="false" parallel="tests" annotations="JDK">
+  <parameter name="test-file" value="CoitalFrequency10"/>
+  <test name="Coital Frequency 7(failed)" junit="false" parallel="tests" annotations="JDK">
+    <parameter name="test-file" value="CoitalFrequency7"/>
+    <classes>
+      <class name="com.metascape.ecscape.test.RunATest">
+        <methods>
+          <include name="executeFileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Coital Frequency 9(failed)" junit="false" parallel="tests" annotations="JDK">
+    <parameter name="test-file" value="CoitalFrequency9"/>
+    <classes>
+      <class name="com.metascape.ecscape.test.RunATest">
+        <methods>
+          <include name="executeFileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Coital Frequency 5(failed)" junit="false" parallel="tests" annotations="JDK">
+    <parameter name="test-file" value="CoitalFrequency5"/>
+    <classes>
+      <class name="com.metascape.ecscape.test.RunATest">
+        <methods>
+          <include name="executeFileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Coital Frequency 3(failed)" junit="false" parallel="tests" annotations="JDK">
+    <parameter name="test-file" value="CoitalFrequency3"/>
+    <classes>
+      <class name="com.metascape.ecscape.test.RunATest">
+        <methods>
+          <include name="executeFileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Coital Frequency 1(failed)" junit="false" parallel="tests" annotations="JDK">
+    <parameter name="test-file" value="CoitalFrequency1"/>
+    <classes>
+      <class name="com.metascape.ecscape.test.RunATest">
+        <methods>
+          <include name="executeFileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Coital Frequency 6(failed)" junit="false" parallel="tests" annotations="JDK">
+    <parameter name="test-file" value="CoitalFrequency6"/>
+    <classes>
+      <class name="com.metascape.ecscape.test.RunATest">
+        <methods>
+          <include name="executeFileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Coital Frequency 4(failed)" junit="false" parallel="tests" annotations="JDK">
+    <parameter name="test-file" value="CoitalFrequency4"/>
+    <classes>
+      <class name="com.metascape.ecscape.test.RunATest">
+        <methods>
+          <include name="executeFileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="Coital Frequency 2(failed)" junit="false" parallel="tests" annotations="JDK">
+    <parameter name="test-file" value="CoitalFrequency2"/>
+    <classes>
+      <class name="com.metascape.ecscape.test.RunATest">
+        <methods>
+          <include name="executeFileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,4 @@
+title	Relationship Status 1: Second check of p(rel begin) and p(rel end) parameters
+comments	This test changes the probability of entering into a relationship to zero.  This should result in no agents being in a relationship.
+Count Adult In Relationship	0	0					
+	

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Baseline Unmarried" failures="1" tests="1" time="131.935" errors="0">
+  <properties/>
+  <testcase name="executeFileTest" time="131.904" classname="com.metascape.ecscape.test.RunATest">
+    <failure type="java.lang.AssertionError" message="Sum Adult Miscarriages in Lifetime 277.0 &lt; 284 expected:&lt;true&gt; but was:&lt;false&gt;">
+      <![CDATA[java.lang.AssertionError: Sum Adult Miscarriages in Lifetime 277.0 < 284 expected:<true> but was:<false>
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:126)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 20 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

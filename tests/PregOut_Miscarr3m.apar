@@ -1,0 +1,8 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Miscarriage Married Other Factor	-0.33333
+P Miscarriage Married Black Factor	-0.33333
+P Miscarriage Married Hispanic Factor	-0.33333
+P Miscarriage Married White Factor	-0.33333
+Stop Period	1365
+Input Data File	|data/NSFG_Married.txt

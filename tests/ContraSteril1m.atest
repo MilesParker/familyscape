@@ -1,0 +1,10 @@
+title	Contraception Sterilization 1m: Check of Baseline Factor for Sterilization Equations Among Marrieds 
+comments	This test sets the baseline factor for the sterilization equations among marrieds to one, which should have the effect sterilizing everyone.  This doubles as an efficacy test; if everyone is sterilized, there should be no pregnancies.
+Count Adult Sterilized Contraception Method	4186	4186	
+Count Adult Sterilization Choices	4186	4186	
+Sum Adult Pregnancies in Lifetime	0	0				
+Sum Adult Abortions in Lifetime	0	0				
+Sum Adult Miscarriages in Lifetime	0	0				
+Sum Adult Births in Lifetime	0	0				
+Sum Adult Poor Births in Lifetime	0	0				
+	

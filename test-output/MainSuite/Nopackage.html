@@ -1,0 +1,306 @@
+<html>
+<head>
+<title>TestNG:  Nopackage</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Nopackage</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 22 16:56:12 PDT 2008</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1391 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='edu.brook.ccf.rpp.TestBaseline.married()'>married</td>
+<td>1</td>
+<td><div><pre>java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.married(TestBaseline.java:19)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4720458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4720458'><pre>java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.married(TestBaseline.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+</pre></div></td>
+</tr>
+<tr>
+<td title='edu.brook.ccf.rpp.TestBaseline.marriedBase()'>marriedBase</td>
+<td>1</td>
+<td><div><pre>java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.marriedBase(TestBaseline.java:9)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7023078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7023078'><pre>java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.marriedBase(TestBaseline.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+</pre></div></td>
+</tr>
+<tr>
+<td title='edu.brook.ccf.rpp.TestBaseline.unmarried()'>unmarried</td>
+<td>1</td>
+<td><div><pre>java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.unmarried(TestBaseline.java:24)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace457687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace457687'><pre>java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.unmarried(TestBaseline.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+</pre></div></td>
+</tr>
+<tr>
+<td title='edu.brook.ccf.rpp.TestBaseline.unmarriedBase()'>unmarriedBase</td>
+<td>1</td>
+<td><div><pre>java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.unmarriedBase(TestBaseline.java:14)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3934565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3934565'><pre>java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.unmarriedBase(TestBaseline.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+</pre></div></td>
+</tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Coital Frequency 8" failures="0" tests="1" time="44.129" errors="0">
+  <properties/>
+  <testcase name="executeFileTest" time="44.096" classname="com.metascape.ecscape.test.RunATest"/>
+</testsuite>

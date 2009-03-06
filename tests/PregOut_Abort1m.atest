@@ -1,0 +1,7 @@
+title	Pregnancy Outcome Abortion 1m: First Check of Baseline Factor for Abortion among Marrieds
+comments	This test sets the baseline factor in the married abortion equation equal to zero, which should eliminate abortions and increase the number of births and miscarriages relative to baseline. There should be slightly fewer overall pregnancies as longer gestation period.
+Sum Adult Pregnancies in Lifetime	820	1370				
+Sum Adult Abortions in Lifetime	0	0	
+Sum Adult Miscarriages in Lifetime	220	368				
+Sum Adult Births in Lifetime	360	520			
+Sum Adult Poor Births in Lifetime	180	280	

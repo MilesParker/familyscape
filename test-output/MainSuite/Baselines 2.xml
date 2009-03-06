@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Baselines 2" failures="1" tests="1" time="116.502" errors="0">
+  <properties/>
+  <testcase name="executeFileTest" time="116.48" classname="com.metascape.ecscape.test.RunATest">
+    <failure type="java.lang.AssertionError" message="Sum Adult Poor Births in Lifetime 156.0 &gt; 153 expected:&lt;true&gt; but was:&lt;false&gt;">
+      <![CDATA[java.lang.AssertionError: Sum Adult Poor Births in Lifetime 156.0 > 153 expected:<true> but was:<false>
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 20 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

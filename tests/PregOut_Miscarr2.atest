@@ -1,0 +1,7 @@
+title	Pregnancy Outcome Miscarriage 2: Second Check of Baseline Factor for Miscarriage among Unmarrieds
+comments	This test sets the baseline factor in the unmarried miscarriage equation equal to one, which should eliminate births and abortions and increase the number of miscarriages relative to baseline.
+Sum Adult Miscarriages in Lifetime	500	1300	
+Sum Adult Abortions in Lifetime	0	0				
+Sum Adult Births in Lifetime	0	0				
+Sum Adult Poor Births in Lifetime	0	0									
+	

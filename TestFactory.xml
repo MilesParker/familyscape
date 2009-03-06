@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All RPP Tests" parallel="methods" thread-count="8">
+  <test name="data">
+    <classes>
+    	<parameter name="dir" value="../edu.brook.parent.ecscape/tests"/>
+       <class name="com.metascape.ecscape.runtime.testing.TestFactory"/>
+    </classes>
+  </test>
+</suite>

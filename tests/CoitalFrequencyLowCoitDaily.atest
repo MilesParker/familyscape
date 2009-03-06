@@ -1,0 +1,5 @@
+title	Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds 
+comments	This test assigns all unmarried agents to the low coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should have no effect on coital frequency.
+Count Adult Very Low Frequency Coital Behavior Type	5814	5814	
+Average Adult Sex Count in Lifetime	640	688				
+Average Adult Sex Partners in Lifetime	12.5	13.5

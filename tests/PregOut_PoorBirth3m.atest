@@ -1,0 +1,5 @@
+title	Pregnancy Outcome Poor Birth 3m: Spot Check of Covariates for Poor Birth Equation among Marrieds
+comments	This test sets the Education covariates in the married poor birth equation equal to (-1*baseline), which should eliminate poor births.
+Sum Adult Poor Births in Lifetime	0	0				
+								
+	

@@ -1,0 +1,3 @@
+title	Sexual Behavior 7: Spot Check of Covariates - SES (very low married)
+comments	This test spot checks the SES-related demographic predictors of sexual behavior within the very low married equation by setting all relevant covariates equal to (-1*baseline factor), which should result in no agents falling into this proclivity category.
+Count Adult Very Low Frequency Coital Behavior Type	0	0	

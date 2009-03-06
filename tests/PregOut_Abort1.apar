@@ -1,0 +1,3 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	BaselineUnmarried
+P Abortion Unmarried Factor Base	0.0

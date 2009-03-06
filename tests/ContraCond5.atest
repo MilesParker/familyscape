@@ -1,0 +1,3 @@
+title	Contraception Cond 5: Cross Check of Married Covariates for Medium Condom Equation Among Unmarrieds 
+comments	This test sets all values for the pill covariates in the married medium condom equation equal to an extremely high number, which should have no effect on the number of medium condom intenders among unmarrieds.
+Count Adult Condom Medium Intender Contraception Method	374	479	

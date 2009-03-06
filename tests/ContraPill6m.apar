@@ -1,0 +1,7 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Pill Use Married Factor Base	1.0
+P Sterilize Female Married Factor Base	0.0
+Pill Failure Rate	0.0
+Stop Period	1
+Input Data File	|data/NSFG_Married.txt

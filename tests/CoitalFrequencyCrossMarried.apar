@@ -1,0 +1,41 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Coital Frequency Moderate Unmarried Factor Base	100
+P Coital Frequency Moderate Unmarried Female Factor	100
+P Coital Frequency Moderate Unmarried Male Factor	100
+P Coital Frequency Moderate Unmarried 15 to 19 Factor	100
+P Coital Frequency Moderate Unmarried 20 to 24 Factor	100
+P Coital Frequency Moderate Unmarried 25 to 29 Factor	100
+P Coital Frequency Moderate Unmarried 30 to 44 Factor	100
+P Coital Frequency Moderate Unmarried NHS Factor	100
+P Coital Frequency Moderate Unmarried PHS Factor	100
+P Coital Frequency Moderate Unmarried HS Factor	100
+P Coital Frequency Moderate Unmarried Other Factor	100
+P Coital Frequency Moderate Unmarried Black Factor	100
+P Coital Frequency Moderate Unmarried Hispanic Factor	100
+P Coital Frequency Moderate Unmarried White Factor	100
+P Coital Frequency Moderate Unmarried Category 1 Factor	100
+P Coital Frequency Moderate Unmarried Category 3 Factor	100
+P Coital Frequency Moderate Unmarried Category 2 Factor	100
+P Coital Frequency Moderate Unmarried Category 4 Factor	100
+P Coital Frequency Very Low Unmarried Factor Base	100
+P Coital Frequency Very Low Unmarried Female Factor	100
+P Coital Frequency Very Low Unmarried Male Factor	100
+P Coital Frequency Very Low Unmarried 15 to 19 Factor	100
+P Coital Frequency Very Low Unmarried 20 to 24 Factor	100
+P Coital Frequency Very Low Unmarried 25 to 29 Factor	100
+P Coital Frequency Very Low Unmarried 30 to 44 Factor	100
+P Coital Frequency Very Low Unmarried NHS Factor	100
+P Coital Frequency Very Low Unmarried PHS Factor	100
+P Coital Frequency Very Low Unmarried HS Factor	100
+P Coital Frequency Very Low Unmarried Other Factor	100
+P Coital Frequency Very Low Unmarried Black Factor	100
+P Coital Frequency Very Low Unmarried Hispanic Factor	100
+P Coital Frequency Very Low Unmarried White Factor	100
+P Coital Frequency Very Low Unmarried Category 1 Factor	100
+P Coital Frequency Very Low Unmarried Category 3 Factor	100
+P Coital Frequency Very Low Unmarried Category 2 Factor	100
+P Coital Frequency Very Low Unmarried Category 4 Factor	100
+Stop Period	0
+Input Data File	|data/NSFG_Married.txt
+

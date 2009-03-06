@@ -1,0 +1,5 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Poor Birth Married Factor Base	1.0
+Stop Period	1365
+Input Data File	|data/NSFG_Married.txt

@@ -1,0 +1,10 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Sterilize Female Unmarried Very Low Frequency Factor	-0.5
+P Sterilize Female Unmarried Moderate Frequency Factor	-0.5
+P Sterilize Female Unmarried High Frequency Factor	-0.5
+P Sterilize Male Unmarried Very Low Frequency Factor	-0.5
+P Sterilize Male Unmarried Moderate Frequency Factor	-0.5
+P Sterilize Male Unmarried High Frequency Factor	-0.5
+Stop Period	1
+Input Data File	|data/NSFG_Unmarried.txt

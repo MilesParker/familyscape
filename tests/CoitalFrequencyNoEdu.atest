@@ -1,0 +1,3 @@
+title	Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried)
+comments	This test spot checks the education-related demographic predictors of Coital Frequency within the moderate unmarried equation by setting all relevant covariates equal to (-1*baseline factor), which should result in no agents falling into this proclivity category.
+Count Adult Moderate Frequency Coital Behavior Type	0	0	

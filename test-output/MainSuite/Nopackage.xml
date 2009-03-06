@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Nopackage" failures="4" tests="4" time="1.391" errors="0">
+  <properties/>
+  <testcase name="marriedBase" time="1.352" classname="edu.brook.ccf.rpp.TestBaseline">
+    <failure type="java.lang.IllegalStateException" message="Workbench has not been created yet.">
+      <![CDATA[java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.marriedBase(TestBaseline.java:9)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="unmarriedBase" time="1.352" classname="edu.brook.ccf.rpp.TestBaseline">
+    <failure type="java.lang.IllegalStateException" message="Workbench has not been created yet.">
+      <![CDATA[java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.unmarriedBase(TestBaseline.java:14)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="unmarried" time="1.352" classname="edu.brook.ccf.rpp.TestBaseline">
+    <failure type="java.lang.IllegalStateException" message="Workbench has not been created yet.">
+      <![CDATA[java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.unmarried(TestBaseline.java:24)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="married" time="1.352" classname="edu.brook.ccf.rpp.TestBaseline">
+    <failure type="java.lang.IllegalStateException" message="Workbench has not been created yet.">
+      <![CDATA[java.lang.IllegalStateException: Workbench has not been created yet.
+	at org.eclipse.ui.PlatformUI.getWorkbench(PlatformUI.java:92)
+	at com.metascape.ecscape.view.vis.ScapeViewProxy.scapeAdded(ScapeViewProxy.java:51)
+	at org.ascape.model.Scape.addView(Scape.java:1321)
+	at org.ascape.model.Scape.addView(Scape.java:1350)
+	at org.ascape.model.Scape.addView(Scape.java:1288)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy.createGraphicViews(RelationshipsAndPregnancy.java:2636)
+	at org.ascape.model.Scape.createViews(Scape.java:2568)
+	at com.metascape.ecscape.model.Escape.createViews(Escape.java:68)
+	at org.ascape.model.Scape$2.execute(Scape.java:385)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:820)
+	at org.ascape.runtime.Runner.open(Runner.java:874)
+	at edu.brook.ccf.rpp.DataTest.executeFileTest(DataTest.java:142)
+	at edu.brook.ccf.rpp.TestBaseline.married(TestBaseline.java:19)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:675)
+	at java.lang.Thread.run(Thread.java:613)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

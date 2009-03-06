@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  Coital Frequency 4</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Coital Frequency 4</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 03 11:20:19 PST 2008</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17860 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.ecscape.test.RunATest.executeFileTest()'>executeFileTest<br/><b>Parameters:</b> CoitalFrequency4</td>
+<td>17</td>
+<td><div><pre>java.lang.OutOfMemoryError: Java heap space
+	at org.ascape.model.space.Array2DBase.findWithinMoore(Array2DBase.java:1249)
+	at org.ascape.model.space.Array2DMoore.findWithinImpl(Array2DMoore.java:81)
+	at org.ascape.model.space.Array.findWithin(Array.java:211)
+	at org.ascape.model.space.Discrete.calculateNeighbors(Discrete.java:86)
+	at org.ascape.model.Cell.calculateNeighbors(Cell.java:172)
+	at org.ascape.model.Cell$3.execute(Cell.java:130)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.Scape.initialize(Scape.java:1168)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:252)
+	at org.ascape.runtime.Runner.run(Runner.java:720)
+	at org.ascape.runtime.Runner.run(Runner.java:605)
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:118)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12428887", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12428887'><pre>java.lang.OutOfMemoryError: Java heap space
+	at org.ascape.model.space.Array2DBase.findWithinMoore(Array2DBase.java:1249)
+	at org.ascape.model.space.Array2DMoore.findWithinImpl(Array2DMoore.java:81)
+	at org.ascape.model.space.Array.findWithin(Array.java:211)
+	at org.ascape.model.space.Discrete.calculateNeighbors(Discrete.java:86)
+	at org.ascape.model.Cell.calculateNeighbors(Cell.java:172)
+	at org.ascape.model.Cell$3.execute(Cell.java:130)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.Scape.initialize(Scape.java:1168)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:252)
+	at org.ascape.runtime.Runner.run(Runner.java:720)
+	at org.ascape.runtime.Runner.run(Runner.java:605)
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+</pre></div></td>
+</tr>
+</table><p>
+</body>
+</html>

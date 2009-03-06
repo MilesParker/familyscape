@@ -1,0 +1,338 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="MainSuite">
+    <groups>
+    </groups>
+    <test name="Coital Frequency 7">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="FAIL" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="33490" started-at="2008-11-03T11:20:19Z" finished-at="2008-11-03T11:20:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency7]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.OutOfMemoryError">
+            <message>
+              <![CDATA[Java heap space]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.OutOfMemoryError: Java heap space
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="Coital Frequency 9">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="FAIL" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="33536" started-at="2008-11-03T11:20:25Z" finished-at="2008-11-03T11:20:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.OutOfMemoryError">
+            <message>
+              <![CDATA[Java heap space]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.OutOfMemoryError: Java heap space
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="Coital Frequency 5">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="FAIL" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="22100" started-at="2008-11-03T11:20:19Z" finished-at="2008-11-03T11:20:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.OutOfMemoryError">
+            <message>
+              <![CDATA[Java heap space]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at java.util.ArrayList.&lt;init&gt;(ArrayList.java:136)
+	at org.ascape.model.space.CollectionSpace.filter(CollectionSpace.java:1189)
+	at org.ascape.model.space.Array.findWithin(Array.java:218)
+	at org.ascape.model.space.Discrete.calculateNeighbors(Discrete.java:86)
+	at org.ascape.model.Cell.calculateNeighbors(Cell.java:172)
+	at org.ascape.model.Cell$3.execute(Cell.java:130)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.Scape.initialize(Scape.java:1168)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:252)
+	at org.ascape.runtime.Runner.run(Runner.java:720)
+	at org.ascape.runtime.Runner.run(Runner.java:605)
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="Coital Frequency 3">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="FAIL" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="11126" started-at="2008-11-03T11:20:19Z" finished-at="2008-11-03T11:20:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.OutOfMemoryError">
+            <message>
+              <![CDATA[Java heap space]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at org.apache.commons.lang.RandomStringUtils.random(RandomStringUtils.java:285)
+	at org.apache.commons.lang.RandomStringUtils.random(RandomStringUtils.java:167)
+	at org.apache.commons.lang.RandomStringUtils.random(RandomStringUtils.java:147)
+	at org.apache.commons.lang.RandomStringUtils.randomAlphanumeric(RandomStringUtils.java:115)
+	at edu.brook.ccf.rpm.NeighborhoodCell.createUniqueID(NeighborhoodCell.java:32)
+	at edu.brook.ccf.rpm.NeighborhoodCell.clone(NeighborhoodCell.java:41)
+	at org.ascape.model.space.Array2DBase.populate(Array2DBase.java:525)
+	at org.ascape.model.Scape.populate(Scape.java:1118)
+	at org.ascape.model.Scape.createScape(Scape.java:1146)
+	at org.ascape.model.Scape.initialize(Scape.java:1162)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:252)
+	at org.ascape.runtime.Runner.run(Runner.java:720)
+	at org.ascape.runtime.Runner.run(Runner.java:605)
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="Coital Frequency 1">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="FAIL" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="4682" started-at="2008-11-03T11:20:19Z" finished-at="2008-11-03T11:20:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.OutOfMemoryError">
+            <message>
+              <![CDATA[Java heap space]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at java.beans.FeatureDescriptor.createReference(FeatureDescriptor.java:281)
+	at java.beans.PropertyDescriptor.setWriteMethod(PropertyDescriptor.java:274)
+	at java.beans.PropertyDescriptor.&lt;init&gt;(PropertyDescriptor.java:117)
+	at java.beans.Introspector.getTargetPropertyInfo(Introspector.java:562)
+	at java.beans.Introspector.getBeanInfo(Introspector.java:389)
+	at java.beans.Introspector.getBeanInfo(Introspector.java:222)
+	at java.beans.Introspector.getBeanInfo(Introspector.java:208)
+	at org.ascape.util.PropertyAccessor.determineReadWriteAccessors(PropertyAccessor.java:234)
+	at org.ascape.model.Scape.assignParameters(Scape.java:2829)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:814)
+	at org.ascape.runtime.Runner.open(Runner.java:850)
+	at org.ascape.runtime.Runner.open(Runner.java:930)
+	at org.ascape.runtime.Runner.open(Runner.java:980)
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:712)
+	at org.testng.TestRunner.privateRun(TestRunner.java:582)
+	at org.testng.TestRunner.run(TestRunner.java:477)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:324)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:33)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:350)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="Coital Frequency 8">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="PASS" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="44096" started-at="2008-11-03T11:20:19Z" finished-at="2008-11-03T11:21:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency8]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+    <test name="Coital Frequency 10">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="PASS" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="31309" started-at="2008-11-03T11:20:32Z" finished-at="2008-11-03T11:21:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency10]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+    <test name="Coital Frequency 6">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="FAIL" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="43726" started-at="2008-11-03T11:20:19Z" finished-at="2008-11-03T11:21:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency6]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.OutOfMemoryError">
+            <message>
+              <![CDATA[Java heap space]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.OutOfMemoryError: Java heap space
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="Coital Frequency 4">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="FAIL" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="17397" started-at="2008-11-03T11:20:19Z" finished-at="2008-11-03T11:20:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency4]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.OutOfMemoryError">
+            <message>
+              <![CDATA[Java heap space]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at org.ascape.model.space.Array2DBase.findWithinMoore(Array2DBase.java:1249)
+	at org.ascape.model.space.Array2DMoore.findWithinImpl(Array2DMoore.java:81)
+	at org.ascape.model.space.Array.findWithin(Array.java:211)
+	at org.ascape.model.space.Discrete.calculateNeighbors(Discrete.java:86)
+	at org.ascape.model.Cell.calculateNeighbors(Cell.java:172)
+	at org.ascape.model.Cell$3.execute(Cell.java:130)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.Scape.initialize(Scape.java:1168)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:252)
+	at org.ascape.runtime.Runner.run(Runner.java:720)
+	at org.ascape.runtime.Runner.run(Runner.java:605)
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+    <test name="Coital Frequency 2">
+      <class name="com.metascape.ecscape.test.RunATest">
+        <test-method status="FAIL" signature="executeFileTest(java.lang.String)" name="executeFileTest" duration-ms="27951" started-at="2008-11-03T11:20:19Z" finished-at="2008-11-03T11:20:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CoitalFrequency2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.OutOfMemoryError">
+            <message>
+              <![CDATA[Java heap space]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.OutOfMemoryError: Java heap space
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

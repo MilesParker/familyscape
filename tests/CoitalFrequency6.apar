@@ -1,0 +1,7 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Sex Moderate Unmarried NHS Factor	-0.3
+P Sex Moderate Unmarried PHS Factor	-0.3
+P Sex Moderate Unmarried HS Factor	-0.3
+Stop Period	0
+Input Data File	|NSFG_Unmarried.txt

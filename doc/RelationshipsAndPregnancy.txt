@@ -1,0 +1,487 @@
+Relationships And Pregnancy
+
+
+Parameters
+Relationships And Pregnancy	Adult Count	The number of adults to create.	int	500
+Relationships And Pregnancy	Minimum Age		int	15
+Relationships And Pregnancy	Typical Abortion Period Start	The first day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. 	int	60
+Relationships And Pregnancy	Typical Abortion Period End	The last day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. 	int	200
+Relationships And Pregnancy	Typical Birth Period Start	The first day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. 	int	300
+Relationships And Pregnancy	Typical Birth Period End	The last day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. 	int	360
+Relationships And Pregnancy	Fecundity by Day in Cycle	The probability that a woman having unprotected sex (not using contraception) will concieve as a function of the day in her mentural cycle.	double[]	0.0001,0.0003,0.0006,0.0011,0.0022,0.0043,0.0085,0.0169,0.0333,0.0658,0.1299,0.2565,0.5065,1.0000,0.5065,0.0574,0.0138,0.0033,0.0008,0.0002,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+Relationships And Pregnancy	Condom Failure Rate	The rate at which condoms fail to prevent a pregnancy from occuring. (1 - efficacy.)	double	.15
+Relationships And Pregnancy	Pill Failure Rate	The rate at which oral contraception fails to prevent a pregnancy from occuring. (1 - efficacy.)	double	.05
+Relationships And Pregnancy	Pill Condom Failure Rate	The rate at which condom and oral contraception used together fail to prevent a given pregnancy from occuring. (1 - efficacy.)	double	.0075
+Relationships And Pregnancy	Fecundity By Age		double[]	0.854,0.832,0.81,0.788,0.766,0.744,0.722,0.7,0.678,0.656,0.634,0.612,0.59,0.568,0.546,0.524,0.502,0.48,0.458,0.436,0.414,0.392,0.37,0.348,0.326,0.304,0.282,0.26,0.238,0.216
+Relationships And Pregnancy	Walk Toward Age		int	1
+Relationships And Pregnancy	Rhythm Method Bias for Day	Given all other factors, the effect of a timing strategy on intercourse proclivity as a function of day of mentural cycle.	double[]	1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+Relationships And Pregnancy	Portion Rhythm Method	The probability that a woman will attempt to time intercourse given that they have not chose another contraception strategy.	double	0.0
+Relationships And Pregnancy	Agent Vision		int	6
+Relationships And Pregnancy	Periods in Year		int	365
+Relationships And Pregnancy	P Marriage Minimum Base		double	0.0
+Relationships And Pregnancy	P Marriage Maximum Base		double	0.0
+Relationships And Pregnancy	P Marriage Female Minimum		double	0.0
+Relationships And Pregnancy	P Marriage Female Maximum		double	0.0
+Relationships And Pregnancy	P Marriage Male Minimum		double	0.0
+Relationships And Pregnancy	P Marriage Male Maximum		double	0.0
+Relationships And Pregnancy	P Marriage 15 to 19 Minimum		double	0.0
+Relationships And Pregnancy	P Marriage 15 to 19 Maximum		double	0.0
+Relationships And Pregnancy	P Marriage 21 to 24 Minimum		double	0.0
+Relationships And Pregnancy	P Marriage 21 to 24 Maximum		double	0.0
+Relationships And Pregnancy	P Marriage 25 to 29 Minimum		double	0.0
+Relationships And Pregnancy	P Marriage 25 to 29 Maximum		double	0.0
+Relationships And Pregnancy	P Marriage 30 to 44 Minimum		double	0.0
+Relationships And Pregnancy	P Marriage 30 to 44 Maximum		double	0.0
+Relationships And Pregnancy	P Marriage NHS Minimum		double	0.0
+Relationships And Pregnancy	P Marriage NHS Maximum		double	0.0
+Relationships And Pregnancy	P Marriage PHS Minimum		double	0.0
+Relationships And Pregnancy	P Marriage PHS Maximum		double	0.0
+Relationships And Pregnancy	P Marriage HS Minimum		double	0.0
+Relationships And Pregnancy	P Marriage HS Maximum		double	0.0
+Relationships And Pregnancy	P Marriage Other Minimum		double	0.0
+Relationships And Pregnancy	P Marriage Other Maximum		double	0.0
+Relationships And Pregnancy	P Marriage Black Minimum		double	0.0
+Relationships And Pregnancy	P Marriage Black Maximum		double	0.0
+Relationships And Pregnancy	P Marriage Hispanic Minimum		double	0.0
+Relationships And Pregnancy	P Marriage Hispanic Maximum		double	0.0
+Relationships And Pregnancy	P Marriage White Minimum		double	0.0
+Relationships And Pregnancy	P Marriage White Maximum		double	0.0
+Relationships And Pregnancy	P Marriage Category 1 Minimum		double	0.0
+Relationships And Pregnancy	P Marriage Category 1 Maximum		double	0.0
+Relationships And Pregnancy	P Marriage Category 3 Minimum		double	0.0
+Relationships And Pregnancy	P Marriage Category 3 Maximum		double	0.0
+Relationships And Pregnancy	P Marriage Category 2 Minimum		double	0.0
+Relationships And Pregnancy	P Marriage Category 2 Maximum		double	0.0
+Relationships And Pregnancy	P Marriage Category 4 Minimum		double	0.0
+Relationships And Pregnancy	P Marriage Category 4 Maximum		double	0.0
+Relationships And Pregnancy	P Divorce Minimum Base		double	0.0
+Relationships And Pregnancy	P Divorce Maximum Base		double	0.0
+Relationships And Pregnancy	P Divorce Female Minimum		double	0.0
+Relationships And Pregnancy	P Divorce Female Maximum		double	0.0
+Relationships And Pregnancy	P Divorce Male Minimum		double	0.0
+Relationships And Pregnancy	P Divorce Male Maximum		double	0.0
+Relationships And Pregnancy	P Divorce 15 to 19 Minimum		double	0.0
+Relationships And Pregnancy	P Divorce 15 to 19 Maximum		double	0.0
+Relationships And Pregnancy	P Divorce 20 to 24 Minimum		double	0.0
+Relationships And Pregnancy	P Divorce 20 to 24 Maximum		double	0.0
+Relationships And Pregnancy	P Divorce 25 to 29 Minimum		double	0.0
+Relationships And Pregnancy	P Divorce 25 to 29 Maximum		double	0.0
+Relationships And Pregnancy	P Divorce 30 to 44 Minimum		double	0.0
+Relationships And Pregnancy	P Divorce 30 to 44 Maximum		double	0.0
+Relationships And Pregnancy	P Divorce NHS Minimum		double	0.0
+Relationships And Pregnancy	P Divorce NHS Maximum		double	0.0
+Relationships And Pregnancy	P Divorce PHS Minimum		double	0.0
+Relationships And Pregnancy	P Divorce PHS Maximum		double	0.0
+Relationships And Pregnancy	P Divorce HS Minimum		double	0.0
+Relationships And Pregnancy	P Divorce HS Maximum		double	0.0
+Relationships And Pregnancy	P Divorce Other Minimum		double	0.0
+Relationships And Pregnancy	P Divorce Other Maximum		double	0.0
+Relationships And Pregnancy	P Divorce Black Minimum		double	0.0
+Relationships And Pregnancy	P Divorce Black Maximum		double	0.0
+Relationships And Pregnancy	P Divorce Hispanic Minimum		double	0.0
+Relationships And Pregnancy	P Divorce Hispanic Maximum		double	0.0
+Relationships And Pregnancy	P Divorce White Minimum		double	0.0
+Relationships And Pregnancy	P Divorce White Maximum		double	0.0
+Relationships And Pregnancy	P Divorce Category 1 Minimum		double	0.0
+Relationships And Pregnancy	P Divorce Category 1 Maximum		double	0.0
+Relationships And Pregnancy	P Divorce Category 3 Minimum		double	0.0
+Relationships And Pregnancy	P Divorce Category 3 Maximum		double	0.0
+Relationships And Pregnancy	P Divorce Category 2 Minimum		double	0.0
+Relationships And Pregnancy	P Divorce Category 2 Maximum		double	0.0
+Relationships And Pregnancy	P Divorce Category 4 Minimum		double	0.0
+Relationships And Pregnancy	P Divorce Category 4 Maximum		double	0.0
+Relationships And Pregnancy	P Miscarriage Married Factor Base		double	.33333
+Relationships And Pregnancy	P Miscarriage Married 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Miscarriage Married 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Miscarriage Married 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Miscarriage Married 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	Pregnancy Status Adjustment Minimum Base		double	0.0
+Relationships And Pregnancy	Pregnancy Status Adjustment Maximum Base		double	0.0
+Relationships And Pregnancy	Pregnancy Status Adjustment Never Pregnant Minimum		double	0.0
+Relationships And Pregnancy	Pregnancy Status Adjustment Never Pregnant Maximum		double	0.0
+Relationships And Pregnancy	Pregnancy Status Adjustment Currently Pregnant Minimum		double	0.0
+Relationships And Pregnancy	Pregnancy Status Adjustment Currently Pregnant Maximum		double	0.0
+Relationships And Pregnancy	Pregnancy Status Adjustment Was Pregnant Minimum		double	0.0
+Relationships And Pregnancy	Pregnancy Status Adjustment Was Pregnant Maximum		double	0.0
+Relationships And Pregnancy	Input Data File		String	/Users/milesparker/Documents/Developer/repos/brook/edu.brook.parent.ecscape/data/NSFG_Unmarried.txt
+Relationships And Pregnancy	P Relationship End Minimum		double	0
+Relationships And Pregnancy	P Relationship End Maximum		double	.02
+Relationships And Pregnancy	P Relationship Begin Minimum		double	.0
+Relationships And Pregnancy	P Relationship Begin Maximum		double	1
+Relationships And Pregnancy	Coital Frequency Very Low Days Minimum		double	28
+Relationships And Pregnancy	Coital Frequency Very Low Days Maximum		double	28
+Relationships And Pregnancy	Coital Frequency Moderate Days Minimum		double	28
+Relationships And Pregnancy	Coital Frequency Moderate Days Maximum		double	28
+Relationships And Pregnancy	Coital Frequency High Days Minimum		double	28
+Relationships And Pregnancy	Coital Frequency High Days Maximum		double	28
+Relationships And Pregnancy	Coital Frequency Initial Modification	The effect on likelihood of sex given that the couple has never had sex. For example, if an Adult's P Sex is 0.1 and this value is 0.2, then the probability of having sex on any given day is .02.	double	1.0
+Relationships And Pregnancy	Lunar Days		int	28
+Relationships And Pregnancy	Output Run File		String	data/RunOut.txt
+Relationships And Pregnancy	Output Period File		String	data/RunPeriod.txt
+Relationships And Pregnancy	P Sex Very Low Married Factor Base		double	0.1
+Relationships And Pregnancy	P Sex Very Low Married Female Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married Male Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married NHS Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married PHS Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married HS Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married Other Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married Black Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married White Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Married Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married Factor Base		double	0.3
+Relationships And Pregnancy	P Sex Moderate Married Female Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married Male Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married NHS Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married PHS Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married HS Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married Other Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married Black Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married White Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Married Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried Factor Base		double	0.1
+Relationships And Pregnancy	P Sex Very Low Unmarried Female Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried Male Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried NHS Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried PHS Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried HS Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried Other Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried Black Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried White Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Sex Very Low Unmarried Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried Factor Base		double	.5
+Relationships And Pregnancy	P Sterilize Unmarried Female Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried Male Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried NHS Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried PHS Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried HS Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried Other Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried Black Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried White Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Unmarried Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married Factor Base		double	.5
+Relationships And Pregnancy	P Pill Use Married 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married NHS Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married PHS Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married HS Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married Other Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married Black Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married White Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Married Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married Factor Base		double	.5
+Relationships And Pregnancy	P Sterilize Married Female Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married Male Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married NHS Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married PHS Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married HS Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married Other Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married Black Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married White Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Sterilize Married Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried NHS Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried PHS Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried HS Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried Other Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried Black Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried White Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried Category 4 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married Factor Base		double	.1
+Relationships And Pregnancy	P High Condom Use Married 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married NHS Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married PHS Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married HS Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married Other Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married Black Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married Hispanic Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married White Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married Category 1 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married Category 3 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married Category 2 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Married Category 4 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried Factor Base		double	.1
+Relationships And Pregnancy	P High Condom Use Unmarried 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried NHS Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried PHS Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried HS Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried Other Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried Black Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried Hispanic Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried White Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried Category 1 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried Category 3 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried Category 2 Factor		double	0.0
+Relationships And Pregnancy	P High Condom Use Unmarried Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married Factor Base		double	0.4
+Relationships And Pregnancy	P Medium Condom Use Married 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married NHS Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married PHS Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married HS Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married Other Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married Black Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married White Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Married Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried Factor Base		double	0.4
+Relationships And Pregnancy	P Medium Condom Use Unmarried 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried NHS Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried PHS Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried HS Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried Other Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried Black Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried White Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Medium Condom Use Unmarried Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married Factor Base		double	.33333
+Relationships And Pregnancy	P Abortion Married 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married NHS Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married PHS Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married HS Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married Other Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married Black Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married White Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Married Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried Factor Base		double	.33333
+Relationships And Pregnancy	P Abortion Unmarried 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried NHS Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried PHS Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried HS Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried Other Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried Black Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried White Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Abortion Unmarried Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried Factor Base		double	.33333
+Relationships And Pregnancy	P Misscarriage Unmarried 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried NHS Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried PHS Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried HS Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried Other Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried Black Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried White Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Misscarriage Unmarried Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married Factor Base		double	.5
+Relationships And Pregnancy	P Poor Birth Married 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married NHS Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married PHS Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married HS Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married Other Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married Black Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married White Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Married Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried Factor Base		double	.5
+Relationships And Pregnancy	P Poor Birth Unmarried 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried NHS Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried PHS Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried HS Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried Other Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried Black Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried White Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Poor Birth Unmarried Category 4 Factor		double	0.0
+Relationships And Pregnancy	P Pill Use Unmarried Factor Base		double	.5
+Relationships And Pregnancy	P Sex Moderate Unmarried Factor Base		double	0.3
+Relationships And Pregnancy	P Sex Moderate Unmarried Female Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried Male Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried 15 to 19 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried 20 to 24 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried 25 to 29 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried 30 to 44 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried NHS Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried PHS Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried HS Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried Other Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried Black Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried Hispanic Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried White Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried Category 1 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried Category 3 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried Category 2 Factor		double	0.0
+Relationships And Pregnancy	P Sex Moderate Unmarried Category 4 Factor		double	0.0
+Relationships And Pregnancy	All Output File		String	/Users/milesparker/Documents/Developer/repos/edu.brook.parent.ecscape/data/AllOutput.txt
+Relationships And Pregnancy	Write Periods		int[]	1000,1028,1365,100000
+Relationships And Pregnancy	Output Data		boolean	true
+Agents
+Adult	
+Neighborhood Cell	
+    
+
+Attributes
+Agent	Name	Description Type	Default Value
+Adult	Gender		GenderEnum	Female
+Adult	Age in Years		int	
+Adult	Age in Years Index		int	
+Adult	Age Group		AgeGroupEnum	15 to 19
+Adult	Education		EducationEnum	HS
+Adult	In Relationship		boolean	false
+Adult	Marital Status		MaritalStatusEnum	Single
+Adult	Pregnant	Am I currently pregnant?	boolean	
+Adult	Pregnancy Relationship Status		PregnancyRelationshipStatusEnum	Never Pregnant
+Adult	Contraception Method		ContraceptionMethodEnum	None
+Adult	Rhythm Method User		boolean	false
+Adult	Projected Day of Birth		int	
+Adult	Projected Day of Miscarriage	The day on which last miscarriage occurs or will occur. Zero if no such event.	int	
+Adult	Projected Day of Abortion	The day on which last abortion occurred or will occur. Zero if no such event.	int	
+Adult	P Relationship Initial	My desire to enter into a relationship with a member of the opposite sex, given that I am not currently in a relationship. 	double	
+Adult	P End Relationship	Given that I am currently in a relationship, the likelihood that I wish to remain in that relationship for the current period.	double	
+Adult	P Marriage	The probability that this agent will become married on a given day, ignoring pregnancy status.	double	
+Adult	P Divorce		double	
+Adult	P Sex	Given that I am in a relationship with a partner with whom I have not had sex, the likilihood that I wish to engage in sex with that partner during given period.	double	
+Adult	P Sex Initial	Given that I continue in a relationship with whom I've had sex, the likilihood that I wish to engage in sex with that same partner during given period.	double	
+Adult	Sex Count in Relationship		int	
+Adult	Day in Cycle		int	
+Adult	Sex Count in Lifetime		double	
+Adult	Days in Current Relationship		int	
+Adult	Sex Partners in Lifetime		int	
+Adult	Day of Last Sex	The last day in which sex occurred.  Zero if no such event.	int	-1
+Adult	Pregnancies in Lifetime		int	
+Adult	Births in Lifetime	The total number of live birth events.	int	
+Adult	Abortions in Lifetime		int	
+Adult	Miscarriages in Lifetime		int	
+Adult	Ratio Pregnancies to Sex Events		double	
+Adult	Poor Births in Lifetime		int	
+Adult	Race		RaceEnum	White
+Adult	SES	Socio-Economic Category. Currently defined by mother's education level, i.e. high school, high-school degree, some college, at least a college degree.	SESEnum	Category 4
+Adult	Coital Behavior Type		CoitalBehaviorTypeEnum	Very Low Frequency
+Adult	Married Code		int	0
+Adult	Unmarried Code		int	1
+Adult	ID		double	
+Adult	Spouse ID		double	
+Adult	P Sex Very Low		double	
+Adult	P Sex Moderate		double	
+    
+
+Activities
+Agent	Name	Description
+        
+Adult	Initialize Location	
+Adult	Initialize Behavior Values	
+Adult	Initialize Ages	
+Adult	Initialize Marriage	
+Adult	Movement	
+Adult	Update Dates	
+Adult	Seek Partner	
+Adult	Pregnancy Outcome	
+Adult	Sex Potential	
+Adult	Pregnancy Event	Watch for changes in Pregnant.
+Adult	Sex Event	Watch for changes in Sex Count in Lifetime.
+Adult	Sex in Relationship Event	Watch for changes in Sex Count in Relationship.
+Adult	Relationship Change Event	Watch for changes in In Relationship.
+Adult	Assign Marital Status Based State	Watch for changes in Marital Status.
+Adult	Update Relationship	Watch for changes in Days in Current Relationship.
+Adult	Birth Event	Watch for changes in Births in Lifetime.
+Adult	Watch Married Code	Watch for changes in Married Code.
+        
+    
+
+Spaces
+    
+Name	Description	Type
+Neighborhood		2-Dimensional Grid
+Partners		Network
+Generated by metaabm system: Nov 26, 2008 2:07:30 PM PST.
+    

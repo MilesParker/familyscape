@@ -1,0 +1,6 @@
+title	Pregnancy Outcome Miscarriage 1m: First Check of Baseline Factor for Miscarriage among Marrieds
+comments	This test sets the baseline factor in the married miscarriage equation equal to zero, which should eliminate miscarriages increase the number of births (but not quite up to the same total because of gestation length) and lower abortions slightly relative to baseline.
+Sum Adult Pregnancies in Lifetime	869	1370				
+Sum Adult Miscarriages in Lifetime	0	0	
+Sum Adult Abortions in Lifetime	250	462				
+Sum Adult Births in Lifetime	420	763				

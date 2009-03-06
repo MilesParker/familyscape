@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Coital Frequency 1" failures="1" tests="1" time="6.078" errors="0">
+  <properties/>
+  <testcase name="executeFileTest" time="4.682" classname="com.metascape.ecscape.test.RunATest">
+    <failure type="java.lang.OutOfMemoryError" message="Java heap space">
+      <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at java.beans.FeatureDescriptor.createReference(FeatureDescriptor.java:281)
+	at java.beans.PropertyDescriptor.setWriteMethod(PropertyDescriptor.java:274)
+	at java.beans.PropertyDescriptor.<init>(PropertyDescriptor.java:117)
+	at java.beans.Introspector.getTargetPropertyInfo(Introspector.java:562)
+	at java.beans.Introspector.getBeanInfo(Introspector.java:389)
+	at java.beans.Introspector.getBeanInfo(Introspector.java:222)
+	at java.beans.Introspector.getBeanInfo(Introspector.java:208)
+	at org.ascape.util.PropertyAccessor.determineReadWriteAccessors(PropertyAccessor.java:234)
+	at org.ascape.model.Scape.assignParameters(Scape.java:2829)
+	at org.ascape.runtime.Runner.openImplementation(Runner.java:814)
+	at org.ascape.runtime.Runner.open(Runner.java:850)
+	at org.ascape.runtime.Runner.open(Runner.java:930)
+	at org.ascape.runtime.Runner.open(Runner.java:980)
+	at com.metascape.ecscape.test.RunATest.executeFileTest(RunATest.java:115)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:650)
+... Removed 17 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

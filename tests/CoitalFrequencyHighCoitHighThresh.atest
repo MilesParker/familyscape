@@ -1,0 +1,4 @@
+title	Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) 
+comments	This test sets the relationship probability to 100%, assigns all unmarried agents to the high coitfreq category, and then sets the Minimum and Maximum thresholds for that category equal to 1.  If Coital Frequency is working properly then sex count in lifetime should have a Maximum of no more than the number of periods, which is 50.
+Maximum Adult Sex Count in Lifetime	0	10
+Count Adult High Frequency Coital Behavior Type	5814	5814	

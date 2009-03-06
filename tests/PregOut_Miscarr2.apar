@@ -1,0 +1,6 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Abortion Unmarried Factor Base	0.0
+P Miscarriage Unmarried Factor Base	1.0
+Stop Period	1365
+Input Data File	|data/NSFG_Unmarried.txt

@@ -1,0 +1,4 @@
+title	Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) 
+comments	This test sets the relationship probability to 100%, assigns all unmarried agents to the medium coitfreq category, and then sets the Minimum and Maximum thresholds for that category equal to 1.  If Coital Frequency is working properly then sex count in lifetime should have a Maximum of no more than the number of periods, which is 50.
+Maximum Adult Sex Count in Lifetime	50	50
+Count Adult Moderate Frequency Coital Behavior Type	5814	5814	

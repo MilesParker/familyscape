@@ -1,0 +1,19 @@
+experiment	Basic Model 0 Period Functionality Unmarried
+Count Adult Male Gender	2819	2819
+Count Adult Female Gender	2995	2995
+Count Adult In Relationship	100	200				
+Count Adult Unmarried Code	5814	5814
+Sum Adult Married Code	0	0
+Sum Adult Unmarried Code	5814	5814
+Sum Adult Male Code	2819	2819
+Sum Adult Female Code	2995	2995
+Average Adult P Relationship Initial	.49	.51				
+Average Adult P End Relationship	.009	.011				
+Count Adult None Contraception Method	1534.8694	1901.52				
+Count Adult Sterilized Contraception Method	2778.18	3070.62				
+Count Adult Pill Contraception Method	700	800				
+Count Adult Condom Medium Intender Contraception Method	380	461				
+Count Adult Condom High Intender Contraception Method	121	158				
+Count Adult High Frequency Coital Behavior Type	3313.6	3662.4				
+Count Adult Moderate Frequency Coital Behavior Type	1656.705	1831.095				
+Count Adult Very Low Frequency Coital Behavior Type	542	611.205		

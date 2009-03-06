@@ -1,0 +1,7 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	BaselineMarried
+P Relationship Begin Maximum	1.0
+P Relationship Begin Minimum	1.0
+P Relationship End Maximum	1.0
+P Relationship End Minimum	1.0
+Stop Period	100

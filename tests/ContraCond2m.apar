@@ -1,0 +1,8 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Medium Condom Use Married Other Factor	-0.4
+P Medium Condom Use Married Black Factor	-0.4
+P Medium Condom Use Married Hispanic Factor	-0.4
+P Medium Condom Use Married White Factor	-0.4
+Stop Period	1
+Input Data File	|data/NSFG_Married.txt

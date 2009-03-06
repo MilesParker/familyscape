@@ -1,0 +1,8 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+Typical Abortion Period Start	1370
+Typical Abortion Period End	1370
+Typical Birth Period Start	1370
+Typical Birth Period End	1370
+Stop Period	1365
+Input Data File	|data/NSFG_Married.txt

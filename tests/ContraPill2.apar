@@ -1,0 +1,8 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Pill Use Unmarried 15 to 19 Factor	-0.5
+P Pill Use Unmarried 20 to 24 Factor	-0.5
+P Pill Use Unmarried 25 to 29 Factor	-0.5
+P Pill Use Unmarried 30 to 44 Factor	-0.5
+Stop Period	1
+Input Data File	|data/NSFG_Unmarried.txt

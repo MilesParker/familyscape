@@ -1,0 +1,8 @@
+title	Coital Frequency No Initial: Check of Initial-Sex Parameter (married)
+comments	This test sets the initial-sex coefficient equal to zero for the unmarried analysis, which should have no effect on coital frequency among marrieds (since this parameter should apply only to unmarrieds).
+Average Adult P Sex	1.0	1.0
+Average Adult P Sex Initial	1.0	1.0
+Average Adult Sex Count in Lifetime	500	500
+Average Adult Sex Partners in Lifetime	1	1
+		
+	

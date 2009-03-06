@@ -1,0 +1,359 @@
+
+		<HTML>
+			<HEAD>
+				<TITLE>Demographic Prisoner_s Dilemma</TITLE>
+				<STYLE TYPE="text/css">
+					body,
+					html {
+    					margin:0;
+    					padding:0;
+    					
+    					color:#000;
+    				}
+    				body {
+    					min-width:750px;
+    				}
+					#wrap {
+    					
+    					margin:0 auto;
+    					width:1024px;
+    				}
+    				#header {
+    					border-bottom: solid 1px #BEBFAA;   						
+    					left: 220px;
+    				}
+					#nav {
+    					
+    				}
+					#nav ul{
+   						margin:0;
+    					padding:0;
+    					list-style:none;
+    				}
+					#nav li{
+    					display:inline;
+    					margin:0;
+    					padding:0;
+    				}
+    				#main {
+    					border-left: solid 1px #BEBFAA;   						
+    					
+    					float:left;
+    					width:800px;
+    				}
+					#sidebarfake {
+      					float:left;
+    					width:200px;
+    				}
+					#sidebar {
+  						position: fixed;
+      					float:left;
+    					width:200px;
+    				}
+					#footer {
+    					border-top: solid 1px #BEBFAA;   						
+    					
+    					clear:both;
+    				}
+    				
+					#section {
+  						background: #FFFFDC;
+   						border-bottom: solid 1px black;
+   						border-left: solid 1px #BEBFAA;
+   						border-right: solid 1px black;
+   						border-top: solid 1px #BEBFAA;
+   						margin: 2em 1em 1em 2em;
+   						padding: 0.5em 2em 2em 2em;
+   						text-align: justify;
+					}
+					#section h1 {
+   						text-align: left;
+   						font-family: sans-serif;
+					}
+					#section p {
+   						text-indent: 2em;
+					}
+					#section p.noindent {
+   						text-indent: 0;
+					}
+					
+					#agent {
+  						border-bottom: solid 1px black;
+   						border-left: solid 1px #BEBFAA;
+   						border-right: solid 1px black;
+   						border-top: solid 1px #BEBFAA;
+   						margin: 2em 1em 1em 2em;
+   						padding: 0.5em 2em 2em 2em;
+   						text-align: justify;
+					}
+				</STYLE>
+			</HEAD>
+			<BODY>
+			<div id="wrap">
+    			<div id="header">
+    				<H1>Demographic Prisoner_s Dilemma</H1>
+					<P></P>
+    			</div>
+    			<div id="sidebarfake">
+    				<H1>   </H1>
+    			</div>
+    			<div id="sidebar">
+			    <ul>
+    					<a href="#parlink"><li>Parameters</li></a>
+    					<a href="#behaviorlink"><li>Behaviors</li></a>
+    					<a href="#agentslink"><li>Agents</li></a>
+    					<ul>
+    				
+    					<a href="#playerlink"><li>Player</li></a>
+    				
+    					<a href="#playCelllink"><li>Play Cell</li></a>
+    				
+    					</ul>
+    					<a href="#projlink"><li>Projections</li></a>
+    				</ul>    				
+    			</div>
+    			<div id="main">
+    					<DIV id="agent">
+    					<a name="parlink"/><h3>Parameters</h3>
+								
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Name</TH><TH align="left">Description</TH><TH align="left">Type</TH><TH>Default Value</TH>
+		
+					<TR>
+						<TD><i>Player Count</i></TD>
+						<TD WIDTH="200">The number of players to create.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">100</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Minimum Wealth</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">20</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Maximum Wealth</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">100</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Maximum Age</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">100</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Payoff Cooperate Cooperate</i></TD>
+						<TD WIDTH="200">The change in wealth for a player when playing cooperate against cooperate.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">2</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Payoff Cooperate Defect</i></TD>
+						<TD WIDTH="200">The change in wealth for a player when playing cooperate against defect.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">-6</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Payoff Defect Cooperate</i></TD>
+						<TD WIDTH="200">The change in wealth for a player when playing defect against cooperate.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">6</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Payoff Defect Defect</i></TD>
+						<TD WIDTH="200">The change in wealth for a player when both players defect.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">-5</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Fission Wealth</i></TD>
+						<TD WIDTH="200">The wealth level at which an agent can fission.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">11</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Inheirited Wealth</i></TD>
+						<TD WIDTH="200">The wealth that is passed from parent to child.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">6</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Initial Wealth</i></TD>
+						<TD WIDTH="200">The wealth initially assigned to an agent at the beginning of model run.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">6</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Mutation Rate</i></TD>
+						<TD WIDTH="200">The probabaility that a given agent will change strategies in a given period, expressed as a value from 0.0 to 1.0.</TD>
+						<TD WIDTH="80">double</TD>
+						<TD WIDTH="80">.1</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Death Age</i></TD>
+						<TD WIDTH="200">The number of periods before an agent will be removed from game when Die At Age rule is active.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80">100</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Birth Age</i></TD>
+						<TD WIDTH="200">The actual age in years as determined by data set.</TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+		</TABLE>
+
+    					<a name="behaviorlink"/><h3>Behaviors</h3>
+								
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Act</TH><TH align="left">Description</TH>
+		
+					<TR>
+						<TD><i>Build Demographic Prisonner's Dillema</i></TD>
+						<TD>Build internal state for Demographic Prisoner_s Dilemma.</TD>
+					</TR>
+		
+		</TABLE>
+
+						</DIV>
+    					<a name="agentslink"/><h1><ul>Agents</ul></h1>
+							
+								<DIV id="agent">
+									<a name="playerlink"/><H2>Player</H2>
+									
+									<H3>Attributes</H3>
+									
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Name</TH><TH align="left">Description</TH><TH align="left">Type</TH><TH>Default Value</TH>
+		
+					<TR>
+						<TD><i>Cooperate</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">boolean</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Age</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Wealth</i></TD>
+						<TD WIDTH="200"></TD>
+						<TD WIDTH="80">int</TD>
+						<TD WIDTH="80"></TD>
+					</TR>
+		
+		</TABLE>
+
+									<H3>Behaviors</H3>
+									
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Act</TH><TH align="left">Description</TH>
+		
+					<TR>
+						<TD><i>Initialize</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Move To Random Location</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Random Walk</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Play Neighbor</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Update Age</i></TD>
+						<TD>Increment the Age by One.</TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Fission Rule</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Die At Age</i></TD>
+						<TD></TD>
+					</TR>
+		
+					<TR>
+						<TD><i>Die At Wealth 0</i></TD>
+						<TD></TD>
+					</TR>
+		
+		</TABLE>
+
+								</DIV>
+							
+								<DIV id="agent">
+									<a name="playCelllink"/><H2>Play Cell</H2>
+									
+									<H3>Attributes</H3>
+									
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Name</TH><TH align="left">Description</TH><TH align="left">Type</TH><TH>Default Value</TH>
+		
+		</TABLE>
+
+									<H3>Behaviors</H3>
+									
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Act</TH><TH align="left">Description</TH>
+		
+		</TABLE>
+
+								</DIV>
+							
+						
+					<DIV id="section">
+						<a name="projlink"/><H2>Projections:</H2>
+						
+		<TABLE CELLPADDING="10px">
+			<TH align="left">Name</TH><TH align="left">Description</TH><TH align="left">Type</TH>
+			
+					<TR>
+						<TD><i>Game Space</i></TD>
+						<TD></TD>
+						<TD>2-Dimensional Grid</TD>
+					</TR>
+			
+		</TABLE>
+
+					</DIV>			    			
+    			</div>
+			    
+    			<div id="footer">
+    				<P>Generated by metaabm system: Feb 2, 2009 12:15:34 PM PST.</P>
+    			</div>
+						</BODY>
+		</HTML>
+	

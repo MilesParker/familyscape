@@ -1,0 +1,7 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Medium Condom Use Married Very Low Frequency Factor	-0.4
+P Medium Condom Use Married Moderate Frequency Factor	-0.4
+P Medium Condom Use Married High Frequency Factor	-0.4
+Stop Period	1
+Input Data File	|data/NSFG_Married.txt

@@ -1,0 +1,24 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Medium Condom Use Unmarried Factor Base	100
+P Medium Condom Use Unmarried 15 to 19 Factor	100
+P Medium Condom Use Unmarried 20 to 24 Factor	100
+P Medium Condom Use Unmarried 25 to 29 Factor	100
+P Medium Condom Use Unmarried 30 to 44 Factor	100
+P Medium Condom Use Unmarried NHS Factor	100
+P Medium Condom Use Unmarried PHS Factor	100
+P Medium Condom Use Unmarried HS Factor	100
+P Medium Condom Use Unmarried Other Factor	100
+P Medium Condom Use Unmarried Black Factor	100
+P Medium Condom Use Unmarried Hispanic Factor	100
+P Medium Condom Use Unmarried White Factor	100
+P Medium Condom Use Unmarried Category 1 Factor	100
+P Medium Condom Use Unmarried Category 3 Factor	100
+P Medium Condom Use Unmarried Category 2 Factor	100
+P Medium Condom Use Unmarried Category 4 Factor	100
+P Medium Condom Use Unmarried Very Low Frequency Factor	100
+P Medium Condom Use Unmarried Moderate Frequency Factor	100
+P Medium Condom Use Unmarried High Frequency Factor	100
+P Medium Condom Use Unmarried Partner Sterilized Factor	100
+Stop Period	1
+Input Data File	|data/NSFG_Married.txt

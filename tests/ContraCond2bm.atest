@@ -1,0 +1,5 @@
+title	Contraception Condom 2bm: Spot Check of Covariates High Condom Equation Among Marrieds 
+comments	This test sets all race factors equal to (-1*baseline) in the high condom equation among marrieds, which should have the effect of eliminating high condom intenders from the simulation and turning that number of people into medium intenders.
+Count Adult Condom High Intender Contraception Method	0	0				
+Count Adult Condom Medium Intender Contraception Method	350	500
+	
