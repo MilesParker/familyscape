@@ -1,0 +1,6 @@
+title	***Doesn't do anything now; partner sterilization has no effect for unmarrieds*** Contraception Condom 4: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Unmarrieds 
+comments	This test sets the partner sterilization factor equal to (-1*baseline) in the medium condom equation among unmarrieds, which should have the effect of eliminating medium condom intenders from the simulation except we need to add back initials.
+Count Adult Condom Medium Intender Contraception Method	0	0				
+Count Adult Sterilized Contraception Method	4200	4800	
+Count Adult In Relationship	250	350	
+Count Adult Partner Sterilized Partner Contraception Method	180	240	

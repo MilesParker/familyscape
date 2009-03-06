@@ -1,0 +1,9 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	BaselineUnmarried
+P Relationship Begin Minimum	1.0
+P Relationship Begin Maximum	1.0
+P Relationship End Minimum	0.0
+P Relationship End Maximum	0.0
+P Sterilize Female Unmarried Factor Base	1.0
+P Medium Condom Use Unmarried Partner Sterilized Factor	-0.4
+Stop Period	1

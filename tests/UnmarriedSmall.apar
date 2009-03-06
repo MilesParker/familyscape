@@ -2,4 +2,4 @@ model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
 incorporates	BaselineParameters
 Neighborhood Height	50
 Neighborhood Width	50
-Input Data File	|NSFG_Unmarried_Small.txt
+Input Data File	|data/NSFG_Unmarried_Small.txt

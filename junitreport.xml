@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="report" default="reports">
+<target name="reports">
+  <junitreport todir="test-report">
+    <fileset dir="test-output">
+      <include name="*/*.xml"/>
+    </fileset>
+ 
+    <report format="noframes"  todir="test-report"/>
+  </junitreport>
+</target>
+</project>

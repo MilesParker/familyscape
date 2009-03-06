@@ -1,0 +1,6 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Sterilize Female Unmarried Factor Base	1.0
+P High Condom Use Unmarried Partner Sterilized Factor	-0.2
+Stop Period	1
+Input Data File	|data/NSFG_Unmarried.txt
