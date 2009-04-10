@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PregOut_PoorBirth4m Test" failures="0" tests="1" time="15.026" errors="0">
+  <properties/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4m: Cross Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth4m])" time="15.002" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

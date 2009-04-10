@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraSteril5m.atest Test" failures="1" tests="1" time="245.164" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Sterilization 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5m])" time="245.07" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.RuntimeException">
+      <![CDATA[java.lang.RuntimeException
+	at edu.brook.ccf.rpm.Adult.watchContraceptionMethod(Adult.java:4659)
+	at edu.brook.ccf.rpm.Adult.setContraceptionMethod(Adult.java:4875)
+	at edu.brook.ccf.rpm.Adult.updateRelationship(Adult.java:754)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy$60.execute(RelationshipsAndPregnancy.java:3102)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1961)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1953)
+	at org.ascape.model.Scape$6.execute(Scape.java:496)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:70)
+	at org.ascape.model.Scape$6.execute(Scape.java:497)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:270)
+	at org.ascape.runtime.Runner.run(Runner.java:719)
+	at org.ascape.runtime.Runner.run(Runner.java:604)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:241)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

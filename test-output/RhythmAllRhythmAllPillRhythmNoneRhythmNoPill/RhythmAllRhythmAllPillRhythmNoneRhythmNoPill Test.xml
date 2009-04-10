@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RhythmAllRhythmAllPillRhythmNoneRhythmNoPill Test" failures="2" tests="4" time="56.338" errors="0">
+  <properties/>
+  <testcase name="runModel (Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPill])" time="55.277" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Rhythm Method User 2995.0 &gt; 1550">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Rhythm Method User 2995.0 > 1550
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Rhythm Method None: No unmarrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNone])" time="55.879" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill: Sets all women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPill])" time="55.953" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="56.307" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Rhythm Method User 2995.0 &gt; 2350">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Rhythm Method User 2995.0 > 2350
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

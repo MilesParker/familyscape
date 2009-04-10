@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraSterilPartnerm Test" failures="0" tests="1" time="2.667" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])" time="2.634" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

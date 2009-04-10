@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PregOut_Abort3PregOut_AbortMis1m Test" failures="1" tests="2" time="43.384" errors="0">
+  <properties/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes all Miscarriages and overall number of pregnancies to go up.[PregOut_AbortMis1m])" time="15.517" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])" time="43.332" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 819.0 &lt; 1100">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 819.0 < 1100
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

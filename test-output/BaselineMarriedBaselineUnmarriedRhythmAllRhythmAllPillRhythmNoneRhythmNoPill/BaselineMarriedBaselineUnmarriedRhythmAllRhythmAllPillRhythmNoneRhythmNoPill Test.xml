@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BaselineMarriedBaselineUnmarriedRhythmAllRhythmAllPillRhythmNoneRhythmNoPill Test" failures="3" tests="6" time="69.295" errors="0">
+  <properties/>
+  <testcase name="runModel (BaselineMarried[BaselineMarried])" time="25.348" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPill])" time="67.678" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 1528.0 &lt; 2995
+Count Adult Rhythm Method User 2995.0 &gt; 1550">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 1528.0 < 2995
+Count Adult Rhythm Method User 2995.0 > 1550
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Rhythm Method None: No unmarrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNone])" time="68.43" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="68.669" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Poor Births in Lifetime 103.0 &lt; 106">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Poor Births in Lifetime 103.0 < 106
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Rhythm Method No Pill: Sets all women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPill])" time="68.843" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 653.5816993464052 &lt; 655">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 653.5816993464052 < 655
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="69.269" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

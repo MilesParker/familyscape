@@ -1,0 +1,5 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Coital Frequency Moderate Married Factor Base	0.6
+Stop Period	0
+Input Data File	|data/NSFG_Married.txt

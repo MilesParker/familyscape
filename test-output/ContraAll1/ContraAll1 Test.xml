@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraAll1 Test" failures="0" tests="1" time="42.277" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception All 1: Check of Contraceptive Efficacy of All Methods Among Unmarrieds [ContraAll1])" time="42.241" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

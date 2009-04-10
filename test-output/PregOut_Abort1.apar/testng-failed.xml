@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [PregOut_Abort1.apar]" junit="false" parallel="methods" annotations="JDK">
+  <parameter name="projectLocation" value="/Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape"/>
+  <parameter name="testDir" value=""/>
+  <parameter name="testCount" value="1"/>
+  <parameter name="projectName" value="edu.brook.parent.escape"/>
+  <parameter name="testFiles" value="tests/PregOut_Abort1 tests/PregOut_Abort1m tests/PregOut_Abort1mCheck tests/PregOut_Abort2 tests/PregOut_Abort2m tests/PregOut_Abort3 tests/PregOut_Abort3m tests/PregOut_Abort4 tests/PregOut_Abort4m tests/PregOut_AbortMis1m tests/PregOut_AbortMis2m tests/PregOut_Miscarr1 tests/PregOut_Miscarr1m tests/PregOut_Miscarr2 tests/PregOut_Miscarr2m tests/PregOut_Miscarr3 tests/PregOut_Miscarr3m tests/PregOut_Miscarr4 tests/PregOut_Miscarr4m tests/PregOut_PoorBirth1 tests/PregOut_PoorBirth1m tests/PregOut_PoorBirth2 tests/PregOut_PoorBirth2m tests/PregOut_PoorBirth3 tests/PregOut_PoorBirth3m tests/PregOut_PoorBirth4 tests/PregOut_PoorBirth4m"/>
+  <test name="PregOut_Abort1.apar Test(failed)" junit="false" parallel="methods" annotations="JDK">
+    <parameter name="projectLocation" value="/Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape"/>
+    <parameter name="testCount" value="1"/>
+    <parameter name="testDir" value=""/>
+    <parameter name="projectName" value="edu.brook.parent.escape"/>
+    <parameter name="testFiles" value="tests/PregOut_Abort1 tests/PregOut_Abort1m tests/PregOut_Abort1mCheck tests/PregOut_Abort2 tests/PregOut_Abort2m tests/PregOut_Abort3 tests/PregOut_Abort3m tests/PregOut_Abort4 tests/PregOut_Abort4m tests/PregOut_AbortMis1m tests/PregOut_AbortMis2m tests/PregOut_Miscarr1 tests/PregOut_Miscarr1m tests/PregOut_Miscarr2 tests/PregOut_Miscarr2m tests/PregOut_Miscarr3 tests/PregOut_Miscarr3m tests/PregOut_Miscarr4 tests/PregOut_Miscarr4m tests/PregOut_PoorBirth1 tests/PregOut_PoorBirth1m tests/PregOut_PoorBirth2 tests/PregOut_PoorBirth2m tests/PregOut_PoorBirth3 tests/PregOut_PoorBirth3m tests/PregOut_PoorBirth4 tests/PregOut_PoorBirth4m"/>
+    <classes>
+      <class name="com.metascape.escape.testng.runtime.ParameterTest">
+        <methods>
+          <include name="runModel"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

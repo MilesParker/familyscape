@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalFrequencyLowCoitNonem Test" failures="0" tests="1" time="6.842" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold None Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitNonem])" time="6.816" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

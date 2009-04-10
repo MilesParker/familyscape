@@ -1,0 +1,526 @@
+
+_Settings_
+Adult Count:                                                               500.0000
+Minimum Age:                                                                15.0000
+Agent Vision:                                                                6.0000
+All Output File:                                          data/AllOutput.txt
+Coital Days Married Minimum Base:                                            0.0000
+Coital Days Married Maximum Base:                                            0.0000
+Coital Days Married High Frequency Minimum:                                 28.0000
+Coital Days Married High Frequency Maximum:                                 28.0000
+Coital Days Married Moderate Frequency Minimum:                             28.0000
+Coital Days Married Moderate Frequency Maximum:                             28.0000
+Coital Days Married Very Low Frequency Minimum:                             28.0000
+Coital Days Married Very Low Frequency Maximum:                             28.0000
+Coital Days Unmarried Minimum Base:                                          0.0000
+Coital Days Unmarried Maximum Base:                                          0.0000
+Coital Days Unmarried High Frequency Minimum:                               28.0000
+Coital Days Unmarried High Frequency Maximum:                               28.0000
+Coital Days Unmarried Moderate Frequency Minimum:                           28.0000
+Coital Days Unmarried Moderate Frequency Maximum:                           28.0000
+Coital Days Unmarried Very Low Frequency Minimum:                           28.0000
+Coital Days Unmarried Very Low Frequency Maximum:                           28.0000
+Coital Frequency Initial Modification:                                       1.0000
+Condom Failure Rate:                                                         0.1500
+Input Data File:                                          /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/data/NSFG_Unmarried.txt
+Lunar Days:                                                                 28.0000
+Neighborhood Height:                                                       225.0000
+Neighborhood Width:                                                        225.0000
+Output Data:                                                                  false
+Output Period File:                                       /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/run-output/Results.txt
+Output Run File:                                          /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/run-output/Parameters.txt
+PAbortion Married Black Factor:                                              0.0000
+PAbortion Married Category1 Factor:                                          0.0000
+PAbortion Married Category2 Factor:                                          0.0000
+PAbortion Married Category3 Factor:                                          0.0000
+PAbortion Married Category4 Factor:                                          0.0000
+PAbortion Married Factor Base:                                               0.3333
+PAbortion Married HSFactor:                                                  0.0000
+PAbortion Married Hispanic Factor:                                           0.0000
+PAbortion Married NHSFactor:                                                 0.0000
+PAbortion Married Other Factor:                                              0.0000
+PAbortion Married PHSFactor:                                                 0.0000
+PAbortion Married White Factor:                                              0.0000
+PAbortion Married15to19 Factor:                                              0.0000
+PAbortion Married20to24 Factor:                                              0.0000
+PAbortion Married25to29 Factor:                                              0.0000
+PAbortion Married30to44 Factor:                                              0.0000
+PAbortion Unmarried Black Factor:                                            0.0000
+PAbortion Unmarried Category1 Factor:                                        0.0000
+PAbortion Unmarried Category2 Factor:                                        0.0000
+PAbortion Unmarried Category3 Factor:                                        0.0000
+PAbortion Unmarried Category4 Factor:                                        0.0000
+PAbortion Unmarried Factor Base:                                             0.3333
+PAbortion Unmarried HSFactor:                                                0.0000
+PAbortion Unmarried Hispanic Factor:                                         0.0000
+PAbortion Unmarried NHSFactor:                                               0.0000
+PAbortion Unmarried Other Factor:                                            0.0000
+PAbortion Unmarried PHSFactor:                                               0.0000
+PAbortion Unmarried White Factor:                                            0.0000
+PAbortion Unmarried15to19 Factor:                                            0.0000
+PAbortion Unmarried20to24 Factor:                                            0.0000
+PAbortion Unmarried25to29 Factor:                                            0.0000
+PAbortion Unmarried30to44 Factor:                                            0.0000
+PCoital Frequency Moderate Married Black Factor:                             0.0000
+PCoital Frequency Moderate Married Category1 Factor:                         0.0000
+PCoital Frequency Moderate Married Category2 Factor:                         0.0000
+PCoital Frequency Moderate Married Category3 Factor:                         0.0000
+PCoital Frequency Moderate Married Category4 Factor:                         0.0000
+PCoital Frequency Moderate Married Factor Base:                              0.3000
+PCoital Frequency Moderate Married Female Factor:                            0.0000
+PCoital Frequency Moderate Married HSFactor:                                 0.0000
+PCoital Frequency Moderate Married Hispanic Factor:                          0.0000
+PCoital Frequency Moderate Married Male Factor:                              0.0000
+PCoital Frequency Moderate Married NHSFactor:                                0.0000
+PCoital Frequency Moderate Married Other Factor:                             0.0000
+PCoital Frequency Moderate Married PHSFactor:                                0.0000
+PCoital Frequency Moderate Married White Factor:                             0.0000
+PCoital Frequency Moderate Married15to19 Factor:                             0.0000
+PCoital Frequency Moderate Married20to24 Factor:                             0.0000
+PCoital Frequency Moderate Married25to29 Factor:                             0.0000
+PCoital Frequency Moderate Married30to44 Factor:                             0.0000
+PCoital Frequency Moderate Unmarried Black Factor:                           0.0000
+PCoital Frequency Moderate Unmarried Category1 Factor:                       0.0000
+PCoital Frequency Moderate Unmarried Category2 Factor:                       0.0000
+PCoital Frequency Moderate Unmarried Category3 Factor:                       0.0000
+PCoital Frequency Moderate Unmarried Category4 Factor:                       0.0000
+PCoital Frequency Moderate Unmarried Factor Base:                            0.3000
+PCoital Frequency Moderate Unmarried Female Factor:                          0.0000
+PCoital Frequency Moderate Unmarried HSFactor:                               0.0000
+PCoital Frequency Moderate Unmarried Hispanic Factor:                        0.0000
+PCoital Frequency Moderate Unmarried Male Factor:                            0.0000
+PCoital Frequency Moderate Unmarried NHSFactor:                              0.0000
+PCoital Frequency Moderate Unmarried Other Factor:                           0.0000
+PCoital Frequency Moderate Unmarried PHSFactor:                              0.0000
+PCoital Frequency Moderate Unmarried White Factor:                           0.0000
+PCoital Frequency Moderate Unmarried15to19 Factor:                           0.0000
+PCoital Frequency Moderate Unmarried20to24 Factor:                           0.0000
+PCoital Frequency Moderate Unmarried25to29 Factor:                           0.0000
+PCoital Frequency Moderate Unmarried30to44 Factor:                           0.0000
+PCoital Frequency Very Low Married Black Factor:                             0.0000
+PCoital Frequency Very Low Married Category1 Factor:                         0.0000
+PCoital Frequency Very Low Married Category2 Factor:                         0.0000
+PCoital Frequency Very Low Married Category3 Factor:                         0.0000
+PCoital Frequency Very Low Married Category4 Factor:                         0.0000
+PCoital Frequency Very Low Married Factor Base:                              0.1000
+PCoital Frequency Very Low Married Female Factor:                            0.0000
+PCoital Frequency Very Low Married HSFactor:                                 0.0000
+PCoital Frequency Very Low Married Hispanic Factor:                          0.0000
+PCoital Frequency Very Low Married Male Factor:                              0.0000
+PCoital Frequency Very Low Married NHSFactor:                                0.0000
+PCoital Frequency Very Low Married Other Factor:                             0.0000
+PCoital Frequency Very Low Married PHSFactor:                                0.0000
+PCoital Frequency Very Low Married White Factor:                             0.0000
+PCoital Frequency Very Low Married15to19 Factor:                             0.0000
+PCoital Frequency Very Low Married20to24 Factor:                             0.0000
+PCoital Frequency Very Low Married25to29 Factor:                             0.0000
+PCoital Frequency Very Low Married30to44 Factor:                             0.0000
+PCoital Frequency Very Low Unmarried Black Factor:                           0.0000
+PCoital Frequency Very Low Unmarried Category1 Factor:                       0.0000
+PCoital Frequency Very Low Unmarried Category2 Factor:                       0.0000
+PCoital Frequency Very Low Unmarried Category3 Factor:                       0.0000
+PCoital Frequency Very Low Unmarried Category4 Factor:                       0.0000
+PCoital Frequency Very Low Unmarried Factor Base:                            0.1000
+PCoital Frequency Very Low Unmarried Female Factor:                          0.0000
+PCoital Frequency Very Low Unmarried HSFactor:                               0.0000
+PCoital Frequency Very Low Unmarried Hispanic Factor:                        0.0000
+PCoital Frequency Very Low Unmarried Male Factor:                            0.0000
+PCoital Frequency Very Low Unmarried NHSFactor:                              0.0000
+PCoital Frequency Very Low Unmarried Other Factor:                           0.0000
+PCoital Frequency Very Low Unmarried PHSFactor:                              0.0000
+PCoital Frequency Very Low Unmarried White Factor:                           0.0000
+PCoital Frequency Very Low Unmarried15to19 Factor:                           0.0000
+PCoital Frequency Very Low Unmarried20to24 Factor:                           0.0000
+PCoital Frequency Very Low Unmarried25to29 Factor:                           0.0000
+PCoital Frequency Very Low Unmarried30to44 Factor:                           0.0000
+PDivorce Minimum Base:                                                       0.0000
+PDivorce Maximum Base:                                                       0.0000
+PDivorce Black Minimum:                                                      0.0000
+PDivorce Black Maximum:                                                      0.0000
+PDivorce Category1 Minimum:                                                  0.0000
+PDivorce Category1 Maximum:                                                  0.0000
+PDivorce Category2 Minimum:                                                  0.0000
+PDivorce Category2 Maximum:                                                  0.0000
+PDivorce Category3 Minimum:                                                  0.0000
+PDivorce Category3 Maximum:                                                  0.0000
+PDivorce Category4 Minimum:                                                  0.0000
+PDivorce Category4 Maximum:                                                  0.0000
+PDivorce Female Minimum:                                                     0.0000
+PDivorce Female Maximum:                                                     0.0000
+PDivorce HSMinimum:                                                          0.0000
+PDivorce HSMaximum:                                                          0.0000
+PDivorce Hispanic Minimum:                                                   0.0000
+PDivorce Hispanic Maximum:                                                   0.0000
+PDivorce Male Minimum:                                                       0.0000
+PDivorce Male Maximum:                                                       0.0000
+PDivorce NHSMinimum:                                                         0.0000
+PDivorce NHSMaximum:                                                         0.0000
+PDivorce Other Minimum:                                                      0.0000
+PDivorce Other Maximum:                                                      0.0000
+PDivorce PHSMinimum:                                                         0.0000
+PDivorce PHSMaximum:                                                         0.0000
+PDivorce White Minimum:                                                      0.0000
+PDivorce White Maximum:                                                      0.0000
+PDivorce15to19 Minimum:                                                      0.0000
+PDivorce15to19 Maximum:                                                      0.0000
+PDivorce20to24 Minimum:                                                      0.0000
+PDivorce20to24 Maximum:                                                      0.0000
+PDivorce25to29 Minimum:                                                      0.0000
+PDivorce25to29 Maximum:                                                      0.0000
+PDivorce30to44 Minimum:                                                      0.0000
+PDivorce30to44 Maximum:                                                      0.0000
+PHigh Condom Use Married Black Factor:                                       0.0000
+PHigh Condom Use Married Category1 Factor:                                   0.0000
+PHigh Condom Use Married Category2 Factor:                                   0.0000
+PHigh Condom Use Married Category3 Factor:                                   0.0000
+PHigh Condom Use Married Category4 Factor:                                   0.0000
+PHigh Condom Use Married Factor Base:                                        0.1000
+PHigh Condom Use Married HSFactor:                                           0.0000
+PHigh Condom Use Married High Frequency Factor:                              0.0000
+PHigh Condom Use Married Hispanic Factor:                                    0.0000
+PHigh Condom Use Married Moderate Frequency Factor:                          0.0000
+PHigh Condom Use Married NHSFactor:                                          0.0000
+PHigh Condom Use Married Other Contraception Factor:                         0.0000
+PHigh Condom Use Married Other Factor:                                       0.0000
+PHigh Condom Use Married PHSFactor:                                          0.0000
+PHigh Condom Use Married Partner Sterilized Factor:                          0.0000
+PHigh Condom Use Married Value:                                              0.0000
+PHigh Condom Use Married Very Low Frequency Factor:                          0.0000
+PHigh Condom Use Married White Factor:                                       0.0000
+PHigh Condom Use Married15to19 Factor:                                       0.0000
+PHigh Condom Use Married20to24 Factor:                                       0.0000
+PHigh Condom Use Married25to29 Factor:                                       0.0000
+PHigh Condom Use Married30to44 Factor:                                       0.0000
+PHigh Condom Use Unmarried Black Factor:                                     0.0000
+PHigh Condom Use Unmarried Category1 Factor:                                 0.0000
+PHigh Condom Use Unmarried Category2 Factor:                                 0.0000
+PHigh Condom Use Unmarried Category3 Factor:                                 0.0000
+PHigh Condom Use Unmarried Category4 Factor:                                 0.0000
+PHigh Condom Use Unmarried Factor Base:                                      0.1000
+PHigh Condom Use Unmarried HSFactor:                                         0.0000
+PHigh Condom Use Unmarried High Frequency Factor:                            0.0000
+PHigh Condom Use Unmarried Hispanic Factor:                                  0.0000
+PHigh Condom Use Unmarried Moderate Frequency Factor:                        0.0000
+PHigh Condom Use Unmarried NHSFactor:                                        0.0000
+PHigh Condom Use Unmarried Other Contraception Factor:                       0.0000
+PHigh Condom Use Unmarried Other Factor:                                     0.0000
+PHigh Condom Use Unmarried PHSFactor:                                        0.0000
+PHigh Condom Use Unmarried Partner Sterilized Factor:                        0.0000
+PHigh Condom Use Unmarried Very Low Frequency Factor:                        0.0000
+PHigh Condom Use Unmarried White Factor:                                     0.0000
+PHigh Condom Use Unmarried15to19 Factor:                                     0.0000
+PHigh Condom Use Unmarried20to24 Factor:                                     0.0000
+PHigh Condom Use Unmarried25to29 Factor:                                     0.0000
+PHigh Condom Use Unmarried30to44 Factor:                                     0.0000
+PMarriage Minimum Base:                                                      0.0000
+PMarriage Maximum Base:                                                      0.0000
+PMarriage Black Minimum:                                                     0.0000
+PMarriage Black Maximum:                                                     0.0000
+PMarriage Category1 Minimum:                                                 0.0000
+PMarriage Category1 Maximum:                                                 0.0000
+PMarriage Category2 Minimum:                                                 0.0000
+PMarriage Category2 Maximum:                                                 0.0000
+PMarriage Category3 Minimum:                                                 0.0000
+PMarriage Category3 Maximum:                                                 0.0000
+PMarriage Category4 Minimum:                                                 0.0000
+PMarriage Category4 Maximum:                                                 0.0000
+PMarriage Female Minimum:                                                    0.0000
+PMarriage Female Maximum:                                                    0.0000
+PMarriage HSMinimum:                                                         0.0000
+PMarriage HSMaximum:                                                         0.0000
+PMarriage Hispanic Minimum:                                                  0.0000
+PMarriage Hispanic Maximum:                                                  0.0000
+PMarriage Male Minimum:                                                      0.0000
+PMarriage Male Maximum:                                                      0.0000
+PMarriage NHSMinimum:                                                        0.0000
+PMarriage NHSMaximum:                                                        0.0000
+PMarriage Other Minimum:                                                     0.0000
+PMarriage Other Maximum:                                                     0.0000
+PMarriage PHSMinimum:                                                        0.0000
+PMarriage PHSMaximum:                                                        0.0000
+PMarriage White Minimum:                                                     0.0000
+PMarriage White Maximum:                                                     0.0000
+PMarriage15to19 Minimum:                                                     0.0000
+PMarriage15to19 Maximum:                                                     0.0000
+PMarriage20to24 Minimum:                                                     0.0000
+PMarriage20to24 Maximum:                                                     0.0000
+PMarriage25to29 Minimum:                                                     0.0000
+PMarriage25to29 Maximum:                                                     0.0000
+PMarriage30to44 Minimum:                                                     0.0000
+PMarriage30to44 Maximum:                                                     0.0000
+PMedium Condom Use Married Black Factor:                                     0.0000
+PMedium Condom Use Married Category1 Factor:                                 0.0000
+PMedium Condom Use Married Category2 Factor:                                 0.0000
+PMedium Condom Use Married Category3 Factor:                                 0.0000
+PMedium Condom Use Married Category4 Factor:                                 0.0000
+PMedium Condom Use Married Factor Base:                                      0.4000
+PMedium Condom Use Married HSFactor:                                         0.0000
+PMedium Condom Use Married High Frequency Factor:                            0.0000
+PMedium Condom Use Married Hispanic Factor:                                  0.0000
+PMedium Condom Use Married Moderate Frequency Factor:                        0.0000
+PMedium Condom Use Married NHSFactor:                                        0.0000
+PMedium Condom Use Married Other Contraception Factor:                       0.0000
+PMedium Condom Use Married Other Factor:                                     0.0000
+PMedium Condom Use Married PHSFactor:                                        0.0000
+PMedium Condom Use Married Partner Sterilized Factor:                        0.0000
+PMedium Condom Use Married Very Low Frequency Factor:                        0.0000
+PMedium Condom Use Married White Factor:                                     0.0000
+PMedium Condom Use Married15to19 Factor:                                     0.0000
+PMedium Condom Use Married20to24 Factor:                                     0.0000
+PMedium Condom Use Married25to29 Factor:                                     0.0000
+PMedium Condom Use Married30to44 Factor:                                     0.0000
+PMedium Condom Use Unmarried Black Factor:                                   0.0000
+PMedium Condom Use Unmarried Category1 Factor:                               0.0000
+PMedium Condom Use Unmarried Category2 Factor:                               0.0000
+PMedium Condom Use Unmarried Category3 Factor:                               0.0000
+PMedium Condom Use Unmarried Category4 Factor:                               0.0000
+PMedium Condom Use Unmarried Factor Base:                                    0.4000
+PMedium Condom Use Unmarried HSFactor:                                       0.0000
+PMedium Condom Use Unmarried High Frequency Factor:                          0.0000
+PMedium Condom Use Unmarried Hispanic Factor:                                0.0000
+PMedium Condom Use Unmarried Moderate Frequency Factor:                      0.0000
+PMedium Condom Use Unmarried NHSFactor:                                      0.0000
+PMedium Condom Use Unmarried Other Contraception Factor:                     0.0000
+PMedium Condom Use Unmarried Other Factor:                                   0.0000
+PMedium Condom Use Unmarried PHSFactor:                                      0.0000
+PMedium Condom Use Unmarried Partner Sterilized Factor:                     -0.4000
+PMedium Condom Use Unmarried Very Low Frequency Factor:                      0.0000
+PMedium Condom Use Unmarried White Factor:                                   0.0000
+PMedium Condom Use Unmarried15to19 Factor:                                   0.0000
+PMedium Condom Use Unmarried20to24 Factor:                                   0.0000
+PMedium Condom Use Unmarried25to29 Factor:                                   0.0000
+PMedium Condom Use Unmarried30to44 Factor:                                   0.0000
+PMiscarriage Married Black Factor:                                           0.0000
+PMiscarriage Married Category1 Factor:                                       0.0000
+PMiscarriage Married Category2 Factor:                                       0.0000
+PMiscarriage Married Category3 Factor:                                       0.0000
+PMiscarriage Married Category4 Factor:                                       0.0000
+PMiscarriage Married Factor Base:                                            0.3333
+PMiscarriage Married HSFactor:                                               0.0000
+PMiscarriage Married Hispanic Factor:                                        0.0000
+PMiscarriage Married NHSFactor:                                              0.0000
+PMiscarriage Married Other Factor:                                           0.0000
+PMiscarriage Married PHSFactor:                                              0.0000
+PMiscarriage Married White Factor:                                           0.0000
+PMiscarriage Married15to19 Factor:                                           0.0000
+PMiscarriage Married20to24 Factor:                                           0.0000
+PMiscarriage Married25to29 Factor:                                           0.0000
+PMiscarriage Married30to44 Factor:                                           0.0000
+PMiscarriage Unmarried Black Factor:                                         0.0000
+PMiscarriage Unmarried Category1 Factor:                                     0.0000
+PMiscarriage Unmarried Category2 Factor:                                     0.0000
+PMiscarriage Unmarried Category3 Factor:                                     0.0000
+PMiscarriage Unmarried Category4 Factor:                                     0.0000
+PMiscarriage Unmarried Factor Base:                                          0.3333
+PMiscarriage Unmarried HSFactor:                                             0.0000
+PMiscarriage Unmarried Hispanic Factor:                                      0.0000
+PMiscarriage Unmarried NHSFactor:                                            0.0000
+PMiscarriage Unmarried Other Factor:                                         0.0000
+PMiscarriage Unmarried PHSFactor:                                            0.0000
+PMiscarriage Unmarried White Factor:                                         0.0000
+PMiscarriage Unmarried15to19 Factor:                                         0.0000
+PMiscarriage Unmarried20to24 Factor:                                         0.0000
+PMiscarriage Unmarried25to29 Factor:                                         0.0000
+PMiscarriage Unmarried30to44 Factor:                                         0.0000
+PPill Use Married Black Factor:                                              0.0000
+PPill Use Married Category1 Factor:                                          0.0000
+PPill Use Married Category2 Factor:                                          0.0000
+PPill Use Married Category3 Factor:                                          0.0000
+PPill Use Married Category4 Factor:                                          0.0000
+PPill Use Married Factor Base:                                               0.5000
+PPill Use Married HSFactor:                                                  0.0000
+PPill Use Married High Frequency Factor:                                     0.0000
+PPill Use Married Hispanic Factor:                                           0.0000
+PPill Use Married Moderate Frequency Factor:                                 0.0000
+PPill Use Married NHSFactor:                                                 0.0000
+PPill Use Married Other Contraception Factor:                                0.0000
+PPill Use Married Other Factor:                                              0.0000
+PPill Use Married PHSFactor:                                                 0.0000
+PPill Use Married Partner Sterilized Factor:                                 0.0000
+PPill Use Married Very Low Frequency Factor:                                 0.0000
+PPill Use Married White Factor:                                              0.0000
+PPill Use Married15to19 Factor:                                              0.0000
+PPill Use Married20to24 Factor:                                              0.0000
+PPill Use Married25to29 Factor:                                              0.0000
+PPill Use Married30to44 Factor:                                              0.0000
+PPill Use Unmarried Black Factor:                                            0.0000
+PPill Use Unmarried Category1 Factor:                                        0.0000
+PPill Use Unmarried Category2 Factor:                                        0.0000
+PPill Use Unmarried Category3 Factor:                                        0.0000
+PPill Use Unmarried Category4 Factor:                                        0.0000
+PPill Use Unmarried Factor Base:                                             0.5000
+PPill Use Unmarried HSFactor:                                                0.0000
+PPill Use Unmarried High Frequency Factor:                                   0.0000
+PPill Use Unmarried Hispanic Factor:                                         0.0000
+PPill Use Unmarried Moderate Frequency Factor:                               0.0000
+PPill Use Unmarried NHSFactor:                                               0.0000
+PPill Use Unmarried Other Contraception Factor:                              0.0000
+PPill Use Unmarried Other Factor:                                            0.0000
+PPill Use Unmarried PHSFactor:                                               0.0000
+PPill Use Unmarried Partner Sterilized Factor:                               0.0000
+PPill Use Unmarried Very Low Frequency Factor:                               0.0000
+PPill Use Unmarried White Factor:                                            0.0000
+PPill Use Unmarried15to19 Factor:                                            0.0000
+PPill Use Unmarried20to24 Factor:                                            0.0000
+PPill Use Unmarried25to29 Factor:                                            0.0000
+PPill Use Unmarried30to44 Factor:                                            0.0000
+PPoor Birth Married Black Factor:                                            0.0000
+PPoor Birth Married Category1 Factor:                                        0.0000
+PPoor Birth Married Category2 Factor:                                        0.0000
+PPoor Birth Married Category3 Factor:                                        0.0000
+PPoor Birth Married Category4 Factor:                                        0.0000
+PPoor Birth Married Factor Base:                                             0.5000
+PPoor Birth Married HSFactor:                                                0.0000
+PPoor Birth Married Hispanic Factor:                                         0.0000
+PPoor Birth Married NHSFactor:                                               0.0000
+PPoor Birth Married Other Factor:                                            0.0000
+PPoor Birth Married PHSFactor:                                               0.0000
+PPoor Birth Married White Factor:                                            0.0000
+PPoor Birth Married15to19 Factor:                                            0.0000
+PPoor Birth Married20to24 Factor:                                            0.0000
+PPoor Birth Married25to29 Factor:                                            0.0000
+PPoor Birth Married30to44 Factor:                                            0.0000
+PPoor Birth Unmarried Black Factor:                                          0.0000
+PPoor Birth Unmarried Category1 Factor:                                      0.0000
+PPoor Birth Unmarried Category2 Factor:                                      0.0000
+PPoor Birth Unmarried Category3 Factor:                                      0.0000
+PPoor Birth Unmarried Category4 Factor:                                      0.0000
+PPoor Birth Unmarried Factor Base:                                           0.5000
+PPoor Birth Unmarried HSFactor:                                              0.0000
+PPoor Birth Unmarried Hispanic Factor:                                       0.0000
+PPoor Birth Unmarried NHSFactor:                                             0.0000
+PPoor Birth Unmarried Other Factor:                                          0.0000
+PPoor Birth Unmarried PHSFactor:                                             0.0000
+PPoor Birth Unmarried White Factor:                                          0.0000
+PPoor Birth Unmarried15to19 Factor:                                          0.0000
+PPoor Birth Unmarried20to24 Factor:                                          0.0000
+PPoor Birth Unmarried25to29 Factor:                                          0.0000
+PPoor Birth Unmarried30to44 Factor:                                          0.0000
+PRelationship Begin Minimum:                                                 1.0000
+PRelationship Begin Maximum:                                                 1.0000
+PRelationship End Minimum:                                                   0.0000
+PRelationship End Maximum:                                                   0.0000
+PRhythm Method Divorced Condom High Intender:                                0.0000
+PRhythm Method Divorced Condom Medium Intender:                              0.0000
+PRhythm Method Divorced None:                                                0.0000
+PRhythm Method Divorced Pill:                                                0.0000
+PRhythm Method Divorced Sterilized:                                          0.0000
+PRhythm Method Married Condom High Intender:                                 0.0000
+PRhythm Method Married Condom Medium Intender:                               0.0000
+PRhythm Method Married None:                                                 0.0000
+PRhythm Method Married Pill:                                                 0.0000
+PRhythm Method Married Sterilized:                                           0.0000
+PRhythm Method Single Condom High Intender:                                  0.0000
+PRhythm Method Single Condom Medium Intender:                                0.0000
+PRhythm Method Single None:                                                  0.0000
+PRhythm Method Single Pill:                                                  0.0000
+PRhythm Method Single Sterilized:                                            0.0000
+PSterilize Female Married Black Factor:                                      0.0000
+PSterilize Female Married Category1 Factor:                                  0.0000
+PSterilize Female Married Category2 Factor:                                  0.0000
+PSterilize Female Married Category3 Factor:                                  0.0000
+PSterilize Female Married Category4 Factor:                                  0.0000
+PSterilize Female Married Factor Base:                                       0.5000
+PSterilize Female Married HSFactor:                                          0.0000
+PSterilize Female Married High Frequency Factor:                             0.0000
+PSterilize Female Married Hispanic Factor:                                   0.0000
+PSterilize Female Married Moderate Frequency Factor:                         0.0000
+PSterilize Female Married NHSFactor:                                         0.0000
+PSterilize Female Married Other Contraception Factor:                        0.0000
+PSterilize Female Married Other Factor:                                      0.0000
+PSterilize Female Married PHSFactor:                                         0.0000
+PSterilize Female Married Partner Sterilized Factor:                         0.0000
+PSterilize Female Married Very Low Frequency Factor:                         0.0000
+PSterilize Female Married White Factor:                                      0.0000
+PSterilize Female Married15to19 Factor:                                      0.0000
+PSterilize Female Married20to24 Factor:                                      0.0000
+PSterilize Female Married25to29 Factor:                                      0.0000
+PSterilize Female Married30to44 Factor:                                      0.0000
+PSterilize Female Unmarried Black Factor:                                    0.0000
+PSterilize Female Unmarried Category1 Factor:                                0.0000
+PSterilize Female Unmarried Category2 Factor:                                0.0000
+PSterilize Female Unmarried Category3 Factor:                                0.0000
+PSterilize Female Unmarried Category4 Factor:                                0.0000
+PSterilize Female Unmarried Factor Base:                                     1.0000
+PSterilize Female Unmarried HSFactor:                                        0.0000
+PSterilize Female Unmarried High Frequency Factor:                           0.0000
+PSterilize Female Unmarried Hispanic Factor:                                 0.0000
+PSterilize Female Unmarried Moderate Frequency Factor:                       0.0000
+PSterilize Female Unmarried NHSFactor:                                       0.0000
+PSterilize Female Unmarried Other Contraception Factor:                      0.0000
+PSterilize Female Unmarried Other Factor:                                    0.0000
+PSterilize Female Unmarried PHSFactor:                                       0.0000
+PSterilize Female Unmarried Partner Sterilized Factor:                       0.0000
+PSterilize Female Unmarried Very Low Frequency Factor:                       0.0000
+PSterilize Female Unmarried White Factor:                                    0.0000
+PSterilize Female Unmarried15to19 Factor:                                    0.0000
+PSterilize Female Unmarried20to24 Factor:                                    0.0000
+PSterilize Female Unmarried25to29 Factor:                                    0.0000
+PSterilize Female Unmarried30to44 Factor:                                    0.0000
+PSterilize Male Married Black Factor:                                        0.0000
+PSterilize Male Married Category1 Factor:                                    0.0000
+PSterilize Male Married Category2 Factor:                                    0.0000
+PSterilize Male Married Category3 Factor:                                    0.0000
+PSterilize Male Married Category4 Factor:                                    0.0000
+PSterilize Male Married Factor Base:                                         0.5000
+PSterilize Male Married HSFactor:                                            0.0000
+PSterilize Male Married High Frequency Factor:                               0.0000
+PSterilize Male Married Hispanic Factor:                                     0.0000
+PSterilize Male Married Moderate Frequency Factor:                           0.0000
+PSterilize Male Married NHSFactor:                                           0.0000
+PSterilize Male Married Other Contraception Factor:                          0.0000
+PSterilize Male Married Other Factor:                                        0.0000
+PSterilize Male Married PHSFactor:                                           0.0000
+PSterilize Male Married Partner Sterilized Factor:                           0.0000
+PSterilize Male Married Very Low Frequency Factor:                           0.0000
+PSterilize Male Married White Factor:                                        0.0000
+PSterilize Male Married15to19 Factor:                                        0.0000
+PSterilize Male Married20to24 Factor:                                        0.0000
+PSterilize Male Married25to29 Factor:                                        0.0000
+PSterilize Male Married30to44 Factor:                                        0.0000
+PSterilize Male Unmarried Black Factor:                                      0.0000
+PSterilize Male Unmarried Category1 Factor:                                  0.0000
+PSterilize Male Unmarried Category2 Factor:                                  0.0000
+PSterilize Male Unmarried Category3 Factor:                                  0.0000
+PSterilize Male Unmarried Category4 Factor:                                  0.0000
+PSterilize Male Unmarried Factor Base:                                       0.5000
+PSterilize Male Unmarried HSFactor:                                          0.0000
+PSterilize Male Unmarried High Frequency Factor:                             0.0000
+PSterilize Male Unmarried Hispanic Factor:                                   0.0000
+PSterilize Male Unmarried Moderate Frequency Factor:                         0.0000
+PSterilize Male Unmarried NHSFactor:                                         0.0000
+PSterilize Male Unmarried Other Contraception Factor:                        0.0000
+PSterilize Male Unmarried Other Factor:                                      0.0000
+PSterilize Male Unmarried PHSFactor:                                         0.0000
+PSterilize Male Unmarried Partner Sterilized Factor:                         0.0000
+PSterilize Male Unmarried Very Low Frequency Factor:                         0.0000
+PSterilize Male Unmarried White Factor:                                      0.0000
+PSterilize Male Unmarried15to19 Factor:                                      0.0000
+PSterilize Male Unmarried20to24 Factor:                                      0.0000
+PSterilize Male Unmarried25to29 Factor:                                      0.0000
+PSterilize Male Unmarried30to44 Factor:                                      0.0000
+Pause Period:                                                               inf/max
+Periodsin Year:                                                            365.0000
+Pill Condom Failure Rate:                                                    0.0075
+Pill Failure Rate:                                                           0.0500
+Pregnancy Status Adjustment Minimum Base:                                    0.0000
+Pregnancy Status Adjustment Maximum Base:                                    0.0000
+Pregnancy Status Adjustment Currently Pregnant Minimum:                      0.0000
+Pregnancy Status Adjustment Currently Pregnant Maximum:                      0.0000
+Pregnancy Status Adjustment Never Pregnant Minimum:                          0.0000
+Pregnancy Status Adjustment Never Pregnant Maximum:                          0.0000
+Pregnancy Status Adjustment Was Pregnant Minimum:                            0.0000
+Pregnancy Status Adjustment Was Pregnant Maximum:                            0.0000
+Random Seed:                                                          1237514655248
+Start Period:                                                                0.0000
+Stop Period:                                                                 1.0000
+Thread Count:                                                                1.0000
+Typical Abortion Period End:                                               200.0000
+Typical Abortion Period Start:                                              60.0000
+Typical Birth Period End:                                                  360.0000
+Typical Birth Period Start:                                                300.0000
+Walk Toward Age:                                                             1.0000
+Write Periods:                                            1365
+Stop Period: 1
+Finished in: 0:0:0.593
+

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" skipfailedinvocationCounts="false" verbose="1" name="PdsinYr1PdsinYr1mPregOut_Miscarr3PregOut_Miscarr4" junit="false" parallel="methods" >
+  <test name="PdsinYr1PdsinYr1mPregOut_Miscarr3PregOut_Miscarr4 Test" junit="false">
+    <parameter name="projectLocation" value="/Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape"/>
+    <parameter name="testCount" value="1"/>
+    <parameter name="testDir" value=""/>
+    <parameter name="projectName" value="edu.brook.parent.escape"/>
+    <parameter name="testFiles" value="tests/PdsinYr1 tests/PdsinYr1m tests/PregOut_Miscarr3 tests/PregOut_Miscarr4"/>
+    <classes>
+      <class name="com.metascape.escape.testng.runtime.ParameterTestFactory"/>
+    </classes>
+  </test>
+</suite>

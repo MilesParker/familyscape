@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PdsinYr1PdsinYr1mPregOut_Miscarr3PregOut_Miscarr4 Test" failures="0" tests="4" time="53.236" errors="0">
+  <properties/>
+  <testcase name="runModel (Periods In Year 1m: Check of Periods in Year Parameter for Marrieds [PdsinYr1m])" time="20.083" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])" time="52.684" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr4])" time="53.081" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds [PdsinYr1])" time="53.208" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

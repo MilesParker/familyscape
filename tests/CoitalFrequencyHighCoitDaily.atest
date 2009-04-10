@@ -1,0 +1,8 @@
+title	Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds 
+comments	This test assigns all unmarried agents to the high coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should result in agents having the same amount of sex (this test is probably redundant).
+Average Adult P Sex	1	1				
+Average Adult P Relationship Initial	.49	.51				
+Average Adult P End Relationship	.009	.011				
+Average Adult Sex Count in Lifetime	655	688				
+Average Adult Sex Partners in Lifetime	12.5	13.5			
+Count Adult High Frequency Coital Behavior Type	5814	5814	

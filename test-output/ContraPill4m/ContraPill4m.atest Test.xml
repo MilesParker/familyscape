@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraPill4m.atest Test" failures="5" tests="5" time="166.339" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="163.554" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 410.0 &gt; 280">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 410.0 > 280
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="163.929" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 413.0 &gt; 280">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 413.0 > 280
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="165.494" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 401.0 &gt; 280">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 401.0 > 280
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="166.094" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 358.0 &gt; 280">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 358.0 > 280
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="166.297" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 403.0 &gt; 280">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 403.0 > 280
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

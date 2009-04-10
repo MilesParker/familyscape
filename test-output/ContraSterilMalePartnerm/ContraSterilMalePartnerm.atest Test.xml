@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraSterilMalePartnerm.atest Test" failures="1" tests="1" time="10.527" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])" time="10.496" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Partner Sterilized Partner Contraception Method 0.0 &lt; 2093">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Partner Sterilized Partner Contraception Method 0.0 < 2093
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

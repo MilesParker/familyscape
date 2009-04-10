@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>TestNG:  PregOut_Abort3PregOut_Abort4 Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PregOut_Abort3PregOut_Abort4 Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 04 20:50:09 PST 2009</td>
+</tr>
+<tr><td>Total time:</td><td>45 seconds (45740 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])()'>runModel<br/>
+<a href="#Output-1613589366" onClick='toggleBox("Output-1613589366", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1613589366" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1613589366">
+<b>Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds_0</b><br/>
+This test sets the SES covariates in the unmarried abortion equation equal to (-1*baseline), which should eliminate abortions and increase the number of briths and miscarriages relative to baseline.<br/>
+<a href="../../tests/PregOut_Abort3.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort3.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort3_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort3_0.ares">Results</a><br/>
+</div>
+</td>
+<td>45</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Miscarriages in Lifetime 236.0 &lt; 353
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1613589366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1613589366'><pre>java.lang.AssertionError: 
+Sum Adult Miscarriages in Lifetime 236.0 &lt; 353
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort4])()'>runModel<br/>
+<a href="#Output-325579916" onClick='toggleBox("Output-325579916", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-325579916" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-325579916">
+<b>Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds_0</b><br/>
+This test sets all covariates in the married abortion equation equal extremely high values, which should have no effect on pregnancy outcomes among unmarrieds.<br/>
+<a href="../../tests/PregOut_Abort4.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort4.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort4_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort4_0.ares">Results</a><br/>
+</div>
+</td>
+<td>45</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

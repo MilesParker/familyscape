@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PregOut_Abort1CheckBasemPregOut_Abort1Checkm Test" failures="2" tests="2" time="18.175" errors="0">
+  <properties/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m Check: Cross-check to abortion and married issuee.[PregOut_Abort1Checkm])" time="18.071" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 8021.0 &lt; 9000
+Sum Adult Miscarriages in Lifetime 0.0 &lt; 2800
+Sum Adult Births in Lifetime 8011.0 &gt; 8000
+Sum Adult Poor Births in Lifetime 4033.0 &gt; 4000">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 8021.0 < 9000
+Sum Adult Miscarriages in Lifetime 0.0 < 2800
+Sum Adult Births in Lifetime 8011.0 > 8000
+Sum Adult Poor Births in Lifetime 4033.0 > 4000
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m Check: Cross-check to abortion and married issuee.[PregOut_Abort1CheckBasem])" time="18.138" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 3532.0 &lt; 9000
+Sum Adult Abortions in Lifetime 1064.0 &lt; 2900
+Sum Adult Miscarriages in Lifetime 1151.0 &lt; 2900
+Sum Adult Births in Lifetime 1201.0 &lt; 2900
+Sum Adult Poor Births in Lifetime 602.0 &lt; 2900">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 3532.0 < 9000
+Sum Adult Abortions in Lifetime 1064.0 < 2900
+Sum Adult Miscarriages in Lifetime 1151.0 < 2900
+Sum Adult Births in Lifetime 1201.0 < 2900
+Sum Adult Poor Births in Lifetime 602.0 < 2900
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

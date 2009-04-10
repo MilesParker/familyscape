@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraSteril5MenWomenContraSteril5MenWomenmContraSteril5WomenMenContraSteril5WomenMenmCont Test" failures="0" tests="7" time="19.635" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Sterilization Men Women: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])" time="6.37" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])" time="6.381" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])" time="18.991" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomenm])" time="19.04" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerFemalem])" time="19.435" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])" time="19.582" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMenm])" time="19.592" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests Test" failures="32" tests="675" time="3090.049" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency Unmarried Once Daily[CoitalFrequencyUnmarriedOnceDaily])" time="18.082" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1m: Check of Baseline Factor for Medium Condom Equation Among Marrieds [ContraCond1m])" time="21.88" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5bm: Cross Check of Married Covariates for High Condom Equation Among Marrieds [ContraCond5bm])" time="22.421" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds [ContraSteril3m])" time="22.501" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3m: Spot Check of Sexual Frequency Covariates for Pill Equation Among Marrieds [ContraPill3m])" time="4.798" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Married Once Daily[CoitalFrequencyMarriedOnceDaily])" time="8.916" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Partners Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="6.481" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerFemalem])" time="12.427" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds [ContraSteril4])" time="1.061" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitDailym])" time="20.708" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3: Spot Check of Sexual Frequency Covariates for Pill Equation Among Unmarrieds [ContraPill3])" time="0.944" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2m: Second Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr2m])" time="56.613" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds[PregOut_Miscarr3m])" time="38.56" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 866.0 &lt; 869
+Sum Adult Abortions in Lifetime 249.0 &lt; 270
+Sum Adult Births in Lifetime 450.0 &lt; 476">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 866.0 < 869
+Sum Adult Abortions in Lifetime 249.0 < 270
+Sum Adult Births in Lifetime 450.0 < 476
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency 4m: Spot Check of Covariates - SES (very low married)[CoitalFrequencyNoSESm])" time="3.444" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 2m: Check Hypothesis that Miscarriages at .5 and Abortion at .5 Causes no births to occur and overall number of abortions and miscarriages to go up.[PregOut_AbortMis2m])" time="30.422" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7m High Threshold None Married: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitNonem])" time="12.47" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerFemalem])" time="6.716" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low Married: Functionality of Very Low Married Sexual-Proclivity Baseline[CoitalFrequencyVeryLowm])" time="6.676" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4: Cross Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth4])" time="108.739" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort4])" time="108.883" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None: No unmarrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNone])" time="109.888" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1m: Check of Periods in Year Parameter for Marrieds [PdsinYr1m])" time="32.189" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4: Spot Check of Partner Sterilization Covariate for Pill Equation Among Unmarrieds [ContraPill4])" time="0.986" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds[PregOut_PoorBirth3])" time="108.018" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Freq None Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitNonem])" time="22.019" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitDailym])" time="23.438" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial: Check of Initial-Sex Parameter (married)[CoitalFrequencyNoInitialm])" time="23.513" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline[CoitalFrequencyVeryLow])" time="2.125" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1m: Check of Baseline Factor for Medium Condom Equation Among Marrieds [ContraCond1m])" time="8.837" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4bm: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4bm])" time="6.909" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3])" time="1.008" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitDaily])" time="104.017" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3b])" time="0.949" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold None Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitNonem])" time="11.356" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) [CoitalFrequencyHighCoitHighThresh])" time="5.847" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr4])" time="106.015" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2: Spot Check of Covariates Medium Condom Equation Among Unmarrieds [ContraCond2])" time="1.011" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5b: Cross Check of Married Covariates for High Condom Equation Among Unmarrieds [ContraCond5b])" time="0.937" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3m: Spot Check of Covariates for Poor Birth Equation among Marrieds[PregOut_PoorBirth3m])" time="37.13" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1m: Check of Baseline Factor for Sterilization Equations Among Marrieds [ContraSteril1m])" time="6.216" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1: Check of Baseline Factor for Pill Equation Among Unmarrieds [ContraPill1])" time="1.02" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 5m: Cross Check of Married Covariates for Pill Equation Among Marrieds [ContraPill5m])" time="5.956" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossUnmarried])" time="0.902" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Very Low Frequency Coital Behavior Type 612.0 &gt; 611.205">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 612.0 > 611.205
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4m: Cross Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort4m])" time="34.067" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Partners Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="6.411" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Threshold: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitDailym])" time="20.892" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2m: Second Check of Baseline Factor for Poor Birth among Marrieds[PregOut_PoorBirth2m])" time="29.569" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth1m])" time="33.762" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitNone])" time="35.736" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])" time="0.954" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency MOd Coit Threshold Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitDailym])" time="13.098" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitDaily])" time="104.481" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 654.6756105951152 &lt; 655">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 654.6756105951152 < 655
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Rhythm Method All Married: All marrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllm])" time="29.889" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitDaily])" time="106.818" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds [ContraSteril4])" time="0.898" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="101.941" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds[PregOut_Miscarr3m])" time="34.985" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Births in Lifetime 466.0 &lt; 476">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Births in Lifetime 466.0 < 476
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Minimum Age 2: Check of Minimum Age Parameter for Marrieds [MinAge1m])" time="37.582" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4m: Cross Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth4m])" time="39.223" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomenm])" time="6.281" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Relationship Status 1: Second check of p(rel begin) and p(rel end) parameters[RelStat2])" time="193.125" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds [ContraSteril4])" time="1.025" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineMarried[BaselineMarried])" time="42.138" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth1m])" time="49.719" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitDaily])" time="108.431" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2m: Second Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort2m])" time="48.193" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 667.0 &lt; 750
+Sum Adult Abortions in Lifetime 517.0 &lt; 550">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 667.0 < 750
+Sum Adult Abortions in Lifetime 517.0 < 550
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineZeroMarried[BaselineZeroMarried])" time="24.074" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 6m: Check of Pill Efficacy Among Marrieds [ContraPill6m])" time="25.094" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m: First Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr1m])" time="56.487" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline[CoitalFrequencyDoubleMod])" time="0.956" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Freq None Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitNonem])" time="42.642" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Cond 5: Cross Check of Married Covariates for Medium Condom Equation Among Unmarrieds [ContraCond5])" time="0.95" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Age Married: Spot Check of Covariates - Age (moderate married)[CoitalFrequencyNoAgem])" time="6.291" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitDailym])" time="29.672" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2: Second Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort2])" time="117.974" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 6: Check of Pill Efficacy Among Unmarrieds [ContraPill6])" time="0.9" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMenm])" time="14.299" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitNone])" time="49.118" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low Married: Functionality of Very Low Married Sexual-Proclivity Baseline[CoitalFrequencyVeryLowm])" time="23.647" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2m: Second Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr2m])" time="75.814" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold: Check of Unmarried Coital Frequency (Very Low Threshold) [CoitalFrequencyLowCoitMax])" time="5.614" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossMarried])" time="16.589" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes all Miscarriages and overall number of pregnancies to go up.[PregOut_AbortMis1m])" time="75.244" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Miscarriages in Lifetime 1129.0 &lt; 9800">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Miscarriages in Lifetime 1129.0 < 9800
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Sterilization Men Women: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])" time="2.124" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2: Spot Check of Covariates Sterilization Equations Among Unmarrieds [ContraSteril2])" time="1.348" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m Check: Cross-check to ensure that miscarraiges ae assigned.[PregOut_CheckAllMism])" time="58.444" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3])" time="0.963" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2: Spot Check of Covariates Pill Equation Among Unmarrieds [ContraPill2])" time="0.921" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Marrieds [ContraCond6m])" time="50.345" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2: Spot Check of Covariates Medium Condom Equation Among Unmarrieds [ContraCond2])" time="0.882" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2m: Spot Check of Covariates Medium Condom Equation Among Marrieds [ContraCond2m])" time="4.786" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3m: Spot Check of Covariates for Abortion Equation among Marrieds[PregOut_Abort3m])" time="56.388" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineZeroUnmarried[BaselineZeroUnmarried])" time="0.958" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1m: Check of Contraceptive Efficacy of All Methods Among Marrieds [ContraAll1m])" time="32.274" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Threshold: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitDailym])" time="13.341" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline[CoitalFrequencyDoubleMod])" time="0.907" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitNone])" time="39.999" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Cond 5: Cross Check of Married Covariates for Medium Condom Equation Among Unmarrieds [ContraCond5])" time="1.775" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 4: Spot Check of Covariates - Race (very low unmarried)[CoitalFrequencyNoSES])" time="0.992" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 1: Check of Minimum Age Parameter for Unmarrieds [PregDuration1])" time="123.229" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4bm: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4bm])" time="3.416" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2: Spot Check of Covariates Pill Equation Among Unmarrieds [ContraPill2])" time="1.033" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m Check: Cross-check to ensure that miscarraiges ae assigned.[PregOut_CheckAllMism])" time="31.406" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1m: Check of Contraceptive Efficacy of All Methods Among Marrieds [ContraAll1m])" time="32.278" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4m: Cross Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth4m])" time="34.469" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 5m: Cross Check of Married Covariates for Pill Equation Among Marrieds [ContraPill5m])" time="5.745" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold None Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitNonem])" time="15.804" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4: Spot Check of Partner Sterilization Covariate for Pill Equation Among Unmarrieds [ContraPill4])" time="0.935" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4m: Cross Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort4m])" time="32.927" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="100.948" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried)[CoitalFrequencyNoEdu])" time="0.895" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 1: Check of Minimum Age Parameter for Unmarrieds [PregDuration1])" time="108.686" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineZeroUnmarried[BaselineZeroUnmarried])" time="0.921" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1: First Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth1])" time="104.296" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Baseline 1m Check: Cross-check to abortion and married issue.[PregOut_CheckBasem])" time="31.928" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1: First Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr1])" time="100.046" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3m: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3m])" time="3.929" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds[PregOut_Miscarr3m])" time="31.6" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Abortions in Lifetime 245.0 &lt; 270
+Sum Adult Births in Lifetime 475.0 &lt; 476">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Abortions in Lifetime 245.0 < 270
+Sum Adult Births in Lifetime 475.0 < 476
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Pill 5: Cross Check of Unmarried Covariates for Pill Equation Among Unmarrieds [ContraPill5])" time="1.107" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None Married: No marrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNonem])" time="30.611" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])" time="102.454" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1m: Check of CondomandPill Efficacy Among Marrieds [ContraCondPill1m])" time="23.582" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Age Married: Spot Check of Covariates - Age (moderate married)[CoitalFrequencyNoAgem])" time="3.652" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1m: Check of Baseline Factor for Sterilization Equations Among Marrieds [ContraSteril1m])" time="4.36" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion All Check m: Cross-check to ensure that abortions are assigned.[PregOut_CheckAllAbortm])" time="27.662" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Unmarried (high value) [CoitalFrequencyMenstrualHigh])" time="36.196" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Unmarrieds [ContraCond6])" time="71.299" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1bm: Check of Baseline Factor for High Condom Equation Among Marrieds [ContraCond1bm])" time="3.34" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitDaily])" time="98.072" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 2: Check of Minimum Age Parameter for Marrieds [PregDuration2])" time="27.522" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Birth 1m Check: Cross-check to ensure that births are assigned.[PregOut_CheckAllBirthm])" time="27.226" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])" time="95.121" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Minimum Age 1: Check of Minimum Age Parameter for Unmarrieds [MinAge1])" time="95.772" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1b: Check of Baseline Factor for High Condom Equation Among Unmarrieds [ContraCond1b])" time="1.795" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Minimum Age 1: Check of Minimum Age Parameter for Unmarrieds [MinAge1])" time="98.437" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3bm: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3bm])" time="3.211" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 2m: Check Hypothesis that Miscarriages at .5 and Abortion at .5 Causes no births to occur and overall number of abortions and miscarriages to go up.[PregOut_AbortMis2m])" time="26.529" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="4.559" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])" time="0.982" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill: Sets all women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPill])" time="93.82" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Married Sexual-Proclivity Baseline[CoitalFrequencyDoubleModm])" time="4.392" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill: Sets all women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPill])" time="100.78" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m Check: Cross-check to ensure that miscarraiges ae assigned.[PregOut_CheckAllMism])" time="28.723" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitDailym])" time="13.992" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None Married: No marrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNonem])" time="27.235" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="98.612" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Partners Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="6.226" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold: Check of Unmarried Coital Frequency (Very Low Threshold) [CoitalFrequencyLowCoitMax])" time="5.2" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="96.92" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 653.3003095975232 &lt; 655">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 653.3003095975232 < 655
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="100.526" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Condom Medium Intender Contraception Method 373.0 &lt; 374">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Condom Medium Intender Contraception Method 373.0 < 374
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Cond 5: Cross Check of Married Covariates for Medium Condom Equation Among Unmarrieds [ContraCond5])" time="0.975" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried)[CoitalFrequencyNoEdu])" time="0.898" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1m: Check of CondomandPill Efficacy Among Marrieds [ContraCondPill1m])" time="22.512" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds[PregOut_PoorBirth3])" time="98.193" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold: Check of Unmarried Coital Frequency (Very Low Threshold) [CoitalFrequencyLowCoitMax])" time="5.084" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Married: All marrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllm])" time="27.613" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Marrieds (low value) [CoitalFrequencyMenstrualNonem])" time="12.666" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPill])" time="95.038" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])" time="0.934" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Married (high value) [CoitalFrequencyMenstrualHighm])" time="11.52" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitDaily])" time="101.632" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 2: Check of Minimum Age Parameter for Marrieds [PregDuration2])" time="25.648" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Cond 5: Cross Check of Married Covariates for Medium Condom Equation Among Unmarrieds [ContraCond5])" time="0.973" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Married Once Daily[CoitalFrequencyMarriedOnceDaily])" time="5.448" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4: Cross Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth4])" time="100.456" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Abortions in Lifetime 268.0 &lt; 270">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Abortions in Lifetime 268.0 < 270
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Relationship Status 1: Second check of p(rel begin) and p(rel end) parameters[RelStat2])" time="201.051" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Married Once Daily[CoitalFrequencyMarriedOnceDaily])" time="5.624" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2bm: Spot Check of Covariates High Condom Equation Among Marrieds [ContraCond2bm])" time="3.139" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2m: Spot Check of Covariates Pill Equation Among Marrieds [ContraPill2m])" time="3.066" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitDaily])" time="99.033" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2m: Second Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort2m])" time="30.506" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 711.0 &lt; 750">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 711.0 < 750
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) [CoitalFrequencyModCoitMax])" time="6.393" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1: Check of Baseline Factor for Sterilization Equations Among Unmarrieds [ContraSteril1])" time="76.68" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2m: Spot Check of Covariates Pill Equation Among Marrieds [ContraPill2m])" time="2.784" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low Married: Functionality of Very Low Married Sexual-Proclivity Baseline[CoitalFrequencyVeryLowm])" time="3.565" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2b: Spot Check of Covariates High Condom Equation Among Unmarrieds [ContraCond2b])" time="1.002" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1: First Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr1])" time="104.417" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineZeroMarried[BaselineZeroMarried])" time="2.902" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Birth 1m Check: Cross-check to ensure that births are assigned.[PregOut_CheckAllBirthm])" time="26.352" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 4: Spot Check of Covariates - Race (very low unmarried)[CoitalFrequencyNoSES])" time="0.985" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1: First Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth1])" time="129.426" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill: Sets all women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPill])" time="99.964" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossUnmarried])" time="1.899" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Unmarrieds [ContraCond6])" time="75.314" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds [ContraSteril3m])" time="5.52" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1: Check of Contraceptive Efficacy of All Methods Among Unmarrieds [ContraAll1])" time="107.056" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomenm])" time="7.976" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold None Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitNonem])" time="20.93" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 5m: Cross Check of Married Covariates for Pill Equation Among Marrieds [ContraPill5m])" time="10.254" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1: Check of Baseline Factor for Medium Condom Equation Among Unmarrieds [ContraCond1])" time="1.285" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds [PdsinYr1])" time="103.916" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="103.337" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds[PregOut_PoorBirth3])" time="109.09" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossUnmarried])" time="1.064" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Moderate Frequency Coital Behavior Type 1656.0 &lt; 1656.705
+Count Adult Very Low Frequency Coital Behavior Type 628.0 &gt; 611.205">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Moderate Frequency Coital Behavior Type 1656.0 < 1656.705
+Count Adult Very Low Frequency Coital Behavior Type 628.0 > 611.205
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Pill 6: Check of Pill Efficacy Among Unmarrieds [ContraPill6])" time="1.028" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2m: Second Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr2m])" time="50.363" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold None Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitNonem])" time="34.897" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossMarried])" time="9.12" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds [ContraSteril4])" time="0.941" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Married (high value) [CoitalFrequencyMenstrualHighm])" time="34.507" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Marrieds [ContraCond6m])" time="43.418" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4bm: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4bm])" time="13.82" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds[PregOut_Miscarr3m])" time="58.064" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth1m])" time="48.677" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1m: Check of Baseline Factor for Sterilization Equations Among Marrieds [ContraSteril1m])" time="5.66" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="5.057" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth1m])" time="45.257" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2m: Spot Check of Covariates Medium Condom Equation Among Marrieds [ContraCond2m])" time="5.311" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossUnmarried])" time="1.119" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Very Low Frequency Coital Behavior Type 612.0 &gt; 611.205">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 612.0 > 611.205
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Sterilization 3: Spot Check of Sexual Frequency Covariates for Sterilization Equation2 Among Unmarrieds [ContraSteril3])" time="1.916" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None Married: No marrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNonem])" time="47.056" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Marrieds [ContraCond6m])" time="32.457" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Married Sexual-Proclivity Baseline[CoitalFrequencyDoubleModm])" time="10.98" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1: Check of Baseline Factor for Pill Equation Among Unmarrieds [ContraPill1])" time="0.874" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Cond 5m: Cross Check of Married Covariates for Medium Condom Equation Among Marrieds [ContraCond5m])" time="4.915" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None: No unmarrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNone])" time="124.72" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 6m: Check of Pill Efficacy Among Marrieds [ContraPill6m])" time="6.714" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Age Married: Spot Check of Covariates - Age (moderate married)[CoitalFrequencyNoAgem])" time="10.96" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="10.554" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMenm])" time="4.615" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])" time="0.866" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3m: Spot Check of Covariates for Poor Birth Equation among Marrieds[PregOut_PoorBirth3m])" time="54.465" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 2m: Check Hypothesis that Miscarriages at .5 and Abortion at .5 Causes no births to occur and overall number of abortions and miscarriages to go up.[PregOut_AbortMis2m])" time="53.462" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3m: Spot Check of Covariates for Poor Birth Equation among Marrieds[PregOut_PoorBirth3m])" time="54.721" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1: First Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth1])" time="142.264" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Age Married: Spot Check of Covariates - Age (moderate married)[CoitalFrequencyNoAgem])" time="8.051" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="9.698" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Unmarrieds [ContraCond6])" time="109.687" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2: Spot Check of Covariates Sterilization Equations Among Unmarrieds [ContraSteril2])" time="1.911" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3])" time="1.128" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency MOd Coit Threshold Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitDailym])" time="21.491" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])" time="113.566" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4m: Cross Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort4m])" time="30.803" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3m: Spot Check of Covariates for Poor Birth Equation among Marrieds[PregOut_PoorBirth3m])" time="32.275" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Marrieds (low value) [CoitalFrequencyMenstrualNonem])" time="10.816" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1: Check of CondomandPill Efficacy Among Unmarrieds [ContraCondPill1])" time="78.348" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion All Check m: Cross-check to ensure that abortions are assigned.[PregOut_CheckAllAbortm])" time="26.45" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3])" time="0.956" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1: Check of CondomandPill Efficacy Among Unmarrieds [ContraCondPill1])" time="70.429" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5b: Cross Check of Married Covariates for High Condom Equation Among Unmarrieds [ContraCond5b])" time="0.998" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Birth 1m Check: Cross-check to ensure that births are assigned.[PregOut_CheckAllBirthm])" time="26.812" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])" time="4.442" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 6: Check of Pill Efficacy Among Unmarrieds [ContraPill6])" time="0.94" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4: Cross Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth4])" time="96.748" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3bm: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3bm])" time="5.577" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 1: Check of Minimum Age Parameter for Unmarrieds [PregDuration1])" time="94.623" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="96.456" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Baseline 1m Check: Cross-check to abortion and married issue.[PregOut_CheckBasem])" time="33.756" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2: Spot Check of Covariates Medium Condom Equation Among Unmarrieds [ContraCond2])" time="0.921" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Minimum Age 2: Check of Minimum Age Parameter for Marrieds [MinAge1m])" time="32.269" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMenm])" time="4.699" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="96.289" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 692.0 &lt; 700">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 692.0 < 700
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 2m: Check Hypothesis that Miscarriages at .5 and Abortion at .5 Causes no births to occur and overall number of abortions and miscarriages to go up.[PregOut_AbortMis2m])" time="32.873" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3: Spot Check of Sexual Frequency Covariates for Sterilization Equation2 Among Unmarrieds [ContraSteril3])" time="0.91" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2m: Spot Check of Covariates Medium Condom Equation Among Marrieds [ContraCond2m])" time="10.977" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill Married: All marrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPillm])" time="37.025" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitDailym])" time="12.081" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3m: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3m])" time="4.708" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineMarried[BaselineMarried])" time="35.123" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m Check: Cross-check to ensure that miscarraiges ae assigned.[PregOut_CheckAllMism])" time="33.943" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 1: Check of Minimum Age Parameter for Unmarrieds [PregDuration1])" time="101.877" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 6m: Check of Pill Efficacy Among Marrieds [ContraPill6m])" time="3.199" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossMarried])" time="3.348" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])" time="3.122" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1m: Check of Contraceptive Efficacy of All Methods Among Marrieds [ContraAll1m])" time="28.168" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])" time="98.43" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitNone])" time="39.489" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Freq None Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitNonem])" time="12.555" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="99.486" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Relationship Status 1: Second check of p(rel begin) and p(rel end) parameters[RelStat2])" time="194.474" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5b: Cross Check of Married Covariates for High Condom Equation Among Unmarrieds [ContraCond5b])" time="0.898" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Unmarried (high value) [CoitalFrequencyMenstrualHigh])" time="40.365" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2m: Spot Check of Covariates Medium Condom Equation Among Marrieds [ContraCond2m])" time="5.014" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2: Spot Check of Covariates Sterilization Equations Among Unmarrieds [ContraSteril2])" time="0.903" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Minimum Age 2: Check of Minimum Age Parameter for Marrieds [MinAge1m])" time="30.907" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1: First Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort1])" time="98.497" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m: First Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr1m])" time="29.302" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 839.0 &lt; 869
+Sum Adult Abortions in Lifetime 235.0 &lt; 250">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 839.0 < 869
+Sum Adult Abortions in Lifetime 235.0 < 250
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Condom 1m: Check of Baseline Factor for Medium Condom Equation Among Marrieds [ContraCond1m])" time="5.389" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes all Miscarriages and overall number of pregnancies to go up.[PregOut_AbortMis1m])" time="30.309" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Miscarriages in Lifetime 1123.0 &lt; 9800">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Miscarriages in Lifetime 1123.0 < 9800
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)[CoitalFrequencyNoInitial])" time="38.827" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2bm: Spot Check of Covariates High Condom Equation Among Marrieds [ContraCond2bm])" time="8.502" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None: No unmarrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNone])" time="102.723" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4: Spot Check of Partner Sterilization Covariate for Pill Equation Among Unmarrieds [ContraPill4])" time="2.074" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) [CoitalFrequencyHighCoitHighThresh])" time="6.538" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Married Sexual-Proclivity Baseline[CoitalFrequencyDoubleModm])" time="5.444" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 6: Check of Pill Efficacy Among Unmarrieds [ContraPill6])" time="0.994" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4m: Cross Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth4m])" time="38.508" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 4: Spot Check of Covariates - Race (very low unmarried)[CoitalFrequencyNoSES])" time="1.939" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill Married: Sets all married women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPillm])" time="36.984" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])" time="105.334" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 2: Check of Minimum Age Parameter for Marrieds [PregDuration2])" time="38.559" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1: Check of Baseline Factor for Pill Equation Among Unmarrieds [ContraPill1])" time="0.975" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1m: Check of Baseline Factor for Sterilization Equations Among Marrieds [ContraSteril1m])" time="6.256" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="4.085" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1m: Check of CondomandPill Efficacy Among Marrieds [ContraCondPill1m])" time="27.812" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m: First Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort1m])" time="34.154" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1b: Check of Baseline Factor for High Condom Equation Among Unmarrieds [ContraCond1b])" time="1.052" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1: First Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort1])" time="106.546" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency MOd Coit Threshold Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitDailym])" time="14.941" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1: First Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth1])" time="104.409" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill Married: All marrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPillm])" time="30.161" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Cond 5m: Cross Check of Married Covariates for Medium Condom Equation Among Marrieds [ContraCond5m])" time="3.4" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1: Check of Baseline Factor for Pill Equation Among Unmarrieds [ContraPill1])" time="0.963" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1: Check of CondomandPill Efficacy Among Unmarrieds [ContraCondPill1])" time="77.098" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4m: Cross Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth4m])" time="27.865" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1b: Check of Baseline Factor for High Condom Equation Among Unmarrieds [ContraCond1b])" time="1.227" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)[CoitalFrequencyNoInitial])" time="36.828" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline[CoitalFrequencyVeryLow])" time="0.92" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds [ContraSteril4])" time="2.101" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossMarried])" time="3.78" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3m: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3m])" time="2.776" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])" time="0.962" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4: Cross Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth4])" time="105.77" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4m: Cross Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort4m])" time="25.529" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) [CoitalFrequencyModCoitMax])" time="5.199" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="3.977" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3bm: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3bm])" time="2.856" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds [CoitalFrequencyModCoitNone])" time="40.037" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1bm: Check of Baseline Factor for High Condom Equation Among Marrieds [ContraCond1bm])" time="3.426" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill: Sets all women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPill])" time="105.108" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2: Second Check of Baseline Factor for Poor Birth among Unmarrieds[PregOut_PoorBirth2])" time="102.806" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline[CoitalFrequencyDoubleMod])" time="0.907" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="4.494" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline[CoitalFrequencyDoubleMod])" time="1.012" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Married (high value) [CoitalFrequencyMenstrualHighm])" time="17.724" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4bm: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4bm])" time="14.029" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2: Spot Check of Covariates Pill Equation Among Unmarrieds [ContraPill2])" time="0.998" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 4m: Spot Check of Covariates - SES (very low married)[CoitalFrequencyNoSESm])" time="8.231" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline[CoitalFrequencyVeryLow])" time="1.771" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 4m: Spot Check of Covariates - SES (very low married)[CoitalFrequencyNoSESm])" time="8.754" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Cond 5m: Cross Check of Married Covariates for Medium Condom Equation Among Marrieds [ContraCond5m])" time="7.994" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Married: All marrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllm])" time="42.175" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPill])" time="112.633" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) [CoitalFrequencyHighCoitHighThresh])" time="6.216" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMenm])" time="6.121" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 5m: Cross Check of Married Covariates for Pill Equation Among Marrieds [ContraPill5m])" time="7.443" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2: Spot Check of Covariates Medium Condom Equation Among Unmarrieds [ContraCond2])" time="2.176" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="110.424" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Baseline 1m Check: Cross-check to abortion and married issue.[PregOut_CheckBasem])" time="49.791" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])" time="6.983" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2: Second Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr2])" time="111.944" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried)[CoitalFrequencyNoEdu])" time="0.94" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2: Spot Check of Covariates Sterilization Equations Among Unmarrieds [ContraSteril2])" time="0.97" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Married: All marrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllm])" time="35.38" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None Married: No marrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNonem])" time="37.855" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds [CoitalFrequencyModCoitNone])" time="52.141" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerFemalem])" time="5.17" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="3.945" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineMarried[BaselineMarried])" time="30.657" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3: Spot Check of Sexual Frequency Covariates for Sterilization Equation2 Among Unmarrieds [ContraSteril3])" time="1.086" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3b])" time="0.914" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill: Sets all women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPill])" time="112.523" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 653.7437220502236 &lt; 655">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 653.7437220502236 < 655
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Married Sexual-Proclivity Baseline[CoitalFrequencyDoubleModm])" time="5.354" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])" time="5.118" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4m: Cross Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort4m])" time="32.931" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill Married: Sets all married women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPillm])" time="26.264" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1m: Check of Baseline Factor for Sterilization Equations Among Marrieds [ContraSteril1m])" time="2.892" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1: Check of Contraceptive Efficacy of All Methods Among Unmarrieds [ContraAll1])" time="106.878" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Unmarried Once Daily[CoitalFrequencyUnmarriedOnceDaily])" time="9.255" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds [ContraSteril3m])" time="4.039" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low Married: Functionality of Very Low Married Sexual-Proclivity Baseline[CoitalFrequencyVeryLowm])" time="2.774" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])" time="2.879" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1: First Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort1])" time="99.95" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPill])" time="102.669" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline[CoitalFrequencyDoubleMod])" time="0.926" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4m: Cross Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr4m])" time="26.016" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="103.267" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1122.0 &gt; 1100">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1122.0 > 1100
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2: Second Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort2])" time="94.078" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Partners Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="5.022" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])" time="98.912" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomenm])" time="4.218" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3b])" time="1.012" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitNone])" time="37.463" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1m: Check of Periods in Year Parameter for Marrieds [PdsinYr1m])" time="27.373" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) [CoitalFrequencyHighCoitHighThresh])" time="6.854" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3m: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3m])" time="12.624" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])" time="13.52" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])" time="11.3" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="109.399" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1m: Check of CondomandPill Efficacy Among Marrieds [ContraCondPill1m])" time="31.229" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1m: Check of Baseline Factor for Medium Condom Equation Among Marrieds [ContraCond1m])" time="3.436" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Minimum Age 2: Check of Minimum Age Parameter for Marrieds [MinAge1m])" time="30.878" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Baseline 1m Check: Cross-check to abortion and married issue.[PregOut_CheckBasem])" time="29.098" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2: Second Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort2])" time="129.786" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 4m: Spot Check of Covariates - SES (very low married)[CoitalFrequencyNoSESm])" time="3.762" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7m High Threshold None Married: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitNonem])" time="9.798" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline[CoitalFrequencyVeryLow])" time="1.043" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitNone])" time="38.373" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2: Second Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr2])" time="102.918" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1: Check of Baseline Factor for Sterilization Equations Among Unmarrieds [ContraSteril1])" time="72.771" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) [CoitalFrequencyModCoitMax])" time="5.147" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m Check: Cross-check to ensure that miscarraiges ae assigned.[PregOut_CheckAllMism])" time="26.196" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Unmarrieds [ContraCond6])" time="77.643" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1: Check of Contraceptive Efficacy of All Methods Among Unmarrieds [ContraAll1])" time="96.891" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried)[CoitalFrequencyNoEdu])" time="1.025" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2m: Second Check of Baseline Factor for Poor Birth among Marrieds[PregOut_PoorBirth2m])" time="27.363" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Baseline 1m Check: Cross-check to abortion and married issue.[PregOut_CheckBasem])" time="26.699" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2b: Spot Check of Covariates High Condom Equation Among Unmarrieds [ContraCond2b])" time="1.101" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds [ContraSteril3m])" time="4.378" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1b: Check of Baseline Factor for High Condom Equation Among Unmarrieds [ContraCond1b])" time="0.925" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitDaily])" time="99.752" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2b: Spot Check of Covariates High Condom Equation Among Unmarrieds [ContraCond2b])" time="0.997" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Relationship Status 1: Second check of p(rel begin) and p(rel end) parameters[RelStat2])" time="193.331" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Age Married: Spot Check of Covariates - Age (moderate married)[CoitalFrequencyNoAgem])" time="3.096" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Marrieds (low value) [CoitalFrequencyMenstrualNonem])" time="13.971" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 4: Spot Check of Covariates - Race (very low unmarried)[CoitalFrequencyNoSES])" time="1.092" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3b])" time="0.994" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)[CoitalFrequencyNoInitial])" time="50.856" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1bm: Check of Baseline Factor for High Condom Equation Among Marrieds [ContraCond1bm])" time="3.317" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1: Check of Baseline Factor for Sterilization Equations Among Unmarrieds [ContraSteril1])" time="74.848" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7m High Threshold None Married: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitNonem])" time="12.585" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Married Sexual-Proclivity Baseline[CoitalFrequencyDoubleModm])" time="5.268" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Unmarried (high value) [CoitalFrequencyMenstrualHigh])" time="39.105" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossMarried])" time="5.057" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort4])" time="104.796" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m: First Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort1m])" time="35.895" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)[CoitalFrequencyNoInitial])" time="41.826" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Married Once Daily[CoitalFrequencyMarriedOnceDaily])" time="9.988" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3m: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3m])" time="6.058" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4: Spot Check of Partner Sterilization Covariate for Pill Equation Among Unmarrieds [ContraPill4])" time="1.949" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineZeroUnmarried[BaselineZeroUnmarried])" time="1.091" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult None Contraception Method 1534.0 &lt; 1534.8694">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult None Contraception Method 1534.0 < 1534.8694
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2: Second Check of Baseline Factor for Poor Birth among Unmarrieds[PregOut_PoorBirth2])" time="105.083" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Married (high value) [CoitalFrequencyMenstrualHighm])" time="20.5" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3])" time="2.058" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4m: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4m])" time="11.317" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1b: Check of Baseline Factor for High Condom Equation Among Unmarrieds [ContraCond1b])" time="0.885" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3m: Spot Check of Sexual Frequency Covariates for Pill Equation Among Marrieds [ContraPill3m])" time="5.34" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])" time="0.882" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitNone])" time="46.251" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7m High Threshold None Married: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitNonem])" time="24.634" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5b: Cross Check of Married Covariates for High Condom Equation Among Unmarrieds [ContraCond5b])" time="0.955" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3m: Spot Check of Sexual Frequency Covariates for Pill Equation Among Marrieds [ContraPill3m])" time="5.873" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4: Spot Check of Partner Sterilization Covariate for Pill Equation Among Unmarrieds [ContraPill4])" time="0.947" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m: First Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr1m])" time="50.684" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="14.94" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Birth 1m Check: Cross-check to ensure that births are assigned.[PregOut_CheckAllBirthm])" time="46.939" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2: Second Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr2])" time="111.098" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])" time="5.099" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4m: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4m])" time="4.162" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2b: Spot Check of Covariates High Condom Equation Among Unmarrieds [ContraCond2b])" time="0.954" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion All Check m: Cross-check to ensure that abortions are assigned.[PregOut_CheckAllAbortm])" time="41.405" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1m: Check of Periods in Year Parameter for Marrieds [PdsinYr1m])" time="37.921" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial: Check of Initial-Sex Parameter (married)[CoitalFrequencyNoInitialm])" time="12.933" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3bm: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3bm])" time="3.46" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4m: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4m])" time="4.49" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m: First Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr1m])" time="31.47" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds [PdsinYr1])" time="109.511" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1: Check of CondomandPill Efficacy Among Unmarrieds [ContraCondPill1])" time="79.414" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="107.769" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1: Check of Baseline Factor for Medium Condom Equation Among Unmarrieds [ContraCond1])" time="0.932" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3: Spot Check of Sexual Frequency Covariates for Pill Equation Among Unmarrieds [ContraPill3])" time="0.951" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])" time="1.831" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold: Check of Unmarried Coital Frequency (Very Low Threshold) [CoitalFrequencyLowCoitMax])" time="4.834" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None Married: No marrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNonem])" time="30.169" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1: Check of Baseline Factor for Sterilization Equations Among Unmarrieds [ContraSteril1])" time="75.222" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4m: Cross Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr4m])" time="30.351" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="98.563" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion All Check m: Cross-check to ensure that abortions are assigned.[PregOut_CheckAllAbortm])" time="27.936" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2m: Spot Check of Covariates Medium Condom Equation Among Marrieds [ContraCond2m])" time="2.754" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3m: Spot Check of Sexual Frequency Covariates for Pill Equation Among Marrieds [ContraPill3m])" time="2.882" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds [ContraCond3b])" time="0.927" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1: Check of Contraceptive Efficacy of All Methods Among Unmarrieds [ContraAll1])" time="98.623" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds [ContraSteril3m])" time="2.928" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="2.878" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="102.079" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 652.8493292053663 &lt; 655">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 652.8493292053663 < 655
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds [PdsinYr1])" time="100.001" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Abortions in Lifetime 251.0 &lt; 270">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Abortions in Lifetime 251.0 < 270
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency High Coital Threshold: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitDailym])" time="12.45" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPill])" time="100.076" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1: First Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort1])" time="104.687" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1: First Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr1])" time="102.177" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="7.238" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 3bm: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds [ContraCond3bm])" time="4.636" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2m: Second Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort2m])" time="34.471" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 679.0 &lt; 750
+Sum Adult Abortions in Lifetime 525.0 &lt; 550">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 679.0 < 750
+Sum Adult Abortions in Lifetime 525.0 < 550
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Moderate Freq None Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitNonem])" time="17.947" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1: Check of Contraceptive Efficacy of All Methods Among Unmarrieds [ContraAll1])" time="104.534" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes all Miscarriages and overall number of pregnancies to go up.[PregOut_AbortMis1m])" time="37.253" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Miscarriages in Lifetime 1222.0 &lt; 9800">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Miscarriages in Lifetime 1222.0 < 9800
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr4])" time="103.092" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2m: Spot Check of Covariates Pill Equation Among Marrieds [ContraPill2m])" time="5.81" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency MOd Coit Threshold Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitDailym])" time="16.063" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Unmarried Once Daily[CoitalFrequencyUnmarriedOnceDaily])" time="9.384" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds [CoitalFrequencyModCoitNone])" time="41.013" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill Married: Sets all married women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPillm])" time="36.297" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m: First Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort1m])" time="34.649" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomenm])" time="5.072" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 5: Cross Check of Unmarried Covariates for Pill Equation Among Unmarrieds [ContraPill5])" time="1.838" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 5: Cross Check of Unmarried Covariates for Pill Equation Among Unmarrieds [ContraPill5])" time="1.213" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds [CoitalFrequencyModCoitNone])" time="43.964" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial: Check of Initial-Sex Parameter (married)[CoitalFrequencyNoInitialm])" time="16.182" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1: First Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort1])" time="109.572" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1m: Check of Contraceptive Efficacy of All Methods Among Marrieds [ContraAll1m])" time="32.134" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1bm: Check of Baseline Factor for High Condom Equation Among Marrieds [ContraCond1bm])" time="4.086" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2m: Second Check of Baseline Factor for Poor Birth among Marrieds[PregOut_PoorBirth2m])" time="29.47" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr4])" time="98.975" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2: Second Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr2])" time="94.71" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Relationship Status 1: Check of p(rel begin) and p(rel end) parameters[RelStat1])" time="112.111" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency MOd Coit Threshold Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitDailym])" time="11.279" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2b: Spot Check of Covariates High Condom Equation Among Unmarrieds [ContraCond2b])" time="0.937" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 5: Cross Check of Unmarried Covariates for Pill Equation Among Unmarrieds [ContraPill5])" time="0.869" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Minimum Age 1: Check of Minimum Age Parameter for Unmarrieds [MinAge1])" time="95.52" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Relationship Status 1: Check of p(rel begin) and p(rel end) parameters[RelStat1])" time="102.918" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds [PdsinYr1])" time="100.091" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMenm])" time="9.683" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1: Check of CondomandPill Efficacy Among Unmarrieds [ContraCondPill1])" time="80.042" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Unmarried Once Daily[CoitalFrequencyUnmarriedOnceDaily])" time="11.922" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 4m: Spot Check of Covariates - SES (very low married)[CoitalFrequencyNoSESm])" time="9.212" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 5m: Cross Check of Married Covariates for Pill Equation Among Marrieds [ContraPill5m])" time="5.728" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4: Cross Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth4])" time="101.621" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineMarried[BaselineMarried])" time="40.396" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m: First Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort1m])" time="39.222" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Births in Lifetime 536.0 &gt; 520">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Births in Lifetime 536.0 > 520
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="8.953" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1: Check of Baseline Factor for Medium Condom Equation Among Unmarrieds [ContraCond1])" time="0.899" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Married Once Daily[CoitalFrequencyMarriedOnceDaily])" time="11.146" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2bm: Spot Check of Covariates High Condom Equation Among Marrieds [ContraCond2bm])" time="6.728" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3: Spot Check of Sexual Frequency Covariates for Pill Equation Among Unmarrieds [ContraPill3])" time="1.94" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1: Check of Baseline Factor for Medium Condom Equation Among Unmarrieds [ContraCond1])" time="0.901" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2m: Spot Check of Covariates Sterilization Equations Among Marrieds [ContraSteril2m])" time="4.517" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Birth 1m Check: Cross-check to ensure that births are assigned.[PregOut_CheckAllBirthm])" time="32.781" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds[PregOut_PoorBirth3])" time="109.31" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Relationship Status 1: Check of p(rel begin) and p(rel end) parameters[RelStat1])" time="116.434" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Threshold: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitDailym])" time="12.963" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])" time="1.899" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitNone])" time="38.644" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineZeroMarried[BaselineZeroMarried])" time="9.149" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None: No unmarrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNone])" time="103.925" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill Married: Sets all married women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPillm])" time="36.166" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2: Second Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort2])" time="104.059" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Relationship Status 1: Check of p(rel begin) and p(rel end) parameters[RelStat1])" time="122.019" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds[PregOut_PoorBirth3])" time="103.77" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4m: Cross Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr4m])" time="38.601" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception All 1m: Check of Contraceptive Efficacy of All Methods Among Marrieds [ContraAll1m])" time="33.121" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerFemalem])" time="4.704" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="3.14" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Marrieds [ContraCond6m])" time="25.171" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])" time="3.652" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3: Spot Check of Sexual Frequency Covariates for Pill Equation Among Unmarrieds [ContraPill3])" time="0.936" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2m: Spot Check of Covariates Sterilization Equations Among Marrieds [ContraSteril2m])" time="2.81" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="97.84" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds [PdsinYr1])" time="95.828" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1: First Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr1])" time="100.58" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="97.941" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr4])" time="101.758" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Minimum Age 1: Check of Minimum Age Parameter for Unmarrieds [MinAge1])" time="96.21" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 650.7839697282421 &lt; 655">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 650.7839697282421 < 655
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Condom 1m: Check of Baseline Factor for Medium Condom Equation Among Marrieds [ContraCond1m])" time="5.169" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])" time="100.491" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes all Miscarriages and overall number of pregnancies to go up.[PregOut_AbortMis1m])" time="29.075" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 1bm: Check of Baseline Factor for High Condom Equation Among Marrieds [ContraCond1bm])" time="4.033" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) [CoitalFrequencyHighCoitHighThresh])" time="6.547" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort4])" time="100.866" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Marrieds [ContraCond6m])" time="29.015" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2m: Spot Check of Covariates Sterilization Equations Among Marrieds [ContraSteril2m])" time="7.182" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2: Spot Check of Covariates Sterilization Equations Among Unmarrieds [ContraSteril2])" time="1.931" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)[CoitalFrequencyNoInitial])" time="41.238" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineZeroMarried[BaselineZeroMarried])" time="9.734" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 570.0 &gt; 568">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 570.0 > 568
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Marrieds (low value) [CoitalFrequencyMenstrualNonem])" time="21.17" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3: Spot Check of Sexual Frequency Covariates for Pill Equation Among Unmarrieds [ContraPill3])" time="0.937" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2m: Spot Check of Covariates Pill Equation Among Marrieds [ContraPill2m])" time="6.429" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5bm: Cross Check of Married Covariates for High Condom Equation Among Marrieds [ContraCond5bm])" time="9.641" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitNone])" time="44.642" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Marrieds (low value) [CoitalFrequencyMenstrualNonem])" time="25.573" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 2: Check of Minimum Age Parameter for Marrieds [PregDuration2])" time="48.361" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 4m: Spot Check of Partner Sterilization Covariate for Pill Equation Among Marrieds [ContraPill4m])" time="15.383" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Cond 5m: Cross Check of Married Covariates for Medium Condom Equation Among Marrieds [ContraCond5m])" time="14.103" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])" time="114.554" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossUnmarried])" time="0.882" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Partners Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="6.54" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 3m: Spot Check of Sexual Frequency Covariates for Pill Equation Among Marrieds [ContraPill3m])" time="8.2" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m: First Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr1m])" time="51.342" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])" time="117.676" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3m: Spot Check of Covariates for Poor Birth Equation among Marrieds[PregOut_PoorBirth3m])" time="56.356" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Unmarried (high value) [CoitalFrequencyMenstrualHigh])" time="47.08" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineZeroMarried[BaselineZeroMarried])" time="16.739" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 579.0 &gt; 568">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 579.0 > 568
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Condom 1: Check of Baseline Factor for Medium Condom Equation Among Unmarrieds [ContraCond1])" time="0.9" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds[PregOut_Miscarr3m])" time="50.911" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 841.0 &lt; 869
+Sum Adult Abortions in Lifetime 252.0 &lt; 270
+Sum Adult Births in Lifetime 440.0 &lt; 476">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 841.0 < 869
+Sum Adult Abortions in Lifetime 252.0 < 270
+Sum Adult Births in Lifetime 440.0 < 476
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineZeroUnmarried[BaselineZeroUnmarried])" time="0.951" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2bm: Spot Check of Covariates High Condom Equation Among Marrieds [ContraCond2bm])" time="18.6" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low Married: Functionality of Very Low Married Sexual-Proclivity Baseline[CoitalFrequencyVeryLowm])" time="19.491" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 2: Check of Minimum Age Parameter for Marrieds [PregDuration2])" time="58.851" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill Married: All marrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPillm])" time="60.34" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2m: Spot Check of Covariates Pill Equation Among Marrieds [ContraPill2m])" time="12.809" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds [CoitalFrequencyModCoitNone])" time="47.716" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 5: Cross Check of Unmarried Covariates for Pill Equation Among Unmarrieds [ContraPill5])" time="0.949" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2m: Spot Check of Covariates Sterilization Equations Among Marrieds [ContraSteril2m])" time="11.073" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4m: Cross Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr4m])" time="68.776" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2: Second Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr2])" time="133.263" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitNone])" time="50.67" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill Married: All marrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPillm])" time="65.586" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline[CoitalFrequencyVeryLow])" time="0.937" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method No Pill Married: Sets all married women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users.[RhythmNoPillm])" time="59.254" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried)[CoitalFrequencyNoEdu])" time="0.898" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7m High Threshold None Married: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitNonem])" time="30.298" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2m: Second Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr2m])" time="64.808" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 2m: Spot Check of Covariates Sterilization Equations Among Marrieds [ContraSteril2m])" time="13.136" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold: Check of Unmarried Coital Frequency (Very Low Threshold) [CoitalFrequencyLowCoitMax])" time="4.918" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2m: Second Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr2m])" time="58.814" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Married: All marrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllm])" time="57.076" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Cond 5: Cross Check of Married Covariates for Medium Condom Equation Among Unmarrieds [ContraCond5])" time="2.006" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Threshold: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitDailym])" time="17.914" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Minimum Age 2: Check of Minimum Age Parameter for Marrieds [MinAge1m])" time="48.993" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2: Spot Check of Covariates Medium Condom Equation Among Unmarrieds [ContraCond2])" time="0.956" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1m: Check of Periods in Year Parameter for Marrieds [PdsinYr1m])" time="45.922" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 6m: Check of Pill Efficacy Among Marrieds [ContraPill6m])" time="9.374" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1: Check of Baseline Factor for Pill Equation Among Unmarrieds [ContraPill1])" time="0.947" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 4: Spot Check of Covariates - Race (very low unmarried)[CoitalFrequencyNoSES])" time="0.944" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3m: Spot Check of Covariates for Abortion Equation among Marrieds[PregOut_Abort3m])" time="47.255" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3: Spot Check of Sexual Frequency Covariates for Sterilization Equation2 Among Unmarrieds [ContraSteril3])" time="0.953" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion All Check m: Cross-check to ensure that abortions are assigned.[PregOut_CheckAllAbortm])" time="45.681" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])" time="3.923" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Freq None Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitNonem])" time="20.544" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Unmarried Once Daily[CoitalFrequencyUnmarriedOnceDaily])" time="9.963" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 1: Check of Baseline Factor for Sterilization Equations Among Unmarrieds [ContraSteril1])" time="84.751" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Minimum Age 1: Check of Minimum Age Parameter for Unmarrieds [MinAge1])" time="113.758" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Pill Contraception Method 693.0 &lt; 700
+Count Adult High Frequency Coital Behavior Type 3397.0 &lt; 3398">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Pill Contraception Method 693.0 < 700
+Count Adult High Frequency Coital Behavior Type 3397.0 < 3398
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Pill 6m: Check of Pill Efficacy Among Marrieds [ContraPill6m])" time="7.997" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m: First Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort1m])" time="40.679" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1: First Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth1])" time="114.16" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Pill 1m: Check of CondomandPill Efficacy Among Marrieds [ContraCondPill1m])" time="30.326" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3: Spot Check of Sexual Frequency Covariates for Sterilization Equation2 Among Unmarrieds [ContraSteril3])" time="1.919" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 2bm: Spot Check of Covariates High Condom Equation Among Marrieds [ContraCond2bm])" time="10.234" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3m: Spot Check of Covariates for Abortion Equation among Marrieds[PregOut_Abort3m])" time="40.548" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2m: Second Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort2m])" time="35.909" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4m: Cross Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr4m])" time="35.28" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Relationship Status 1: Check of p(rel begin) and p(rel end) parameters[RelStat1])" time="109.418" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1: First Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr1])" time="102.328" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5bm: Cross Check of Married Covariates for High Condom Equation Among Marrieds [ContraCond5bm])" time="4.435" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPill])" time="94.784" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineMarried[BaselineMarried])" time="28.807" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineZeroUnmarried[BaselineZeroUnmarried])" time="1.007" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="94.446" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial: Check of Initial-Sex Parameter (married)[CoitalFrequencyNoInitialm])" time="13.93" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2m: Second Check of Baseline Factor for Poor Birth among Marrieds[PregOut_PoorBirth2m])" time="28.617" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitDaily])" time="99.288" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="97.089" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Births in Lifetime 220.0 &lt; 222">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Births in Lifetime 220.0 < 222
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2: Second Check of Baseline Factor for Poor Birth among Unmarrieds[PregOut_PoorBirth2])" time="94.513" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) [CoitalFrequencyModCoitMax])" time="5.223" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial: Check of Initial-Sex Parameter (married)[CoitalFrequencyNoInitialm])" time="12.255" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3m: Spot Check of Covariates for Abortion Equation among Marrieds[PregOut_Abort3m])" time="27.03" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2: Second Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort2])" time="97.371" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1510.0 &gt; 1450">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1510.0 > 1450
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Condom 6m: Check of Condom Efficacy Among Unmarrieds [ContraCond6])" time="74.126" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5b: Cross Check of Married Covariates for High Condom Equation Among Unmarrieds [ContraCond5b])" time="1.94" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2: Spot Check of Covariates Pill Equation Among Unmarrieds [ContraPill2])" time="0.99" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 2m: Check Hypothesis that Miscarriages at .5 and Abortion at .5 Causes no births to occur and overall number of abortions and miscarriages to go up.[PregOut_AbortMis2m])" time="25.565" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="99.688" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2: Second Check of Baseline Factor for Poor Birth among Unmarrieds[PregOut_PoorBirth2])" time="96.745" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort4])" time="94.952" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method None: No unmarrieds are rhythm method users; this is the default and all sex related outcomes should remain the same.[RhythmNone])" time="99.346" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4m: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4m])" time="4.761" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 1: Check of Minimum Age Parameter for Unmarrieds [PregDuration1])" time="96.856" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3m: Spot Check of Covariates for Abortion Equation among Marrieds[PregOut_Abort3m])" time="34.765" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Married (high value) [CoitalFrequencyMenstrualHighm])" time="13.965" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])" time="100.33" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])" time="1.37" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1m: Check of Periods in Year Parameter for Marrieds [PdsinYr1m])" time="36.836" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) [CoitalFrequencyModCoitMax])" time="6.572" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerFemalem])" time="4.945" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 6: Check of Pill Efficacy Among Unmarrieds [ContraPill6])" time="1.054" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Rhythm Method All Pill Married: All marrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPillm])" time="35.666" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4bm: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4bm])" time="10.134" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="10.988" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5bm: Cross Check of Married Covariates for High Condom Equation Among Marrieds [ContraCond5bm])" time="12.849" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomenm])" time="12.036" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort4])" time="108.686" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Unmarried (high value) [CoitalFrequencyMenstrualHigh])" time="47.115" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom Cond 5bm: Cross Check of Married Covariates for High Condom Equation Among Marrieds [ContraCond5bm])" time="9.506" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Cond 5m: Cross Check of Married Covariates for Medium Condom Equation Among Marrieds [ContraCond5m])" time="6.464" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Condom Medium Intender Contraception Method 264.0 &lt; 299">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Condom Medium Intender Contraception Method 264.0 < 299
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2m: Second Check of Baseline Factor for Poor Birth among Marrieds[PregOut_PoorBirth2m])" time="50.566" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Condom 4m: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4m])" time="8.468" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2m: Second Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort2m])" time="47.201" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth1m])" time="45.434" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 2: Spot Check of Covariates Pill Equation Among Unmarrieds [ContraPill2])" time="2.168" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes all Miscarriages and overall number of pregnancies to go up.[PregOut_AbortMis1m])" time="39.998" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold None Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitNonem])" time="13.195" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4m: Cross Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth4m])" time="30.006" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Relationship Status 1: Second check of p(rel begin) and p(rel end) parameters[RelStat2])" time="177.288" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr4])" time="105.197" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2: Second Check of Baseline Factor for Poor Birth among Unmarrieds[PregOut_PoorBirth2])" time="69.346" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitDaily])" time="58.753" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

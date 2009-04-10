@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalFrequencyNoInitial Test" failures="0" tests="1" time="17.795" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)[CoitalFrequencyNoInitial])" time="17.762" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

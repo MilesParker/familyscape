@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraSteril4m.atest Test" failures="5" tests="5" time="19.393" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="17.8" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Sterilized Contraception Method 2391.0 &gt; 2205.945">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 2391.0 > 2205.945
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="18.11" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Sterilized Contraception Method 2320.0 &gt; 2205.945">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 2320.0 > 2205.945
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="18.799" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Sterilized Contraception Method 2311.0 &gt; 2205.945">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 2311.0 > 2205.945
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="19.353" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Sterilized Contraception Method 2349.0 &gt; 2205.945">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 2349.0 > 2205.945
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="19.361" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Sterilized Contraception Method 2310.0 &gt; 2205.945">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 2310.0 > 2205.945
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BaselineUnmarried Test" failures="1" tests="5" time="66.38" errors="0">
+  <properties/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="65.539" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="65.857" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="66.027" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult In Relationship 2904.0 &lt; 2944
+Average Adult Sex Count in Lifetime 643.6023391812865 &lt; 655">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult In Relationship 2904.0 < 2944
+Average Adult Sex Count in Lifetime 643.6023391812865 < 655
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="66.321" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="66.347" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

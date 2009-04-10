@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalFrequencyNoInitialCoitalFrequencyNoInitialm Test" failures="1" tests="2" time="18.044" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency No Initial: Check of Initial-Sex Parameter (married)[CoitalFrequencyNoInitialm])" time="7.692" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)[CoitalFrequencyNoInitial])" time="18.014" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 4.5816993464052285 &gt; 0
+Average Adult Sex Partners in Lifetime 4.5816993464052285 &gt; 0">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 4.5816993464052285 > 0
+Average Adult Sex Partners in Lifetime 4.5816993464052285 > 0
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraSterilAll Test" failures="0" tests="5" time="8.755" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Parnters Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="8.298" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Parnters Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="8.329" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Parnters Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="8.429" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Parnters Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="8.541" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Parnters Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds [ContraSterilAll])" time="8.676" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

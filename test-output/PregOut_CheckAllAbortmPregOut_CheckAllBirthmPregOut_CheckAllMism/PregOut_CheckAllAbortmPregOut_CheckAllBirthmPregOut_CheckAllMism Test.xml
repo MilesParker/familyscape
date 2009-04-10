@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PregOut_CheckAllAbortmPregOut_CheckAllBirthmPregOut_CheckAllMism Test" failures="1" tests="3" time="23.669" errors="0">
+  <properties/>
+  <testcase name="runModel (Pregnancy Outcome Abortion All Check m: Cross-check to ensure that abortions are assigned.[PregOut_CheckAllAbortm])" time="20.937" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1m Check: Cross-check to ensure that miscarraiges ae assigned.[PregOut_CheckAllMism])" time="21.493" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Birth 1m Check: Cross-check to ensure that births are assigned.[PregOut_CheckAllBirthm])" time="21.623" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 5102.0 &lt; 5200
+Sum Adult Births in Lifetime 5070.0 &lt; 5200">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 5102.0 < 5200
+Sum Adult Births in Lifetime 5070.0 < 5200
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

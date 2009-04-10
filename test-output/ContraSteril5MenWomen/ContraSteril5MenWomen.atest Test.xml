@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraSteril5MenWomen.atest Test" failures="1" tests="2" time="25.788" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])" time="25.424" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Partner Sterilized Partner Contraception Method 0.0 &lt; 2093">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Partner Sterilized Partner Contraception Method 0.0 < 2093
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])" time="25.738" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

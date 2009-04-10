@@ -1,0 +1,299 @@
+<html>
+<head>
+<title>TestNG:  ContraSteril1.atest Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ContraSteril1.atest Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 28 14:35:14 PST 2009</td>
+</tr>
+<tr><td>Total time:</td><td>62 seconds (62619 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 1: Check of Baseline Factor for Sterilization Equations Among Unmarrieds [ContraSteril1])()'>runModel<br/>
+<a href="#Output-1677364539" onClick='toggleBox("Output-1677364539", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1677364539" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1677364539">
+<b>Contraception Sterilization 1: Check of Baseline Factor for Sterilization Equations Among Unmarrieds _0</b><br/>
+This test sets the baseline factor for the sterilization equations among unmarrieds to on, which should have the effect sterilizing everyone.  This doubles as an efficacy test; if everyone is sterilized, there should be no pregnancies.<br/>
+<a href="../../tests/ContraSteril1.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril1.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril1_0.log">Log</a><br/>
+<a href="../results/ContraSteril1_0.ares">Results</a><br/>
+</div>
+</td>
+<td>62</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 1m: Check of Baseline Factor for Sterilization Equations Among Marrieds [ContraSteril1m])()'>runModel<br/>
+<a href="#Output-833779842" onClick='toggleBox("Output-833779842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-833779842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-833779842">
+<b>Contraception Sterilization 1m: Check of Baseline Factor for Sterilization Equations Among Marrieds _0</b><br/>
+This test sets the baseline factor for the sterilization equations among marrieds to one, which should have the effect sterilizing everyone.  This doubles as an efficacy test; if everyone is sterilized, there should be no pregnancies.<br/>
+<a href="../../tests/ContraSteril1m.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril1m.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril1m_0.log">Log</a><br/>
+<a href="../results/ContraSteril1m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>33</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 2: Spot Check of Covariates Sterilization Equations Among Unmarrieds [ContraSteril2])()'>runModel<br/>
+<a href="#Output-206299513" onClick='toggleBox("Output-206299513", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-206299513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-206299513">
+<b>Contraception Sterilization 2: Spot Check of Covariates Sterilization Equations Among Unmarrieds _0</b><br/>
+This test sets all SES factors equal to (-1*baseline) in the sterilization equations among unmarrieds, which should have the effect of eliminating sterilization in the simulation.<br/>
+<a href="../../tests/ContraSteril2.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril2.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril2_0.log">Log</a><br/>
+<a href="../results/ContraSteril2_0.ares">Results</a><br/>
+</div>
+</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 2m: Spot Check of Covariates Sterilization Equations Among Marrieds [ContraSteril2m])()'>runModel<br/>
+<a href="#Output-1134757638" onClick='toggleBox("Output-1134757638", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1134757638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1134757638">
+<b>Contraception Sterilization 2m: Spot Check of Covariates Sterilization Equations Among Marrieds _0</b><br/>
+This test sets all SES factors equal to (-1*baseline) in the sterilization equations among marrieds, which should have the effect of eliminating sterilization in the simulation.<br/>
+<a href="../../tests/ContraSteril2m.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril2m.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril2m_0.log">Log</a><br/>
+<a href="../results/ContraSteril2m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>33</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 3: Spot Check of Sexual Frequency Covariates for Sterilization Equation2 Among Unmarrieds [ContraSteril3])()'>runModel<br/>
+<a href="#Output-1017116040" onClick='toggleBox("Output-1017116040", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1017116040" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1017116040">
+<b>Contraception Sterilization 3: Spot Check of Sexual Frequency Covariates for Sterilization Equation2 Among Unmarrieds _0</b><br/>
+This test sets all sexual proclivity factors equal to (-1*baseline) in the sterilization equations among unmarrieds, which should have the effect of eliminating sterilization in the simulation.<br/>
+<a href="../../tests/ContraSteril3.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril3.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril3_0.log">Log</a><br/>
+<a href="../results/ContraSteril3_0.ares">Results</a><br/>
+</div>
+</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds [ContraSteril3m])()'>runModel<br/>
+<a href="#Output-461791926" onClick='toggleBox("Output-461791926", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-461791926" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-461791926">
+<b>Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds _0</b><br/>
+This test sets all sexual proclivity factors equal to (-1*baseline) in the sterilization equations among marrieds, which should have the effect of eliminating sterilization in the simulation.<br/>
+<a href="../../tests/ContraSteril3m.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril3m.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril3m_0.log">Log</a><br/>
+<a href="../results/ContraSteril3m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>35</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds [ContraSteril4])()'>runModel<br/>
+<a href="#Output-624419230" onClick='toggleBox("Output-624419230", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-624419230" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-624419230">
+<b>Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds _0</b><br/>
+This test sets all values for the pill covariates in the married sterilization equations equal to an extremely high number, which should have no effect on sterilization among unmarrieds.<br/>
+<a href="../../tests/ContraSteril4.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril4.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril4_0.log">Log</a><br/>
+<a href="../results/ContraSteril4_0.ares">Results</a><br/>
+</div>
+</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])()'>runModel<br/>
+<a href="#Output-1319140238" onClick='toggleBox("Output-1319140238", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1319140238" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1319140238">
+<b>Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds _0</b><br/>
+This test sets all values for the pill covariates in the unmarried sterilization equations equal to an extremely high number, which should have no effect on sterilization among marrieds.<br/>
+<a href="../../tests/ContraSteril4m.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril4m.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril4m_0.log">Log</a><br/>
+<a href="../results/ContraSteril4m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>30</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerFemalem])()'>runModel<br/>
+<a href="#Output-794229024" onClick='toggleBox("Output-794229024", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-794229024" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-794229024">
+<b>Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly_0</b><br/>
+null<br/>
+<a href="../../tests/ContraSterilPartnerFemalem.atest">Test File</a><br/>
+<a href="../../tests/ContraSterilPartnerFemalem.apar">Parameters</a><br/>
+<a href="../logs/ContraSterilPartnerFemalem_0.log">Log</a><br/>
+<a href="../results/ContraSterilPartnerFemalem_0.ares">Results</a><br/>
+</div>
+</td>
+<td>35</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])()'>runModel<br/>
+<a href="#Output-1213285582" onClick='toggleBox("Output-1213285582", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1213285582" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1213285582">
+<b>Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly_0</b><br/>
+null<br/>
+<a href="../../tests/ContraSterilMalePartnerm.atest">Test File</a><br/>
+<a href="../../tests/ContraSterilMalePartnerm.apar">Parameters</a><br/>
+<a href="../logs/ContraSterilMalePartnerm_0.log">Log</a><br/>
+<a href="../results/ContraSterilMalePartnerm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])()'>runModel<br/>
+<a href="#Output-1260080634" onClick='toggleBox("Output-1260080634", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1260080634" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1260080634">
+<b>Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds _0</b><br/>
+This test sets the partner sterilization factor equal to (-1*baseline) in the male sterilization equation among marrieds and women sterilization to 1.0, which should have no effect on male sterilization and make all females sterilized.<br/>
+<a href="../../tests/ContraSteril5MenWomen.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril5MenWomen.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril5MenWomen_0.log">Log</a><br/>
+<a href="../results/ContraSteril5MenWomen_0.ares">Results</a><br/>
+</div>
+</td>
+<td>31</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])()'>runModel<br/>
+<a href="#Output-416024090" onClick='toggleBox("Output-416024090", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-416024090" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-416024090">
+<b>Contraception Sterilization Partner m: Check that partner sterilization count is working correctly_0</b><br/>
+null<br/>
+<a href="../../tests/ContraSterilPartnerm.atest">Test File</a><br/>
+<a href="../../tests/ContraSterilPartnerm.apar">Parameters</a><br/>
+<a href="../logs/ContraSterilPartnerm_0.log">Log</a><br/>
+<a href="../results/ContraSterilPartnerm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>30</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])()'>runModel<br/>
+<a href="#Output-696100179" onClick='toggleBox("Output-696100179", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-696100179" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-696100179">
+<b>Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds _0</b><br/>
+This test sets the partner sterilization factor equal to (-1*baseline) in the female sterilization equation among marrieds and male sterilization level to 1, which should make all males sterilized and no females sterilized.<br/>
+<a href="../../tests/ContraSteril5WomenMen.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril5WomenMen.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril5WomenMen_0.log">Log</a><br/>
+<a href="../results/ContraSteril5WomenMen_0.ares">Results</a><br/>
+</div>
+</td>
+<td>7</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

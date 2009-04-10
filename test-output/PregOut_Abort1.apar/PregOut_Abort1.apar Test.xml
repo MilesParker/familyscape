@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PregOut_Abort1.apar Test" failures="11" tests="27" time="257.312" errors="0">
+  <properties/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds[PregOut_Miscarr3m])" time="52.707" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2m: Second Check of Baseline Factor for Poor Birth among Marrieds[PregOut_PoorBirth2m])" time="53.649" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Miscarriage 1m: First Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr1m])" time="55.145" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 842.0 &lt; 869
+Sum Adult Abortions in Lifetime 237.0 &lt; 270
+Sum Adult Births in Lifetime 456.0 &lt; 476">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 842.0 < 869
+Sum Adult Abortions in Lifetime 237.0 < 270
+Sum Adult Births in Lifetime 456.0 < 476
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4m: Cross Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth4m])" time="55.522" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 988.0 &lt; 1000
+Sum Adult Miscarriages in Lifetime 281.0 &lt; 283
+Sum Adult Births in Lifetime 257.0 &lt; 260">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 988.0 < 1000
+Sum Adult Miscarriages in Lifetime 281.0 < 283
+Sum Adult Births in Lifetime 257.0 < 260
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3m: Spot Check of Covariates for Abortion Equation among Marrieds[PregOut_Abort3m])" time="55.856" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth1m])" time="43.021" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3m: Spot Check of Covariates for Poor Birth Equation among Marrieds[PregOut_PoorBirth3m])" time="43.773" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4m: Cross Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr4m])" time="44.561" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4m: Cross Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort4m])" time="47.293" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Sterilization Choices 2093.0 &lt; 4186">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Sterilization Choices 2093.0 < 4186
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr4])" time="112.121" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1590.0 &gt; 1155
+Sum Adult Abortions in Lifetime 453.0 &gt; 369
+Sum Adult Miscarriages in Lifetime 486.0 &gt; 353
+Sum Adult Births in Lifetime 398.0 &gt; 295
+Sum Adult Poor Births in Lifetime 199.0 &gt; 153">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1590.0 > 1155
+Sum Adult Abortions in Lifetime 453.0 > 369
+Sum Adult Miscarriages in Lifetime 486.0 > 353
+Sum Adult Births in Lifetime 398.0 > 295
+Sum Adult Poor Births in Lifetime 199.0 > 153
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort4])" time="113.132" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1613.0 &gt; 1155
+Sum Adult Abortions in Lifetime 473.0 &gt; 369
+Sum Adult Miscarriages in Lifetime 464.0 &gt; 353
+Sum Adult Births in Lifetime 413.0 &gt; 295
+Sum Adult Poor Births in Lifetime 211.0 &gt; 153">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1613.0 > 1155
+Sum Adult Abortions in Lifetime 473.0 > 369
+Sum Adult Miscarriages in Lifetime 464.0 > 353
+Sum Adult Births in Lifetime 413.0 > 295
+Sum Adult Poor Births in Lifetime 211.0 > 153
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 1: First Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth1])" time="118.461" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes more Miscarraiges to occur and overall number of pregnancies to go up.[PregOut_AbortMis1m])" time="32.664" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion Miscarriage 2m: Check Hypothesis that Miscarriages at .5 and Abortion at .5 Causes no births to occur and overall number of abortions and miscarriages to go up.[PregOut_AbortMis2m])" time="31.639" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m Check: Cross-check to abortion and married issuee.[PregOut_Abort1mCheck])" time="30.47" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2m: Second Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr2m])" time="30.985" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])" time="103.978" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m: First Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort1m])" time="27.952" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Births in Lifetime 523.0 &gt; 520">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Births in Lifetime 523.0 > 520
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2m: Second Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort2m])" time="27.567" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 2: Second Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort2])" time="102.303" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1897.0 &gt; 1370
+Sum Adult Abortions in Lifetime 1708.0 &gt; 1370">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1897.0 > 1370
+Sum Adult Abortions in Lifetime 1708.0 > 1370
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 4: Cross Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth4])" time="102.962" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1506.0 &gt; 1155
+Sum Adult Abortions in Lifetime 442.0 &gt; 369
+Sum Adult Miscarriages in Lifetime 417.0 &gt; 353
+Sum Adult Births in Lifetime 383.0 &gt; 295
+Sum Adult Poor Births in Lifetime 176.0 &gt; 153">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1506.0 > 1155
+Sum Adult Abortions in Lifetime 442.0 > 369
+Sum Adult Miscarriages in Lifetime 417.0 > 353
+Sum Adult Births in Lifetime 383.0 > 295
+Sum Adult Poor Births in Lifetime 176.0 > 153
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])" time="97.037" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1: First Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr1])" time="125.627" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Abortions in Lifetime 411.0 &gt; 369">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Abortions in Lifetime 411.0 > 369
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds[PregOut_PoorBirth3])" time="97.549" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Poor Birth 2: Second Check of Baseline Factor for Poor Birth among Unmarrieds[PregOut_PoorBirth2])" time="92.857" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Births in Lifetime 369.0 &gt; 295
+Sum Adult Poor Births in Lifetime 369.0 &gt; 295">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Births in Lifetime 369.0 > 295
+Sum Adult Poor Births in Lifetime 369.0 > 295
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 2: Second Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr2])" time="76.601" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Abortions in Lifetime 458.0 &gt; 0">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Abortions in Lifetime 458.0 > 0
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1: First Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort1])" time="69.835" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

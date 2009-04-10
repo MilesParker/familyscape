@@ -1,5 +1,0 @@
-title	Sexual Behavior 10: Cross Check of Covariates - Married Parameters
-comments	This test cross checks to ensure that the values of the married parameters have no effect on the distribution of coital frequency among unmarrieds. This is achieved by setting the relevant parameters equal to extremely large values and testing that it has no effect on the distribution of coital frequency types among unmarrieds.
-Count Adult High Frequency Coital Behavior Type	3313.6	3662.4				
-Count Adult Moderate Frequency Coital Behavior Type	1656.705	1831.095	
-Count Adult Very Low Frequency Coital Behavior Type	542	611.205	

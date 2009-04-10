@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BaselineMarriedBaselineUnmarried Test" failures="0" tests="2" time="44.535" errors="0">
+  <properties/>
+  <testcase name="runModel (BaselineMarried[BaselineMarried])" time="15.603" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="44.511" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BaselineUnmarried.atest Test" failures="5" tests="5" time="73.1" errors="0">
+  <properties/>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="71.473" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1601.0 &gt; 1231
+Sum Adult Abortions in Lifetime 503.0 &gt; 462
+Sum Adult Miscarriages in Lifetime 458.0 &gt; 406
+Sum Adult Births in Lifetime 392.0 &gt; 357
+Sum Adult Poor Births in Lifetime 202.0 &gt; 196">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1601.0 > 1231
+Sum Adult Abortions in Lifetime 503.0 > 462
+Sum Adult Miscarriages in Lifetime 458.0 > 406
+Sum Adult Births in Lifetime 392.0 > 357
+Sum Adult Poor Births in Lifetime 202.0 > 196
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="71.841" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1467.0 &gt; 1231
+Sum Adult Births in Lifetime 381.0 &gt; 357
+Sum Adult Poor Births in Lifetime 205.0 &gt; 196">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1467.0 > 1231
+Sum Adult Births in Lifetime 381.0 > 357
+Sum Adult Poor Births in Lifetime 205.0 > 196
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="72.263" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1612.0 &gt; 1231
+Sum Adult Abortions in Lifetime 502.0 &gt; 462
+Sum Adult Miscarriages in Lifetime 474.0 &gt; 406
+Sum Adult Births in Lifetime 389.0 &gt; 357
+Sum Adult Poor Births in Lifetime 197.0 &gt; 196">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1612.0 > 1231
+Sum Adult Abortions in Lifetime 502.0 > 462
+Sum Adult Miscarriages in Lifetime 474.0 > 406
+Sum Adult Births in Lifetime 389.0 > 357
+Sum Adult Poor Births in Lifetime 197.0 > 196
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="72.599" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1688.0 &gt; 1231
+Sum Adult Abortions in Lifetime 536.0 &gt; 462
+Sum Adult Miscarriages in Lifetime 473.0 &gt; 406
+Sum Adult Births in Lifetime 416.0 &gt; 357
+Sum Adult Poor Births in Lifetime 204.0 &gt; 196">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1688.0 > 1231
+Sum Adult Abortions in Lifetime 536.0 > 462
+Sum Adult Miscarriages in Lifetime 473.0 > 406
+Sum Adult Births in Lifetime 416.0 > 357
+Sum Adult Poor Births in Lifetime 204.0 > 196
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="73.061" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1493.0 &gt; 1231
+Sum Adult Miscarriages in Lifetime 414.0 &gt; 406
+Sum Adult Births in Lifetime 372.0 &gt; 357">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1493.0 > 1231
+Sum Adult Miscarriages in Lifetime 414.0 > 406
+Sum Adult Births in Lifetime 372.0 > 357
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

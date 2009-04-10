@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalFrequencyCrossMarried Test" failures="0" tests="1" time="2.553" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossMarried])" time="2.539" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

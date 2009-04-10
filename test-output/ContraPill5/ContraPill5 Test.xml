@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraPill5 Test" failures="0" tests="1" time="1.972" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Pill 5: Cross Check of Unmarried Covariates for Pill Equation Among Unmarrieds [ContraPill5])" time="1.942" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

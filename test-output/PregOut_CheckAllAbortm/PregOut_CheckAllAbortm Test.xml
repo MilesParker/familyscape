@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PregOut_CheckAllAbortm Test" failures="1" tests="1" time="15.716" errors="0">
+  <properties/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m Check: Cross-check to ensure that abortions are assigned.[PregOut_CheckAllAbortm])" time="15.682" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1836.0 &lt; 9000
+Sum Adult Abortions in Lifetime 1680.0 &lt; 9000
+Maximum Adult Projected Day of Abortion 1557.0 &gt; 1385">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1836.0 < 9000
+Sum Adult Abortions in Lifetime 1680.0 < 9000
+Maximum Adult Projected Day of Abortion 1557.0 > 1385
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

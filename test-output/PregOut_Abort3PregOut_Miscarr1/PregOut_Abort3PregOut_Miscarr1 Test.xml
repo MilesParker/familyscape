@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PregOut_Abort3PregOut_Miscarr1 Test" failures="0" tests="2" time="46.384" errors="0">
+  <properties/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])" time="46.183" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 1: First Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr1])" time="46.328" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

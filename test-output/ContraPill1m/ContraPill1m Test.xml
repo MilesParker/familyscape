@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraPill1m Test" failures="0" tests="5" time="17.564" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="15.271" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="16.633" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="17.322" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="17.494" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds [ContraPill1m])" time="17.509" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

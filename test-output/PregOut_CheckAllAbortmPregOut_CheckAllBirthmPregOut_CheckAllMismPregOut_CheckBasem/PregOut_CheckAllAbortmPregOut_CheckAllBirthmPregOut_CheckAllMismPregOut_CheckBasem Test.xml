@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PregOut_CheckAllAbortmPregOut_CheckAllBirthmPregOut_CheckAllMismPregOut_CheckBasem Test" failures="0" tests="4" time="28.891" errors="0">
+  <properties/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m Check: Cross-check to ensure that abortions are assigned.[PregOut_CheckAllAbortm])" time="28.128" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m Check: Cross-check to abortion and married issuee.[PregOut_CheckBasem])" time="28.651" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m Check: Cross-check to ensure that births are assigned.[PregOut_CheckAllBirthm])" time="28.705" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Pregnancy Outcome Abortion 1m Check: Cross-check to ensure that miscarraiges ae assigned.[PregOut_CheckAllMism])" time="28.853" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

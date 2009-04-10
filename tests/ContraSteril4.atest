@@ -1,0 +1,4 @@
+title	Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds 
+comments	This test sets all values for the pill covariates in the married sterilization equations equal to an extremely high number, which should have no effect on sterilization among unmarrieds.
+Count Adult Sterilized Contraception Method	2778.18	3070.62					
+	

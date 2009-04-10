@@ -1,0 +1,262 @@
+<html>
+<head>
+<title>TestNG:  BaselineMarried.apar Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BaselineMarried.apar Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 28 16:00:28 PST 2009</td>
+</tr>
+<tr><td>Total time:</td><td>48 seconds (48422 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (BaselineMarried[BaselineMarried])()'>runModel<br/>
+<a href="#Output-1699024671" onClick='toggleBox("Output-1699024671", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1699024671" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1699024671">
+<b>BaselineMarried_0</b><br/>
+null<br/>
+<a href="../../tests/BaselineMarried.atest">Test File</a><br/>
+<a href="../../tests/BaselineMarried.apar">Parameters</a><br/>
+<a href="../logs/BaselineMarried_0.log">Log</a><br/>
+<a href="../results/BaselineMarried_0.ares">Results</a><br/>
+</div>
+</td>
+<td>18</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult None Contraception Method 1007.0 &lt; 1065
+Count Adult Sterilized Contraception Method 2343.0 &gt; 2177
+Count Adult Pill Contraception Method 392.0 &lt; 472
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1699024671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1699024671'><pre>java.lang.AssertionError: 
+Count Adult None Contraception Method 1007.0 &lt; 1065
+Count Adult Sterilized Contraception Method 2343.0 &gt; 2177
+Count Adult Pill Contraception Method 392.0 &lt; 472
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (BaselineUnmarried[BaselineUnmarried])()'>runModel<br/>
+<a href="#Output-1063745335" onClick='toggleBox("Output-1063745335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1063745335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1063745335">
+<b>BaselineUnmarried_0</b><br/>
+null<br/>
+<a href="../../tests/BaselineUnmarried.atest">Test File</a><br/>
+<a href="../../tests/BaselineUnmarried.apar">Parameters</a><br/>
+<a href="../logs/BaselineUnmarried_0.log">Log</a><br/>
+<a href="../results/BaselineUnmarried_0.ares">Results</a><br/>
+</div>
+</td>
+<td>48</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1579.0 &gt; 1231
+Sum Adult Abortions in Lifetime 479.0 &gt; 462
+Sum Adult Miscarriages in Lifetime 471.0 &gt; 406
+Sum Adult Births in Lifetime 368.0 &gt; 357
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1063745335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1063745335'><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1579.0 &gt; 1231
+Sum Adult Abortions in Lifetime 479.0 &gt; 462
+Sum Adult Miscarriages in Lifetime 471.0 &gt; 406
+Sum Adult Births in Lifetime 368.0 &gt; 357
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (BaselineZeroMarried[BaselineZeroMarried])()'>runModel<br/>
+<a href="#Output-481059370" onClick='toggleBox("Output-481059370", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-481059370" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-481059370">
+<b>BaselineZeroMarried_0</b><br/>
+null<br/>
+<a href="../../tests/BaselineZeroMarried.atest">Test File</a><br/>
+<a href="../../tests/BaselineZeroMarried.apar">Parameters</a><br/>
+<a href="../logs/BaselineZeroMarried_0.log">Log</a><br/>
+<a href="../results/BaselineZeroMarried_0.ares">Results</a><br/>
+</div>
+</td>
+<td>5</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult None Contraception Method 1011.0 &lt; 1065
+Count Adult Sterilized Contraception Method 2369.0 &gt; 2177
+Count Adult Pill Contraception Method 370.0 &lt; 472
+Sum Adult Sterilization Choices 2093.0 &lt; 4186
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace481059370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace481059370'><pre>java.lang.AssertionError: 
+Count Adult None Contraception Method 1011.0 &lt; 1065
+Count Adult Sterilized Contraception Method 2369.0 &gt; 2177
+Count Adult Pill Contraception Method 370.0 &lt; 472
+Sum Adult Sterilization Choices 2093.0 &lt; 4186
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (BaselineZeroUnmarried[BaselineZeroUnmarried])()'>runModel<br/>
+<a href="#Output-1388889817" onClick='toggleBox("Output-1388889817", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1388889817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1388889817">
+<b>BaselineZeroUnmarried_0</b><br/>
+null<br/>
+<a href="../../tests/BaselineZeroUnmarried.atest">Test File</a><br/>
+<a href="../../tests/BaselineZeroUnmarried.apar">Parameters</a><br/>
+<a href="../logs/BaselineZeroUnmarried_0.log">Log</a><br/>
+<a href="../results/BaselineZeroUnmarried_0.ares">Results</a><br/>
+</div>
+</td>
+<td>3</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 524.0 &lt; 542
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1388889817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1388889817'><pre>java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 524.0 &lt; 542
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+</table><p>
+</body>
+</html>

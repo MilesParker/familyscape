@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>TestNG:  PdsinYr1PdsinYr1mPregOut_Miscarr3PregOut_Miscarr4 Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PdsinYr1PdsinYr1mPregOut_Miscarr3PregOut_Miscarr4 Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 04 21:03:50 PST 2009</td>
+</tr>
+<tr><td>Total time:</td><td>53 seconds (53236 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds [PdsinYr1])()'>runModel<br/>
+<a href="#Output-320806181" onClick='toggleBox("Output-320806181", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-320806181" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-320806181">
+<b>Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds _0</b><br/>
+This test ensures that value the periods in year parameter has no effect on the model's outcomes for unmarrieds by setting periods in year equal to an extremely high value and comparing results to baseline.<br/>
+<a href="../../tests/PdsinYr1.atest">Test File</a><br/>
+<a href="../../tests/PdsinYr1.apar">Parameters</a><br/>
+<a href="../logs/PdsinYr1_0.log">Log</a><br/>
+<a href="../results/PdsinYr1_0.ares">Results</a><br/>
+</div>
+</td>
+<td>53</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Periods In Year 1m: Check of Periods in Year Parameter for Marrieds [PdsinYr1m])()'>runModel<br/>
+<a href="#Output-1844781148" onClick='toggleBox("Output-1844781148", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1844781148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1844781148">
+<b>Periods In Year 1m: Check of Periods in Year Parameter for Marrieds _0</b><br/>
+This test ensures that value the periods in year parameter has no effect on the model's outcomes for marrieds by setting periods in year equal to an extremely high value and comparing results to baseline.<br/>
+<a href="../../tests/PdsinYr1m.atest">Test File</a><br/>
+<a href="../../tests/PdsinYr1m.apar">Parameters</a><br/>
+<a href="../logs/PdsinYr1m_0.log">Log</a><br/>
+<a href="../results/PdsinYr1m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])()'>runModel<br/>
+<a href="#Output-840824263" onClick='toggleBox("Output-840824263", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-840824263" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-840824263">
+<b>Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds_0</b><br/>
+This test sets the race covariates in the unmarried miscarriage equation equal to (-1*baseline), which should eliminate miscarriages and increase the number of births and slightly decrease the number of abortions relative to baseline.<br/>
+<a href="../../tests/PregOut_Miscarr3.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr3.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr3_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr3_0.ares">Results</a><br/>
+</div>
+</td>
+<td>52</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr4])()'>runModel<br/>
+<a href="#Output-1658132026" onClick='toggleBox("Output-1658132026", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1658132026" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1658132026">
+<b>Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds_0</b><br/>
+This test sets all covariates in the married miscarriage equation equal extremely high values, which should have no effect on pregnancy outcomes among unmarrieds.<br/>
+<a href="../../tests/PregOut_Miscarr4.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr4.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr4_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr4_0.ares">Results</a><br/>
+</div>
+</td>
+<td>53</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

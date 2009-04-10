@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PregOut_Miscarr3 Test" failures="1" tests="1" time="42.451" errors="0">
+  <properties/>
+  <testcase name="runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])" time="42.41" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Births in Lifetime 516.0 &gt; 500">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Births in Lifetime 516.0 > 500
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

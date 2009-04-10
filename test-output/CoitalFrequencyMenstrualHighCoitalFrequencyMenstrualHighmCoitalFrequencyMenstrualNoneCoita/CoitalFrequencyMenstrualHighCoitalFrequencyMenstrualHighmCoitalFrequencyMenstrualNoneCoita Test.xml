@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalFrequencyMenstrualHighCoitalFrequencyMenstrualHighmCoitalFrequencyMenstrualNoneCoita Test" failures="1" tests="4" time="46.308" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency Menstrual High Married (high value) [CoitalFrequencyMenstrualHighm])" time="10.692" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Marrieds (low value) [CoitalFrequencyMenstrualNonem])" time="10.817" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Unmarried (high value) [CoitalFrequencyMenstrualHigh])" time="22.613" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="46.282" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 666.8823529411765 &lt; 715">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 666.8823529411765 < 715
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

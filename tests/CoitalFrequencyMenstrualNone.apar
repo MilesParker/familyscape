@@ -1,0 +1,5 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+Lunar Days	1
+Stop Period	1365
+Input Data File	|data/NSFG_Unmarried.txt

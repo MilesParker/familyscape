@@ -1,0 +1,8 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	BaselineMarried
+P Rhythm Method Single Pill	0.0
+P Rhythm Method Single None	0.0
+P Rhythm Method Married Pill	1.0
+P Rhythm Method Married None	0.0
+P Rhythm Method Married Sterilized	1.0
+P Pill Use Married Factor Base	1.0

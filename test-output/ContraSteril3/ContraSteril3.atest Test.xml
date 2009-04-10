@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraSteril3.atest Test" failures="2" tests="9" time="367.746" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Sterilization 3: Spot Check of Sexual Frequency Covariates for Sterilization Equation2 Among Unmarrieds [ContraSteril3])" time="7.434" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds [ContraSteril4])" time="7.455" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])" time="360.259" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Sterilized Contraception Method 3103.0 &gt; 2093
+Count Adult Partner Sterilized Partner Contraception Method 3103.0 &gt; 2093">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 3103.0 > 2093
+Count Adult Partner Sterilized Partner Contraception Method 3103.0 > 2093
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])" time="364.858" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])" time="365.21" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerFemalem])" time="366.596" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds [ContraSteril3m])" time="367.17" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])" time="367.453" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Sterilized Contraception Method 3115.0 &gt; 2093
+Count Adult Partner Sterilized Partner Contraception Method 3115.0 &gt; 2093">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 3115.0 > 2093
+Count Adult Partner Sterilized Partner Contraception Method 3115.0 > 2093
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])" time="360.152" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

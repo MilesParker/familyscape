@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalFrequencyMenstrualNone Test" failures="1" tests="5" time="65.555" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="65.106" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="65.196" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="65.234" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="65.511" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="65.527" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 653.1661506707947 &lt; 655">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 653.1661506707947 < 655
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

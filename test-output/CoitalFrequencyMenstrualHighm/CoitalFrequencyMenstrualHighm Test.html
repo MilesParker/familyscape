@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  CoitalFrequencyMenstrualHighm Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CoitalFrequencyMenstrualHighm Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 01 19:05:01 PST 2009</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3072 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Coital Frequency Menstrual High Married (high value) [CoitalFrequencyMenstrualHighm])()'>runModel<br/>
+<a href="#Output-1093399904" onClick='toggleBox("Output-1093399904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1093399904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1093399904">
+<b>Coital Frequency Menstrual High Married (high value) _0</b><br/>
+This test assigns an extremely high value to lunar days, which should result in little or no sex occurring -- we can't really test that here as it causes an exception in fecundity index but we can test other aspects.<br/>
+<a href="../../tests/CoitalFrequencyMenstrualHighm.atest">Test File</a><br/>
+<a href="../../tests/CoitalFrequencyMenstrualHighm.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyMenstrualHighm_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyMenstrualHighm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>3</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: 46964
+	at edu.brook.ccf.rpm.Adult.sexEvent(Adult.java:1847)
+	at edu.brook.ccf.rpm.Adult.setSexCountinLifetime(Adult.java:5703)
+	at edu.brook.ccf.rpm.Adult.sexPotential(Adult.java:1594)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy$64.execute(RelationshipsAndPregnancy.java:3127)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1961)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1953)
+	at org.ascape.model.Scape$6.execute(Scape.java:496)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:70)
+	at org.ascape.model.Scape$6.execute(Scape.java:497)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:270)
+	at org.ascape.runtime.Runner.run(Runner.java:719)
+	at org.ascape.runtime.Runner.run(Runner.java:604)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:241)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1093399904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1093399904'><pre>java.lang.ArrayIndexOutOfBoundsException: 46964
+	at edu.brook.ccf.rpm.Adult.sexEvent(Adult.java:1847)
+	at edu.brook.ccf.rpm.Adult.setSexCountinLifetime(Adult.java:5703)
+	at edu.brook.ccf.rpm.Adult.sexPotential(Adult.java:1594)
+	at edu.brook.ccf.rpm.RelationshipsAndPregnancy$64.execute(RelationshipsAndPregnancy.java:3127)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1961)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1953)
+	at org.ascape.model.Scape$6.execute(Scape.java:496)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:70)
+	at org.ascape.model.Scape$6.execute(Scape.java:497)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2012)
+	at org.ascape.model.Scape.executeOnRoot(Scape.java:2026)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:270)
+	at org.ascape.runtime.Runner.run(Runner.java:719)
+	at org.ascape.runtime.Runner.run(Runner.java:604)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:241)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+</table><p>
+</body>
+</html>

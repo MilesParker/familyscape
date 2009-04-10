@@ -1,0 +1,7 @@
+title	Pregnancy Outcome Abortion 4m: Cross Check of Baseline Factor for Abortion among Marrieds
+comments	This test sets all covariates in the unmarried abortion equation equal extremely high values, which should have no effect on pregnancy outcomes among marrieds.
+Sum Adult Pregnancies in Lifetime	869	1370				
+Sum Adult Abortions in Lifetime	270	462				
+Sum Adult Miscarriages in Lifetime	254	406				
+Sum Adult Births in Lifetime	222	357			
+Sum Adult Poor Births in Lifetime	106	196				

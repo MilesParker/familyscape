@@ -1,0 +1,7 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline
+P Coital Frequency Moderate Unmarried NHS Factor	-0.3
+P Coital Frequency Moderate Unmarried PHS Factor	-0.3
+P Coital Frequency Moderate Unmarried HS Factor	-0.3
+Stop Period	0
+Input Data File	|data/NSFG_Unmarried.txt

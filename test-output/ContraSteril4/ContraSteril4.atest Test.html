@@ -1,0 +1,331 @@
+<html>
+<head>
+<title>TestNG:  ContraSteril4.atest Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ContraSteril4.atest Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Feb 27 19:54:11 PST 2009</td>
+</tr>
+<tr><td>Total time:</td><td>242 seconds (242166 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds [ContraSteril4m])()'>runModel<br/>
+<a href="#Output-1560513400" onClick='toggleBox("Output-1560513400", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1560513400" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1560513400">
+<b>Contraception Sterilization 4m: Cross Check of Married Covariates for Sterilization Equations Among Marrieds _0</b><br/>
+This test sets all values for the pill covariates in the unmarried sterilization equations equal to an extremely high number, which should have no effect on sterilization among marrieds.<br/>
+<a href="../../tests/ContraSteril4m.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril4m.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril4m_0.log">Log</a><br/>
+<a href="../results/ContraSteril4m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>231</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 2271.0 &gt; 2205.945
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1560513400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1560513400'><pre>java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 2271.0 &gt; 2205.945
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly[ContraSterilMalePartnerm])()'>runModel<br/>
+<a href="#Output-920503681" onClick='toggleBox("Output-920503681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-920503681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-920503681">
+<b>Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly_0</b><br/>
+null<br/>
+<a href="../../tests/ContraSterilMalePartnerm.atest">Test File</a><br/>
+<a href="../../tests/ContraSterilMalePartnerm.apar">Parameters</a><br/>
+<a href="../logs/ContraSterilMalePartnerm_0.log">Log</a><br/>
+<a href="../results/ContraSterilMalePartnerm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>242</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Partner Sterilized Partner Contraception Method 0.0 &lt; 2093
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace920503681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920503681'><pre>java.lang.AssertionError: 
+Count Adult Partner Sterilized Partner Contraception Method 0.0 &lt; 2093
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5MenWomen])()'>runModel<br/>
+<a href="#Output-378778923" onClick='toggleBox("Output-378778923", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-378778923" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-378778923">
+<b>Contraception Sterilization Men Women 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds _0</b><br/>
+This test sets the partner sterilization factor equal to (-1*baseline) in the male sterilization equation among marrieds, which should have the effect of eliminating male sterilization in the simulation and making all feamles sterilized.<br/>
+<a href="../../tests/ContraSteril5MenWomen.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril5MenWomen.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril5MenWomen_0.log">Log</a><br/>
+<a href="../results/ContraSteril5MenWomen_0.ares">Results</a><br/>
+</div>
+</td>
+<td>221</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 3116.0 &gt; 2093
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace378778923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace378778923'><pre>java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 3116.0 &gt; 2093
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerm])()'>runModel<br/>
+<a href="#Output-1292454077" onClick='toggleBox("Output-1292454077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1292454077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1292454077">
+<b>Contraception Sterilization Partner m: Check that partner sterilization count is working correctly_0</b><br/>
+null<br/>
+<a href="../../tests/ContraSterilPartnerm.atest">Test File</a><br/>
+<a href="../../tests/ContraSterilPartnerm.apar">Parameters</a><br/>
+<a href="../logs/ContraSterilPartnerm_0.log">Log</a><br/>
+<a href="../results/ContraSterilPartnerm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>241</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Partner Sterilized Partner Contraception Method 2093.0 &lt; 4186
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1292454077", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1292454077'><pre>java.lang.AssertionError: 
+Count Adult Partner Sterilized Partner Contraception Method 2093.0 &lt; 4186
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds [ContraSteril5WomenMen])()'>runModel<br/>
+<a href="#Output-8100393" onClick='toggleBox("Output-8100393", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8100393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8100393">
+<b>Contraception Sterilization Women Men 5m: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds _0</b><br/>
+This test sets the partner sterilization factor equal to (-1*baseline) in the male sterilization equation among marrieds, which should have the effect of eliminating male sterilization in the simulation and making all feamles sterilized.<br/>
+<a href="../../tests/ContraSteril5WomenMen.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril5WomenMen.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril5WomenMen_0.log">Log</a><br/>
+<a href="../results/ContraSteril5WomenMen_0.ares">Results</a><br/>
+</div>
+</td>
+<td>238</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 3637.0 &gt; 2093
+Count Adult Partner Sterilized Partner Contraception Method 1008.0 &lt; 2093
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8100393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8100393'><pre>java.lang.AssertionError: 
+Count Adult Sterilized Contraception Method 3637.0 &gt; 2093
+Count Adult Partner Sterilized Partner Contraception Method 1008.0 &lt; 2093
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds [ContraSteril4])()'>runModel<br/>
+<a href="#Output-1266454399" onClick='toggleBox("Output-1266454399", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1266454399" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1266454399">
+<b>Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds _0</b><br/>
+This test sets all values for the pill covariates in the married sterilization equations equal to an extremely high number, which should have no effect on sterilization among unmarrieds.<br/>
+<a href="../../tests/ContraSteril4.atest">Test File</a><br/>
+<a href="../../tests/ContraSteril4.apar">Parameters</a><br/>
+<a href="../logs/ContraSteril4_0.log">Log</a><br/>
+<a href="../results/ContraSteril4_0.ares">Results</a><br/>
+</div>
+</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly[ContraSterilPartnerFemalem])()'>runModel<br/>
+<a href="#Output-461657448" onClick='toggleBox("Output-461657448", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-461657448" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-461657448">
+<b>Contraception Sterilization Female Partner m: Check that partner sterilization count is working correctly_0</b><br/>
+null<br/>
+<a href="../../tests/ContraSterilPartnerFemalem.atest">Test File</a><br/>
+<a href="../../tests/ContraSterilPartnerFemalem.apar">Parameters</a><br/>
+<a href="../logs/ContraSterilPartnerFemalem_0.log">Log</a><br/>
+<a href="../results/ContraSterilPartnerFemalem_0.ares">Results</a><br/>
+</div>
+</td>
+<td>242</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

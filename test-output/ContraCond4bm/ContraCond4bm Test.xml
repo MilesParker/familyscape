@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraCond4bm Test" failures="0" tests="1" time="3.128" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Condom 4bm: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds [ContraCond4bm])" time="2.544" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

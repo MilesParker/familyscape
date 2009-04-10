@@ -1,0 +1,8 @@
+title	Contraception Pill 6: Check of Pill Efficacy Among Unmarrieds 
+comments	This test puts all women on the pill and sets efficacy to one, which should have the effect of generating no pregnancies.
+Count Adult Pill Contraception Method	2995	2995
+Sum Adult Pregnancies in Lifetime	0	0				
+Sum Adult Abortions in Lifetime	0	0				
+Sum Adult Miscarriages in Lifetime	0	0				
+Sum Adult Births in Lifetime	0	0				
+Sum Adult Poor Births in Lifetime	0	0	

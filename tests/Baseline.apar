@@ -19,8 +19,6 @@ Pill Failure Rate	0.05
 Pill Condom Failure Rate	0.0075
 Fecundity By Age	0.854,0.832,0.81,0.788,0.766,0.744,0.722,0.7,0.678,0.656,0.634,0.612,0.59,0.568,0.546,0.524,0.502,0.48,0.458,0.436,0.414,0.392,0.37,0.348,0.326,0.304,0.282,0.26,0.238,0.216
 Walk Toward Age	1
-Rhythm Method Bias for Day	1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1
-Portion Rhythm Method	0
 Agent Vision	6
 Periods in Year	365
 P Marriage Factor Base	0
@@ -458,3 +456,7 @@ P Poor Birth Unmarried Category 1 Factor	0
 P Poor Birth Unmarried Category 3 Factor	0
 P Poor Birth Unmarried Category 2 Factor	0
 P Poor Birth Unmarried Category 4 Factor	0
+P Rhythm Method Married Pill	0.0
+P Rhythm Method Married None	0.0
+P Rhythm Method Single Pill	0.0
+P Rhythm Method Single None	0.0

@@ -1,0 +1,8 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	BaselineMarried
+Typical Birth Period Start	1
+Typical Birth Period End	20
+Typical Abortion Period Start	1
+Typical Abortion Period End	20
+
+

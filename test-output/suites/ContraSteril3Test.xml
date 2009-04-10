@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" skipfailedinvocationCounts="false" verbose="1" name="ContraSteril3" junit="false" parallel="methods" >
+  <test name="ContraSteril3.atest Test" junit="false">
+    <parameter name="projectLocation" value="/Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape"/>
+    <parameter name="testCount" value="1"/>
+    <parameter name="testDir" value=""/>
+    <parameter name="projectName" value="edu.brook.parent.escape"/>
+    <parameter name="testFiles" value="tests/ContraSteril3 tests/ContraSteril3m tests/ContraSteril4 tests/ContraSteril4m tests/ContraSteril5MenWomen tests/ContraSteril5WomenMen tests/ContraSterilMalePartnerm tests/ContraSterilPartnerFemalem tests/ContraSterilPartnerm"/>
+    <classes>
+      <class name="com.metascape.escape.testng.runtime.ParameterTestFactory"/>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraCond4b Test" failures="1" tests="1" time="1.971" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Condom 4b: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Unmarrieds [ContraCond4b])" time="1.931" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Condom High Intender Contraception Method 133.0 &gt; 0
+Count Adult Condom Medium Intender Contraception Method 435.0 &lt; 500">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Condom High Intender Contraception Method 133.0 > 0
+Count Adult Condom Medium Intender Contraception Method 435.0 < 500
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

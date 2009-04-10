@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalFrequencyModCoitDaily Test" failures="0" tests="5" time="66.507" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="64.85" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="65.519" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="65.678" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="65.753" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="66.453" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

@@ -1,0 +1,851 @@
+<html>
+<head>
+<title>TestNG:  PregOut_Abort1.apar Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PregOut_Abort1.apar Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/11/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 28 16:16:22 PST 2009</td>
+</tr>
+<tr><td>Total time:</td><td>257 seconds (257312 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Miscarriage 1m: First Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr1m])()'>runModel<br/>
+<a href="#Output-1626344975" onClick='toggleBox("Output-1626344975", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1626344975" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1626344975">
+<b>Miscarriage 1m: First Check of Baseline Factor for Miscarriage among Marrieds_0</b><br/>
+This test sets the baseline factor in the married miscarriage equation equal to zero, which should eliminate miscarriages increase the number of births and keep abortions the same relative to baseline.<br/>
+<a href="../../tests/PregOut_Miscarr1m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr1m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr1m_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr1m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>55</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 842.0 &lt; 869
+Sum Adult Abortions in Lifetime 237.0 &lt; 270
+Sum Adult Births in Lifetime 456.0 &lt; 476
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1626344975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1626344975'><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 842.0 &lt; 869
+Sum Adult Abortions in Lifetime 237.0 &lt; 270
+Sum Adult Births in Lifetime 456.0 &lt; 476
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 1m: First Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort1m])()'>runModel<br/>
+<a href="#Output-1866826899" onClick='toggleBox("Output-1866826899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1866826899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1866826899">
+<b>Pregnancy Outcome Abortion 1m: First Check of Baseline Factor for Abortion among Marrieds_0</b><br/>
+This test sets the baseline factor in the married abortion equation equal to zero, which should eliminate abortions and increase the number of births and miscarriages relative to baseline. There should be slightly fewer overall pregnancies as longer gestation period.<br/>
+<a href="../../tests/PregOut_Abort1m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort1m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort1m_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort1m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>27</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Births in Lifetime 523.0 &gt; 520
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1866826899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1866826899'><pre>java.lang.AssertionError: 
+Sum Adult Births in Lifetime 523.0 &gt; 520
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.GeneratedMethodAccessor1459.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 2: Second Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort2])()'>runModel<br/>
+<a href="#Output-1575245606" onClick='toggleBox("Output-1575245606", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1575245606" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1575245606">
+<b>Pregnancy Outcome Abortion 2: Second Check of Baseline Factor for Abortion among Unmarrieds_0</b><br/>
+This test sets the baseline factor in the unmarried abortion equation equal to one, which should eliminate births and miscarriages and increase the number of abortions relative to baseline. We expect slightly more pregnancies due to differences in period pregnant.<br/>
+<a href="../../tests/PregOut_Abort2.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort2.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort2_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort2_0.ares">Results</a><br/>
+</div>
+</td>
+<td>102</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1897.0 &gt; 1370
+Sum Adult Abortions in Lifetime 1708.0 &gt; 1370
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1575245606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1575245606'><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1897.0 &gt; 1370
+Sum Adult Abortions in Lifetime 1708.0 &gt; 1370
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort4])()'>runModel<br/>
+<a href="#Output-2112239710" onClick='toggleBox("Output-2112239710", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2112239710" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2112239710">
+<b>Pregnancy Outcome Abortion 4: Cross Check of Baseline Factor for Abortion among Unmarrieds_0</b><br/>
+This test sets all covariates in the married abortion equation equal extremely high values, which should have no effect on pregnancy outcomes among unmarrieds.<br/>
+<a href="../../tests/PregOut_Abort4.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort4.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort4_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort4_0.ares">Results</a><br/>
+</div>
+</td>
+<td>113</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1613.0 &gt; 1155
+Sum Adult Abortions in Lifetime 473.0 &gt; 369
+Sum Adult Miscarriages in Lifetime 464.0 &gt; 353
+Sum Adult Births in Lifetime 413.0 &gt; 295
+Sum Adult Poor Births in Lifetime 211.0 &gt; 153
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2112239710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2112239710'><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1613.0 &gt; 1155
+Sum Adult Abortions in Lifetime 473.0 &gt; 369
+Sum Adult Miscarriages in Lifetime 464.0 &gt; 353
+Sum Adult Births in Lifetime 413.0 &gt; 295
+Sum Adult Poor Births in Lifetime 211.0 &gt; 153
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 4m: Cross Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort4m])()'>runModel<br/>
+<a href="#Output-1419126749" onClick='toggleBox("Output-1419126749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1419126749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1419126749">
+<b>Pregnancy Outcome Abortion 4m: Cross Check of Baseline Factor for Abortion among Marrieds_0</b><br/>
+This test sets all covariates in the unmarried abortion equation equal extremely high values, which should have no effect on pregnancy outcomes among marrieds.<br/>
+<a href="../../tests/PregOut_Abort4m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort4m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort4m_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort4m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>47</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Sterilization Choices 2093.0 &lt; 4186
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1419126749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1419126749'><pre>java.lang.AssertionError: 
+Sum Adult Sterilization Choices 2093.0 &lt; 4186
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Miscarriage 1: First Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr1])()'>runModel<br/>
+<a href="#Output-657598823" onClick='toggleBox("Output-657598823", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-657598823" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-657598823">
+<b>Pregnancy Outcome Miscarriage 1: First Check of Baseline Factor for Miscarriage among Unmarrieds_0</b><br/>
+This test sets the baseline factor in the unmarried miscarriage equation equal to zero, which should eliminate miscarriages and increase the number of briths and abortions relative to baseline.<br/>
+<a href="../../tests/PregOut_Miscarr1.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr1.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr1_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr1_0.ares">Results</a><br/>
+</div>
+</td>
+<td>125</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Abortions in Lifetime 411.0 &gt; 369
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace657598823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace657598823'><pre>java.lang.AssertionError: 
+Sum Adult Abortions in Lifetime 411.0 &gt; 369
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Miscarriage 2: Second Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr2])()'>runModel<br/>
+<a href="#Output-1879730338" onClick='toggleBox("Output-1879730338", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1879730338" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1879730338">
+<b>Pregnancy Outcome Miscarriage 2: Second Check of Baseline Factor for Miscarriage among Unmarrieds_0</b><br/>
+This test sets the baseline factor in the unmarried miscarriage equation equal to one, which should eliminate births and abortions and increase the number of miscarriages relative to baseline.<br/>
+<a href="../../tests/PregOut_Miscarr2.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr2.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr2_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr2_0.ares">Results</a><br/>
+</div>
+</td>
+<td>76</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Abortions in Lifetime 458.0 &gt; 0
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1879730338", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1879730338'><pre>java.lang.AssertionError: 
+Sum Adult Abortions in Lifetime 458.0 &gt; 0
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.GeneratedMethodAccessor1459.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds[PregOut_Miscarr4])()'>runModel<br/>
+<a href="#Output-1034148457" onClick='toggleBox("Output-1034148457", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1034148457" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1034148457">
+<b>Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds_0</b><br/>
+This test sets all covariates in the married miscarriage equation equal extremely high values, which should have no effect on pregnancy outcomes among unmarrieds.<br/>
+<a href="../../tests/PregOut_Miscarr4.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr4.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr4_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr4_0.ares">Results</a><br/>
+</div>
+</td>
+<td>112</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1590.0 &gt; 1155
+Sum Adult Abortions in Lifetime 453.0 &gt; 369
+Sum Adult Miscarriages in Lifetime 486.0 &gt; 353
+Sum Adult Births in Lifetime 398.0 &gt; 295
+Sum Adult Poor Births in Lifetime 199.0 &gt; 153
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1034148457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1034148457'><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1590.0 &gt; 1155
+Sum Adult Abortions in Lifetime 453.0 &gt; 369
+Sum Adult Miscarriages in Lifetime 486.0 &gt; 353
+Sum Adult Births in Lifetime 398.0 &gt; 295
+Sum Adult Poor Births in Lifetime 199.0 &gt; 153
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Poor Birth 2: Second Check of Baseline Factor for Poor Birth among Unmarrieds[PregOut_PoorBirth2])()'>runModel<br/>
+<a href="#Output-1275875898" onClick='toggleBox("Output-1275875898", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1275875898" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1275875898">
+<b>Pregnancy Outcome Poor Birth 2: Second Check of Baseline Factor for Poor Birth among Unmarrieds_0</b><br/>
+This test sets the baseline factor in the unmarried poor birth equation equal to one, which should make all births poor births.<br/>
+<a href="../../tests/PregOut_PoorBirth2.atest">Test File</a><br/>
+<a href="../../tests/PregOut_PoorBirth2.apar">Parameters</a><br/>
+<a href="../logs/PregOut_PoorBirth2_0.log">Log</a><br/>
+<a href="../results/PregOut_PoorBirth2_0.ares">Results</a><br/>
+</div>
+</td>
+<td>92</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Births in Lifetime 369.0 &gt; 295
+Sum Adult Poor Births in Lifetime 369.0 &gt; 295
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1275875898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275875898'><pre>java.lang.AssertionError: 
+Sum Adult Births in Lifetime 369.0 &gt; 295
+Sum Adult Poor Births in Lifetime 369.0 &gt; 295
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.GeneratedMethodAccessor1459.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Poor Birth 4: Cross Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth4])()'>runModel<br/>
+<a href="#Output-584710036" onClick='toggleBox("Output-584710036", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-584710036" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-584710036">
+<b>Pregnancy Outcome Poor Birth 4: Cross Check of Baseline Factor for Poor Births among Unmarrieds_0</b><br/>
+This test sets all covariates in the married poor birth equation equal extremely high values, which should have no effect on pregnancy outcomes among unmarrieds.<br/>
+<a href="../../tests/PregOut_PoorBirth4.atest">Test File</a><br/>
+<a href="../../tests/PregOut_PoorBirth4.apar">Parameters</a><br/>
+<a href="../logs/PregOut_PoorBirth4_0.log">Log</a><br/>
+<a href="../results/PregOut_PoorBirth4_0.ares">Results</a><br/>
+</div>
+</td>
+<td>102</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1506.0 &gt; 1155
+Sum Adult Abortions in Lifetime 442.0 &gt; 369
+Sum Adult Miscarriages in Lifetime 417.0 &gt; 353
+Sum Adult Births in Lifetime 383.0 &gt; 295
+Sum Adult Poor Births in Lifetime 176.0 &gt; 153
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace584710036", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace584710036'><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1506.0 &gt; 1155
+Sum Adult Abortions in Lifetime 442.0 &gt; 369
+Sum Adult Miscarriages in Lifetime 417.0 &gt; 353
+Sum Adult Births in Lifetime 383.0 &gt; 295
+Sum Adult Poor Births in Lifetime 176.0 &gt; 153
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.GeneratedMethodAccessor1459.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Poor Birth 4m: Cross Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth4m])()'>runModel<br/>
+<a href="#Output-890729916" onClick='toggleBox("Output-890729916", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-890729916" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-890729916">
+<b>Pregnancy Outcome Poor Birth 4m: Cross Check of Baseline Factor for Poor Births among Marrieds_0</b><br/>
+This test sets all covariates in the unmarried poor birth equation equal extremely high values, which should have no effect on pregnancy outcomes among marrieds.<br/>
+<a href="../../tests/PregOut_PoorBirth4m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_PoorBirth4m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_PoorBirth4m_0.log">Log</a><br/>
+<a href="../results/PregOut_PoorBirth4m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>55</td>
+<td><div><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 988.0 &lt; 1000
+Sum Adult Miscarriages in Lifetime 281.0 &lt; 283
+Sum Adult Births in Lifetime 257.0 &lt; 260
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace890729916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace890729916'><pre>java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 988.0 &lt; 1000
+Sum Adult Miscarriages in Lifetime 281.0 &lt; 283
+Sum Adult Births in Lifetime 257.0 &lt; 260
+	at org.testng.Assert.fail(Assert.java:84)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 1: First Check of Baseline Factor for Abortion among Unmarrieds[PregOut_Abort1])()'>runModel<br/>
+<a href="#Output-927452733" onClick='toggleBox("Output-927452733", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-927452733" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-927452733">
+<b>Pregnancy Outcome Abortion 1: First Check of Baseline Factor for Abortion among Unmarrieds_0</b><br/>
+This test sets the baseline factor in the unmarried abortion equation equal to zero, which should eliminate abortions and increase the number of births and miscarriages relative to baseline.<br/>
+<a href="../../tests/PregOut_Abort1.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort1.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort1_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort1_0.ares">Results</a><br/>
+</div>
+</td>
+<td>69</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 1m Check: Cross-check to abortion and married issuee.[PregOut_Abort1mCheck])()'>runModel<br/>
+<a href="#Output-177752142" onClick='toggleBox("Output-177752142", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-177752142" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-177752142">
+<b>Pregnancy Outcome Abortion 1m Check: Cross-check to abortion and married issuee._0</b><br/>
+By setting total gestational period to 1 we eliminate issues of bias toward any given category caused by time spent pregnant.<br/>
+<a href="../../tests/PregOut_Abort1mCheck.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort1mCheck.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort1mCheck_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort1mCheck_0.ares">Results</a><br/>
+</div>
+</td>
+<td>30</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 2m: Second Check of Baseline Factor for Abortion among Marrieds[PregOut_Abort2m])()'>runModel<br/>
+<a href="#Output-833292899" onClick='toggleBox("Output-833292899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-833292899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-833292899">
+<b>Pregnancy Outcome Abortion 2m: Second Check of Baseline Factor for Abortion among Marrieds_0</b><br/>
+This test sets the baseline factor in the married abortion equation equal to one, and period of abortion to the same as birth which should eliminate births and miscarriages and increase the number of abortions relative to baseline.<br/>
+<a href="../../tests/PregOut_Abort2m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort2m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort2m_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort2m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>27</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds[PregOut_Abort3])()'>runModel<br/>
+<a href="#Output-1937952894" onClick='toggleBox("Output-1937952894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1937952894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1937952894">
+<b>Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds_0</b><br/>
+This test sets the SES covariates in the unmarried abortion equation equal to (-1*baseline), which should eliminate abortions and increase the number of briths and miscarriages relative to baseline.<br/>
+<a href="../../tests/PregOut_Abort3.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort3.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort3_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort3_0.ares">Results</a><br/>
+</div>
+</td>
+<td>97</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion 3m: Spot Check of Covariates for Abortion Equation among Marrieds[PregOut_Abort3m])()'>runModel<br/>
+<a href="#Output-1184447146" onClick='toggleBox("Output-1184447146", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1184447146" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1184447146">
+<b>Pregnancy Outcome Abortion 3m: Spot Check of Covariates for Abortion Equation among Marrieds_0</b><br/>
+This test sets the SES covariates in the married abortion equation equal to (-1*baseline), which should eliminate abortions and increase the number of births and slightly lower the number of miscarriages relative to baseline.<br/>
+<a href="../../tests/PregOut_Abort3m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Abort3m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Abort3m_0.log">Log</a><br/>
+<a href="../results/PregOut_Abort3m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>55</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes more Miscarraiges to occur and overall number of pregnancies to go up.[PregOut_AbortMis1m])()'>runModel<br/>
+<a href="#Output-1571119861" onClick='toggleBox("Output-1571119861", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1571119861" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1571119861">
+<b>Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes more Miscarraiges to occur and overall number of pregnancies to go up._0</b><br/>
+This test sets the baseline factor in the married abortion equation equal to zero, which should eliminate abortions and births and cause miscarriages relative to baseline.<br/>
+<a href="../../tests/PregOut_AbortMis1m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_AbortMis1m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_AbortMis1m_0.log">Log</a><br/>
+<a href="../results/PregOut_AbortMis1m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>32</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Abortion Miscarriage 2m: Check Hypothesis that Miscarriages at .5 and Abortion at .5 Causes no births to occur and overall number of abortions and miscarriages to go up.[PregOut_AbortMis2m])()'>runModel<br/>
+<a href="#Output-2097352866" onClick='toggleBox("Output-2097352866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2097352866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2097352866">
+<b>Pregnancy Outcome Abortion Miscarriage 2m: Check Hypothesis that Miscarriages at .5 and Abortion at .5 Causes no births to occur and overall number of abortions and miscarriages to go up._0</b><br/>
+This test sets the baseline factor in the married abortion equation equal to zero, which should eliminate abortions increase pregnancies somewhat, and increase the number of births and miscarriages relative to baseline.<br/>
+<a href="../../tests/PregOut_AbortMis2m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_AbortMis2m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_AbortMis2m_0.log">Log</a><br/>
+<a href="../results/PregOut_AbortMis2m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>31</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Miscarriage 2m: Second Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr2m])()'>runModel<br/>
+<a href="#Output-303037763" onClick='toggleBox("Output-303037763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-303037763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-303037763">
+<b>Pregnancy Outcome Miscarriage 2m: Second Check of Baseline Factor for Miscarriage among Marrieds_0</b><br/>
+This test sets the baseline factor in the married miscarriage equation equal to one, which should eliminate births and abortions and increase the number of miscarriages relative to baseline.<br/>
+<a href="../../tests/PregOut_Miscarr2m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr2m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr2m_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr2m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>30</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds[PregOut_Miscarr3])()'>runModel<br/>
+<a href="#Output-372739769" onClick='toggleBox("Output-372739769", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-372739769" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-372739769">
+<b>Pregnancy Outcome Miscarriage 3: Spot Check of Covariates for Miscarriage Equation among Unmarrieds_0</b><br/>
+This test sets the race covariates in the unmarried miscarriage equation equal to (-1*baseline), which should eliminate miscarriages and increase the number of briths and abortions relative to baseline.<br/>
+<a href="../../tests/PregOut_Miscarr3.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr3.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr3_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr3_0.ares">Results</a><br/>
+</div>
+</td>
+<td>103</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds[PregOut_Miscarr3m])()'>runModel<br/>
+<a href="#Output-1651958235" onClick='toggleBox("Output-1651958235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1651958235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1651958235">
+<b>Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds_0</b><br/>
+This test sets the race covariates in the married miscarriage equation equal to (-1*baseline), which should eliminate miscarriages and increase the number of births (but not abortions) relative to baseline.<br/>
+<a href="../../tests/PregOut_Miscarr3m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr3m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr3m_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr3m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>52</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Miscarriage 4m: Cross Check of Baseline Factor for Miscarriage among Marrieds[PregOut_Miscarr4m])()'>runModel<br/>
+<a href="#Output-989362009" onClick='toggleBox("Output-989362009", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-989362009" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-989362009">
+<b>Pregnancy Outcome Miscarriage 4m: Cross Check of Baseline Factor for Miscarriage among Marrieds_0</b><br/>
+This test sets all covariates in the unmarried miscarriage equation equal extremely high values, which should have no effect on pregnancy outcomes among marrieds.<br/>
+<a href="../../tests/PregOut_Miscarr4m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_Miscarr4m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_Miscarr4m_0.log">Log</a><br/>
+<a href="../results/PregOut_Miscarr4m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>44</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Poor Birth 1: First Check of Baseline Factor for Poor Births among Unmarrieds[PregOut_PoorBirth1])()'>runModel<br/>
+<a href="#Output-723248511" onClick='toggleBox("Output-723248511", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-723248511" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-723248511">
+<b>Pregnancy Outcome Poor Birth 1: First Check of Baseline Factor for Poor Births among Unmarrieds_0</b><br/>
+This test sets the baseline factor in the poor birth abortion equation equal to zero, which should eliminate poor births.<br/>
+<a href="../../tests/PregOut_PoorBirth1.atest">Test File</a><br/>
+<a href="../../tests/PregOut_PoorBirth1.apar">Parameters</a><br/>
+<a href="../logs/PregOut_PoorBirth1_0.log">Log</a><br/>
+<a href="../results/PregOut_PoorBirth1_0.ares">Results</a><br/>
+</div>
+</td>
+<td>118</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds[PregOut_PoorBirth1m])()'>runModel<br/>
+<a href="#Output-115708536" onClick='toggleBox("Output-115708536", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-115708536" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-115708536">
+<b>Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds_0</b><br/>
+This test sets the baseline factor in the poor birth abortion equation equal to zero, which should eliminate poor births.<br/>
+<a href="../../tests/PregOut_PoorBirth1m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_PoorBirth1m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_PoorBirth1m_0.log">Log</a><br/>
+<a href="../results/PregOut_PoorBirth1m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>43</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Poor Birth 2m: Second Check of Baseline Factor for Poor Birth among Marrieds[PregOut_PoorBirth2m])()'>runModel<br/>
+<a href="#Output-114603123" onClick='toggleBox("Output-114603123", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-114603123" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-114603123">
+<b>Pregnancy Outcome Poor Birth 2m: Second Check of Baseline Factor for Poor Birth among Marrieds_0</b><br/>
+This test sets the baseline factor in the married poor birth equation equal to one, which should make all births poor births.<br/>
+<a href="../../tests/PregOut_PoorBirth2m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_PoorBirth2m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_PoorBirth2m_0.log">Log</a><br/>
+<a href="../results/PregOut_PoorBirth2m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>53</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds[PregOut_PoorBirth3])()'>runModel<br/>
+<a href="#Output-1417370087" onClick='toggleBox("Output-1417370087", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1417370087" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1417370087">
+<b>Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds_0</b><br/>
+This test sets the Education covariates in the unmarried poor birth equation equal to (-1*baseline), which should eliminate poor births.<br/>
+<a href="../../tests/PregOut_PoorBirth3.atest">Test File</a><br/>
+<a href="../../tests/PregOut_PoorBirth3.apar">Parameters</a><br/>
+<a href="../logs/PregOut_PoorBirth3_0.log">Log</a><br/>
+<a href="../results/PregOut_PoorBirth3_0.ares">Results</a><br/>
+</div>
+</td>
+<td>97</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.metascape.escape.testng.runtime.ParameterTest.runModel (Pregnancy Outcome Poor Birth 3m: Spot Check of Covariates for Poor Birth Equation among Marrieds[PregOut_PoorBirth3m])()'>runModel<br/>
+<a href="#Output-1851708569" onClick='toggleBox("Output-1851708569", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1851708569" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1851708569">
+<b>Pregnancy Outcome Poor Birth 3m: Spot Check of Covariates for Poor Birth Equation among Marrieds_0</b><br/>
+This test sets the Education covariates in the married poor birth equation equal to (-1*baseline), which should eliminate poor births.<br/>
+<a href="../../tests/PregOut_PoorBirth3m.atest">Test File</a><br/>
+<a href="../../tests/PregOut_PoorBirth3m.apar">Parameters</a><br/>
+<a href="../logs/PregOut_PoorBirth3m_0.log">Log</a><br/>
+<a href="../results/PregOut_PoorBirth3m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>43</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

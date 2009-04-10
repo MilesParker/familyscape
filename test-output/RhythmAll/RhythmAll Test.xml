@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RhythmAll Test" failures="5" tests="5" time="14.925" errors="0">
+  <properties/>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="14.318" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.OutOfMemoryError" message="Java heap space">
+      <![CDATA[java.lang.OutOfMemoryError: Java heap space
+]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="14.32" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.OutOfMemoryError" message="Java heap space">
+      <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at org.ascape.model.space.CollectionSpace.filter(CollectionSpace.java:1189)
+	at org.ascape.model.space.Array.findWithin(Array.java:218)
+	at org.ascape.model.space.Discrete.calculateNeighbors(Discrete.java:86)
+	at org.ascape.model.Cell.calculateNeighbors(Cell.java:172)
+	at org.ascape.model.Cell$3.execute(Cell.java:130)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.Scape.initialize(Scape.java:1168)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:253)
+	at org.ascape.runtime.Runner.run(Runner.java:719)
+	at org.ascape.runtime.Runner.run(Runner.java:604)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:241)
+... Removed 6 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="14.325" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.OutOfMemoryError" message="Java heap space">
+      <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays$ArrayList.toArray(Arrays.java:3366)
+	at java.util.ArrayList.<init>(ArrayList.java:131)
+	at org.ascape.model.space.CollectionSpace.filter(CollectionSpace.java:1189)
+	at org.ascape.model.space.Array.findWithin(Array.java:218)
+	at org.ascape.model.space.Discrete.calculateNeighbors(Discrete.java:86)
+	at org.ascape.model.Cell.calculateNeighbors(Cell.java:172)
+	at org.ascape.model.Cell$3.execute(Cell.java:130)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.Scape.initialize(Scape.java:1168)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:253)
+	at org.ascape.runtime.Runner.run(Runner.java:719)
+	at org.ascape.runtime.Runner.run(Runner.java:604)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:241)
+... Removed 4 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="14.328" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.OutOfMemoryError" message="Java heap space">
+      <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at org.ascape.model.space.Array2DBase.findWithinMoore(Array2DBase.java:1249)
+	at org.ascape.model.space.Array2DMoore.findWithinImpl(Array2DMoore.java:81)
+	at org.ascape.model.space.Array.findWithin(Array.java:211)
+	at org.ascape.model.space.Discrete.calculateNeighbors(Discrete.java:86)
+	at org.ascape.model.Cell.calculateNeighbors(Cell.java:172)
+	at org.ascape.model.Cell$3.execute(Cell.java:130)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.Scape.initialize(Scape.java:1168)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:253)
+	at org.ascape.runtime.Runner.run(Runner.java:719)
+	at org.ascape.runtime.Runner.run(Runner.java:604)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:241)
+... Removed 5 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAll])" time="14.615" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.OutOfMemoryError" message="Java heap space">
+      <![CDATA[java.lang.OutOfMemoryError: Java heap space
+	at java.util.ArrayList.<init>(ArrayList.java:135)
+	at org.ascape.model.space.CollectionSpace.filter(CollectionSpace.java:1189)
+	at org.ascape.model.space.Array.findWithin(Array.java:218)
+	at org.ascape.model.space.Discrete.calculateNeighbors(Discrete.java:86)
+	at org.ascape.model.Cell.calculateNeighbors(Cell.java:172)
+	at org.ascape.model.Cell$3.execute(Cell.java:130)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.Scape.initialize(Scape.java:1168)
+	at org.ascape.model.Agent$1.execute(Agent.java:71)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.fire(IncrementalExecutionStrategy.java:87)
+	at org.ascape.model.engine.IncrementalExecutionStrategy.execute(IncrementalExecutionStrategy.java:79)
+	at org.ascape.model.engine.ParallelExecutionStrategy.execute(ParallelExecutionStrategy.java:61)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1981)
+	at org.ascape.model.Scape.executeOnMembers(Scape.java:1971)
+	at org.ascape.model.rule.Propogate.execute(Propogate.java:78)
+	at org.ascape.model.Agent$1.execute(Agent.java:72)
+	at org.ascape.model.Agent.execute(Agent.java:675)
+	at org.ascape.model.Agent.execute(Agent.java:686)
+	at org.ascape.runtime.Runner.initialize(Runner.java:228)
+	at org.ascape.runtime.Runner.runMainLoop(Runner.java:253)
+	at org.ascape.runtime.Runner.run(Runner.java:719)
+	at org.ascape.runtime.Runner.run(Runner.java:604)
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:241)
+... Removed 5 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

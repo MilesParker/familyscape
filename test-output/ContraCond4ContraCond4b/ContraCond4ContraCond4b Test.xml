@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraCond4ContraCond4b Test" failures="1" tests="2" time="2.898" errors="0">
+  <properties/>
+  <testcase name="runModel (Contraception Condom 4b: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Unmarrieds [ContraCond4b])" time="2.819" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult In Relationship 154.0 &gt; 150">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult In Relationship 154.0 > 150
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Contraception Condom 4: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Unmarrieds [ContraCond4])" time="2.839" classname="com.metascape.escape.testng.runtime.ParameterTest"/>
+</testsuite>

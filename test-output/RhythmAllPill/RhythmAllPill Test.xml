@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RhythmAllPill Test" failures="1" tests="1" time="43.792" errors="0">
+  <properties/>
+  <testcase name="runModel (Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.[RhythmAllPill])" time="42.762" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 627.1888544891641 &gt; 619">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 627.1888544891641 > 619
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

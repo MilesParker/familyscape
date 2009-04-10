@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BaselineMarried.apar Test" failures="4" tests="4" time="48.422" errors="0">
+  <properties/>
+  <testcase name="runModel (BaselineZeroUnmarried[BaselineZeroUnmarried])" time="3.856" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Very Low Frequency Coital Behavior Type 524.0 &lt; 542">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 524.0 < 542
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineZeroMarried[BaselineZeroMarried])" time="5.395" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult None Contraception Method 1011.0 &lt; 1065
+Count Adult Sterilized Contraception Method 2369.0 &gt; 2177
+Count Adult Pill Contraception Method 370.0 &lt; 472
+Sum Adult Sterilization Choices 2093.0 &lt; 4186">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult None Contraception Method 1011.0 < 1065
+Count Adult Sterilized Contraception Method 2369.0 > 2177
+Count Adult Pill Contraception Method 370.0 < 472
+Sum Adult Sterilization Choices 2093.0 < 4186
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineMarried[BaselineMarried])" time="18.26" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult None Contraception Method 1007.0 &lt; 1065
+Count Adult Sterilized Contraception Method 2343.0 &gt; 2177
+Count Adult Pill Contraception Method 392.0 &lt; 472">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult None Contraception Method 1007.0 < 1065
+Count Adult Sterilized Contraception Method 2343.0 > 2177
+Count Adult Pill Contraception Method 392.0 < 472
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (BaselineUnmarried[BaselineUnmarried])" time="48.396" classname="com.metascape.escape.testng.runtime.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Sum Adult Pregnancies in Lifetime 1579.0 &gt; 1231
+Sum Adult Abortions in Lifetime 479.0 &gt; 462
+Sum Adult Miscarriages in Lifetime 471.0 &gt; 406
+Sum Adult Births in Lifetime 368.0 &gt; 357">
+      <![CDATA[java.lang.AssertionError: 
+Sum Adult Pregnancies in Lifetime 1579.0 > 1231
+Sum Adult Abortions in Lifetime 479.0 > 462
+Sum Adult Miscarriages in Lifetime 471.0 > 406
+Sum Adult Births in Lifetime 368.0 > 357
+	at com.metascape.escape.testng.runtime.ParameterTest.runModel(ParameterTest.java:274)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>
