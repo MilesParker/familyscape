@@ -1,5 +1,6 @@
 model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
 incorporates	Baseline
-Stop Period	1365
 Auto Restart	true
 Input Data File	|data/NSFG_Unmarried.txt
+Write Periods	1365
+Stop Period	1365

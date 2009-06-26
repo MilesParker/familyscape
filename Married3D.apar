@@ -1,0 +1,5 @@
+model	edu.brook.ccf.rpm.RPP3D
+Input Data File	|data/NSFG_Married.txt
+Output Data	False
+Write Periods	1365
+Stop Period	1365

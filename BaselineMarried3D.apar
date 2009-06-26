@@ -1,0 +1,5 @@
+model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
+incorporates	Baseline3D
+Stop Period	1365
+Input Data File	|data/NSFG_Married.txt
+P Relationship Begin Maximum	0

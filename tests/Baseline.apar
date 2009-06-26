@@ -21,7 +21,8 @@ Fecundity By Age	0.854,0.832,0.81,0.788,0.766,0.744,0.722,0.7,0.678,0.656,0.634,
 Walk Toward Age	1
 Agent Vision	6
 Periods in Year	365
-P Marriage Factor Base	0
+P Marriage Minimum Base	0.0
+P Marriage Maximum Base	1.0
 P Marriage 15 to 19 Factor	0
 P Marriage 20 to 24 Factor	0
 P Marriage 25 to 29 Factor	0
