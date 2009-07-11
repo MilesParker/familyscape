@@ -1,7 +1,8 @@
 package edu.brook.ccf.rpm;
 public class RelationshipsAndPregnancyPartFactory
 		extends
-			com.metascape.escape.view.gef.ScapePartFactory {
+			org.eclipse.amp.escape.ascape.adapt.AscapePartFactory {
+
 	protected org.eclipse.gef.EditPart getPartForElement(Object model) {
 
 		if (model instanceof Adult) {
