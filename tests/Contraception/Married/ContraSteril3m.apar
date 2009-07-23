@@ -1,0 +1,10 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"P Sterilize Female Married Very Low Frequency Factor"=-0.5
+"P Sterilize Female Married Moderate Frequency Factor"=-0.5
+"P Sterilize Female Married High Frequency Factor"=-0.5
+"P Sterilize Male Married Very Low Frequency Factor"=-0.5
+"P Sterilize Male Married Moderate Frequency Factor"=-0.5
+"P Sterilize Male Married High Frequency Factor"=-0.5
+"Stop Period"=1
+"Input Data File"="|data/NSFG_Married.txt"

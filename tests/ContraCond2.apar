@@ -1,8 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	Baseline
-P Medium Condom Use Unmarried Other Factor	-0.4
-P Medium Condom Use Unmarried Black Factor	-0.4
-P Medium Condom Use Unmarried Hispanic Factor	-0.4
-P Medium Condom Use Unmarried White Factor	-0.4
-Stop Period	1
-Input Data File	|data/NSFG_Unmarried.txt

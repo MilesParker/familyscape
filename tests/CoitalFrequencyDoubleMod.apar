@@ -1,6 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	Baseline
-P Coital Frequency Moderate Unmarried Factor Base	0.6
-Stop Period	0
-Input Data File	|data/NSFG_Unmarried.txt
-

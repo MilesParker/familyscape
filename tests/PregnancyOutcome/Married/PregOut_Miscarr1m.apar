@@ -1,0 +1,5 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"P Miscarriage Married Factor Base"=0.0
+"Stop Period"=1365
+"Input Data File"="|data/NSFG_Married.txt"

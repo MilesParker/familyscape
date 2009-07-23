@@ -1,0 +1,6 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"P Sterilize Female Married Factor Base"=1.0
+"P Medium Condom Use Married Partner Sterilized Factor"=-0.4
+"Stop Period"=1
+"Input Data File"="|data/NSFG_Married.txt"

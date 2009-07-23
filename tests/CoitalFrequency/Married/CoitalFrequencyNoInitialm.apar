@@ -1,0 +1,5 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"Coital Frequency Initial Modification"=0
+"Stop Period"=500
+"Input Data File"="|data/NSFG_Married.txt"

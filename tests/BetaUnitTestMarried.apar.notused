@@ -1,4 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	BaselineMarried
-P Coital Frequency Moderate Married Factor Base	0.3
-Stop Period	0

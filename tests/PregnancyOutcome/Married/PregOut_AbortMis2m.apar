@@ -1,0 +1,4 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"Married
+"P Abortion Married Factor Base"=0.5
+"P Miscarriage Married Factor Base"=0.5

@@ -1,0 +1,5 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"Lunar Days"=1
+"Stop Period"=500
+"Input Data File"="|data/NSFG_Married.txt"

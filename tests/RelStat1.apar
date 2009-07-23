@@ -1,8 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	Baseline
-P Relationship End Minimum	0.0
-P Relationship End Maximum	0.0
-P Relationship Begin Minimum	1.0
-P Relationship Begin Maximum	1.0
-Stop Period	2000
-Input Data File	|data/NSFG_Unmarried.txt

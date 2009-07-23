@@ -1,0 +1,6 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"Married
+"P Rhythm Method Married Pill"=0.0
+"P Rhythm Method Married None"=0.0
+"P Rhythm Method Unmarried Pill"=0.0
+"P Rhythm Method Unmarried None"=0.0

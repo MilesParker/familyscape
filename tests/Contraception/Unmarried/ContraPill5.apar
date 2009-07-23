@@ -1,0 +1,24 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"P Pill Use Married Factor Base"=100
+"P Pill Use Married 15 to 19 Factor"=100
+"P Pill Use Married 20 to 24 Factor"=100
+"P Pill Use Married 25 to 29 Factor"=100
+"P Pill Use Married 30 to 44 Factor"=100
+"P Pill Use Married NHS Factor"=100
+"P Pill Use Married PHS Factor"=100
+"P Pill Use Married HS Factor"=100
+"P Pill Use Married Other Factor"=100
+"P Pill Use Married Black Factor"=100
+"P Pill Use Married Hispanic Factor"=100
+"P Pill Use Married White Factor"=100
+"P Pill Use Married Category 1 Factor"=100
+"P Pill Use Married Category 3 Factor"=100
+"P Pill Use Married Category 2 Factor"=100
+"P Pill Use Married Category 4 Factor"=100
+"P Pill Use Married Very Low Frequency Factor"=100
+"P Pill Use Married Moderate Frequency Factor"=100
+"P Pill Use Married High Frequency Factor"=100
+"P Pill Use Married Partner Sterilized Factor"=100
+"Stop Period"=1
+"Input Data File"="|data/NSFG_Unmarried.txt"

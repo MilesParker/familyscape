@@ -1,0 +1,9 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"P Coital Frequency Very Low Unmarried Black Factor"=-0.1
+"P Coital Frequency Very Low Unmarried White Factor"=-0.1
+"P Coital Frequency Very Low Unmarried Hispanic Factor"=-0.1
+"P Coital Frequency Very Low Unmarried Other Factor"=-0.1
+"Stop Period"=0
+"Input Data File"="|data/NSFG_Unmarried.txt"
+

@@ -1,5 +1,0 @@
-model	edu.brook.ccf.rpm.RPP3D
-incorporates	Baseline3D
-Stop Period	1365
-Auto Restart	true
-Input Data File	|data/NSFG_Unmarried.txt

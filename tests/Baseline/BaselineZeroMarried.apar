@@ -1,0 +1,4 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"Baseline.apar"
+"Stop Period"=1
+"Input Data File"="|data/NSFG_Married.txt"

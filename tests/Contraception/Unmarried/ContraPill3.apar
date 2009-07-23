@@ -1,0 +1,7 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"P Pill Use Unmarried Very Low Frequency Factor"=-0.5
+"P Pill Use Unmarried Moderate Frequency Factor"=-0.5
+"P Pill Use Unmarried High Frequency Factor"=-0.5
+"Stop Period"=1
+"Input Data File"="|data/NSFG_Unmarried.txt"

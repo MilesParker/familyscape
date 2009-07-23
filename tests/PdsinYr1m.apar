@@ -1,5 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	Baseline
-Periods in Year	36500
-Stop Period	1365
-Input Data File	|data/NSFG_Married.txt

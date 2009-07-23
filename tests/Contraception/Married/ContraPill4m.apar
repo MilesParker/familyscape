@@ -1,0 +1,5 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"Married
+"P Pill Use Married Partner Sterilized Factor"=-0.5
+"P Sterilize Male Married Factor Base"=1.0
+"Stop Period"=1

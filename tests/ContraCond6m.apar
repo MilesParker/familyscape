@@ -1,9 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	Baseline
-P Sterilize Male Married Factor Base	0.0
-P Medium Condom Use Married Factor Base	0.0
-P High Condom Use Married Factor Base	1.0
-Condom Failure Rate	0.0
-Pill Condom Failure Rate	0.0
-Stop Period	1000
-Input Data File	|data/NSFG_Married.txt

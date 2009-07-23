@@ -1,8 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	Baseline
-P Abortion Married Category 1 Factor	-0.33333
-P Abortion Married Category 3 Factor	-0.33333
-P Abortion Married Category 2 Factor	-0.33333
-P Abortion Married Category 4 Factor	-0.33333
-Stop Period	1365
-Input Data File	|data/NSFG_Married.txt

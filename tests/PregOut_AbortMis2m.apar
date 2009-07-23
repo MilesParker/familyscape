@@ -1,4 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	BaselineMarried
-P Abortion Married Factor Base	0.5
-P Miscarriage Married Factor Base	0.5

@@ -1,0 +1,7 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"P Poor Birth Married NHS Factor"=-0.5
+"P Poor Birth Married PHS Factor"=-0.5
+"P Poor Birth Married HS Factor"=-0.5
+"Stop Period"=1365
+"Input Data File"="|data/NSFG_Married.txt"

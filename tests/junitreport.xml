@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <project name="report" default="reports">
 <target name="reports">
-  <junitreport todir="test-report">
-    <fileset dir="test-output">
+  <junitreport todir="../test-report">
+    <fileset dir="../test-output/tests">
       <include name="*/*.xml"/>
     </fileset>
  

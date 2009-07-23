@@ -1,0 +1,5 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"
+"Periods in Year"=36500
+"Stop Period"=1365
+"Input Data File"="|data/NSFG_Unmarried.txt"

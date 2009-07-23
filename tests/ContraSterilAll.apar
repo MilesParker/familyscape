@@ -1,5 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	BaselineUnmarried
-P Sterilize Male Unmarried Factor Base	1.0
-P Sterilize Female Unmarried Factor Base	1.0
-Stop Period	50

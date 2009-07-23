@@ -1,9 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	Baseline
-P Coital Frequency Very Low Married Factor Base	1.0
-P Coital Frequency Moderate Married Factor Base	0.0
-Coital Days Married Very Low Frequency Minimum	28
-Coital Days Married Very Low Frequency Maximum	28
-Stop Period	500
-Input Data File	|data/NSFG_Married.txt
-

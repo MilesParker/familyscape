@@ -1,7 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	Baseline
-P High Condom Use Unmarried Very Low Frequency Factor	-0.1
-P High Condom Use Unmarried Moderate Frequency Factor	-0.1
-P High Condom Use Unmarried High Frequency Factor	-0.1
-Stop Period	1
-Input Data File	|data/NSFG_Unmarried.txt

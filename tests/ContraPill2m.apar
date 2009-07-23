@@ -1,8 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-incorporates	Baseline
-P Pill Use Married 15 to 19 Factor	-0.5
-P Pill Use Married 20 to 24 Factor	-0.5
-P Pill Use Married 25 to 29 Factor	-0.5
-P Pill Use Married 30 to 44 Factor	-0.5
-Stop Period	1
-Input Data File	|data/NSFG_Married.txt

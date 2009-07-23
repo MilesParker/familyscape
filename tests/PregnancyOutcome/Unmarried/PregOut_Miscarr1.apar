@@ -1,0 +1,3 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/Baseline.apar"Unmarried
+"P Miscarriage Unmarried Factor Base"=0.0

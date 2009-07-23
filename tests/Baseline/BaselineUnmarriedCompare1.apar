@@ -1,0 +1,9 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"Baseline.apar"
+"Stop Period"=1
+"Input Data File"="|data/NSFG_Unmarried.txt"
+"P Relationship End Minimum"=0
+"P Relationship End Maximum"=0
+"P Relationship Begin Minimum"=1
+"P Relationship Begin Maximum"=1
+"Write Periods"=1
