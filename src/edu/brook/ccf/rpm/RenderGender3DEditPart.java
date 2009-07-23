@@ -5,7 +5,6 @@ import org.ascape.util.vis.ColorFeature;
 import org.ascape.util.vis.ColorFeatureConcrete;
 import org.ascape.util.vis.ColorFeatureGradiatedIndex;
 import org.eclipse.amp.agf3d.RenderEdit3DPart;
-import org.eclipse.draw2d.Animation;
 import org.eclipse.draw3d.graphics3d.Graphics3D;
 import org.eclipse.draw3d.graphics3d.Graphics3DDraw;
 import org.eclipse.draw3d.graphics3d.Graphics3DUtil;
@@ -59,7 +58,6 @@ public class RenderGender3DEditPart extends RenderEdit3DPart {
     private float totalHeight;
 
     protected void renderShape(Graphics3D g3d) {
-        Animation.markBegin();
         Adult adult = (Adult) getModel();
         // float scale = 0.6f + adult.getAgeinYearsIndex() * .01f;
         float scale = 1.0f;
@@ -118,8 +116,6 @@ public class RenderGender3DEditPart extends RenderEdit3DPart {
         g3d.glTranslatef(-.5f, -.5f, -(legHeight + bodyHeight));
 
         g3d.glEnd();
-        Animation.run();
-
     }
 
     private void drawForRelationship(Graphics3D g3d, Adult adult) {
@@ -134,7 +130,7 @@ public class RenderGender3DEditPart extends RenderEdit3DPart {
         else if (adult.getMaritalStatus() == MaritalStatusEnum.married) {
             // error
             glSetColor(g3d, ColorFeature.RED, 150);
-            drawCube(g3d, 1.0f, 1.0f, 0.05f);
+            drawCylinder(g3d, 1.0f, 0.05f, true);
         }
     }
 
