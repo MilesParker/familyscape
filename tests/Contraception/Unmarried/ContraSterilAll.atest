@@ -2,4 +2,4 @@
 «By making all sterilized, we should have the same number of partners in relationship as sterilized parnters.»
 Count("Adult"."Contraception Method"="Sterilized")=[5814,5814]	
 Count("Adult"."In Relationship")=[1500,1900]	
-Count("Adult"."Contraception Method"="Partner Sterilized Partner")=[1500,1900]	
+Count("Adult"."Partner Contraception Method"="Partner Sterilized")=[1500,1900]	
