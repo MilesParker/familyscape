@@ -1,8 +1,8 @@
-title	Contraception Condom 6m: Check of Condom Efficacy Among Unmarrieds 
-comments	This test makes all men high condom intenders and sets condom efficacy to 100%, which should have the effect of eliminating all pregnancies in the model.
-Count Adult Condom High Intender Contraception Method	2819	2819
-Sum Adult Pregnancies in Lifetime	0	0				
-Sum Adult Abortions in Lifetime	0	0				
-Sum Adult Miscarriages in Lifetime	0	0				
-Sum Adult Births in Lifetime	0	0				
-Sum Adult Poor Births in Lifetime	0	0		
+"Contraception Condom 6m: Check of Condom Efficacy Among Unmarrieds "
+«This test makes all men high condom intenders and sets condom efficacy to 100%, which should have the effect of eliminating all pregnancies in the model.»
+Count("Adult"."Contraception Method"="Condom High Intender")=[2819,2819]
+Sum("Adult"."Pregnancies in Lifetime")=[0,0]
+Sum("Adult"."Abortions in Lifetime")=[0,0]
+Sum("Adult"."Miscarriages in Lifetime")=[0,0]
+Sum("Adult"."Births in Lifetime")=[0,0]
+Sum("Adult"."Poor Births in Lifetime")=[0,0]

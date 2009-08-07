@@ -1,3 +1,3 @@
-title	Contraception Pill 3m: Spot Check of Sexual Frequency Covariates for Pill Equation Among Marrieds 
-comments	This test sets all sexual proclivity factors equal to (-1*baseline) in the equation among marrieds, which should have the effect of eliminating pill use in the simulation.
-Count Adult Pill Contraception Method	0	0				
+"Contraception Pill 3m: Spot Check of Sexual Frequency Covariates for Pill Equation Among Marrieds "
+«This test sets all sexual proclivity factors equal to (-1*baseline) in the equation among marrieds, which should have the effect of eliminating pill use in the simulation.»
+Count("Adult"."Contraception Method"="Pill")=[0,0]

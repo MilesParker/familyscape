@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"Married
+incorporates	"../../Baseline/BaselineMarried.apar"
 "Typical Birth Period Start"=1
 "Typical Birth Period End"=20
 "Typical Abortion Period Start"=1

@@ -1,4 +1,4 @@
-title	Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%.
-Count Adult Pill Contraception Method	1425	1550
-Count Adult Rhythm Method User	2995	2995
-Average Adult Sex Count in Lifetime	570	619				
+"Rhythm Method All Pill: All unmarrieds are pill users whom are all rhythm method users; this should reduce sex acts in lifetime by 10%"
+Count("Adult"."Contraception Method"="Pill")=[1425,1550]
+Count("Adult"."Rhythm Method User")=[2995,2995]
+Average("Adult"."Sex Count in Lifetime")=[570,619]

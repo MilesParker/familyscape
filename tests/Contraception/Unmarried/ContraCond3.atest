@@ -1,3 +1,3 @@
-title	Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds 
-comments	This test sets all sexual proclivity factors equal to (-1*baseline) in the medium condom equation among unmarrieds, which should have the effect of eliminating medium condom intenders from the simulation.
-Count Adult Condom Medium Intender Contraception Method	0	0
+"Contraception Condom 3: Spot Check of Sexual Frequency Covariates for Medium Equation Among Unmarrieds "
+«This test sets all sexual proclivity factors equal to (-1*baseline) in the medium condom equation among unmarrieds, which should have the effect of eliminating medium condom intenders from the simulation.»
+Count("Adult"."Contraception Method"="Condom Medium Intender")=[0,0]

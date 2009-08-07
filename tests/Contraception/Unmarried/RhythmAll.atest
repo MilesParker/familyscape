@@ -1,8 +1,8 @@
-title	Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.
-Count Adult Rhythm Method User	2995	2995
-Average Adult Sex Count in Lifetime	570	619				
-Sum Adult Pregnancies in Lifetime	800	1100				
-Sum Adult Abortions in Lifetime	240	420				
-Sum Adult Miscarriages in Lifetime	225	360				
-Sum Adult Births in Lifetime	200	320				
-Sum Adult Poor Births in Lifetime	80	170				
+"Rhythm Method All: All unmarrieds are rhythm method users; this should reduce sex acts in lifetime by 10%"
+Count("Adult"."Rhythm Method User")=[2995,2995]
+Average("Adult"."Sex Count in Lifetime")=[570,619]
+Sum("Adult"."Pregnancies in Lifetime")=[800,1100]
+Sum("Adult"."Abortions in Lifetime")=[240,420]
+Sum("Adult"."Miscarriages in Lifetime")=[225,360]
+Sum("Adult"."Births in Lifetime")=[200,320]
+Sum("Adult"."Poor Births in Lifetime")=[80,170]

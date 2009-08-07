@@ -1,7 +1,7 @@
-title	Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes all Miscarriages and overall number of pregnancies to go up.
-comments	This test sets the baseline factor in the married abortion equation equal to zero, which should eliminate abortions and births and cause miscarriages relative to baseline.
-Sum Adult Pregnancies in Lifetime	1100	1500				
-Sum Adult Abortions in Lifetime	0	0	
-Sum Adult Miscarriages in Lifetime	1050	1500				
-Sum Adult Births in Lifetime	0	0			
-Sum Adult Poor Births in Lifetime	0	0	
+"Pregnancy Outcome Abortion Miscarriage 1m: Check Hypothesis that Miscariages at 1.0 and Abortion at 0.0 Causes all Miscarriages and overall number of pregnancies to go up."
+«This test sets the baseline factor in the married abortion equation equal to zero, which should eliminate abortions and births and cause miscarriages relative to baseline.»
+Sum("Adult"."Pregnancies in Lifetime")=[1100,1500]
+Sum("Adult"."Abortions in Lifetime")=[0,0]	
+Sum("Adult"."Miscarriages in Lifetime")=[1050,1500]
+Sum("Adult"."Births in Lifetime")=[0,0]	
+Sum("Adult"."Poor Births in Lifetime")=[0,0]	

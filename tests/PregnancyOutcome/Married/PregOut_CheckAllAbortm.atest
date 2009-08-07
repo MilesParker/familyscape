@@ -1,6 +1,6 @@
-title	Pregnancy Outcome Abortion All Check m: Cross-check to ensure that abortions are assigned.
-comments	By setting total gestational period to 1 we eliminate issues of bias toward any given category caused by time spent pregnant.
-Sum Adult Pregnancies in Lifetime	5000	6400				
-Sum Adult Abortions in Lifetime	5000	6400				
-Sum Adult Miscarriages in Lifetime	0	0				
-Sum Adult Births in Lifetime	0	0			
+"Pregnancy Outcome Abortion All Check m: Cross-check to ensure that abortions are assigned"
+«By setting total gestational period to 1 we eliminate issues of bias toward any given category caused by time spent pregnant.»
+Sum("Adult"."Pregnancies in Lifetime")=[5000,6400]
+Sum("Adult"."Abortions in Lifetime")=[5000,6400]
+Sum("Adult"."Miscarriages in Lifetime")=[0,0]
+Sum("Adult"."Births in Lifetime")=[0,0]	

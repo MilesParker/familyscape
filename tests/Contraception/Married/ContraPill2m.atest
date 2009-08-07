@@ -1,4 +1,4 @@
-title	Contraception Pill 2m: Spot Check of Covariates Pill Equation Among Marrieds 
-comments	This test sets all age factors equal to (-1*baseline) in the equation among marrieds, which should have the effect of eliminating pill use in the simulation.
-Count Adult Pill Contraception Method	0	0				
+"Contraception Pill 2m: Spot Check of Covariates Pill Equation Among Marrieds "
+«This test sets all age factors equal to (-1*baseline) in the equation among marrieds, which should have the effect of eliminating pill use in the simulation.»
+Count("Adult"."Contraception Method"="Pill")=[0,0]
 	

@@ -1,5 +1,5 @@
-title	Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds 
-comments	This test assigns all unmmarried agents to the medium coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.
-Average Adult Sex Count in Lifetime	0	0
-Average Adult Sex Partners in Lifetime	0	0
-Count Adult Moderate Frequency Coital Behavior Type	5814	5814	
+"Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds "
+«This test assigns all unmmarried agents to the medium coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.»
+Average("Adult"."Sex Count in Lifetime")=[0,0]
+Average("Adult"."Sex Partners in Lifetime")=[0,0]
+Count("Adult"."Coital Behavior Type"="Moderate Frequency")=[5814,5814]	

@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"Unmarried
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Relationship Begin Maximum"=1.0
 "P Relationship Begin Minimum"=1.0
 "P Relationship End Maximum"=1.0

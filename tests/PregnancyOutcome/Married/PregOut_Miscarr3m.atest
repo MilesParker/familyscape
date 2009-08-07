@@ -1,6 +1,6 @@
-title	Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds
-comments	This test sets the race covariates in the married miscarriage equation equal to (-1*baseline), which should eliminate miscarriages and increase the number of births (but not abortions) relative to baseline.
-Sum Adult Pregnancies in Lifetime	869	1370				
-Sum Adult Miscarriages in Lifetime	0	0	
-Sum Adult Abortions in Lifetime	270	462				
-Sum Adult Births in Lifetime	476	763	
+"Pregnancy Outcome Miscarriage 3m: Spot Check of Covariates for Miscarriage Equation among Marrieds"
+«This test sets the race covariates in the married miscarriage equation equal to (-1*baseline), which should eliminate miscarriages and increase the number of births (but not abortions) relative to baseline.»
+Sum("Adult"."Pregnancies in Lifetime")=[869,1370]
+Sum("Adult"."Miscarriages in Lifetime")=[0,0]	
+Sum("Adult"."Abortions in Lifetime")=[270,462]
+Sum("Adult"."Births in Lifetime")=[476,763]	

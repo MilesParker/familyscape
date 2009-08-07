@@ -1,4 +1,4 @@
-title	Contraception Sterilization Men Women: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds 
-comments	This test sets the partner sterilization factor equal to (-1*baseline) in the male sterilization equation among marrieds and women sterilization to 1.0, which should have no effect on male sterilization and make all females sterilized.
-Count Adult Sterilized Contraception Method	3300	4500	
+"Contraception Sterilization Men Women: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds "
+«This test sets the partner sterilization factor equal to (-1*baseline) in the male sterilization equation among marrieds and women sterilization to 1.0, which should have no effect on male sterilization and make all females sterilized.»
+Count("Adult"."Contraception Method"="Sterilized")=[3300,4500]	
 	

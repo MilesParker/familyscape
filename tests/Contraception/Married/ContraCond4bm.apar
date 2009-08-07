@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"Married
+incorporates	"../../Baseline/BaselineMarried.apar"
 "P High Condom Use Married Partner Sterilized Factor"=-0.1
 "P Sterilize Female Married Factor Base"=1.0
 "Stop Period"=1

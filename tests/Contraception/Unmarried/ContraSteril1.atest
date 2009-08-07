@@ -1,9 +1,9 @@
-title	Contraception Sterilization 1: Check of Baseline Factor for Sterilization Equations Among Unmarrieds 
-comments	This test sets the baseline factor for the sterilization equations among unmarrieds to on, which should have the effect sterilizing everyone.  This doubles as an efficacy test; if everyone is sterilized, there should be no pregnancies.
-Count Adult Sterilized Contraception Method	5814	5814	
-Sum Adult Pregnancies in Lifetime	0	0				
-Sum Adult Abortions in Lifetime	0	0				
-Sum Adult Miscarriages in Lifetime	0	0				
-Sum Adult Births in Lifetime	0	0				
-Sum Adult Poor Births in Lifetime	0	0				
+"Contraception Sterilization 1: Check of Baseline Factor for Sterilization Equations Among Unmarrieds "
+«This test sets the baseline factor for the sterilization equations among unmarrieds to on, which should have the effect sterilizing everyone.  This doubles as an efficacy test; if everyone is sterilized, there should be no pregnancies.»
+Count("Adult"."Contraception Method"="Sterilized")=[5814,5814]	
+Sum("Adult"."Pregnancies in Lifetime")=[0,0]
+Sum("Adult"."Abortions in Lifetime")=[0,0]
+Sum("Adult"."Miscarriages in Lifetime")=[0,0]
+Sum("Adult"."Births in Lifetime")=[0,0]
+Sum("Adult"."Poor Births in Lifetime")=[0,0]
 	

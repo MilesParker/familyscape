@@ -1,4 +1,4 @@
-title	Contraception Condom 2m: Spot Check of Covariates Medium Condom Equation Among Marrieds 
-comments	This test sets all race factors equal to (-1*baseline) in the medium condom equation among marrieds, which should have the effect of eliminating medium condom intenders from the simulation.
-Count Adult Condom Medium Intender Contraception Method	0	0				
+"Contraception Condom 2m: Spot Check of Covariates Medium Condom Equation Among Marrieds "
+«This test sets all race factors equal to (-1*baseline) in the medium condom equation among marrieds, which should have the effect of eliminating medium condom intenders from the simulation.»
+Count("Adult"."Contraception Method"="Condom Medium Intender")=[0,0]
 	

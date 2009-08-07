@@ -1,4 +1,4 @@
-title	Contraception Pill 5m: Cross Check of Married Covariates for Pill Equation Among Marrieds 
-comments	This test sets all values for the pill covariates in the unmarried equation equal to an extremely high number, which should have no effect on pill use among marrieds.
-Count Adult Pill Contraception Method	482	636			
+"Contraception Pill 5m: Cross Check of Married Covariates for Pill Equation Among Marrieds "
+«This test sets all values for the pill covariates in the unmarried equation equal to an extremely high number, which should have no effect on pill use among marrieds.»
+Count("Adult"."Contraception Method"="Pill")=[482,636]	
 	

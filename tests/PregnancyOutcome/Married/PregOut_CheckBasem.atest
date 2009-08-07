@@ -1,6 +1,6 @@
-title	Pregnancy Outcome Baseline 1m Check: Cross-check to abortion and married issue.
-comments	By setting total gestational period to 1 we eliminate issues of bias toward any given category caused by time spent pregnant.
-Sum Adult Pregnancies in Lifetime	4800	6800				
-Sum Adult Abortions in Lifetime	1600	2300				
-Sum Adult Miscarriages in Lifetime	1600	2300				
-Sum Adult Births in Lifetime	1500	2300			
+"Pregnancy Outcome Baseline 1m Check: Cross-check to abortion and married issue"
+«By setting total gestational period to 1 we eliminate issues of bias toward any given category caused by time spent pregnant.»
+Sum("Adult"."Pregnancies in Lifetime")=[4800,6800]
+Sum("Adult"."Abortions in Lifetime")=[1600,2300]
+Sum("Adult"."Miscarriages in Lifetime")=[1600,2300]
+Sum("Adult"."Births in Lifetime")=[1500,2300]	

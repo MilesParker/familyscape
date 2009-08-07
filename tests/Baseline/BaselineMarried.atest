@@ -1,20 +1,20 @@
-experiment	Basic Model Functionality
-Sum Adult Married Code	4186	4186
-Sum Adult Unmarried Code	0	0
-Count Adult In Relationship	4186	4186				
-Count Adult None Contraception Method	1065	1238				
-Count Adult Sterilized Contraception Method	2004	2177				
-Count Adult Pill Contraception Method	472	568				
-Count Adult Condom Medium Intender Contraception Method	262	374				
-Count Adult Condom High Intender Contraception Method	76	127				
-Count Adult High Frequency Coital Behavior Type	2417	2628				
-Count Adult Moderate Frequency Coital Behavior Type	1168	1343				
-Count Adult Very Low Frequency Coital Behavior Type	365	475				
-Average Adult P Sex	1	1				
-Average Adult Sex Count in Lifetime	1365	1365				
-Average Adult Sex Partners in Lifetime	1	1				
-Sum Adult Pregnancies in Lifetime	869	1370				
-Sum Adult Abortions in Lifetime	270	462				
-Sum Adult Miscarriages in Lifetime	254	406				
-Sum Adult Births in Lifetime	222	357			
-Sum Adult Poor Births in Lifetime	106	196				
+"Basic Model Functionality"
+Sum("Adult"."Married Code")=[4186,4186]
+Sum("Adult"."Unmarried Code")=[0,0]
+Count("Adult"."In Relationship")=[4186,4186]
+Count("Adult"."Contraception Method"="None")=[1065,1238]
+Count("Adult"."Contraception Method"="Sterilized")=[2004,2177]
+Count("Adult"."Contraception Method"="Pill")=[472,568]
+Count("Adult"."Contraception Method"="Condom Medium Intender")=[262,374]
+Count("Adult"."Contraception Method"="Condom High Intender")=[76,127]
+Count("Adult"."Coital Behavior Type"="High Frequency")=[2417,2628]
+Count("Adult"."Coital Behavior Type"="Moderate Frequency")=[1168,1343]
+Count("Adult"."Coital Behavior Type"="Very Low Frequency")=[365,475]
+Average("Adult"."P Sex")=[1,1]
+Average("Adult"."Sex Count in Lifetime")=[1365,1365]
+Average("Adult"."Sex Partners in Lifetime")=[1,1]
+Sum("Adult"."Pregnancies in Lifetime")=[869,1370]
+Sum("Adult"."Abortions in Lifetime")=[270,462]
+Sum("Adult"."Miscarriages in Lifetime")=[254,406]
+Sum("Adult"."Births in Lifetime")=[222,357]	
+Sum("Adult"."Poor Births in Lifetime")=[106,196]

@@ -1,5 +1,5 @@
-title	Contraception Partners Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds 
-comments	By making all sterilized, we should have the same number of partners in relationship as sterilized parnters.
-Count Adult Sterilized Contraception Method	5814	5814	
-Count Adult In Relationship	1500	1900	
-Count Adult Partner Sterilized Partner Contraception Method	1500	1900	
+"Contraception Partners Sterilization All unmarried: Spot Check of Partner Sterilization Covariate for Sterilization Equation Among Unmarrieds "
+«By making all sterilized, we should have the same number of partners in relationship as sterilized parnters.»
+Count("Adult"."Contraception Method"="Sterilized")=[5814,5814]	
+Count("Adult"."In Relationship")=[1500,1900]	
+Count("Adult"."Contraception Method"="Partner Sterilized Partner")=[1500,1900]	

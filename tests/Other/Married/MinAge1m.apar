@@ -1,3 +1,0 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"Married
-"Minimum Age"=1500

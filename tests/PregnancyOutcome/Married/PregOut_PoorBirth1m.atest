@@ -1,5 +1,5 @@
-title	Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds
-comments	This test sets the baseline factor in the poor birth abortion equation equal to zero, which should eliminate poor births.
-Sum Adult Poor Births in Lifetime	0	0					
-								
+"Pregnancy Outcome Poor Birth 1m: First Check of Baseline Factor for Poor Births among Marrieds"
+«This test sets the baseline factor in the poor birth abortion equation equal to zero, which should eliminate poor births.»
+Sum("Adult"."Poor Births in Lifetime")=[0,0]	
+
 	

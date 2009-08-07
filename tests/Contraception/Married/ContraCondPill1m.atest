@@ -1,9 +1,9 @@
-title	Contraception Condom Pill 1m: Check of CondomandPill Efficacy Among Marrieds 
-comments	This test makes all male high condom intenders, all women pill users, and sets condom-pill efficacy to 100%, which should have the effect of eliminating all pregnancies in the model.
-Count Adult Condom High Intender Contraception Method	2093	2093
-Count Adult Pill Contraception Method	2093	2093	
-Sum Adult Pregnancies in Lifetime	0	0				
-Sum Adult Abortions in Lifetime	0	0				
-Sum Adult Miscarriages in Lifetime	0	0				
-Sum Adult Births in Lifetime	0	0				
-Sum Adult Poor Births in Lifetime	0	0		
+"Contraception Condom Pill 1m: Check of CondomandPill Efficacy Among Marrieds "
+«This test makes all male high condom intenders, all women pill users, and sets condom-pill efficacy to 100%, which should have the effect of eliminating all pregnancies in the model.»
+Count("Adult"."Contraception Method"="Condom High Intender")=[2093,2093]
+Count("Adult"."Contraception Method"="Pill")=[2093,2093]	
+Sum("Adult"."Pregnancies in Lifetime")=[0,0]
+Sum("Adult"."Abortions in Lifetime")=[0,0]
+Sum("Adult"."Miscarriages in Lifetime")=[0,0]
+Sum("Adult"."Births in Lifetime")=[0,0]
+Sum("Adult"."Poor Births in Lifetime")=[0,0]

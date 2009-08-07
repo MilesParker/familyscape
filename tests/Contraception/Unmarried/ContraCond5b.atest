@@ -1,3 +1,3 @@
-title	Contraception Condom Cond 5b: Cross Check of Married Covariates for High Condom Equation Among Unmarrieds 
-comments	This test sets all values for the pill covariates in the married high condom equation equal to an extremely high number, which should have no effect on the number of high condom intenders among unmarrieds.
-Count Adult Condom High Intender Contraception Method	112	170				
+"Contraception Condom Cond 5b: Cross Check of Married Covariates for High Condom Equation Among Unmarrieds "
+«This test sets all values for the pill covariates in the married high condom equation equal to an extremely high number, which should have no effect on the number of high condom intenders among unmarrieds.»
+Count("Adult"."Contraception Method"="Condom High Intender")=[112,170]

@@ -1,7 +1,7 @@
-title	Preg Duration 2: Check of Minimum Age Parameter for Marrieds 
-comments	This test changes the duration of pregnancies for abortions and births among marrieds such that there can be no more than one per run.  This can then be tested by looking at the number of births/abortions and verifying that the number of pregnancies is smaller than under baseline.
-Sum Adult Pregnancies in Lifetime	0	1000				
-Maximum Adult Abortions in Lifetime	0	1				
-Maximum Adult Births in Lifetime	0	1				
-Maximum Adult Poor Births in Lifetime	0	1				
+"Preg Duration 2: Check of Minimum Age Parameter for Marrieds "
+«This test changes the duration of pregnancies for abortions and births among marrieds such that there can be no more than one per run.  This can then be tested by looking at the number of births/abortions and verifying that the number of pregnancies is smaller than under baseline.»
+Sum("Adult"."Pregnancies in Lifetime")=[0,1000]
+Maximum("Adult"."Abortions in Lifetime")=[0,1]
+Maximum("Adult"."Births in Lifetime")=[0,1]
+Maximum("Adult"."Poor Births in Lifetime")=[0,1]
 	

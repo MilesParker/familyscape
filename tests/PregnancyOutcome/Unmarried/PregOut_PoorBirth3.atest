@@ -1,5 +1,5 @@
-title	Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds
-comments	This test sets the Education covariates in the unmarried poor birth equation equal to (-1*baseline), which should eliminate poor births.
-Sum Adult Poor Births in Lifetime	0	0				
-								
+"Pregnancy Outcome Poor Birth 3: Spot Check of Covariates for Poor Birth Equation among Unmarrieds"
+«This test sets the Education covariates in the unmarried poor birth equation equal to (-1*baseline), which should eliminate poor births.»
+Sum("Adult"."Poor Births in Lifetime")=[0,0]
+
 	

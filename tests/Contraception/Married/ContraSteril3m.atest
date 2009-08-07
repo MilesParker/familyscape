@@ -1,4 +1,4 @@
-title	Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds 
-comments	This test sets all sexual proclivity factors equal to (-1*baseline) in the sterilization equations among marrieds, which should have the effect of eliminating sterilization in the simulation.
-Count Adult Sterilized Contraception Method	0	0				
+"Contraception Sterilization 3m: Spot Check of Sexual Frequency Covariates for Sterilization Equations Among Marrieds "
+«This test sets all sexual proclivity factors equal to (-1*baseline) in the sterilization equations among marrieds, which should have the effect of eliminating sterilization in the simulation.»
+Count("Adult"."Contraception Method"="Sterilized")=[0,0]
 	

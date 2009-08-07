@@ -1,5 +1,5 @@
-title	Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds
-comments	This test sets the SES covariates in the unmarried abortion equation equal to (-1*baseline), which should eliminate abortions increase the number of births and slghtly lower miscarriages relative to baseline.
-Sum Adult Abortions in Lifetime	0	0	
-Sum Adult Miscarriages in Lifetime	200	350				
-Sum Adult Births in Lifetime	350	1300				
+"Pregnancy Outcome Abortion 3: Spot Check of Covariates for Abortion Equation among Unmarrieds"
+«This test sets the SES covariates in the unmarried abortion equation equal to (-1*baseline), which should eliminate abortions increase the number of births and slghtly lower miscarriages relative to baseline.»
+Sum("Adult"."Abortions in Lifetime")=[0,0]	
+Sum("Adult"."Miscarriages in Lifetime")=[200,350]
+Sum("Adult"."Births in Lifetime")=[350,1300]

@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"Married
+incorporates	"../../Baseline/BaselineMarried.apar"
 "P Abortion Married Factor Base"=1.0
 "P Miscarriage Married Factor Base"=0.0
 "Typical Birth Period Start"=1

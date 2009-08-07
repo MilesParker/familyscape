@@ -1,6 +1,6 @@
-title	Pregnancy Outcome Birth 1m Check: Cross-check to ensure that births are assigned.
-comments	By setting total gestational period to 1 we eliminate issues of bias toward any given category caused by time spent pregnant.
-Sum Adult Pregnancies in Lifetime	5200	6400				
-Sum Adult Abortions in Lifetime	0	0				
-Sum Adult Miscarriages in Lifetime	0	0				
-Sum Adult Births in Lifetime	5200	6400			
+"Pregnancy Outcome Birth 1m Check: Cross-check to ensure that births are assigned"
+«By setting total gestational period to 1 we eliminate issues of bias toward any given category caused by time spent pregnant.»
+Sum("Adult"."Pregnancies in Lifetime")=[5200,6400]
+Sum("Adult"."Abortions in Lifetime")=[0,0]
+Sum("Adult"."Miscarriages in Lifetime")=[0,0]
+Sum("Adult"."Births in Lifetime")=[5200,6400]	

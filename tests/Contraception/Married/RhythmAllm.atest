@@ -1,3 +1,3 @@
-title	Rhythm Method All Married: All marrieds are rhythm method users; this should reduce sex acts in lifetime by 10%.
-Count Adult Rhythm Method User	2093	2093
-Average Adult Sex Count in Lifetime	1200	1250				
+"Rhythm Method All Married: All marrieds are rhythm method users; this should reduce sex acts in lifetime by 10%"
+Count("Adult"."Rhythm Method User")=[2093,2093]
+Average("Adult"."Sex Count in Lifetime")=[1200,1250]

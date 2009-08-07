@@ -1,3 +1,3 @@
-title	Contraception Pill 1: Check of Baseline Factor for Pill Equation Among Unmarrieds 
-comments	This test doubles the baseline factor for the pill equation among unmarrieds, which should have the effect of roughly doubling the number of women who are on the pill relative to baseline.
-Count Adult Pill Contraception Method	1400	1620				
+"Contraception Pill 1: Check of Baseline Factor for Pill Equation Among Unmarrieds "
+«This test doubles the baseline factor for the pill equation among unmarrieds, which should have the effect of roughly doubling the number of women who are on the pill relative to baseline.»
+Count("Adult"."Contraception Method"="Pill")=[1400,1620]

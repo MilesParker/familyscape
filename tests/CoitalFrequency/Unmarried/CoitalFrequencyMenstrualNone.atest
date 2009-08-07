@@ -1,4 +1,4 @@
-title	Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) 
-comments	This test assigns an extremely low value to lunar days, which should result in no change in sex occurance relative to baseline.
-Average Adult Sex Count in Lifetime	655	688				
-Average Adult Sex Partners in Lifetime	12.5	13.5
+"Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value)"
+«This test assigns an extremely low value to lunar days, which should result in no change in sex occurance relative to baseline.»
+Average("Adult"."Sex Count in Lifetime")=[655,688]
+Average("Adult"."Sex Partners in Lifetime")=[12.5,13.5]

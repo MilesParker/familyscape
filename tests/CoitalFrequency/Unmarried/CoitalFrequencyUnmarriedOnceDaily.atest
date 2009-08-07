@@ -1,6 +1,6 @@
-title	Coital Frequency Unmarried Once Daily
-comments	This check ensures that no unmarrieds are having sex more than once a day.
-Minimum Adult Sex Count in Lifetime	0	0
-Maximum Adult Sex Count in Lifetime	100	100
-Minimum Adult Sex Partners in Lifetime	0	0
-Maximum Adult Sex Partners in Lifetime	100	100
+"Coital Frequency Unmarried Once Daily"
+«This check ensures that no unmarrieds are having sex more than once a day.»
+Minimum("Adult"."Sex Count in Lifetime")=[0,0]
+Maximum("Adult"."Sex Count in Lifetime")=[100,100]
+Minimum("Adult"."Sex Partners in Lifetime")=[0,0]
+Maximum("Adult"."Sex Partners in Lifetime")=[100,100]
