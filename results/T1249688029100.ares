@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ares:RunSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aPar="http://www.eclipse.org/amp/amf/parameters/APar" xmlns:aTest="http://www.eclipse.org/amp/amf/testing/ATest" xmlns:ares="http://eclipse.org/amp/ares" result="FAILURE">
+  <runs result="SUCCESS" started="2009-08-07T16:34:01.018-0700" finished="2009-08-07T16:36:57.840-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraAll1.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraAll1.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='condomFailureRate']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pillFailureRate']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pillCondomFailureRate']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1365"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="1155"/>
+      <maxValue xsi:type="aTest:IntValue" value="136500"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="369"/>
+      <maxValue xsi:type="aTest:IntValue" value="136500"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='miscarriagesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="353"/>
+      <maxValue xsi:type="aTest:IntValue" value="136500"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="295"/>
+      <maxValue xsi:type="aTest:IntValue" value="136500"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="153"/>
+      <maxValue xsi:type="aTest:IntValue" value="136500"/>
+    </constraints>
+    <results constraint="//@runs.0/@constraints.0" issue="NONE" actualValue="1696.0"/>
+    <results constraint="//@runs.0/@constraints.1" issue="NONE" actualValue="515.0"/>
+    <results constraint="//@runs.0/@constraints.2" issue="NONE" actualValue="466.0"/>
+    <results constraint="//@runs.0/@constraints.3" issue="NONE" actualValue="434.0"/>
+    <results constraint="//@runs.0/@constraints.4" issue="NONE" actualValue="212.0"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:06.868-0700" finished="2009-08-07T16:34:43.907-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraCond5b.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraCond5b.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedFactorBase']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarried15to19Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarried20to24Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarried25to29Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarried30to44Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedNHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedPHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedOtherFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedBlackFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedHispanicFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedWhiteFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedCategory1Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedCategory3Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedCategory2Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedCategory4Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedVeryLowFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedModerateFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedHighFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseMarriedPartnerSterilizedFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.4"/>
+      <minValue xsi:type="aTest:IntValue" value="112"/>
+      <maxValue xsi:type="aTest:IntValue" value="170"/>
+    </constraints>
+    <results constraint="//@runs.1/@constraints.0" issue="NONE" actualValue="130.0"/>
+  </runs>
+  <runs result="FAILURE" started="2009-08-07T16:34:06.894-0700" finished="2009-08-07T16:36:49.505-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraCond6.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraCond6.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pMediumCondomUseUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='condomFailureRate']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pillCondomFailureRate']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1000"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.4"/>
+      <minValue xsi:type="aTest:IntValue" value="2819"/>
+      <maxValue xsi:type="aTest:IntValue" value="2819"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='miscarriagesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <results constraint="//@runs.2/@constraints.0" actualValue="2806.0"/>
+    <results constraint="//@runs.2/@constraints.1" issue="NONE"/>
+    <results constraint="//@runs.2/@constraints.2" issue="NONE"/>
+    <results constraint="//@runs.2/@constraints.3" issue="NONE"/>
+    <results constraint="//@runs.2/@constraints.4" issue="NONE"/>
+    <results constraint="//@runs.2/@constraints.5" issue="NONE"/>
+  </runs>
+  <runs result="FAILURE" started="2009-08-07T16:34:06.869-0700" finished="2009-08-07T16:36:49.338-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraCondPill1.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraCondPill1.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pMediumCondomUseUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pHighCondomUseUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pillCondomFailureRate']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1000"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.4"/>
+      <minValue xsi:type="aTest:IntValue" value="2819"/>
+      <maxValue xsi:type="aTest:IntValue" value="2819"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
+      <minValue xsi:type="aTest:IntValue" value="2995"/>
+      <maxValue xsi:type="aTest:IntValue" value="2995"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='miscarriagesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <results constraint="//@runs.3/@constraints.0" actualValue="2800.0"/>
+    <results constraint="//@runs.3/@constraints.1" actualValue="2986.0"/>
+    <results constraint="//@runs.3/@constraints.2" issue="NONE"/>
+    <results constraint="//@runs.3/@constraints.3" issue="NONE"/>
+    <results constraint="//@runs.3/@constraints.4" issue="NONE"/>
+    <results constraint="//@runs.3/@constraints.5" issue="NONE"/>
+    <results constraint="//@runs.3/@constraints.6" issue="NONE"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:06.863-0700" finished="2009-08-07T16:34:43.778-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraPill1.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraPill1.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
+      <minValue xsi:type="aTest:IntValue" value="1400"/>
+      <maxValue xsi:type="aTest:IntValue" value="1620"/>
+    </constraints>
+    <results constraint="//@runs.4/@constraints.0" issue="NONE" actualValue="1522.0"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:06.917-0700" finished="2009-08-07T16:34:43.938-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraPill2.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraPill2.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarried15to19Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarried20to24Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarried25to29Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarried30to44Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <results constraint="//@runs.5/@constraints.0" issue="NONE"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:06.944-0700" finished="2009-08-07T16:34:43.977-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraPill3.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraPill3.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarriedVeryLowFrequencyFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarriedModerateFrequencyFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarriedHighFrequencyFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <results constraint="//@runs.6/@constraints.0" issue="NONE"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:06.926-0700" finished="2009-08-07T16:34:43.749-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraPill4.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraPill4.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarriedPartnerSterilizedFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
+      <minValue xsi:type="aTest:IntValue" value="700"/>
+      <maxValue xsi:type="aTest:IntValue" value="812"/>
+    </constraints>
+    <results constraint="//@runs.7/@constraints.0" issue="NONE" actualValue="712.0"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:43.922-0700" finished="2009-08-07T16:35:09.655-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraPill5.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraPill5.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedFactorBase']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarried15to19Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarried20to24Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarried25to29Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarried30to44Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedNHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedPHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedOtherFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedBlackFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedHispanicFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedWhiteFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedCategory1Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedCategory3Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedCategory2Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedCategory4Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedVeryLowFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedModerateFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedHighFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseMarriedPartnerSterilizedFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
+      <minValue xsi:type="aTest:IntValue" value="700"/>
+      <maxValue xsi:type="aTest:IntValue" value="812"/>
+    </constraints>
+    <results constraint="//@runs.8/@constraints.0" issue="NONE" actualValue="765.0"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:43.926-0700" finished="2009-08-07T16:35:09.612-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraPill6.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraPill6.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pillFailureRate']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
+      <minValue xsi:type="aTest:IntValue" value="2995"/>
+      <maxValue xsi:type="aTest:IntValue" value="2995"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='miscarriagesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <results constraint="//@runs.9/@constraints.0" issue="NONE" actualValue="2995.0"/>
+    <results constraint="//@runs.9/@constraints.1" issue="NONE"/>
+    <results constraint="//@runs.9/@constraints.2" issue="NONE"/>
+    <results constraint="//@runs.9/@constraints.3" issue="NONE"/>
+    <results constraint="//@runs.9/@constraints.4" issue="NONE"/>
+    <results constraint="//@runs.9/@constraints.5" issue="NONE"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:44.055-0700" finished="2009-08-07T16:36:48.056-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraSteril1.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraSteril1.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1000"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.1"/>
+      <minValue xsi:type="aTest:IntValue" value="5814"/>
+      <maxValue xsi:type="aTest:IntValue" value="5814"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='miscarriagesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <results constraint="//@runs.10/@constraints.0" issue="NONE" actualValue="5814.0"/>
+    <results constraint="//@runs.10/@constraints.1" issue="NONE"/>
+    <results constraint="//@runs.10/@constraints.2" issue="NONE"/>
+    <results constraint="//@runs.10/@constraints.3" issue="NONE"/>
+    <results constraint="//@runs.10/@constraints.4" issue="NONE"/>
+    <results constraint="//@runs.10/@constraints.5" issue="NONE"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:44.090-0700" finished="2009-08-07T16:35:09.846-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraSteril2.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraSteril2.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedCategory1Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedCategory3Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedCategory2Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedCategory4Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedCategory1Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedCategory3Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedCategory2Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedCategory4Factor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.1"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <results constraint="//@runs.11/@constraints.0" issue="NONE"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:34:44.145-0700" finished="2009-08-07T16:35:09.868-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraSteril3.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraSteril3.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedVeryLowFrequencyFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedModerateFrequencyFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedHighFrequencyFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedVeryLowFrequencyFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedModerateFrequencyFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedHighFrequencyFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.1"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <results constraint="//@runs.12/@constraints.0" issue="NONE"/>
+  </runs>
+  <runs result="FAILURE" started="2009-08-07T16:35:09.766-0700" finished="2009-08-07T16:35:36.815-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraSteril4.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraSteril4.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedFactorBase']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarried15to19Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarried20to24Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarried25to29Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarried30to44Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedNHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedPHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedOtherFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedBlackFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedHispanicFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedWhiteFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedCategory1Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedCategory3Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedCategory2Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedCategory4Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedVeryLowFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedModerateFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedHighFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedFactorBase']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarried15to19Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarried20to24Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarried25to29Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarried30to44Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedNHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedPHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedHSFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedOtherFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedBlackFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedHispanicFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedWhiteFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedCategory1Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedCategory3Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedCategory2Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedCategory4Factor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedVeryLowFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedModerateFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedHighFrequencyFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedPartnerSterilizedFactor']"/>
+      <value xsi:type="aPar:IntValue" value="100"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="1"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aPar:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../tests/Contraception/Unmarried/ContraSteril4.atest#xtextLink_:://@contraints.0::http://www.eclipse.org/amp/amf/testing/ATest#//Constraint/attribute::/4"/>
+      <minValue xsi:type="aTest:RealValue" value="2778.18"/>
+      <maxValue xsi:type="aTest:RealValue" value="3070.62"/>
+    </constraints>
+    <results constraint="//@runs.13/@constraints.0" issue="NOT_FOUND" actualValue="NaN"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:35:09.785-0700" finished="2009-08-07T16:35:36.779-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraSteril5MenWomen.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraSteril5MenWomen.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedPartnerSterilizedFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="0"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.1"/>
+      <minValue xsi:type="aTest:IntValue" value="3300"/>
+      <maxValue xsi:type="aTest:IntValue" value="4500"/>
+    </constraints>
+    <results constraint="//@runs.14/@constraints.0" issue="NONE" actualValue="4422.0"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-08-07T16:35:10.008-0700" finished="2009-08-07T16:35:36.977-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraSteril5WomenMen.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraSteril5WomenMen.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleMarriedPartnerSterilizedFactor']"/>
+      <value xsi:type="aPar:RealValue" value="-0.5"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleMarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="0"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.1"/>
+      <minValue xsi:type="aTest:IntValue" value="2802"/>
+      <maxValue xsi:type="aTest:IntValue" value="3011"/>
+    </constraints>
+    <results constraint="//@runs.15/@constraints.0" issue="NONE" actualValue="2838.0"/>
+  </runs>
+  <runs result="FAILURE" started="2009-08-07T16:35:10.006-0700" finished="2009-08-07T16:35:48.700-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/ContraSterilAll.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/ContraSterilAll.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeMaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pSterilizeFemaleUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aPar:IntValue" value="50"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.1"/>
+      <minValue xsi:type="aTest:IntValue" value="5814"/>
+      <maxValue xsi:type="aTest:IntValue" value="5814"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='inRelationship']"/>
+      <minValue xsi:type="aTest:IntValue" value="1500"/>
+      <maxValue xsi:type="aTest:IntValue" value="1900"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../tests/Contraception/Unmarried/ContraSterilAll.atest#xtextLink_:://@contraints.2::http://www.eclipse.org/amp/amf/testing/ATest#//Constraint/qualifier::/6"/>
+      <minValue xsi:type="aTest:IntValue" value="1500"/>
+      <maxValue xsi:type="aTest:IntValue" value="1900"/>
+    </constraints>
+    <results constraint="//@runs.16/@constraints.0" issue="NONE" actualValue="5814.0"/>
+    <results constraint="//@runs.16/@constraints.1" issue="NONE" actualValue="1872.0"/>
+    <results constraint="//@runs.16/@constraints.2" issue="NOT_FOUND" actualValue="NaN"/>
+  </runs>
+  <runs result="FAILURE" started="2009-08-07T16:35:36.986-0700" finished="2009-08-07T16:37:03.898-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/RhythmAll.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/RhythmAll.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodMarriedPill']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodMarriedNone']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSinglePill']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSingleNone']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSingleSterilized']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='rhythmMethodUser']"/>
+      <minValue xsi:type="aTest:IntValue" value="2995"/>
+      <maxValue xsi:type="aTest:IntValue" value="2995"/>
+    </constraints>
+    <constraints measure="Average">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='sexCountinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="570"/>
+      <maxValue xsi:type="aTest:IntValue" value="619"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="800"/>
+      <maxValue xsi:type="aTest:IntValue" value="1100"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="240"/>
+      <maxValue xsi:type="aTest:IntValue" value="420"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='miscarriagesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="225"/>
+      <maxValue xsi:type="aTest:IntValue" value="360"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="200"/>
+      <maxValue xsi:type="aTest:IntValue" value="320"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="80"/>
+      <maxValue xsi:type="aTest:IntValue" value="170"/>
+    </constraints>
+    <results constraint="//@runs.17/@constraints.0" actualValue="2980.0"/>
+    <results constraint="//@runs.17/@constraints.1" issue="ABOVE_RANGE" actualValue="826.7175782593739"/>
+    <results constraint="//@runs.17/@constraints.2" issue="ABOVE_RANGE" actualValue="1115.0"/>
+    <results constraint="//@runs.17/@constraints.3" issue="NONE" actualValue="312.0"/>
+    <results constraint="//@runs.17/@constraints.4" issue="NONE" actualValue="310.0"/>
+    <results constraint="//@runs.17/@constraints.5" issue="NONE" actualValue="301.0"/>
+    <results constraint="//@runs.17/@constraints.6" issue="NONE" actualValue="150.0"/>
+  </runs>
+  <runs result="FAILURE" started="2009-08-07T16:35:37.007-0700" finished="2009-08-07T16:37:03.041-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/RhythmAllPill.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/RhythmAllPill.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodMarriedPill']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodMarriedNone']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSinglePill']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSingleNone']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSingleSterilized']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
+      <minValue xsi:type="aTest:IntValue" value="1425"/>
+      <maxValue xsi:type="aTest:IntValue" value="1550"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='rhythmMethodUser']"/>
+      <minValue xsi:type="aTest:IntValue" value="2995"/>
+      <maxValue xsi:type="aTest:IntValue" value="2995"/>
+    </constraints>
+    <constraints measure="Average">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='sexCountinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="570"/>
+      <maxValue xsi:type="aTest:IntValue" value="619"/>
+    </constraints>
+    <results constraint="//@runs.18/@constraints.0" issue="NONE" actualValue="1517.0"/>
+    <results constraint="//@runs.18/@constraints.1" actualValue="2989.0"/>
+    <results constraint="//@runs.18/@constraints.2" issue="ABOVE_RANGE" actualValue="835.9673202614379"/>
+  </runs>
+  <runs result="FAILURE" started="2009-08-07T16:35:37.134-0700" finished="2009-08-07T16:37:07.516-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/RhythmNoPill.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/RhythmNoPill.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodMarriedPill']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodMarriedNone']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSinglePill']"/>
+      <value xsi:type="aPar:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSingleNone']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillUseUnmarriedFactorBase']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='rhythmMethodUser']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Average">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='sexCountinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="655"/>
+      <maxValue xsi:type="aTest:IntValue" value="688"/>
+    </constraints>
+    <results constraint="//@runs.19/@constraints.0" issue="ABOVE_RANGE" actualValue="6.0"/>
+    <results constraint="//@runs.19/@constraints.1" issue="NONE"/>
+    <results constraint="//@runs.19/@constraints.2" issue="ABOVE_RANGE" actualValue="930.5304437564499"/>
+  </runs>
+  <runs result="FAILURE" started="2009-08-07T16:35:48.894-0700" finished="2009-08-07T16:37:04.846-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/Contraception/Unmarried/RhythmNone.atest#/"/>
+    <parameterization href="../tests/Contraception/Unmarried/RhythmNone.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodMarriedPill']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodMarriedNone']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSinglePill']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pRhythmMethodSingleNone']"/>
+      <value xsi:type="aPar:RealValue" value="0.0"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='rhythmMethodUser']"/>
+      <minValue xsi:type="aTest:IntValue" value="0"/>
+      <maxValue xsi:type="aTest:IntValue" value="0"/>
+    </constraints>
+    <constraints measure="Average">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='sexCountinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="655"/>
+      <maxValue xsi:type="aTest:IntValue" value="688"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="904"/>
+      <maxValue xsi:type="aTest:IntValue" value="1231"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="270"/>
+      <maxValue xsi:type="aTest:IntValue" value="462"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='miscarriagesinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="254"/>
+      <maxValue xsi:type="aTest:IntValue" value="406"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="222"/>
+      <maxValue xsi:type="aTest:IntValue" value="357"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aTest:IntValue" value="106"/>
+      <maxValue xsi:type="aTest:IntValue" value="196"/>
+    </constraints>
+    <results constraint="//@runs.20/@constraints.0" issue="NONE"/>
+    <results constraint="//@runs.20/@constraints.1" issue="ABOVE_RANGE" actualValue="920.9852081183351"/>
+    <results constraint="//@runs.20/@constraints.2" issue="NONE" actualValue="1088.0"/>
+    <results constraint="//@runs.20/@constraints.3" issue="NONE" actualValue="318.0"/>
+    <results constraint="//@runs.20/@constraints.4" issue="NONE" actualValue="311.0"/>
+    <results constraint="//@runs.20/@constraints.5" issue="NONE" actualValue="269.0"/>
+    <results constraint="//@runs.20/@constraints.6" issue="NONE" actualValue="129.0"/>
+  </runs>
+</ares:RunSet>
