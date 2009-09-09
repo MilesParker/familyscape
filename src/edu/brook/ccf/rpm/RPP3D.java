@@ -12,6 +12,7 @@ public class RPP3D extends RelationshipsAndPregnancy implements I3DModelFactoryP
         addView(gef3DView);
     }
 
+    @Override
     public EditPartFactory getEditPart3DFactory() {
         return new Ascape3DPartFactory() {
             public EditPart getPartForElement(Object model) {
