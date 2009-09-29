@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ares:RunSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aBase="http://www.eclipse.org/amp/amf/abase/ABase" xmlns:ares="http://eclipse.org/amp/ares" result="SUCCESS">
+  <runs result="SUCCESS" started="2009-09-23T20:17:24.365-0700" finished="2009-09-23T20:17:29.078-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/CoitalFrequency/Married/CoitalFrequencyDoubleModm.atest#/"/>
+    <parameterization href="../tests/CoitalFrequency/Married/CoitalFrequencyDoubleModm.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateMarriedFactorBase']"/>
+      <value xsi:type="aBase:RealValue" value="0.6"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aBase:IntValue" value="0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aBase:StringValue" value="|data/NSFG_Married.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']/@options.2"/>
+      <minValue xsi:type="aBase:IntValue" value="2391"/>
+      <maxValue xsi:type="aBase:IntValue" value="2643"/>
+    </constraints>
+    <results constraint="//@runs.0/@constraints.0" issue="NONE" actualValue="2534.0"/>
+  </runs>
+  <runs result="SUCCESS" started="2009-09-23T20:17:24.359-0700" finished="2009-09-23T20:17:29.079-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/CoitalFrequency/Married/CoitalFrequencyCrossMarried.atest#/"/>
+    <parameterization href="../tests/CoitalFrequency/Married/CoitalFrequencyCrossMarried.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedFactorBase']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedFemaleFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedMaleFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarried15to19Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarried20to24Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarried25to29Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarried30to44Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedNHSFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedPHSFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedHSFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedOtherFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedBlackFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedHispanicFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedWhiteFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedCategory1Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedCategory3Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedCategory2Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyModerateUnmarriedCategory4Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedFactorBase']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedFemaleFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedMaleFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarried15to19Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarried20to24Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarried25to29Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarried30to44Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedNHSFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedPHSFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedHSFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedOtherFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedBlackFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedHispanicFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedWhiteFactor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedCategory1Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedCategory3Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedCategory2Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCoitalFrequencyVeryLowUnmarriedCategory4Factor']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aBase:IntValue" value="0"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']/@options.1"/>
+      <minValue xsi:type="aBase:IntValue" value="2417"/>
+      <maxValue xsi:type="aBase:IntValue" value="2628"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']/@options.2"/>
+      <minValue xsi:type="aBase:IntValue" value="1168"/>
+      <maxValue xsi:type="aBase:IntValue" value="1343"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']/@options.0"/>
+      <minValue xsi:type="aBase:IntValue" value="365"/>
+      <maxValue xsi:type="aBase:IntValue" value="475"/>
+    </constraints>
+    <results constraint="//@runs.1/@constraints.0" issue="NONE" actualValue="2499.0"/>
+    <results constraint="//@runs.1/@constraints.1" issue="NONE" actualValue="1254.0"/>
+    <results constraint="//@runs.1/@constraints.2" issue="NONE" actualValue="433.0"/>
+  </runs>
+</ares:RunSet>
