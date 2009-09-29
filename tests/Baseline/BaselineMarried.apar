@@ -2,4 +2,6 @@ model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"Baseline.apar"
 "Stop Period"=1365
 "Input Data File"="|data/NSFG_Married.txt"
-"P Relationship Begin Maximum"=0
+"P Relationship Begin Maximum"=0.0
+"P Relationship End Minimum"=0.0
+"P Relationship End Maximum"=0.0

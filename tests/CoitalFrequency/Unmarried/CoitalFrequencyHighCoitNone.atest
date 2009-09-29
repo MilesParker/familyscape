@@ -1,6 +1,6 @@
-"Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds "
+"Coital Frequency 7 High Coital Threhsold: Check of Unmarried High CoitFreq Thresholds "
 «This test assigns all unmarried agents to the high coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.»
-Average("Adult"."Sex Count in Lifetime")=[0,0]
-Average("Adult"."Sex Partners in Lifetime")=[0,0]
+Maximum("Adult"."Sex Count in Lifetime")=[0,0]
+Maximum("Adult"."Sex Partners in Lifetime")=[0,0]
 Count("Adult"."Coital Behavior Type"="High Frequency")=[5814,5814]	
-	
+Maximum("Adult"."P End Relationship")=[0,0]

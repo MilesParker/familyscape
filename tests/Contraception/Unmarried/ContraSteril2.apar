@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Sterilize Female Unmarried Category 1 Factor"=-0.5
 "P Sterilize Female Unmarried Category 3 Factor"=-0.5
 "P Sterilize Female Unmarried Category 2 Factor"=-0.5

@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Abortion Unmarried Factor Base"=0.0
 "P Miscarriage Unmarried Factor Base"=1.0
 "Stop Period"=1365

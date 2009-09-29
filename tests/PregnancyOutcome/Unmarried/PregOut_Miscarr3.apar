@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Miscarriage Unmarried 15 to 19 Factor"=-0.33333
 "P Miscarriage Unmarried 20 to 24 Factor"=-0.33333
 "P Miscarriage Unmarried 25 to 29 Factor"=-0.33333

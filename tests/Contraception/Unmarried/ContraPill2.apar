@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Pill Use Unmarried 15 to 19 Factor"=-0.5
 "P Pill Use Unmarried 20 to 24 Factor"=-0.5
 "P Pill Use Unmarried 25 to 29 Factor"=-0.5

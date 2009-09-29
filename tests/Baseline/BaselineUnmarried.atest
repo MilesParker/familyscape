@@ -1,3 +1,5 @@
+"Basic Model Unmarried"
+«Simple baseline values for all umarried agents.»
 Count("Adult"."In Relationship")=[2944,3176]
 Sum("Adult"."Married Code")=[0,0]
 Sum("Adult"."Unmarried Code")=[5814,5814]

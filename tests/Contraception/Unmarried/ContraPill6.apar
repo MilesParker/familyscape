@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Pill Use Unmarried Factor Base"=1.0
 "P Sterilize Female Unmarried Factor Base"=0.0
 "Pill Failure Rate"=0.0

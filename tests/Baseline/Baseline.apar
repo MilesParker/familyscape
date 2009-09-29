@@ -1,10 +1,10 @@
+"Base Model"
 model	"|RelationshipsAndPregnancyData.metaabm"
-"Input Data File"="|data/NSFG_Married.txt"
 "Output Data"=true
 "All Output File"=""
 "Output Run File"="|run-output/Parameters.txt"
 "Output Period File"="|run-output/Results.txt"
-"Write Periods"=1365
+"Write Periods"=13650
 "Stop Period"=1365
 "Neighborhood Height"=225
 "Neighborhood Width"=225
@@ -23,8 +23,8 @@ model	"|RelationshipsAndPregnancyData.metaabm"
 "P Marriage Maximum Base"=1.0
 "P Marriage 15 to 19 Minimum"=0
 "P Marriage 15 to 19 Maximum"=0
-"P Marriage 20 to 24 Minimum"=0
-"P Marriage 20 to 24 Maximum"=0
+//"P Marriage 20 to 24 Minimum"=0
+//"P Marriage 20 to 24 Maximum"=0
 "P Marriage 25 to 29 Minimum"=0
 "P Marriage 25 to 29 Maximum"=0
 "P Marriage 30 to 44 Minimum"=0
@@ -498,7 +498,7 @@ model	"|RelationshipsAndPregnancyData.metaabm"
 "P Poor Birth Unmarried Category 3 Factor"=0
 "P Poor Birth Unmarried Category 2 Factor"=0
 "P Poor Birth Unmarried Category 4 Factor"=0
-"P Rhythm Method Married Pill"=0.0
-"P Rhythm Method Married None"=0.0
-"P Rhythm Method Single Pill"=0.0
-"P Rhythm Method Single None"=0.0
+//"P Rhythm Method Married Pill"=0.0
+//"P Rhythm Method Married None"=0.0
+//"P Rhythm Method Single Pill"=0.0
+//"P Rhythm Method Single None"=0.0

@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Medium Condom Use Unmarried Very Low Frequency Factor"=-0.4
 "P Medium Condom Use Unmarried Moderate Frequency Factor"=-0.4
 "P Medium Condom Use Unmarried High Frequency Factor"=-0.4

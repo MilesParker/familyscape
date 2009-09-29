@@ -1,4 +1,4 @@
 "Coital Frequency Double Moderate: Functionality of Moderate Married Sexual-Proclivity Baseline" 
 «This test doubles the baseline value of the moderate married sexual-proclivity baseline factor. Since all demographic predictors are set equal to zero, this should roughly result in a doubling of the number of married sexual moderates.»
-Count("Adult"."Coital Behavior Type"="High Frequency") =[2391,2643]
+Count("Adult"."Coital Behavior Type"="Moderate Frequency") =[2391,2643]
 

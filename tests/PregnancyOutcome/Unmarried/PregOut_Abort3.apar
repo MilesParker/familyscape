@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Abortion Unmarried Category 1 Factor"=-0.33333
 "P Abortion Unmarried Category 3 Factor"=-0.33333
 "P Abortion Unmarried Category 2 Factor"=-0.33333

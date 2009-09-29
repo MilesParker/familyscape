@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P High Condom Use Unmarried Factor Base"=0.2
 "Stop Period"=1
 "Input Data File"="|data/NSFG_Unmarried.txt"

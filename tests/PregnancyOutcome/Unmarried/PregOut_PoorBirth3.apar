@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Poor Birth Unmarried NHS Factor"=-0.5
 "P Poor Birth Unmarried PHS Factor"=-0.5
 "P Poor Birth Unmarried HS Factor"=-0.5

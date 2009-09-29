@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Pill Use Unmarried Very Low Frequency Factor"=-0.5
 "P Pill Use Unmarried Moderate Frequency Factor"=-0.5
 "P Pill Use Unmarried High Frequency Factor"=-0.5

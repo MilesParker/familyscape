@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Sterilize Female Unmarried Very Low Frequency Factor"=-0.5
 "P Sterilize Female Unmarried Moderate Frequency Factor"=-0.5
 "P Sterilize Female Unmarried High Frequency Factor"=-0.5

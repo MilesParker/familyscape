@@ -1,0 +1,10 @@
+"Executes All Rhythme Method Tests"
+contains
+"Contraception/Unmarried/RhythmAllPill.atest"
+"Contraception/Unmarried/RhythmAll.atest"
+"Contraception/Unmarried/RhythmNone.atest"
+"Contraception/Unmarried/RhythmNoPill.atest"
+"Contraception/Married/RhythmAllPillm.atest"
+"Contraception/Married/RhythmAllm.atest"
+"Contraception/Married/RhythmNonem.atest"
+"Contraception/Married/RhythmNoPillm.atest"

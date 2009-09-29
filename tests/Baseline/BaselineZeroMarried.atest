@@ -1,6 +1,9 @@
-"Basic Model 0 Period Functionality Married"
+"Basic Model Married Period 0"
+«Simple baseline values for all married agents.»
 Sum("Adult"."Married Code")=[4186,4186]
 Sum("Adult"."Unmarried Code")=[0,0]
+Count("Adult"."Marital Status"="Married")=[4186,4186]
+Count("Adult"."Marital Status"="Single")=[0,0]
 Count("Adult"."Gender"="Male")=[2093,2093]
 Count("Adult"."Gender"="Female")=[2093,2093]
 Sum("Adult"."Male Code")=[2093,2093]
@@ -9,6 +12,8 @@ Count("Adult"."Married Code")=[4186,4186]
 Count("Adult"."In Relationship")=[4186,4186]
 Count("Adult"."Contraception Method"="None")=[1065,1238]
 Count("Adult"."Contraception Method"="Sterilized")=[2004,2177]
+Count("Adult"."Partner Contraception Method"="Partner Sterilized")=[2004,2177]
+Count("Adult"."Partner Contraception Method"="Other Contraception")=[2004,2177]
 Count("Adult"."Contraception Method"="Pill")=[472,568]
 Count("Adult"."Contraception Method"="Condom Medium Intender")=[262,374]
 Count("Adult"."Contraception Method"="Condom High Intender")=[76,127]

@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Coital Frequency Very Low Unmarried Black Factor"=-0.1
 "P Coital Frequency Very Low Unmarried White Factor"=-0.1
 "P Coital Frequency Very Low Unmarried Hispanic Factor"=-0.1

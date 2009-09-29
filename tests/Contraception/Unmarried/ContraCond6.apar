@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Sterilize Male Unmarried Factor Base"=0.0
 "P Medium Condom Use Unmarried Factor Base"=0.0
 "P High Condom Use Unmarried Factor Base"=1.0

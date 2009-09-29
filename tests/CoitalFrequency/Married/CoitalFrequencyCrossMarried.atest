@@ -1,6 +1,5 @@
 "Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters"
 «This test cross checks to ensure that the values of the unmarried parameters have no effect on the distribution of coital frequency among marrieds. This is achieved by setting the relevant parameters equal to extremely large values and testing that it has no effect on the distribution of coital frequency types among marrieds.»
-TESTS "CoitalFrequencyCrossMarried.apar"
 Count("Adult"."Coital Behavior Type"="High Frequency")=[2417,2628]
 Count("Adult"."Coital Behavior Type"="Moderate Frequency")=[1168,1343]
 Count("Adult"."Coital Behavior Type"="Very Low Frequency")=[365,475]	

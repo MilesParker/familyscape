@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"../../Baseline/Baseline.apar"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P High Condom Use Unmarried NHS Factor"=-0.1
 "P High Condom Use Unmarried PHS Factor"=-0.1
 "P High Condom Use Unmarried HS Factor"=-0.1
