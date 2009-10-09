@@ -1,0 +1,3 @@
+"Divorce P 1.0"
+«This test sets base divorce probabilty to 1.0 and checks that individual values are 1.0.»
+Average("Adult"."P Divorce")=[1.0, 1.0]

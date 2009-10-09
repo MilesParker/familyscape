@@ -1,0 +1,11 @@
+"Marriages On"
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
+"P Divorce Female Minimum"=0.0
+"P Divorce Female Maximum"=0.0
+"P Divorce Male Minimum"=0.0
+"P Divorce Male Maximum"=0.0
+"Pregnancy Status Adjustment Minimum Base"=1.0
+"Pregnancy Status Adjustment Maximum Base"=1.0
+"Stop Period"=0
+

@@ -64,7 +64,7 @@ model	"|RelationshipsAndPregnancyData.metaabm"
 //"P Marriage Previously Pregnant With Birth Minimum"=0
 //"P Marriage Previously Pregnant With Birth Maximum"=0
 "P Divorce Minimum Base"=0
-"P Divorce Maximum Base"=0.5
+"P Divorce Maximum Base"=0
 "P Divorce 15 to 19 Minimum"=0
 "P Divorce 15 to 19 Maximum"=0
 "P Divorce 20 to 24 Minimum"=0

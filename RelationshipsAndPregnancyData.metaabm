@@ -1228,7 +1228,7 @@
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='different']"/>
       </members>
       <members xsi:type="act:ASelect" label="Divorcing Partner" ID="divorcingPartner" sources="//@agents[ID='adult']/@rootActivity/@members[ID='drewDivorce']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='previousPartner']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']" agent="//@agents[ID='adult']" space="//@projections[ID='partners']"/>
-      <members xsi:type="act:AQuery" label="Previous Partner" ID="previousPartner" sources="//@agents[ID='adult']/@rootActivity/@members[ID='divorcingPartner']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='disconnect']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']">
+      <members xsi:type="act:AQuery" label="Previous Partner" ID="previousPartner" sources="//@agents[ID='adult']/@rootActivity/@members[ID='divorcingPartner']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='disconnect']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='divorcingPartner']">
         <function xsi:type="function:FGenericLogical" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='spatial']/@functions[ID='neighbor']"/>
       </members>
       <members xsi:type="act:ASet" label="Set P Divorce" ID="setPDivorce" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='initializeBehaviorValues']" attribute="//@agents[ID='adult']/@attributes[ID='pDivorce']" parameter="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']"/>
@@ -1319,7 +1319,7 @@
         <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='distribution']/@functions[ID='uniformAdditiveDistribution']"/>
       </members>
       <members xsi:type="act:AEvaluate" label="Partner Adjusted P Marriage" ID="partnerAdjustedPMarriage" sources="//@agents[ID='adult']/@rootActivity/@members[ID='marriageNeighbor']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationshipMarryDrawLesserPMarriageQueryCopy']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']">
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']" value="//@agents[ID='adult']/@attributes[ID='pMarriage']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='marriagePartner']" value="//@agents[ID='adult']/@attributes[ID='pMarriage']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyStatusAdjustment']"/>
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='add']"/>
       </members>
