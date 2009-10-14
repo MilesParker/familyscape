@@ -1,0 +1,5 @@
+model	"|RPP3D.metaabm"
+incorporates	"Baseline3D.apar"
+"Input Data File"="|data/NSFG_Unmarried.txt"
+"Write Periods"=1365
+"Stop Period"=1365
