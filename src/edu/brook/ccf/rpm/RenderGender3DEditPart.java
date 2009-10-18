@@ -114,7 +114,6 @@ public class RenderGender3DEditPart extends RenderEdit3DPart {
         drawForRelationship(g3d, adult);
 
         g3d.glTranslatef(-.5f, -.5f, -(legHeight + bodyHeight));
-
         g3d.glEnd();
     }
 
