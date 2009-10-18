@@ -64,12 +64,12 @@ public class RenderGender3DEditPart extends RenderEdit3DPart {
 
         float bodyWidth = 0.4f * scale;
         float bodyDepth = 0.3f * scale;
-        float bodyHeight = 0.4f * scale;
+        float bodyHeight = -0.4f * scale;
         float legWidth = 0.1f * scale;
-        float legHeight = 0.6f * scale;
-        float skirtHeight = 0.3f * scale;
+        float legHeight = -0.6f * scale;
+        float skirtHeight = -0.3f * scale;
         float headWidth = 0.3f * scale;
-        float headHeight = 0.2f * scale;
+        float headHeight = -0.2f * scale;
         totalHeight = legHeight + bodyHeight + headHeight;
 
         // base
