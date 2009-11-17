@@ -1,0 +1,10 @@
+"Divorce P 0.0 Marriage P 1.0 No Rel End"
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
+"P Marriage Minimum Base"=1.0
+"P Marriage Maximum Base"=1.0
+"P Divorce Minimum Base"=0.0
+"P Divorce Maximum Base"=0.0
+"P Relationship End Minimum"=0.0
+"P Relationship End Maximum"=0.0
+"Stop Period"=2

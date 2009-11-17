@@ -1,0 +1,7 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/BaselineMarried.apar"
+"P Marriage Minimum Base"=0.0
+"P Marriage Maximum Base"=0.0
+"P Divorce Minimum Base"=1.0
+"P Divorce Maximum Base"=1.0
+"Stop Period"=2

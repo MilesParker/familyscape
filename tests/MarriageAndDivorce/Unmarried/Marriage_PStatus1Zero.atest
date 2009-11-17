@@ -1,4 +1,0 @@
-"Marriage P Base 1.0 Pregnancy Status Adjustment 0.0"
-«This test sets the marriage and divorce probabilty to 1.0 and base staus adjustment to 0.0 and then checks to see that P Marriage is still 0 because of 0.0 status adjustment.»
-Average("Adult"."P Marriage")=[0.0, 0.0]
-Average("Adult"."P Divorce")=[0.0, 0.0]

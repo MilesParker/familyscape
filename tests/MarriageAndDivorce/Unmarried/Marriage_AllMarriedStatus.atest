@@ -1,8 +1,0 @@
-"Marriages Created: Status Adjustment Base 1.0"
-«This test sets the marriage probabilty to 1.0 and base staus adjustment to 1.0 and then checks to see that all (or almost all) people in relationships are married. Note that everyone hould be married as relationships cannot end. We should have no divorces either. (Traditional family values taken to an extreme.)»
-Count("Adult"."In Relationship")=[4500,4800]
-Count("Adult"."Marital Status"="Single")=[0,10]
-Count("Adult"."Marital Status"="Married")=[4500,4800]
-Count("Adult"."Marital Status"="Divorced")=[0,0]
-Average("Adult"."P Marriage")=[1.0, 1.0]
-Average("Adult"."P Divorce")=[0.0, 0.0]

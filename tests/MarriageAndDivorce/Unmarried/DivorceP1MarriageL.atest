@@ -1,0 +1,8 @@
+"Divorce P 1.0 Marriage P low"
+«This test sets the marriage probabilty to 0.02 and Divorced to 1.0.  Should lead to most divorced over long run. So»
+Count("Adult"."In Relationship")=[1100,1300]
+Count("Adult"."Marital Status"="Married")=[0,0]
+Count("Adult"."Marital Status"="Divorced")=[500,600]
+Count("Adult"."Marital Status"="Single")=[5534,5580]
+Average("Adult"."P Marriage")=[0.14, 0.16]
+Average("Adult"."P Divorce")=[1.0, 1.0]

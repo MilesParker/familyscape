@@ -1,0 +1,7 @@
+"Divorce P 1.0 Marriage P 0.0"
+Count("Adult"."In Relationship")=[130,180]
+Count("Adult"."Marital Status"="Single")=[5814,5814]
+Count("Adult"."Marital Status"="Married")=[0,0]
+Count("Adult"."Marital Status"="Divorced")=[0,0]
+Average("Adult"."P Marriage")=[0.0, 0.0]
+Average("Adult"."P Divorce")=[1.0, 1.0]
