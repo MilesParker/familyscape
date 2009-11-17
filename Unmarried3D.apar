@@ -1,6 +1,0 @@
-model	edu.brook.ccf.rpm.RPP3D
-Input Data File	|data/NSFG_Unmarried.txt
-Output Data	False
-All Output File	
-Output Run File	|run-output/Parameters.txt
-Output Period File	|run-output/Results.txt

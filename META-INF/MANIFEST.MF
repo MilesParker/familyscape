@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Plugin Plug-in
-Bundle-SymbolicName: edu.brook.parent.escape;singleton:=true
+Bundle-SymbolicName: edu.brook.parent.escape
 Bundle-Version: 1.0.0
 Require-Bundle: org.ascape.core;bundle-version="5.1.0",
  org.eclipse.ui;bundle-version="3.5.0",
@@ -10,7 +10,6 @@ Require-Bundle: org.ascape.core;bundle-version="5.1.0",
  org.eclipse.amp.axf.views;bundle-version="0.2.0",
  org.eclipse.amp.agf.chart;bundle-version="0.2.0",
  org.eclipse.amp.agf.core;bundle-version="0.2.0",
- org.eclipse.amp.agf3d;bundle-version="0.2.0",
  org.eclipse.amp.escape.ascape;bundle-version="0.2.0",
  org.eclipse.amp.escape.ascape.chart;bundle-version="0.2.0",
  org.eclipse.amp.escape.ascape.agf3d;bundle-version="0.2.0",
@@ -20,8 +19,6 @@ Require-Bundle: org.ascape.core;bundle-version="5.1.0",
  org.eclipse.draw3d.graphics3d,
  org.eclipse.amp.escape.ascape;bundle-version="0.2.0",
  org.eclipse.amp.escape.ide;bundle-version="0.2.0",
- org.eclipse.amp.amf.acore;bundle-version="0.2.0"
+ org.eclipse.amp.amf.acore;bundle-version="0.2.0",
+ org.eclipse.amp.agf3d;bundle-version="0.2.0"
 Bundle-ActivationPolicy: lazy
-Export-Package: edu.brook.ccf.rpm
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: .

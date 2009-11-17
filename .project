@@ -16,11 +16,6 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.amp.escape.amf.ide.escapeBuilder3</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
 			<name>org.eclipse.amp.amf.ide.docBuilder</name>
 			<arguments>
 			</arguments>

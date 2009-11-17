@@ -1,7 +1,0 @@
-model	edu.brook.ccf.rpm.RelationshipsAndPregnancy
-Input Data File	|data/NSFG_Unmarried_Small.txt
-Neighborhood Height	50
-Neighborhood Width	50
-Output Data	False
-Write Periods	1365
-Stop Period	1365

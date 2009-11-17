@@ -1,3 +1,0 @@
-model	edu.brook.ccf.rpm.RPP3D
-incorporates	Baseline3D
-Input Data File	|data/NSFG_Unmarried.txt
