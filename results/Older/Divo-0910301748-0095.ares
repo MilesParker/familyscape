@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ares:RunSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aBase="http://www.eclipse.org/amp/amf/abase/ABase" xmlns:ares="http://eclipse.org.eclipse.amp/ares" result="FAILURE">
+  <runs result="FAILURE" started="2009-10-30T17:48:51.603-0700" finished="2009-10-30T17:48:57.550-0700">
+    <model href="../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../tests/MarriageAndDivorce/Married/DivorceAll.atest#/"/>
+    <parameterization href="../tests/MarriageAndDivorce/Married/DivorceAll.apar#/"/>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pMarriageFemaleMinimum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pMarriageFemaleMaximum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pMarriageMaleMinimum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pMarriageMaleMaximum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorceFemaleMinimum']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorceFemaleMaximum']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorceMaleMinimum']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorceMaleMaximum']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pregnancyStatusAdjustmentMinimumBase']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pregnancyStatusAdjustmentMaximumBase']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aBase:IntValue" value="100"/>
+    </parameters>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='inRelationship']"/>
+      <minValue xsi:type="aBase:IntValue" value="4700"/>
+      <maxValue xsi:type="aBase:IntValue" value="4750"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.0"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="0"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.2"/>
+      <minValue xsi:type="aBase:IntValue" value="4500"/>
+      <maxValue xsi:type="aBase:IntValue" value="4800"/>
+    </constraints>
+    <constraints>
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
+      <qualifier href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.1"/>
+      <minValue xsi:type="aBase:IntValue" value="1015"/>
+      <maxValue xsi:type="aBase:IntValue" value="1115"/>
+    </constraints>
+    <constraints measure="Average">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pMarriage']"/>
+      <minValue xsi:type="aBase:RealValue" value="1.0"/>
+      <maxValue xsi:type="aBase:RealValue" value="1.0"/>
+    </constraints>
+    <constraints measure="Average">
+      <agent href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pDivorce']"/>
+      <minValue xsi:type="aBase:RealValue" value="1.0"/>
+      <maxValue xsi:type="aBase:RealValue" value="1.0"/>
+    </constraints>
+    <results constraint="//@runs.0/@constraints.0" actualValue="1070.0"/>
+    <results constraint="//@runs.0/@constraints.1" issue="ABOVE_RANGE" actualValue="2093.0"/>
+    <results constraint="//@runs.0/@constraints.2" actualValue="2093.0"/>
+    <results constraint="//@runs.0/@constraints.3"/>
+    <results constraint="//@runs.0/@constraints.4" actualValue="0.4963485891100102"/>
+    <results constraint="//@runs.0/@constraints.5" issue="NONE" actualValue="1.0"/>
+  </runs>
+</ares:RunSet>
