@@ -1,0 +1,7 @@
+"Marriage Start Period: No Marriages Before (Married)"
+«This test sets base divorce and marriage probabilty to 1.0 and checks that most indivudals have been divorced and married. About half of those in relationship should be married or divorced in any given period. Of course an equal number of married and in relationship is expected»
+Count("Adult"."Marital Status"="Single")=[0,0]
+Count("Adult"."Marital Status"="Married")=[4186,4186]
+Count("Adult"."Marital Status"="Divorced")=[0,0]
+Average("Adult"."P Marriage")=[1.0, 1.0]
+Average("Adult"."P Divorce")=[1.0, 1.0]

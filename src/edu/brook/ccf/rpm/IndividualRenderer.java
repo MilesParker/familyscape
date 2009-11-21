@@ -146,7 +146,7 @@ public class IndividualRenderer implements IRenderer {
         if (adult.getGender() == GenderEnum.male) {
             g3d.glColor(maleAgeColor.getColor(adult));
         } else {
-            if (!adult.isPregnant()) {
+            if (adult.getPregnancyStatus() != PregnancyStatusEnum.pregnant) {
                 g3d.glColor(femaleAgeColor.getColor(adult));
             } else {
                 g3d.glColor(ColorFeatureConcrete.GREEN);

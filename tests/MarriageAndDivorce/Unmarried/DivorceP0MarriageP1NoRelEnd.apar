@@ -7,4 +7,6 @@ incorporates	"../../Baseline/BaselineUnmarried.apar"
 "P Divorce Maximum Base"=0.0
 "P Relationship End Minimum"=0.0
 "P Relationship End Maximum"=0.0
+"P Marriage Yearly to Daily Conversion"=1.0
+"P Divorce Yearly to Daily Conversion"=1.0
 "Stop Period"=2

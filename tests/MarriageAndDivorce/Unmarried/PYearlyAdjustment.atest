@@ -1,0 +1,4 @@
+"P Yearly Marriage and Divorce Adjustment"
+«Ensures that marriage adjustment yearly to daily probabilites are functioning correctly.»
+Average("Adult"."P Marriage")=[.0019, .0021]
+Average("Adult"."P Divorce")=[.0019, .0021]

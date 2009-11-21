@@ -14,78 +14,6 @@
   <attributes label="Walk Toward Age" ID="walkTowardAge" pluralLabel="Walk Toward Ages" sType="INTEGER" defaultValue="1" units=""/>
   <attributes xsi:type="metaabm:SAttributeArray" label="Rhythm Method Bias for Day" ID="rhythmMethodBiasforDay" pluralLabel="Rhythm Method Bias for Days" description="Given all other factors, the effect of a timing strategy on intercourse proclivity as a function of day of mentural cycle." sType="REAL" defaultValue="1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1" size="-1"/>
   <attributes label="Agent Vision" ID="agentVision" pluralLabel="Agent Visions" sType="INTEGER" defaultValue="6"/>
-  <attributes label="P Marriage Minimum Base" ID="pMarriageMinimumBase" pluralLabel="P Marriage Minimum Bases" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Maximum Base" ID="pMarriageMaximumBase" pluralLabel="P Marriage Maximum Bases" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Female Minimum" ID="pMarriageFemaleMinimum" pluralLabel="P Marriage Female Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Female Maximum" ID="pMarriageFemaleMaximum" pluralLabel="P Marriage Female Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Male Minimum" ID="pMarriageMaleMinimum" pluralLabel="P Marriage Male Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Male Maximum" ID="pMarriageMaleMaximum" pluralLabel="P Marriage Male Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage 15 to 19 Minimum" ID="pMarriage15to19Minimum" pluralLabel="P Marriage 15 to 19 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage 15 to 19 Maximum" ID="pMarriage15to19Maximum" pluralLabel="P Marriage 15 to 19 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage 20 to 24 Minimum" ID="pMarriage20to24Minimum" pluralLabel="P Marriage 20 to 24 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage 20 to 24 Maximum" ID="pMarriage20to24Maximum" pluralLabel="P Marriage 20 to 24 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage 25 to 29 Minimum" ID="pMarriage25to29Minimum" pluralLabel="P Marriage 25 to 29 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage 25 to 29 Maximum" ID="pMarriage25to29Maximum" pluralLabel="P Marriage 25 to 29 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage 30 to 44 Minimum" ID="pMarriage30to44Minimum" pluralLabel="P Marriage 30 to 44 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage 30 to 44 Maximum" ID="pMarriage30to44Maximum" pluralLabel="P Marriage 30 to 44 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage NHS Minimum" ID="pMarriageNHSMinimum" pluralLabel="P Marriage NHS Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage NHS Maximum" ID="pMarriageNHSMaximum" pluralLabel="P Marriage NHS Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage PHS Minimum" ID="pMarriagePHSMinimum" pluralLabel="P Marriage PHS Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage PHS Maximum" ID="pMarriagePHSMaximum" pluralLabel="P Marriage PHS Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage HS Minimum" ID="pMarriageHSMinimum" pluralLabel="P Marriage HS Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage HS Maximum" ID="pMarriageHSMaximum" pluralLabel="P Marriage HS Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Other Minimum" ID="pMarriageOtherMinimum" pluralLabel="P Marriage Other Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Other Maximum" ID="pMarriageOtherMaximum" pluralLabel="P Marriage Other Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Black Minimum" ID="pMarriageBlackMinimum" pluralLabel="P Marriage Black Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Black Maximum" ID="pMarriageBlackMaximum" pluralLabel="P Marriage Black Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Hispanic Minimum" ID="pMarriageHispanicMinimum" pluralLabel="P Marriage Hispanic Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Hispanic Maximum" ID="pMarriageHispanicMaximum" pluralLabel="P Marriage Hispanic Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage White Minimum" ID="pMarriageWhiteMinimum" pluralLabel="P Marriage White Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage White Maximum" ID="pMarriageWhiteMaximum" pluralLabel="P Marriage White Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Category 1 Minimum" ID="pMarriageCategory1Minimum" pluralLabel="P Marriage Category 1 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Category 1 Maximum" ID="pMarriageCategory1Maximum" pluralLabel="P Marriage Category 1 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Category 3 Minimum" ID="pMarriageCategory3Minimum" pluralLabel="P Marriage Category 3 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Category 3 Maximum" ID="pMarriageCategory3Maximum" pluralLabel="P Marriage Category 3 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Category 2 Minimum" ID="pMarriageCategory2Minimum" pluralLabel="P Marriage Category 2 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Category 2 Maximum" ID="pMarriageCategory2Maximum" pluralLabel="P Marriage Category 2 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Category 4 Minimum" ID="pMarriageCategory4Minimum" pluralLabel="P Marriage Category 4 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Marriage Category 4 Maximum" ID="pMarriageCategory4Maximum" pluralLabel="P Marriage Category 4 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Minimum Base" ID="pDivorceMinimumBase" pluralLabel="P Divorce Minimum Bases" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Maximum Base" ID="pDivorceMaximumBase" pluralLabel="P Divorce Maximum Bases" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Female Minimum" ID="pDivorceFemaleMinimum" pluralLabel="P Divorce Female Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Female Maximum" ID="pDivorceFemaleMaximum" pluralLabel="P Divorce Female Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Male Minimum" ID="pDivorceMaleMinimum" pluralLabel="P Divorce Male Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Male Maximum" ID="pDivorceMaleMaximum" pluralLabel="P Divorce Male Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce 15 to 19 Minimum" ID="pDivorce15to19Minimum" pluralLabel="P Divorce 15 to 19 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce 15 to 19 Maximum" ID="pDivorce15to19Maximum" pluralLabel="P Divorce 15 to 19 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce 20 to 24 Minimum" ID="pDivorce20to24Minimum" pluralLabel="P Divorce 20 to 24 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce 20 to 24 Maximum" ID="pDivorce20to24Maximum" pluralLabel="P Divorce 20 to 24 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce 25 to 29 Minimum" ID="pDivorce25to29Minimum" pluralLabel="P Divorce 25 to 29 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce 25 to 29 Maximum" ID="pDivorce25to29Maximum" pluralLabel="P Divorce 25 to 29 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce 30 to 44 Minimum" ID="pDivorce30to44Minimum" pluralLabel="P Divorce 30 to 44 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce 30 to 44 Maximum" ID="pDivorce30to44Maximum" pluralLabel="P Divorce 30 to 44 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce NHS Minimum" ID="pDivorceNHSMinimum" pluralLabel="P Divorce NHS Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce NHS Maximum" ID="pDivorceNHSMaximum" pluralLabel="P Divorce NHS Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce PHS Minimum" ID="pDivorcePHSMinimum" pluralLabel="P Divorce PHS Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce PHS Maximum" ID="pDivorcePHSMaximum" pluralLabel="P Divorce PHS Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce HS Minimum" ID="pDivorceHSMinimum" pluralLabel="P Divorce HS Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce HS Maximum" ID="pDivorceHSMaximum" pluralLabel="P Divorce HS Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Other Minimum" ID="pDivorceOtherMinimum" pluralLabel="P Divorce Other Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Other Maximum" ID="pDivorceOtherMaximum" pluralLabel="P Divorce Other Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Black Minimum" ID="pDivorceBlackMinimum" pluralLabel="P Divorce Black Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Black Maximum" ID="pDivorceBlackMaximum" pluralLabel="P Divorce Black Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Hispanic Minimum" ID="pDivorceHispanicMinimum" pluralLabel="P Divorce Hispanic Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Hispanic Maximum" ID="pDivorceHispanicMaximum" pluralLabel="P Divorce Hispanic Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce White Minimum" ID="pDivorceWhiteMinimum" pluralLabel="P Divorce White Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce White Maximum" ID="pDivorceWhiteMaximum" pluralLabel="P Divorce White Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Category 1 Minimum" ID="pDivorceCategory1Minimum" pluralLabel="P Divorce Category 1 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Category 1 Maximum" ID="pDivorceCategory1Maximum" pluralLabel="P Divorce Category 1 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Category 3 Minimum" ID="pDivorceCategory3Minimum" pluralLabel="P Divorce Category 3 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Category 3 Maximum" ID="pDivorceCategory3Maximum" pluralLabel="P Divorce Category 3 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Category 2 Minimum" ID="pDivorceCategory2Minimum" pluralLabel="P Divorce Category 2 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Category 2 Maximum" ID="pDivorceCategory2Maximum" pluralLabel="P Divorce Category 2 Maximums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Category 4 Minimum" ID="pDivorceCategory4Minimum" pluralLabel="P Divorce Category 4 Minimums" sType="REAL" defaultValue="0.0"/>
-  <attributes label="P Divorce Category 4 Maximum" ID="pDivorceCategory4Maximum" pluralLabel="P Divorce Category 4 Maximums" sType="REAL" defaultValue="0.0"/>
   <attributes label="P Miscarriage Married Factor Base" ID="pMiscarriageMarriedFactorBase" pluralLabel="P Miscarriage Married Factor Bases" sType="REAL" defaultValue=".33333"/>
   <attributes label="P Miscarriage Married 15 to 19 Factor" ID="pMiscarriageMarried15to19Factor" pluralLabel="P Miscarriage Married 15 to 19 Factors" sType="REAL" defaultValue="0.0"/>
   <attributes label="P Miscarriage Married 20 to 24 Factor" ID="pMiscarriageMarried20to24Factor" pluralLabel="P Miscarriage Married 20 to 24 Factors" sType="REAL" defaultValue="0.0"/>
@@ -509,6 +437,88 @@
   <attributes label="P Rhythm Method Divorced Condom Medium Intender" ID="pRhythmMethodDivorcedCondomMediumIntender" pluralLabel="P Rhythm Method Divorced Condom Medium Intenders" sType="REAL"/>
   <attributes label="P Rhythm Method Divorced Condom High Intender" ID="pRhythmMethodDivorcedCondomHighIntender" pluralLabel="P Rhythm Method Divorced Condom High Intenders" sType="REAL"/>
   <attributes label="Marriage And Divorce Start Day" ID="marriageAndDivorceStartDay" pluralLabel="Marriage And Divorce Start Days" description="This specifies the model iteration (day) when we first start allowing marriages and divorces to occur. This is designed to allow model behavior (e.g. relationship formation) to go through transition period before beginning marriage dynamics." sType="INTEGER" defaultValue="0" units="Days"/>
+  <attributes label="P Marriage Yearly to Daily Conversion" ID="pMarriageYearlytoDailyConversion" pluralLabel="P Marriage Yearly to Daily Conversions" description="A factor to convert from yearly probability of marriage to daily probability." sType="REAL" defaultValue=".01"/>
+  <attributes label="P Divorce Yearly to Daily Conversion" ID="pDivorceYearlytoDailyConversion" pluralLabel="P Divorce Yearly to Daily Conversions" description="A factor to convert from yearly probability of divorce to daily probability." sType="REAL" defaultValue=".01"/>
+  <attributes label="P Divorce Minimum Base" ID="pDivorceMinimumBase" pluralLabel="P Divorce Minimum Bases" sType="REAL"/>
+  <attributes label="P Divorce Maximum Base" ID="pDivorceMaximumBase" pluralLabel="P Divorce Maximum Bases" sType="REAL"/>
+  <attributes label="P Divorce Female Minimum" ID="pDivorceFemaleMinimum" pluralLabel="P Divorce Female Minimums" sType="REAL"/>
+  <attributes label="P Divorce Female Maximum" ID="pDivorceFemaleMaximum" pluralLabel="P Divorce Female Maximums" sType="REAL"/>
+  <attributes label="P Divorce Male Minimum" ID="pDivorceMaleMinimum" pluralLabel="P Divorce Male Minimums" sType="REAL"/>
+  <attributes label="P Divorce Male Maximum" ID="pDivorceMaleMaximum" pluralLabel="P Divorce Male Maximums" sType="REAL"/>
+  <attributes label="P Divorce 15 to 19 Minimum" ID="pDivorce15to19Minimum" pluralLabel="P Divorce 15 to 19 Minimums" sType="REAL"/>
+  <attributes label="P Divorce 15 to 19 Maximum" ID="pDivorce15to19Maximum" pluralLabel="P Divorce 15 to 19 Maximums" sType="REAL"/>
+  <attributes label="P Divorce 20 to 24 Minimum" ID="pDivorce20to24Minimum" pluralLabel="P Divorce 20 to 24 Minimums" sType="REAL"/>
+  <attributes label="P Divorce 20 to 24 Maximum" ID="pDivorce20to24Maximum" pluralLabel="P Divorce 20 to 24 Maximums" sType="REAL"/>
+  <attributes label="P Divorce 25 to 29 Minimum" ID="pDivorce25to29Minimum" pluralLabel="P Divorce 25 to 29 Minimums" sType="REAL"/>
+  <attributes label="P Divorce 25 to 29 Maximum" ID="pDivorce25to29Maximum" pluralLabel="P Divorce 25 to 29 Maximums" sType="REAL"/>
+  <attributes label="P Divorce 30 to 44 Minimum" ID="pDivorce30to44Minimum" pluralLabel="P Divorce 30 to 44 Minimums" sType="REAL"/>
+  <attributes label="P Divorce 30 to 44 Maximum" ID="pDivorce30to44Maximum" pluralLabel="P Divorce 30 to 44 Maximums" sType="REAL"/>
+  <attributes label="P Divorce NHS Minimum" ID="pDivorceNHSMinimum" pluralLabel="P Divorce NHS Minimums" sType="REAL"/>
+  <attributes label="P Divorce NHS Maximum" ID="pDivorceNHSMaximum" pluralLabel="P Divorce NHS Maximums" sType="REAL"/>
+  <attributes label="P Divorce PHS Minimum" ID="pDivorcePHSMinimum" pluralLabel="P Divorce PHS Minimums" sType="REAL"/>
+  <attributes label="P Divorce PHS Maximum" ID="pDivorcePHSMaximum" pluralLabel="P Divorce PHS Maximums" sType="REAL"/>
+  <attributes label="P Divorce HS Minimum" ID="pDivorceHSMinimum" pluralLabel="P Divorce HS Minimums" sType="REAL"/>
+  <attributes label="P Divorce HS Maximum" ID="pDivorceHSMaximum" pluralLabel="P Divorce HS Maximums" sType="REAL"/>
+  <attributes label="P Divorce Other Minimum" ID="pDivorceOtherMinimum" pluralLabel="P Divorce Other Minimums" sType="REAL"/>
+  <attributes label="P Divorce Other Maximum" ID="pDivorceOtherMaximum" pluralLabel="P Divorce Other Maximums" sType="REAL"/>
+  <attributes label="P Divorce Black Minimum" ID="pDivorceBlackMinimum" pluralLabel="P Divorce Black Minimums" sType="REAL"/>
+  <attributes label="P Divorce Black Maximum" ID="pDivorceBlackMaximum" pluralLabel="P Divorce Black Maximums" sType="REAL"/>
+  <attributes label="P Divorce Hispanic Minimum" ID="pDivorceHispanicMinimum" pluralLabel="P Divorce Hispanic Minimums" sType="REAL"/>
+  <attributes label="P Divorce Hispanic Maximum" ID="pDivorceHispanicMaximum" pluralLabel="P Divorce Hispanic Maximums" sType="REAL"/>
+  <attributes label="P Divorce White Minimum" ID="pDivorceWhiteMinimum" pluralLabel="P Divorce White Minimums" sType="REAL"/>
+  <attributes label="P Divorce White Maximum" ID="pDivorceWhiteMaximum" pluralLabel="P Divorce White Maximums" sType="REAL"/>
+  <attributes label="P Divorce Category 1 Minimum" ID="pDivorceCategory1Minimum" pluralLabel="P Divorce Category 1 Minimums" sType="REAL"/>
+  <attributes label="P Divorce Category 1 Maximum" ID="pDivorceCategory1Maximum" pluralLabel="P Divorce Category 1 Maximums" sType="REAL"/>
+  <attributes label="P Divorce Category 3 Minimum" ID="pDivorceCategory3Minimum" pluralLabel="P Divorce Category 3 Minimums" sType="REAL"/>
+  <attributes label="P Divorce Category 3 Maximum" ID="pDivorceCategory3Maximum" pluralLabel="P Divorce Category 3 Maximums" sType="REAL"/>
+  <attributes label="P Divorce Category 2 Minimum" ID="pDivorceCategory2Minimum" pluralLabel="P Divorce Category 2 Minimums" sType="REAL"/>
+  <attributes label="P Divorce Category 2 Maximum" ID="pDivorceCategory2Maximum" pluralLabel="P Divorce Category 2 Maximums" sType="REAL"/>
+  <attributes label="P Divorce Category 4 Minimum" ID="pDivorceCategory4Minimum" pluralLabel="P Divorce Category 4 Minimums" sType="REAL"/>
+  <attributes label="P Divorce Category 4 Maximum" ID="pDivorceCategory4Maximum" pluralLabel="P Divorce Category 4 Maximums" sType="REAL"/>
+  <attributes label="P Divorce Not Pregnant Minimum" ID="pDivorceNotPregnantMinimum" pluralLabel="P Divorce Not Pregnant Minimums" sType="REAL"/>
+  <attributes label="P Divorce Not Pregnant Maximum" ID="pDivorceNotPregnantMaximum" pluralLabel="P Divorce Not Pregnant Maximums" sType="REAL"/>
+  <attributes label="P Divorce Pregnant Minimum" ID="pDivorcePregnantMinimum" pluralLabel="P Divorce Pregnant Minimums" sType="REAL"/>
+  <attributes label="P Divorce Pregnant Maximum" ID="pDivorcePregnantMaximum" pluralLabel="P Divorce Pregnant Maximums" sType="REAL"/>
+  <attributes label="P Marriage Minimum Base" ID="pMarriageMinimumBase" pluralLabel="P Marriage Minimum Bases" sType="REAL"/>
+  <attributes label="P Marriage Maximum Base" ID="pMarriageMaximumBase" pluralLabel="P Marriage Maximum Bases" sType="REAL"/>
+  <attributes label="P Marriage Female Minimum" ID="pMarriageFemaleMinimum" pluralLabel="P Marriage Female Minimums" sType="REAL"/>
+  <attributes label="P Marriage Female Maximum" ID="pMarriageFemaleMaximum" pluralLabel="P Marriage Female Maximums" sType="REAL"/>
+  <attributes label="P Marriage Male Minimum" ID="pMarriageMaleMinimum" pluralLabel="P Marriage Male Minimums" sType="REAL"/>
+  <attributes label="P Marriage Male Maximum" ID="pMarriageMaleMaximum" pluralLabel="P Marriage Male Maximums" sType="REAL"/>
+  <attributes label="P Marriage 15 to 19 Minimum" ID="pMarriage15to19Minimum" pluralLabel="P Marriage 15 to 19 Minimums" sType="REAL"/>
+  <attributes label="P Marriage 15 to 19 Maximum" ID="pMarriage15to19Maximum" pluralLabel="P Marriage 15 to 19 Maximums" sType="REAL"/>
+  <attributes label="P Marriage 20 to 24 Minimum" ID="pMarriage20to24Minimum" pluralLabel="P Marriage 20 to 24 Minimums" sType="REAL"/>
+  <attributes label="P Marriage 20 to 24 Maximum" ID="pMarriage20to24Maximum" pluralLabel="P Marriage 20 to 24 Maximums" sType="REAL"/>
+  <attributes label="P Marriage 25 to 29 Minimum" ID="pMarriage25to29Minimum" pluralLabel="P Marriage 25 to 29 Minimums" sType="REAL"/>
+  <attributes label="P Marriage 25 to 29 Maximum" ID="pMarriage25to29Maximum" pluralLabel="P Marriage 25 to 29 Maximums" sType="REAL"/>
+  <attributes label="P Marriage 30 to 44 Minimum" ID="pMarriage30to44Minimum" pluralLabel="P Marriage 30 to 44 Minimums" sType="REAL"/>
+  <attributes label="P Marriage 30 to 44 Maximum" ID="pMarriage30to44Maximum" pluralLabel="P Marriage 30 to 44 Maximums" sType="REAL"/>
+  <attributes label="P Marriage NHS Minimum" ID="pMarriageNHSMinimum" pluralLabel="P Marriage NHS Minimums" sType="REAL"/>
+  <attributes label="P Marriage NHS Maximum" ID="pMarriageNHSMaximum" pluralLabel="P Marriage NHS Maximums" sType="REAL"/>
+  <attributes label="P Marriage PHS Minimum" ID="pMarriagePHSMinimum" pluralLabel="P Marriage PHS Minimums" sType="REAL"/>
+  <attributes label="P Marriage PHS Maximum" ID="pMarriagePHSMaximum" pluralLabel="P Marriage PHS Maximums" sType="REAL"/>
+  <attributes label="P Marriage HS Minimum" ID="pMarriageHSMinimum" pluralLabel="P Marriage HS Minimums" sType="REAL"/>
+  <attributes label="P Marriage HS Maximum" ID="pMarriageHSMaximum" pluralLabel="P Marriage HS Maximums" sType="REAL"/>
+  <attributes label="P Marriage Other Minimum" ID="pMarriageOtherMinimum" pluralLabel="P Marriage Other Minimums" sType="REAL"/>
+  <attributes label="P Marriage Other Maximum" ID="pMarriageOtherMaximum" pluralLabel="P Marriage Other Maximums" sType="REAL"/>
+  <attributes label="P Marriage Black Minimum" ID="pMarriageBlackMinimum" pluralLabel="P Marriage Black Minimums" sType="REAL"/>
+  <attributes label="P Marriage Black Maximum" ID="pMarriageBlackMaximum" pluralLabel="P Marriage Black Maximums" sType="REAL"/>
+  <attributes label="P Marriage Hispanic Minimum" ID="pMarriageHispanicMinimum" pluralLabel="P Marriage Hispanic Minimums" sType="REAL"/>
+  <attributes label="P Marriage Hispanic Maximum" ID="pMarriageHispanicMaximum" pluralLabel="P Marriage Hispanic Maximums" sType="REAL"/>
+  <attributes label="P Marriage White Minimum" ID="pMarriageWhiteMinimum" pluralLabel="P Marriage White Minimums" sType="REAL"/>
+  <attributes label="P Marriage White Maximum" ID="pMarriageWhiteMaximum" pluralLabel="P Marriage White Maximums" sType="REAL"/>
+  <attributes label="P Marriage Category 1 Minimum" ID="pMarriageCategory1Minimum" pluralLabel="P Marriage Category 1 Minimums" sType="REAL"/>
+  <attributes label="P Marriage Category 1 Maximum" ID="pMarriageCategory1Maximum" pluralLabel="P Marriage Category 1 Maximums" sType="REAL"/>
+  <attributes label="P Marriage Category 3 Minimum" ID="pMarriageCategory3Minimum" pluralLabel="P Marriage Category 3 Minimums" sType="REAL"/>
+  <attributes label="P Marriage Category 3 Maximum" ID="pMarriageCategory3Maximum" pluralLabel="P Marriage Category 3 Maximums" sType="REAL"/>
+  <attributes label="P Marriage Category 2 Minimum" ID="pMarriageCategory2Minimum" pluralLabel="P Marriage Category 2 Minimums" sType="REAL"/>
+  <attributes label="P Marriage Category 2 Maximum" ID="pMarriageCategory2Maximum" pluralLabel="P Marriage Category 2 Maximums" sType="REAL"/>
+  <attributes label="P Marriage Category 4 Minimum" ID="pMarriageCategory4Minimum" pluralLabel="P Marriage Category 4 Minimums" sType="REAL"/>
+  <attributes label="P Marriage Category 4 Maximum" ID="pMarriageCategory4Maximum" pluralLabel="P Marriage Category 4 Maximums" sType="REAL"/>
+  <attributes label="P Marriage Not Pregnant Minimum" ID="pMarriageNotPregnantMinimum" pluralLabel="P Marriage Not Pregnant Minimums" sType="REAL"/>
+  <attributes label="P Marriage Not Pregnant Maximum" ID="pMarriageNotPregnantMaximum" pluralLabel="P Marriage Not Pregnant Maximums" sType="REAL"/>
+  <attributes label="P Marriage Pregnant Minimum" ID="pMarriagePregnantMinimum" pluralLabel="P Marriage Pregnant Minimums" sType="REAL"/>
+  <attributes label="P Marriage Pregnant Maximum" ID="pMarriagePregnantMaximum" pluralLabel="P Marriage Pregnant Maximums" sType="REAL"/>
   <rootActivity xsi:type="act:AGroup" label="Root Act" ID="rootAct" pluralLabel="Root Acts">
     <members xsi:type="act:ABuild" label="Build Model" ID="buildModel" targets="//@rootActivity/@members[ID='buildGrid'] //@rootActivity/@members[ID='createNetwork'] //@rootActivity/@members[ID='loadfromFile'] //@rootActivity/@members[ID='outputData']" selected="//@rootActivity/@members[ID='buildModel']" agent="/" pluralLabel="Build Models"/>
     <members xsi:type="act:ABuildGrid" label="Build Grid" ID="buildGrid" sources="//@rootActivity/@members[ID='buildModel']" selected="//@rootActivity/@members[ID='buildModel']" pluralLabel="Build Grids" agents="//@agents[ID='adult']" projection="//@projections[ID='neighborhood']" fillAgent="//@agents[ID='neighborhoodCell']"/>
@@ -541,7 +551,6 @@
       <options label="Single" ID="single" pluralLabel="Singles" description="Never married."/>
       <options label="Divorced" ID="divorced" pluralLabel="Divorceds" description="Previously married, but not currently married."/>
     </attributes>
-    <attributes label="Pregnant" ID="pregnant" pluralLabel="Pregnants" description="Am I currently pregnant?" gatherData="true" units=""/>
     <attributes xsi:type="metaabm:SState" label="Contraception Method" ID="contraceptionMethod" pluralLabel="Contraception Methods" sType="SYMBOL" gatherData="true" defaultValue="None" defaultOption="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.0">
       <options label="None" ID="none" pluralLabel="Nones"/>
       <options label="Sterilized" ID="sterilized" pluralLabel="Sterilizeds"/>
@@ -599,9 +608,13 @@
       <options label="Other Contraception" ID="otherContraception" pluralLabel="Other Contraceptions"/>
     </attributes>
     <attributes label="Sterilization Choices" ID="sterilizationChoices" pluralLabel="Sterilization Choicess" sType="INTEGER" gatherData="true"/>
+    <attributes xsi:type="metaabm:SState" label="Pregnancy Status" ID="pregnancyStatus" pluralLabel="Pregnancy Statuss" sType="SYMBOL" defaultValue="Not Pregnant" defaultOption="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.0">
+      <options label="Not Pregnant" ID="notPregnant" pluralLabel="Not Pregnants"/>
+      <options label="Pregnant" ID="pregnant" pluralLabel="Pregnants"/>
+    </attributes>
     <rootActivity xsi:type="act:AGroup" label="Root Act" ID="rootAct" pluralLabel="Root Acts">
       <members xsi:type="act:AInitialize" label="Initialize Location" ID="initializeLocation" targets="//@agents[ID='adult']/@rootActivity/@members[ID='initialLocation']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='initializeLocation']" agent="//@agents[ID='adult']" space="//@projections[ID='neighborhood']" pluralLabel="Initialize Locations"/>
-      <members xsi:type="act:AInitialize" label="Initialize Behavior Values" ID="initializeBehaviorValues" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pRelationshipEnd'] //@agents[ID='adult']/@rootActivity/@members[ID='pRelationshipBegin'] //@agents[ID='adult']/@rootActivity/@members[ID='setPregnantToFalse']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='initializeBehaviorValues']" agent="//@agents[ID='adult']" pluralLabel="Initialize Behavior Valuess"/>
+      <members xsi:type="act:AInitialize" label="Initialize Behavior Values" ID="initializeBehaviorValues" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pRelationshipEnd'] //@agents[ID='adult']/@rootActivity/@members[ID='pRelationshipBegin'] //@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToNotPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='initializeBehaviorValues']" agent="//@agents[ID='adult']" pluralLabel="Initialize Behavior Valuess"/>
       <members xsi:type="act:AInitialize" label="Initialize Ages" ID="initializeAges" targets="//@agents[ID='adult']/@rootActivity/@members[ID='ageGreaterorEqual20'] //@agents[ID='adult']/@rootActivity/@members[ID='initializeAgesAgeinYearsSubtractMinimumAge'] //@agents[ID='adult']/@rootActivity/@members[ID='initializeAgesRandomToLimit_LunarDays_']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='initializeAges']" agent="//@agents[ID='adult']" pluralLabel="Initialize Agess"/>
       <members xsi:type="act:AInitialize" label="Initialize Marital State" ID="initializeMaritalState" targets="//@agents[ID='adult']/@rootActivity/@members[ID='initiallyMarried']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='initializeMaritalState']" agent="//@agents[ID='adult']" space="//@projections[ID='neighborhood']" pluralLabel="Initialize Marital States"/>
       <members xsi:type="act:ARule" label="Movement" ID="movement" targets="//@agents[ID='adult']/@rootActivity/@members[ID='notinRelationship']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='movement']" agent="//@agents[ID='adult']" space="//@projections[ID='neighborhood']" pluralLabel="Movements"/>
@@ -610,8 +623,8 @@
       <members xsi:type="act:ARule" label="Seek Partner" ID="seekPartner" targets="//@agents[ID='adult']/@rootActivity/@members[ID='noPartner']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='seekPartner']" agent="//@agents[ID='adult']" pluralLabel="Seek Partners"/>
       <members xsi:type="act:ARule" label="Pregnancy Outcome" ID="pregnancyOutcome" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']" agent="//@agents[ID='adult']" pluralLabel="Pregnancy Outcomes"/>
       <members xsi:type="act:ARule" label="Sex Potential" ID="sexPotential" targets="//@agents[ID='adult']/@rootActivity/@members[ID='malePotential']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexPotential']" agent="//@agents[ID='adult']" pluralLabel="Sex Potentials"/>
-      <members xsi:type="act:AWatch" label="Pregnancy Event" ID="pregnancyEvent" targets="//@agents[ID='adult']/@rootActivity/@members[ID='becamePregnant'] //@agents[ID='adult']/@rootActivity/@members[ID='pDivorce'] //@agents[ID='adult']/@rootActivity/@members[ID='pMarriage']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pregnant']" agent="//@agents[ID='adult']"/>
-      <members xsi:type="act:AWatch" label="Sex Event" ID="sexEvent" targets="//@agents[ID='adult']/@rootActivity/@members[ID='femaleSex'] //@agents[ID='adult']/@rootActivity/@members[ID='incrementSexCount'] //@agents[ID='adult']/@rootActivity/@members[ID='dayofSex'] //@agents[ID='adult']/@rootActivity/@members[ID='notSterilized'] //@agents[ID='adult']/@rootActivity/@members[ID='sexEventNotPregnantQuery']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" attribute="//@agents[ID='adult']/@attributes[ID='sexCountinLifetime']" agent="//@agents[ID='adult']"/>
+      <members xsi:type="act:AWatch" label="Pregnancy Event" ID="pregnancyEvent" targets="//@agents[ID='adult']/@rootActivity/@members[ID='becamePregnant'] //@agents[ID='adult']/@rootActivity/@members[ID='pDivorce'] //@agents[ID='adult']/@rootActivity/@members[ID='pMarriage']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']" agent="//@agents[ID='adult']"/>
+      <members xsi:type="act:AWatch" label="Sex Event" ID="sexEvent" targets="//@agents[ID='adult']/@rootActivity/@members[ID='femaleSex'] //@agents[ID='adult']/@rootActivity/@members[ID='incrementSexCount'] //@agents[ID='adult']/@rootActivity/@members[ID='dayofSex'] //@agents[ID='adult']/@rootActivity/@members[ID='notSterilized'] //@agents[ID='adult']/@rootActivity/@members[ID='sexEventPregnancyStatusIdenticalNotPregnantQuery']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" attribute="//@agents[ID='adult']/@attributes[ID='sexCountinLifetime']" agent="//@agents[ID='adult']"/>
       <members xsi:type="act:AWatch" label="Sex in Relationship Event" ID="sexinRelationshipEvent" targets="//@agents[ID='adult']/@rootActivity/@members[ID='initialSexinRelationship']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexinRelationshipEvent']" attribute="//@agents[ID='adult']/@attributes[ID='sexCountinRelationship']" agent="//@agents[ID='adult']"/>
       <members xsi:type="act:ASelect" label="Next Cell" ID="nextCell" sources="//@agents[ID='adult']/@rootActivity/@members[ID='notinRelationship']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='walkNeighbor'] //@agents[ID='adult']/@rootActivity/@members[ID='walkAvailable']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='movement']" agent="//@agents[ID='neighborhoodCell']" space="//@projections[ID='neighborhood']"/>
       <members xsi:type="act:ASelect" label="Initial Location" ID="initialLocation" sources="//@agents[ID='adult']/@rootActivity/@members[ID='initializeLocation']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='availableLocation']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='initializeLocation']" agent="//@agents[ID='neighborhoodCell']" space="//@projections[ID='neighborhood']"/>
@@ -745,15 +758,17 @@
         <parameter xsi:type="metaabm:SAttribute" href="http://metaabm.org/core_library.metaabm#//@attributes[ID='zero']"/>
       </members>
       <members xsi:type="act:AQuery" label="Became Pregnant" ID="becamePregnant" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='dayofPregnancy'] //@agents[ID='adult']/@rootActivity/@members[ID='incrementPregnancies']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@attributes[ID='pregnant']"/>
-        <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identity']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.1"/>
+        <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identical']"/>
       </members>
       <members xsi:type="act:AEvaluate" label="Day of Pregnancy" ID="dayofPregnancy" sources="//@agents[ID='adult']/@rootActivity/@members[ID='becamePregnant']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='outcomeDraw']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
         <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='time']/@functions[ID='timeNow']"/>
       </members>
       <members xsi:type="act:AQuery" label="Pregnant" ID="pregnant" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='currentDay']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']">
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']" value="//@agents[ID='adult']/@attributes[ID='pregnant']"/>
-        <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identity']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']" value="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']" value="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.1"/>
+        <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identical']"/>
       </members>
       <members xsi:type="act:AEvaluate" label="Increment Pregnancies" ID="incrementPregnancies" sources="//@agents[ID='adult']/@rootActivity/@members[ID='becamePregnant']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setIncrementedPregnancy'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnanciesoverSexinLifetimeCopy']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
@@ -794,9 +809,7 @@
       <members xsi:type="act:AEvaluate" label="Current Day" ID="currentDay" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnant']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='projectedDayofAbortion'] //@agents[ID='adult']/@rootActivity/@members[ID='projectedDayofMiscarriage'] //@agents[ID='adult']/@rootActivity/@members[ID='projectedDayofBirth']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']">
         <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='time']/@functions[ID='timeNow']"/>
       </members>
-      <members xsi:type="act:ASet" label="Set Pregnancy Ended" ID="setPregnancyEnded" sources="//@agents[ID='adult']/@rootActivity/@members[ID='projectedDayofMiscarriage'] //@agents[ID='adult']/@rootActivity/@members[ID='projectedDayofAbortion'] //@agents[ID='adult']/@rootActivity/@members[ID='projectedDayofBirth']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']" attribute="//@agents[ID='adult']/@attributes[ID='pregnant']">
-        <parameter xsi:type="metaabm:SAttribute" href="http://metaabm.org/core_library.metaabm#//@attributes[ID='false']"/>
-      </members>
+      <members xsi:type="act:ASet" label="Set Pregnancy Ended" ID="setPregnancyEnded" sources="//@agents[ID='adult']/@rootActivity/@members[ID='projectedDayofMiscarriage'] //@agents[ID='adult']/@rootActivity/@members[ID='projectedDayofAbortion'] //@agents[ID='adult']/@rootActivity/@members[ID='projectedDayofBirth']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']" attribute="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']" parameter="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.0"/>
       <members xsi:type="act:AQuery" label="Projected Day of Miscarriage" ID="projectedDayofMiscarriage" sources="//@agents[ID='adult']/@rootActivity/@members[ID='currentDay']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyEnded'] //@agents[ID='adult']/@rootActivity/@members[ID='incrementMiscarriagesinLifetime']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']" value="//@agents[ID='adult']/@rootActivity/@members[ID='currentDay']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyOutcome']" value="//@agents[ID='adult']/@attributes[ID='projectedDayofMiscarriage']"/>
@@ -874,7 +887,7 @@
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.1"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='different']"/>
       </members>
-      <members xsi:type="act:AAll" label="Fertile Female" ID="fertileFemale" sources="//@agents[ID='adult']/@rootActivity/@members[ID='notSterilized'] //@agents[ID='adult']/@rootActivity/@members[ID='femaleSex'] //@agents[ID='adult']/@rootActivity/@members[ID='sexEventNotPregnantQuery']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
+      <members xsi:type="act:AAll" label="Fertile Female" ID="fertileFemale" sources="//@agents[ID='adult']/@rootActivity/@members[ID='notSterilized'] //@agents[ID='adult']/@rootActivity/@members[ID='femaleSex'] //@agents[ID='adult']/@rootActivity/@members[ID='sexEventPregnancyStatusIdenticalNotPregnantQuery']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
       <members xsi:type="act:ASelect" label="Male Partner" ID="malePartner" sources="//@agents[ID='adult']/@rootActivity/@members[ID='fertileFemale']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='malePartnerNeighborQuery']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" agent="//@agents[ID='adult']" space="//@projections[ID='partners']"/>
       <members xsi:type="act:AQuery" label="Sex Event: Contraception Method Different Sterilized Query" ID="sexEventContraceptionMethodDifferentSterilizedQuery" sources="//@agents[ID='adult']/@rootActivity/@members[ID='malePartnerNeighborQuery']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']" value="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
@@ -897,7 +910,7 @@
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@attributes[ID='pillFailureRate']"/>
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='mul']"/>
       </members>
-      <members xsi:type="act:AQuery" label="Pregnant Pill Only" ID="pregnantPillOnly" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityPillOnly']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnantToTrue']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AQuery" label="Pregnant Pill Only" ID="pregnantPillOnly" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityPillOnly']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityPillOnly']"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='lesser']"/>
@@ -920,25 +933,23 @@
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@attributes[ID='condomFailureRate']"/>
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='mul']"/>
       </members>
-      <members xsi:type="act:AQuery" label="Pregnant Pill Condom" ID="pregnantPillCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityWithPillCondom']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnantToTrue']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AQuery" label="Pregnant Pill Condom" ID="pregnantPillCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityWithPillCondom']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityWithPillCondom']"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='lesser']"/>
       </members>
       <members xsi:type="act:AAll" label="Condom Only Users" ID="condomOnlyUsers" sources="//@agents[ID='adult']/@rootActivity/@members[ID='nonPillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='condomIntender']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityCondomOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
-      <members xsi:type="act:AQuery" label="Pregnant No Contraception" ID="pregnantNoContraception" sources="//@agents[ID='adult']/@rootActivity/@members[ID='not_SexEvent_MediumCondomIntenderOrHighCondomIntenderOrPillUser__']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnantToTrue']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AQuery" label="Pregnant No Contraception" ID="pregnantNoContraception" sources="//@agents[ID='adult']/@rootActivity/@members[ID='not_SexEvent_MediumCondomIntenderOrHighCondomIntenderOrPillUser__']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityforAge']"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='lesser']"/>
       </members>
-      <members xsi:type="act:AQuery" label="Pregnant Condom" ID="pregnantCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityCondomOnly']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnantToTrue']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AQuery" label="Pregnant Condom" ID="pregnantCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityCondomOnly']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityCondomOnly']"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='lesser']"/>
       </members>
-      <members xsi:type="act:ASet" label="Set Pregnant To True" ID="setPregnantToTrue" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnantCondom'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnantNoContraception'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillCondom'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pregnant']">
-        <parameter xsi:type="metaabm:SAttribute" href="http://metaabm.org/core_library.metaabm#//@attributes[ID='true']"/>
-      </members>
+      <members xsi:type="act:ASet" label="Set Pregnancy Status To Pregnant" ID="setPregnancyStatusToPregnant" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnantCondom'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnantNoContraception'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillCondom'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']" parameter="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.1"/>
       <members xsi:type="act:AQuery" label="Male Partner: Neighbor() Query" ID="malePartnerNeighborQuery" sources="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='sexEventContraceptionMethodDifferentSterilizedQuery']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']">
         <function xsi:type="function:FGenericLogical" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='spatial']/@functions[ID='neighbor']"/>
       </members>
@@ -982,9 +993,10 @@
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='jointPMiscarriage']"/>
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='add']"/>
       </members>
-      <members xsi:type="act:AQuery" label="Sex Event: Not Pregnant Query" ID="sexEventNotPregnantQuery" sources="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='fertileFemale']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@attributes[ID='pregnant']"/>
-        <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='not']"/>
+      <members xsi:type="act:AQuery" label="Sex Event: Pregnancy Status Identical Not Pregnant Query" ID="sexEventPregnancyStatusIdenticalNotPregnantQuery" sources="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='fertileFemale']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.0"/>
+        <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identical']"/>
       </members>
       <members xsi:type="act:AEvaluate" label="Pregnancy Probability for Age" ID="pregnancyProbabilityforAge" sources="//@agents[ID='adult']/@rootActivity/@members[ID='fecundityForAge']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='mediumCondomIntender'] //@agents[ID='adult']/@rootActivity/@members[ID='highCondomIntender']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='basePregnancyProbability']"/>
@@ -1119,28 +1131,28 @@
         <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='distribution']/@functions[ID='additiveDistribution']"/>
       </members>
       <members xsi:type="act:ASet" label="Set P Sex Initial" ID="setPSexInitial" sources="//@agents[ID='adult']/@rootActivity/@members[ID='veryLowFrequencyMarried']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='watchInRelationship']" attribute="//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']" parameter="//@agents[ID='adult']/@attributes[ID='coitalBehaviorType']/@options.0"/>
-      <members xsi:type="act:AEvaluate" label="P Marriage" ID="pMarriage" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setMarried']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
+      <members xsi:type="act:AEvaluate" label="P Marriage" ID="pMarriage" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='adjustedDailyPMarriage']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pMarriage']/@inputs.0/@literal">
-          <literal xsi:type="act:AMultiValue" label="P Marriage States" ID="pMarriageStates" values="//@agents[ID='adult']/@attributes[ID='gender'] //@agents[ID='adult']/@attributes[ID='ageGroup'] //@agents[ID='adult']/@attributes[ID='education'] //@agents[ID='adult']/@attributes[ID='race'] //@agents[ID='adult']/@attributes[ID='sES']"/>
+          <literal xsi:type="act:AMultiValue" label="P Marriage States" ID="pMarriageStates" values="//@agents[ID='adult']/@attributes[ID='gender'] //@agents[ID='adult']/@attributes[ID='ageGroup'] //@agents[ID='adult']/@attributes[ID='education'] //@agents[ID='adult']/@attributes[ID='race'] //@agents[ID='adult']/@attributes[ID='sES'] //@agents[ID='adult']/@attributes[ID='pregnancyStatus']"/>
         </inputs>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pMarriage']/@inputs.1/@literal">
-          <literal xsi:type="act:AMultiValue" label="P Marriage Minimum" ID="pMarriageMinimum" values="//@attributes[ID='pMarriageMinimumBase'] //@attributes[ID='pMarriageFemaleMinimum'] //@attributes[ID='pMarriageMaleMinimum'] //@attributes[ID='pMarriage15to19Minimum'] //@attributes[ID='pMarriage20to24Minimum'] //@attributes[ID='pMarriage25to29Minimum'] //@attributes[ID='pMarriage30to44Minimum'] //@attributes[ID='pMarriageNHSMinimum'] //@attributes[ID='pMarriagePHSMinimum'] //@attributes[ID='pMarriageHSMinimum'] //@attributes[ID='pMarriageOtherMinimum'] //@attributes[ID='pMarriageBlackMinimum'] //@attributes[ID='pMarriageHispanicMinimum'] //@attributes[ID='pMarriageWhiteMinimum'] //@attributes[ID='pMarriageCategory1Minimum'] //@attributes[ID='pMarriageCategory3Minimum'] //@attributes[ID='pMarriageCategory2Minimum'] //@attributes[ID='pMarriageCategory4Minimum']"/>
+          <literal xsi:type="act:AMultiValue" label="P Marriage Minimum" ID="pMarriageMinimum" values="//@attributes[ID='pMarriageMinimumBase'] //@attributes[ID='pMarriageFemaleMinimum'] //@attributes[ID='pMarriageMaleMinimum'] //@attributes[ID='pMarriage15to19Minimum'] //@attributes[ID='pMarriage20to24Minimum'] //@attributes[ID='pMarriage25to29Minimum'] //@attributes[ID='pMarriage30to44Minimum'] //@attributes[ID='pMarriageNHSMinimum'] //@attributes[ID='pMarriagePHSMinimum'] //@attributes[ID='pMarriageHSMinimum'] //@attributes[ID='pMarriageOtherMinimum'] //@attributes[ID='pMarriageBlackMinimum'] //@attributes[ID='pMarriageHispanicMinimum'] //@attributes[ID='pMarriageWhiteMinimum'] //@attributes[ID='pMarriageCategory1Minimum'] //@attributes[ID='pMarriageCategory3Minimum'] //@attributes[ID='pMarriageCategory2Minimum'] //@attributes[ID='pMarriageCategory4Minimum'] //@attributes[ID='pMarriageNotPregnantMinimum'] //@attributes[ID='pMarriagePregnantMinimum']"/>
         </inputs>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pMarriage']/@inputs.2/@literal">
-          <literal xsi:type="act:AMultiValue" label="P Marriage Maximum" ID="pMarriageMaximum" values="//@attributes[ID='pMarriageMaximumBase'] //@attributes[ID='pMarriageFemaleMaximum'] //@attributes[ID='pMarriageMaleMaximum'] //@attributes[ID='pMarriage15to19Maximum'] //@attributes[ID='pMarriage20to24Maximum'] //@attributes[ID='pMarriage25to29Maximum'] //@attributes[ID='pMarriage30to44Maximum'] //@attributes[ID='pMarriageNHSMaximum'] //@attributes[ID='pMarriagePHSMaximum'] //@attributes[ID='pMarriageHSMaximum'] //@attributes[ID='pMarriageOtherMaximum'] //@attributes[ID='pMarriageBlackMaximum'] //@attributes[ID='pMarriageHispanicMaximum'] //@attributes[ID='pMarriageWhiteMaximum'] //@attributes[ID='pMarriageCategory1Maximum'] //@attributes[ID='pMarriageCategory3Maximum'] //@attributes[ID='pMarriageCategory2Maximum'] //@attributes[ID='pMarriageCategory4Maximum']"/>
+          <literal xsi:type="act:AMultiValue" label="P Marriage Maximum" ID="pMarriageMaximum" values="//@attributes[ID='pMarriageMaximumBase'] //@attributes[ID='pMarriageFemaleMaximum'] //@attributes[ID='pMarriageMaleMaximum'] //@attributes[ID='pMarriage15to19Maximum'] //@attributes[ID='pMarriage20to24Maximum'] //@attributes[ID='pMarriage25to29Maximum'] //@attributes[ID='pMarriage30to44Maximum'] //@attributes[ID='pMarriageNHSMaximum'] //@attributes[ID='pMarriagePHSMaximum'] //@attributes[ID='pMarriageHSMaximum'] //@attributes[ID='pMarriageOtherMaximum'] //@attributes[ID='pMarriageBlackMaximum'] //@attributes[ID='pMarriageHispanicMaximum'] //@attributes[ID='pMarriageWhiteMaximum'] //@attributes[ID='pMarriageCategory1Maximum'] //@attributes[ID='pMarriageCategory3Maximum'] //@attributes[ID='pMarriageCategory2Maximum'] //@attributes[ID='pMarriageCategory4Maximum'] //@attributes[ID='pMarriageNotPregnantMaximum'] //@attributes[ID='pMarriagePregnantMaximum']"/>
         </inputs>
         <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='distribution']/@functions[ID='uniformAdditiveDistribution']"/>
       </members>
-      <members xsi:type="act:ASet" label="Set Married" ID="setMarried" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pMarriage']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pMarriage']" parameter="//@agents[ID='adult']/@rootActivity/@members[ID='pMarriage']"/>
-      <members xsi:type="act:AEvaluate" label="P Divorce" ID="pDivorce" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPDivorce']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
+      <members xsi:type="act:ASet" label="Set Married" ID="setMarried" sources="//@agents[ID='adult']/@rootActivity/@members[ID='adjustedDailyPMarriage']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pMarriage']" parameter="//@agents[ID='adult']/@rootActivity/@members[ID='adjustedDailyPMarriage']"/>
+      <members xsi:type="act:AEvaluate" label="P Divorce" ID="pDivorce" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='adjustedDailyPDivorce']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']/@inputs.0/@literal">
-          <literal xsi:type="act:AMultiValue" label="P Divorce States" ID="pDivorceStates" values="//@agents[ID='adult']/@attributes[ID='gender'] //@agents[ID='adult']/@attributes[ID='ageGroup'] //@agents[ID='adult']/@attributes[ID='education'] //@agents[ID='adult']/@attributes[ID='race'] //@agents[ID='adult']/@attributes[ID='sES']"/>
+          <literal xsi:type="act:AMultiValue" label="P Divorce States" ID="pDivorceStates" values="//@agents[ID='adult']/@attributes[ID='gender'] //@agents[ID='adult']/@attributes[ID='ageGroup'] //@agents[ID='adult']/@attributes[ID='education'] //@agents[ID='adult']/@attributes[ID='race'] //@agents[ID='adult']/@attributes[ID='sES'] //@agents[ID='adult']/@attributes[ID='pregnancyStatus']"/>
         </inputs>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']/@inputs.1/@literal">
-          <literal xsi:type="act:AMultiValue" label="P Divorce Minimum" ID="pDivorceMinimum" values="//@attributes[ID='pDivorceMinimumBase'] //@attributes[ID='pDivorceFemaleMinimum'] //@attributes[ID='pDivorceMaleMinimum'] //@attributes[ID='pDivorce15to19Minimum'] //@attributes[ID='pDivorce20to24Minimum'] //@attributes[ID='pDivorce25to29Minimum'] //@attributes[ID='pDivorce30to44Minimum'] //@attributes[ID='pDivorceNHSMinimum'] //@attributes[ID='pDivorcePHSMinimum'] //@attributes[ID='pDivorceHSMinimum'] //@attributes[ID='pDivorceOtherMinimum'] //@attributes[ID='pDivorceBlackMinimum'] //@attributes[ID='pDivorceHispanicMinimum'] //@attributes[ID='pDivorceWhiteMinimum'] //@attributes[ID='pDivorceCategory1Minimum'] //@attributes[ID='pDivorceCategory3Minimum'] //@attributes[ID='pDivorceCategory2Minimum'] //@attributes[ID='pDivorceCategory4Minimum']"/>
+          <literal xsi:type="act:AMultiValue" label="P Divorce Minimum" ID="pDivorceMinimum" values="//@attributes[ID='pDivorceMinimumBase'] //@attributes[ID='pDivorceFemaleMinimum'] //@attributes[ID='pDivorceMaleMinimum'] //@attributes[ID='pDivorce15to19Minimum'] //@attributes[ID='pDivorce20to24Minimum'] //@attributes[ID='pDivorce25to29Minimum'] //@attributes[ID='pDivorce30to44Minimum'] //@attributes[ID='pDivorceNHSMinimum'] //@attributes[ID='pDivorcePHSMinimum'] //@attributes[ID='pDivorceHSMinimum'] //@attributes[ID='pDivorceOtherMinimum'] //@attributes[ID='pDivorceBlackMinimum'] //@attributes[ID='pDivorceHispanicMinimum'] //@attributes[ID='pDivorceWhiteMinimum'] //@attributes[ID='pDivorceCategory1Minimum'] //@attributes[ID='pDivorceCategory3Minimum'] //@attributes[ID='pDivorceCategory2Minimum'] //@attributes[ID='pDivorceCategory4Minimum'] //@attributes[ID='pDivorceNotPregnantMinimum'] //@attributes[ID='pDivorcePregnantMinimum']"/>
         </inputs>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']/@inputs.2/@literal">
-          <literal xsi:type="act:AMultiValue" label="P Divorce Maximum" ID="pDivorceMaximum" values="//@attributes[ID='pDivorceMaximumBase'] //@attributes[ID='pDivorceFemaleMaximum'] //@attributes[ID='pDivorceMaleMaximum'] //@attributes[ID='pDivorce15to19Maximum'] //@attributes[ID='pDivorce20to24Maximum'] //@attributes[ID='pDivorce25to29Maximum'] //@attributes[ID='pDivorce30to44Maximum'] //@attributes[ID='pDivorceNHSMaximum'] //@attributes[ID='pDivorcePHSMaximum'] //@attributes[ID='pDivorceHSMaximum'] //@attributes[ID='pDivorceOtherMaximum'] //@attributes[ID='pDivorceBlackMaximum'] //@attributes[ID='pDivorceHispanicMaximum'] //@attributes[ID='pDivorceWhiteMaximum'] //@attributes[ID='pDivorceCategory1Maximum'] //@attributes[ID='pDivorceCategory3Maximum'] //@attributes[ID='pDivorceCategory2Maximum'] //@attributes[ID='pDivorceCategory4Maximum']"/>
+          <literal xsi:type="act:AMultiValue" label="P Divorce Maximum" ID="pDivorceMaximum" values="//@attributes[ID='pDivorceMaximumBase'] //@attributes[ID='pDivorceFemaleMaximum'] //@attributes[ID='pDivorceMaleMaximum'] //@attributes[ID='pDivorce15to19Maximum'] //@attributes[ID='pDivorce20to24Maximum'] //@attributes[ID='pDivorce25to29Maximum'] //@attributes[ID='pDivorce30to44Maximum'] //@attributes[ID='pDivorceNHSMaximum'] //@attributes[ID='pDivorcePHSMaximum'] //@attributes[ID='pDivorceHSMaximum'] //@attributes[ID='pDivorceOtherMaximum'] //@attributes[ID='pDivorceBlackMaximum'] //@attributes[ID='pDivorceHispanicMaximum'] //@attributes[ID='pDivorceWhiteMaximum'] //@attributes[ID='pDivorceCategory1Maximum'] //@attributes[ID='pDivorceCategory3Maximum'] //@attributes[ID='pDivorceCategory2Maximum'] //@attributes[ID='pDivorceCategory4Maximum'] //@attributes[ID='pDivorceNotPregnantMaximum'] //@attributes[ID='pDivorcePregnantMaximum']"/>
         </inputs>
         <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='distribution']/@functions[ID='uniformAdditiveDistribution']"/>
       </members>
@@ -1202,7 +1214,7 @@
       <members xsi:type="act:AQuery" label="Previous Partner" ID="previousPartner" sources="//@agents[ID='adult']/@rootActivity/@members[ID='divorcingPartner']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='disconnect']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='divorcingPartner']">
         <function xsi:type="function:FGenericLogical" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='spatial']/@functions[ID='neighbor']"/>
       </members>
-      <members xsi:type="act:ASet" label="Set P Divorce" ID="setPDivorce" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pDivorce']" parameter="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']"/>
+      <members xsi:type="act:ASet" label="Set P Divorce" ID="setPDivorce" sources="//@agents[ID='adult']/@rootActivity/@members[ID='adjustedDailyPDivorce']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pDivorce']" parameter="//@agents[ID='adult']/@rootActivity/@members[ID='adjustedDailyPDivorce']"/>
       <members xsi:type="act:AQuery" label="Married" ID="married" sources="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='newMarriage'] //@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship_MarriedAndAfterFirstDay_']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']" value="//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']" value="//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.0"/>
@@ -1983,8 +1995,16 @@
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='greaterorEqual']"/>
       </members>
       <members xsi:type="act:AAll" label="Update Relationship (Not Married &amp; Now() Greater or Equal Marriage And Divorce Start Day Query)" ID="updateRelationship_NotMarriedAndNowGreaterorEqualMarriageAndDivorceStartDayQuery_" sources="//@agents[ID='adult']/@rootActivity/@members[ID='notMarried'] //@agents[ID='adult']/@rootActivity/@members[ID='updateRelationshipUpdateRelationshipNowGreaterorEqualMarriageAndDivorceStartDayQuery']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='oncepreCouple']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateRelationship']"/>
-      <members xsi:type="act:ASet" label="Set Pregnant To False" ID="setPregnantToFalse" sources="//@agents[ID='adult']/@rootActivity/@members[ID='initializeBehaviorValues']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='initializeBehaviorValues']" attribute="//@agents[ID='adult']/@attributes[ID='pregnant']">
-        <parameter xsi:type="metaabm:SAttribute" href="http://metaabm.org/core_library.metaabm#//@attributes[ID='false']"/>
+      <members xsi:type="act:ASet" label="Set Pregnancy Status To Not Pregnant" ID="setPregnancyStatusToNotPregnant" sources="//@agents[ID='adult']/@rootActivity/@members[ID='initializeBehaviorValues']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='initializeBehaviorValues']" attribute="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']" parameter="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.0"/>
+      <members xsi:type="act:AEvaluate" label="Adjusted Daily P Marriage" ID="adjustedDailyPMarriage" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pMarriage']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setMarried']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pMarriage']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@attributes[ID='pMarriageYearlytoDailyConversion']"/>
+        <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='mul']"/>
+      </members>
+      <members xsi:type="act:AEvaluate" label="Adjusted Daily P Divorce" ID="adjustedDailyPDivorce" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPDivorce']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@attributes[ID='pDivorceYearlytoDailyConversion']"/>
+        <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='mul']"/>
       </members>
     </rootActivity>
     <implementation className="Adult" srcDir=""/>
@@ -2005,8 +2025,9 @@
           <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='graphic']/@functions[ID='shapeRectangle']"/>
         </members>
         <members xsi:type="act:AQuery" label="Pregnant" ID="pregnant" sources="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='femaleShape']" targets="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='drawGenderRuleColorGreen']" selected="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='drawGenderRule']">
-          <inputs selected="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='drawGenderRule']" value="//@agents[ID='adult']/@attributes[ID='pregnant']"/>
-          <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identity']"/>
+          <inputs selected="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='drawGenderRule']" value="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']"/>
+          <inputs selected="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='drawGenderRule']" value="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.1"/>
+          <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identical']"/>
         </members>
         <members xsi:type="act:AQuery" label="Sex Today" ID="sexToday" sources="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='now']" targets="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='drawGenderRuleShapeMarker']" selected="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='drawGenderRule']">
           <inputs selected="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='drawGenderRule']" value="//@agents[ID='adult']/@styles[ID='genderStyle']/@rootActivity/@members[ID='now']"/>

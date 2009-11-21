@@ -6,4 +6,6 @@ incorporates	"../../Baseline/BaselineMarried.apar"
 "P Divorce Maximum Base"=1.0
 "P Relationship Begin Minimum"=0.0
 "P Relationship Begin Maximum"=0.0
+"P Marriage Yearly to Daily Conversion"=1.0
+"P Divorce Yearly to Daily Conversion"=1.0
 "Stop Period"=1
