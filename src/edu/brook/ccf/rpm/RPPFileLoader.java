@@ -8,6 +8,6 @@ public class RPPFileLoader {
         } catch (java.io.IOException e) {
             throw new RuntimeException("File Problem in Scape File Control Test " + e);
         }
-        model.getAdult().addView(fileView);
+        model.getAdultScape().addView(fileView);
     }
 }

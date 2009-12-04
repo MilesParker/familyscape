@@ -10,7 +10,7 @@ public class RPPFileOutput {
                     }
                 }
             };
-            model.getAdult().addView(dataView);
+            model.getAdultScape().addView(dataView);
             try {
                 dataView.setRunFile(new java.io.File(org.apache.commons.lang.StringUtils.replace(model
                                                                                                  .getOutputRunFile(), ".txt", model.getName() + ".txt")));
@@ -24,7 +24,7 @@ public class RPPFileOutput {
         }
         if (model.isOutputData() && !model.getAllOutputFile().equals("")) {
             SnapshotView allView = new SnapshotView();
-            model.getAdult().addView(allView);
+            model.getAdultScape().addView(allView);
             try {
                 allView.setRunFile(new java.io.File(org.apache.commons.lang.StringUtils.replace(model
                                                                                                 .getOutputRunFile(), ".txt", model.getName() + ".txt")));

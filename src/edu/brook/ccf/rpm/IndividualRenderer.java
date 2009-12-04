@@ -5,6 +5,8 @@ import org.ascape.util.vis.ColorFeature;
 import org.ascape.util.vis.ColorFeatureConcrete;
 import org.ascape.util.vis.ColorFeatureGradiatedIndex;
 import org.eclipse.amp.agf3d.IRenderer;
+import org.eclipse.draw3d.IFigure3D;
+import org.eclipse.draw3d.RenderContext;
 import org.eclipse.draw3d.graphics3d.Graphics3D;
 import org.eclipse.draw3d.graphics3d.Graphics3DDraw;
 import org.eclipse.draw3d.graphics3d.Graphics3DUtil;
@@ -57,7 +59,8 @@ public class IndividualRenderer implements IRenderer {
                                                                                          ColorFeature.GREEN, new AgeUnitValue());
     private float totalHeight;
 
-    public void renderShape(Graphics3D g3d, Object object) {
+    public void renderShape(IFigure3D figure, RenderContext context, Object object) {
+        Graphics3D g3d = context.getGraphics3D();
         Adult adult = (Adult) object;
         // float scale = 0.6f + adult.getAgeinYearsIndex() * .01f;
         float scale = 1.0f;
@@ -262,4 +265,5 @@ public class IndividualRenderer implements IRenderer {
         g3d.glVertex3f(0, 0, height);
         g3d.glEnd();
     }
+
 }
