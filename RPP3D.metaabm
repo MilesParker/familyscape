@@ -2134,7 +2134,7 @@
           <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='graphic']/@functions[ID='graphicFill']"/>
         </members>
       </rootActivity>
-      <implementation className="GenderStyle"/>
+      <implementation className="GenderStyle" mode="LOAD"/>
     </styles>
   </agents>
   <agents label="Neighborhood Cell" ID="neighborhoodCell" pluralLabel="Neighborhood Cells">
