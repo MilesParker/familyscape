@@ -2,8 +2,8 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 "Output Data"=true
 "All Output File"=""
-"Output Run File"="|run-output/Parameters.txt"
-"Output Period File"="|run-output/Results.txt"
+"Output Run File"="|run-output/params/P_.txt"
+"Output Period File"="|run-output/results/R_.txt"
 "Write Periods"=13650
 "Stop Period"=1365
 "Neighborhood Height"=225

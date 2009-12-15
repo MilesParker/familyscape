@@ -2,6 +2,7 @@ package edu.brook.ccf.rpm;
 
 public class RPPFileOutput {
     public void setup(final RelationshipsAndPregnancy model) {
+        System.err.println("--");
         if (!model.getOutputRunFile().equals("")) {
             org.ascape.view.nonvis.DataOutputView dataView = new org.ascape.view.nonvis.DataOutputView() {
                 protected void scapeChanged() {
@@ -11,6 +12,7 @@ public class RPPFileOutput {
                 }
             };
             model.getAdultScape().addView(dataView);
+            System.err.println(model.getOutputRunFile());
             try {
                 dataView.setRunFile(new java.io.File(org.apache.commons.lang.StringUtils.replace(model
                                                                                                  .getOutputRunFile(), ".txt", model.getName() + ".txt")));
