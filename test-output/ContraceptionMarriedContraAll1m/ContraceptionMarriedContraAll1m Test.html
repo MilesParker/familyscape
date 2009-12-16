@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>TestNG:  ContraceptionMarriedContraAll1m Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ContraceptionMarriedContraAll1m Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 27 12:44:17 PDT 2009</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (91 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (bsa;lhContraception All 1m: Check of Contraceptive Efficacy of All Methods Among Marrieds )()'>runModel<br/>
+<a href="#Output-62183033" onClick='toggleBox("Output-62183033", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-62183033" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-62183033">
+<b>Contraception All 1m: Check of Contraceptive Efficacy of All Methods Among Marrieds _0</b><br/>
+This test sets contraceptive failure rate for the pill, condom, and pill+condom to one, which should have the effect of increasing the number of pregnancies relative to baseline.<br/>
+<a href="../../tests/Contraception/Married/ContraAll1m.atest">Test File</a><br/>
+<a href="../../tests/Contraception/Married/ContraAll1m.apar">Parameters</a><br/>
+<a href="../logs/ContraAll1m_0.log">Log</a><br/>
+<a href="../results/ContraAll1m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>0</td>
+<td><div><pre>java.lang.RuntimeException: No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Contraception/Married/Baseline/Baseline.apar".apar
+	at org.eclipse.amp.escape.ide.ParameterReader.&lt;init&gt;(ParameterReader.java:95)
+	at org.eclipse.amp.escape.ide.ParameterReader.getRelative(ParameterReader.java:189)
+	at org.eclipse.amp.escape.ide.ParameterReader.pvsFromFile(ParameterReader.java:256)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:248)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace62183033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace62183033'><pre>java.lang.RuntimeException: No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Contraception/Married/Baseline/Baseline.apar".apar
+	at org.eclipse.amp.escape.ide.ParameterReader.&lt;init&gt;(ParameterReader.java:95)
+	at org.eclipse.amp.escape.ide.ParameterReader.getRelative(ParameterReader.java:189)
+	at org.eclipse.amp.escape.ide.ParameterReader.pvsFromFile(ParameterReader.java:256)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:248)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+</table><p>
+</body>
+</html>

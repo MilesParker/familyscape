@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BaselineBaselineUnmarried Test" failures="1" tests="1" time="38.847" errors="0">
+  <properties/>
+  <testcase name="runModel (BaselineUnmarried)" time="38.783" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult In Relationship 4708.0 &gt; 3176
+Sum Adult Married Code 54.0 &gt; 0
+Sum Adult Unmarried Code 5760.0 &lt; 5814
+Count Adult Married Marital Status 4706.0 &gt; 0
+Count Adult Single Marital Status 1108.0 &lt; 5814
+Average Adult Sex Count in Lifetime 934.4138286893705 &gt; 688
+Average Adult Sex Partners in Lifetime 0.9226006191950464 &lt; 12.5">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult In Relationship 4708.0 > 3176
+Sum Adult Married Code 54.0 > 0
+Sum Adult Unmarried Code 5760.0 < 5814
+Count Adult Married Marital Status 4706.0 > 0
+Count Adult Single Marital Status 1108.0 < 5814
+Average Adult Sex Count in Lifetime 934.4138286893705 > 688
+Average Adult Sex Partners in Lifetime 0.9226006191950464 < 12.5
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

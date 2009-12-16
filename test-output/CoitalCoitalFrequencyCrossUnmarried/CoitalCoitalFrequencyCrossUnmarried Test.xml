@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalCoitalFrequencyCrossUnmarried Test" failures="0" tests="1" time="2.084" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossUnmarried])" time="2.066" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+</testsuite>

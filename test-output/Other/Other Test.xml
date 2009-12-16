@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Other Test" failures="4" tests="8" time="143.005" errors="0">
+  <properties/>
+  <testcase name="runModel (Preg Duration 2: Check of Minimum Age Parameter for Marrieds )" time="58.705" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Preg Duration 1: Check of Minimum Age Parameter for Unmarrieds )" time="77.576" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds )" time="77.854" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="	Count Adult In Relationship 4678.0 &gt; 3176	Sum Adult Married Code 40.0 &gt; 0	Sum Adult Unmarried Code 5774.0 &lt; 5814	Count Adult Married Marital Status 4673.0 &gt; 0	Count Adult Single Marital Status 1141.0 &lt; 5814	Average Adult Sex Count in Lifetime 934.5214998280014 &gt; 688	Average Adult Sex Partners in Lifetime 0.9078087375300997 &lt; 12.5	Sum Adult Pregnancies in Lifetime 1281.0 &gt; 1231">
+      <![CDATA[java.lang.AssertionError: 	Count Adult In Relationship 4678.0 > 3176	Sum Adult Married Code 40.0 > 0	Sum Adult Unmarried Code 5774.0 < 5814	Count Adult Married Marital Status 4673.0 > 0	Count Adult Single Marital Status 1141.0 < 5814	Average Adult Sex Count in Lifetime 934.5214998280014 > 688	Average Adult Sex Partners in Lifetime 0.9078087375300997 < 12.5	Sum Adult Pregnancies in Lifetime 1281.0 > 1231
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Minimum Age 1: Check of Minimum Age Parameter for Unmarrieds )" time="78.409" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="	Count Adult In Relationship 4680.0 &gt; 3176	Sum Adult Married Code 40.0 &gt; 0	Sum Adult Unmarried Code 5774.0 &lt; 5814	Count Adult Married Marital Status 4677.0 &gt; 0	Count Adult Single Marital Status 1137.0 &lt; 5814	Average Adult Sex Count in Lifetime 931.0196078431372 &gt; 688	Average Adult Sex Partners in Lifetime 0.9222566219470244 &lt; 12.5	Sum Adult Pregnancies in Lifetime 1265.0 &gt; 1231">
+      <![CDATA[java.lang.AssertionError: 	Count Adult In Relationship 4680.0 > 3176	Sum Adult Married Code 40.0 > 0	Sum Adult Unmarried Code 5774.0 < 5814	Count Adult Married Marital Status 4677.0 > 0	Count Adult Single Marital Status 1137.0 < 5814	Average Adult Sex Count in Lifetime 931.0196078431372 > 688	Average Adult Sex Partners in Lifetime 0.9222566219470244 < 12.5	Sum Adult Pregnancies in Lifetime 1265.0 > 1231
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Relationship Status 1: Check of p(rel begin) and p(rel end) parameters)" time="91.681" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Periods In Year 1m: Check of Periods in Year Parameter for Marrieds )" time="93.161" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="	Count Adult In Relationship 2.0 &lt; 4186	Count Adult None Contraception Method 2092.0 &gt; 1238	Count Adult Pill Contraception Method 0.0 &lt; 472	Count Adult Condom Medium Intender Contraception Method 0.0 &lt; 262	Count Adult Condom High Intender Contraception Method 0.0 &lt; 76	Count Adult High Frequency Coital Behavior Type 1.0 &lt; 2417	Count Adult Moderate Frequency Coital Behavior Type 1.0 &lt; 1168	Count Adult Very Low Frequency Coital Behavior Type 4184.0 &gt; 475	Average Adult P Sex 4.7778308647873863E-4 &lt; 1	Average Adult Sex Count in Lifetime 0.6521739130434783 &lt; 1365	Average Adult Sex Partners in Lifetime 4.7778308647873863E-4 &lt; 1	Sum Adult Pregnancies in Lifetime 0.0 &lt; 869	Sum Adult Abortions in Lifetime 0.0 &lt; 270	Sum Adult Miscarriages in Lifetime 0.0 &lt; 254	Sum Adult Births in Lifetime 0.0 &lt; 222	Sum Adult Poor Births in Lifetime 0.0 &lt; 106">
+      <![CDATA[java.lang.AssertionError: 	Count Adult In Relationship 2.0 < 4186	Count Adult None Contraception Method 2092.0 > 1238	Count Adult Pill Contraception Method 0.0 < 472	Count Adult Condom Medium Intender Contraception Method 0.0 < 262	Count Adult Condom High Intender Contraception Method 0.0 < 76	Count Adult High Frequency Coital Behavior Type 1.0 < 2417	Count Adult Moderate Frequency Coital Behavior Type 1.0 < 1168	Count Adult Very Low Frequency Coital Behavior Type 4184.0 > 475	Average Adult P Sex 4.7778308647873863E-4 < 1	Average Adult Sex Count in Lifetime 0.6521739130434783 < 1365	Average Adult Sex Partners in Lifetime 4.7778308647873863E-4 < 1	Sum Adult Pregnancies in Lifetime 0.0 < 869	Sum Adult Abortions in Lifetime 0.0 < 270	Sum Adult Miscarriages in Lifetime 0.0 < 254	Sum Adult Births in Lifetime 0.0 < 222	Sum Adult Poor Births in Lifetime 0.0 < 106
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Minimum Age 2: Check of Minimum Age Parameter for Marrieds )" time="93.855" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="	Count Adult In Relationship 2.0 &lt; 4186	Count Adult None Contraception Method 2092.0 &gt; 1238	Count Adult Pill Contraception Method 0.0 &lt; 472	Count Adult Condom Medium Intender Contraception Method 0.0 &lt; 262	Count Adult Condom High Intender Contraception Method 0.0 &lt; 76	Count Adult High Frequency Coital Behavior Type 1.0 &lt; 2417	Count Adult Moderate Frequency Coital Behavior Type 1.0 &lt; 1168	Count Adult Very Low Frequency Coital Behavior Type 4184.0 &gt; 475	Average Adult P Sex 4.7778308647873863E-4 &lt; 1	Average Adult Sex Count in Lifetime 0.6521739130434783 &lt; 1365	Average Adult Sex Partners in Lifetime 4.7778308647873863E-4 &lt; 1	Sum Adult Pregnancies in Lifetime 0.0 &lt; 869	Sum Adult Abortions in Lifetime 0.0 &lt; 270	Sum Adult Miscarriages in Lifetime 0.0 &lt; 254	Sum Adult Births in Lifetime 0.0 &lt; 222	Sum Adult Poor Births in Lifetime 0.0 &lt; 106">
+      <![CDATA[java.lang.AssertionError: 	Count Adult In Relationship 2.0 < 4186	Count Adult None Contraception Method 2092.0 > 1238	Count Adult Pill Contraception Method 0.0 < 472	Count Adult Condom Medium Intender Contraception Method 0.0 < 262	Count Adult Condom High Intender Contraception Method 0.0 < 76	Count Adult High Frequency Coital Behavior Type 1.0 < 2417	Count Adult Moderate Frequency Coital Behavior Type 1.0 < 1168	Count Adult Very Low Frequency Coital Behavior Type 4184.0 > 475	Average Adult P Sex 4.7778308647873863E-4 < 1	Average Adult Sex Count in Lifetime 0.6521739130434783 < 1365	Average Adult Sex Partners in Lifetime 4.7778308647873863E-4 < 1	Sum Adult Pregnancies in Lifetime 0.0 < 869	Sum Adult Abortions in Lifetime 0.0 < 270	Sum Adult Miscarriages in Lifetime 0.0 < 254	Sum Adult Births in Lifetime 0.0 < 222	Sum Adult Poor Births in Lifetime 0.0 < 106
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Relationship Status 1: Second check of p(rel begin) and p(rel end) parameters)" time="142.753" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+</testsuite>

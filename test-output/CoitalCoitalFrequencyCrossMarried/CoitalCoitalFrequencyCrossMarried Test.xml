@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalCoitalFrequencyCrossMarried Test" failures="1" tests="1" time="2.522" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters)" time="2.451" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult High Frequency Coital Behavior Type 92.0 &lt; 2417
+Count Adult Moderate Frequency Coital Behavior Type 39.0 &lt; 1168
+Count Adult Very Low Frequency Coital Behavior Type 4055.0 &gt; 475">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult High Frequency Coital Behavior Type 92.0 < 2417
+Count Adult Moderate Frequency Coital Behavior Type 39.0 < 1168
+Count Adult Very Low Frequency Coital Behavior Type 4055.0 > 475
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

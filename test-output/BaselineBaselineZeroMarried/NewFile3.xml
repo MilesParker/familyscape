@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<scene>
+  <FX>General Road Building noises.</FX>
+  <speech speaker="Prosser">
+    Come off it Mr Dent, you can't win
+    you know. There's no point in lying
+    down in the path of progress.
+  </speech>
+  <speech speaker="Arthur">
+    I've gone off the idea of progress.
+    It's overrated
+  </speech>
+</scene>

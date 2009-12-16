@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="Tests.xsl"?>
+<testsuite name="BaselineBaselineZeroMarried Test" failures="1" tests="1" time="2.479" errors="0">
+  <properties/>
+  <testcase testsuite="runModel (BaselineZeroMarried)" time="2.441" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult In Relationship 158.0 &lt; 4186
+Count Adult None Contraception Method 3064.0 &gt; 1238
+Count Adult Sterilized Contraception Method 1075.0 &lt; 2004
+Count Adult Pill Contraception Method 34.0 &lt; 472
+Count Adult Condom Medium Intender Contraception Method 8.0 &lt; 262
+Count Adult Condom High Intender Contraception Method 5.0 &lt; 76
+Count Adult High Frequency Coital Behavior Type 102.0 &lt; 2417
+Count Adult Moderate Frequency Coital Behavior Type 39.0 &lt; 1168
+Count Adult Very Low Frequency Coital Behavior Type 4045.0 &gt; 475
+Average Adult P Sex 0.03774486383182035 &lt; 1
+Average Adult Sex Partners in Lifetime 0.03774486383182035 &lt; 1">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult In Relationship 158.0 < 4186
+Count Adult None Contraception Method 3064.0 > 1238
+Count Adult Sterilized Contraception Method 1075.0 < 2004
+Count Adult Pill Contraception Method 34.0 < 472
+Count Adult Condom Medium Intender Contraception Method 8.0 < 262
+Count Adult Condom High Intender Contraception Method 5.0 < 76
+Count Adult High Frequency Coital Behavior Type 102.0 < 2417
+Count Adult Moderate Frequency Coital Behavior Type 39.0 < 1168
+Count Adult Very Low Frequency Coital Behavior Type 4045.0 > 475
+Average Adult P Sex 0.03774486383182035 < 1
+Average Adult Sex Partners in Lifetime 0.03774486383182035 < 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

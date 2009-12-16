@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" skipfailedinvocationCounts="false" verbose="1" name="Coital" junit="false" parallel="methods" >
+  <test name="Coital Test" junit="false">
+    <parameter name="projectLocation" value="/Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape"/>
+    <parameter name="testCount" value="1"/>
+    <parameter name="testDir" value=""/>
+    <parameter name="projectName" value="edu.brook.parent.escape"/>
+    <parameter name="testFiles" value="tests/Coital/CoitalFrequencyCrossMarried tests/Coital/CoitalFrequencyCrossUnmarried tests/Coital/CoitalFrequencyDoubleMod tests/Coital/CoitalFrequencyDoubleModm tests/Coital/CoitalFrequencyHighCoitDaily tests/Coital/CoitalFrequencyHighCoitDailym tests/Coital/CoitalFrequencyHighCoitHighThresh tests/Coital/CoitalFrequencyHighCoitNone tests/Coital/CoitalFrequencyHighCoitNonem tests/Coital/CoitalFrequencyLowCoitDaily tests/Coital/CoitalFrequencyLowCoitDailym tests/Coital/CoitalFrequencyLowCoitMax tests/Coital/CoitalFrequencyLowCoitNone tests/Coital/CoitalFrequencyLowCoitNonem tests/Coital/CoitalFrequencyMarriedOnceDaily tests/Coital/CoitalFrequencyMenstrualHigh tests/Coital/CoitalFrequencyMenstrualHighm tests/Coital/CoitalFrequencyMenstrualNone tests/Coital/CoitalFrequencyMenstrualNonem tests/Coital/CoitalFrequencyModCoitDaily tests/Coital/CoitalFrequencyModCoitDailym tests/Coital/CoitalFrequencyModCoitMax tests/Coital/CoitalFrequencyModCoitNone tests/Coital/CoitalFrequencyModCoitNonem tests/Coital/CoitalFrequencyNoAgem tests/Coital/CoitalFrequencyNoEdu tests/Coital/CoitalFrequencyNoInitial tests/Coital/CoitalFrequencyNoInitialm tests/Coital/CoitalFrequencyNoSES tests/Coital/CoitalFrequencyNoSESm tests/Coital/CoitalFrequencyUnmarriedOnceDaily tests/Coital/CoitalFrequencyVeryLow tests/Coital/CoitalFrequencyVeryLowm"/>
+    <classes>
+      <class name="org.eclipse.amp.escape.testng.ParameterTestFactory"/>
+    </classes>
+  </test>
+</suite>

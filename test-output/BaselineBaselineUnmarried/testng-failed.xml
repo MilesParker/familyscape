@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [BaselineBaselineUnmarried]" junit="false" parallel="methods" annotations="JDK">
+  <parameter name="projectLocation" value="/Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape"/>
+  <parameter name="testDir" value=""/>
+  <parameter name="testCount" value="1"/>
+  <parameter name="projectName" value="edu.brook.parent.escape"/>
+  <parameter name="testFiles" value="tests/Baseline/BaselineUnmarried"/>
+  <test name="BaselineBaselineUnmarried Test(failed)" junit="false" parallel="methods" annotations="JDK">
+    <parameter name="projectLocation" value="/Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape"/>
+    <parameter name="testCount" value="1"/>
+    <parameter name="testDir" value=""/>
+    <parameter name="projectName" value="edu.brook.parent.escape"/>
+    <parameter name="testFiles" value="tests/Baseline/BaselineUnmarried"/>
+    <classes>
+      <class name="org.eclipse.amp.escape.testng.ParameterTest">
+        <methods>
+          <include name="runModel"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

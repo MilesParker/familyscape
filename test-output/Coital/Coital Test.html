@@ -1,0 +1,1189 @@
+<html>
+<head>
+<title>TestNG:  Coital Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Coital Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/20/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 10 15:19:02 PDT 2009</td>
+</tr>
+<tr><td>Total time:</td><td>154 seconds (154568 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency 4m: Spot Check of Covariates - SES (very low married)[CoitalFrequencyNoSESm])()'>runModel<br/>
+<a href="#Output-1888148175" onClick='toggleBox("Output-1888148175", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1888148175" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1888148175">
+<b>Coital Frequency 4m: Spot Check of Covariates - SES (very low married)_0</b><br/>
+This test spot checks the SES-related demographic predictors of Coital Frequency within the very low married equation by setting all relevant covariates equal to (-1*baseline factor), which should result in no agents falling into this proclivity category.<br/>
+<a href="../../tests/Coital/CoitalFrequencyNoSESm.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyNoSESm.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyNoSESm_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyNoSESm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>10</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 4024.0 &gt; 0
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1888148175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1888148175'><pre>java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 4024.0 &gt; 0
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitNone])()'>runModel<br/>
+<a href="#Output-587199138" onClick='toggleBox("Output-587199138", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-587199138" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-587199138">
+<b>Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds _0</b><br/>
+This test assigns all unmarried agents to the high coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.<br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitNone.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitNone.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyHighCoitNone_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyHighCoitNone_0.ares">Results</a><br/>
+</div>
+</td>
+<td>42</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.4389404884760921 &gt; 0
+Average Adult Sex Partners in Lifetime 0.003783969728242174 &gt; 0
+Count Adult High Frequency Coital Behavior Type 5806.0 &lt; 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace587199138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace587199138'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.4389404884760921 &gt; 0
+Average Adult Sex Partners in Lifetime 0.003783969728242174 &gt; 0
+Count Adult High Frequency Coital Behavior Type 5806.0 &lt; 5814
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency 7m High Threshold None Married: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitNonem])()'>runModel<br/>
+<a href="#Output-832032800" onClick='toggleBox("Output-832032800", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-832032800" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-832032800">
+<b>Coital Frequency 7m High Threshold None Married: Check of Married High CoitFreq Thresholds _0</b><br/>
+This test assigns all married agents to the high coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.<br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitNonem.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitNonem.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyHighCoitNonem_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyHighCoitNonem_0.ares">Results</a><br/>
+</div>
+</td>
+<td>35</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult High Frequency Coital Behavior Type 3068.0 &lt; 4186
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace832032800", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace832032800'><pre>java.lang.AssertionError: 
+Count Adult High Frequency Coital Behavior Type 3068.0 &lt; 4186
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds [CoitalFrequencyModCoitNone])()'>runModel<br/>
+<a href="#Output-51608111" onClick='toggleBox("Output-51608111", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-51608111" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-51608111">
+<b>Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds _0</b><br/>
+This test assigns all unmmarried agents to the medium coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.<br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitNone.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitNone.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyModCoitNone_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyModCoitNone_0.ares">Results</a><br/>
+</div>
+</td>
+<td>37</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.215342277261782 &gt; 0
+Average Adult Sex Partners in Lifetime 0.0041279669762641896 &gt; 0
+Count Adult Moderate Frequency Coital Behavior Type 5797.0 &lt; 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace51608111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace51608111'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.215342277261782 &gt; 0
+Average Adult Sex Partners in Lifetime 0.0041279669762641896 &gt; 0
+Count Adult Moderate Frequency Coital Behavior Type 5797.0 &lt; 5814
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitNone])()'>runModel<br/>
+<a href="#Output-1365940823" onClick='toggleBox("Output-1365940823", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1365940823" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1365940823">
+<b>Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds _0</b><br/>
+This test assigns all unmarried agents to the low coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.<br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitNone.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitNone.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyLowCoitNone_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyLowCoitNone_0.ares">Results</a><br/>
+</div>
+</td>
+<td>38</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.826625386996904 &gt; 0
+Average Adult Sex Partners in Lifetime 0.004815961472308222 &gt; 0
+Count Adult Very Low Frequency Coital Behavior Type 5789.0 &lt; 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1365940823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1365940823'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.826625386996904 &gt; 0
+Average Adult Sex Partners in Lifetime 0.004815961472308222 &gt; 0
+Count Adult Very Low Frequency Coital Behavior Type 5789.0 &lt; 5814
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossMarried])()'>runModel<br/>
+<a href="#Output-211368086" onClick='toggleBox("Output-211368086", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-211368086" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-211368086">
+<b>Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters_0</b><br/>
+This test cross checks to ensure that the values of the unmarried parameters have no effect on the distribution of coital frequency among marrieds. This is achieved by setting the relevant parameters equal to extremely large values and testing that it has no effect on the distribution of coital frequency types among marrieds.<br/>
+<a href="../../tests/Coital/CoitalFrequencyCrossMarried.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyCrossMarried.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyCrossMarried_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyCrossMarried_0.ares">Results</a><br/>
+</div>
+</td>
+<td>8</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult High Frequency Coital Behavior Type 102.0 &lt; 2417
+Count Adult Moderate Frequency Coital Behavior Type 53.0 &lt; 1168
+Count Adult Very Low Frequency Coital Behavior Type 4031.0 &gt; 475
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace211368086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace211368086'><pre>java.lang.AssertionError: 
+Count Adult High Frequency Coital Behavior Type 102.0 &lt; 2417
+Count Adult Moderate Frequency Coital Behavior Type 53.0 &lt; 1168
+Count Adult Very Low Frequency Coital Behavior Type 4031.0 &gt; 475
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Double Moderate: Functionality of Moderate Married Sexual-Proclivity Baseline[CoitalFrequencyDoubleModm])()'>runModel<br/>
+<a href="#Output-996439217" onClick='toggleBox("Output-996439217", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-996439217" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-996439217">
+<b>Coital Frequency Double Moderate: Functionality of Moderate Married Sexual-Proclivity Baseline_0</b><br/>
+This test doubles the baseline value of the moderate married sexual-proclivity baseline factor. Since all demographic predictors are set equal to zero, this should roughly result in a doubling of the number of married sexual moderates.<br/>
+<a href="../../tests/Coital/CoitalFrequencyDoubleModm.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyDoubleModm.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyDoubleModm_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyDoubleModm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>10</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Moderate Frequency Coital Behavior Type 92.0 &lt; 2391
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace996439217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace996439217'><pre>java.lang.AssertionError: 
+Count Adult Moderate Frequency Coital Behavior Type 92.0 &lt; 2391
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency High Coital Threshold: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitDailym])()'>runModel<br/>
+<a href="#Output-849906626" onClick='toggleBox("Output-849906626", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-849906626" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-849906626">
+<b>Coital Frequency High Coital Threshold: Check of Married High CoitFreq Thresholds _0</b><br/>
+This test assigns all married agents to the high coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should result in every agent having sex once a day.  This test also tests for whether married agents ever have sex more than once per day.<br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitDailym.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitDailym.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyHighCoitDailym_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyHighCoitDailym_0.ares">Results</a><br/>
+</div>
+</td>
+<td>38</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 299.25274725274727 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7338748208313426 &lt; 1
+Count Adult High Frequency Coital Behavior Type 3072.0 &lt; 4186
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace849906626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace849906626'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 299.25274725274727 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7338748208313426 &lt; 1
+Count Adult High Frequency Coital Behavior Type 3072.0 &lt; 4186
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitDaily])()'>runModel<br/>
+<a href="#Output-1146455576" onClick='toggleBox("Output-1146455576", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1146455576" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1146455576">
+<b>Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds _0</b><br/>
+This test assigns all unmarried agents to the high coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should result in agents having the same amount of sex (this test is probably redundant).<br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitDaily.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitDaily.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyHighCoitDaily_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyHighCoitDaily_0.ares">Results</a><br/>
+</div>
+</td>
+<td>73</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 932.9095287237702 &gt; 688
+Average Adult Sex Partners in Lifetime 0.91296869625043 &lt; 12.5
+Count Adult High Frequency Coital Behavior Type 5799.0 &lt; 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1146455576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1146455576'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 932.9095287237702 &gt; 688
+Average Adult Sex Partners in Lifetime 0.91296869625043 &lt; 12.5
+Count Adult High Frequency Coital Behavior Type 5799.0 &lt; 5814
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Low Coit Threshold Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitDailym])()'>runModel<br/>
+<a href="#Output-1477896642" onClick='toggleBox("Output-1477896642", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1477896642" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1477896642">
+<b>Coital Frequency Low Coit Threshold Married: Check of Married Low CoitFreq Thresholds _0</b><br/>
+This test assigns all married agents to the low coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should result in every agent having sex once a day.  This test also tests for whether married agents ever have sex more than once per day.<br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitDailym.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitDailym.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyLowCoitDailym_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyLowCoitDailym_0.ares">Results</a><br/>
+</div>
+</td>
+<td>38</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 295.79646440516007 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7319636884854276 &lt; 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1477896642", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1477896642'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 295.79646440516007 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7319636884854276 &lt; 1
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitDaily])()'>runModel<br/>
+<a href="#Output-1784454655" onClick='toggleBox("Output-1784454655", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1784454655" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1784454655">
+<b>Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds _0</b><br/>
+This test assigns all unmarried agents to the low coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should have no effect on coital frequency.<br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitDaily.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitDaily.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyLowCoitDaily_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyLowCoitDaily_0.ares">Results</a><br/>
+</div>
+</td>
+<td>82</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 5784.0 &lt; 5814
+Average Adult Sex Count in Lifetime 927.0278637770898 &gt; 688
+Average Adult Sex Partners in Lifetime 0.891296869625043 &lt; 12.5
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1784454655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1784454655'><pre>java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 5784.0 &lt; 5814
+Average Adult Sex Count in Lifetime 927.0278637770898 &gt; 688
+Average Adult Sex Partners in Lifetime 0.891296869625043 &lt; 12.5
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency MOd Coit Threshold Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitDailym])()'>runModel<br/>
+<a href="#Output-51535841" onClick='toggleBox("Output-51535841", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-51535841" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-51535841">
+<b>Coital Frequency MOd Coit Threshold Married: Check of Married Medium CoitFreq Thresholds _0</b><br/>
+This test assigns all married agents to the medium coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should result in every agent having sex once a day.  This test also tests for whether married agents ever have sex more than once per day.<br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitDailym.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitDailym.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyModCoitDailym_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyModCoitDailym_0.ares">Results</a><br/>
+</div>
+</td>
+<td>39</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 298.41949354992835 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7329192546583851 &lt; 1
+Count Adult Moderate Frequency Coital Behavior Type 3068.0 &lt; 4186
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace51535841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace51535841'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 298.41949354992835 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7329192546583851 &lt; 1
+Count Adult Moderate Frequency Coital Behavior Type 3068.0 &lt; 4186
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Married Once Daily[CoitalFrequencyMarriedOnceDaily])()'>runModel<br/>
+<a href="#Output-1804191637" onClick='toggleBox("Output-1804191637", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1804191637" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1804191637">
+<b>Coital Frequency Married Once Daily_0</b><br/>
+This check ensures that no unmarrieds are having sex more than once a day.<br/>
+<a href="../../tests/Coital/CoitalFrequencyMarriedOnceDaily.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyMarriedOnceDaily.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyMarriedOnceDaily_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyMarriedOnceDaily_0.ares">Results</a><br/>
+</div>
+</td>
+<td>14</td>
+<td><div><pre>java.lang.AssertionError: 
+Minimum Adult Sex Count in Lifetime 0.0 &lt; 100
+Minimum Adult Sex Partners in Lifetime 0.0 &lt; 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1804191637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1804191637'><pre>java.lang.AssertionError: 
+Minimum Adult Sex Count in Lifetime 0.0 &lt; 100
+Minimum Adult Sex Partners in Lifetime 0.0 &lt; 1
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Menstrual None: Check of Lunar Days for Marrieds (low value) [CoitalFrequencyMenstrualNonem])()'>runModel<br/>
+<a href="#Output-1289325312" onClick='toggleBox("Output-1289325312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1289325312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1289325312">
+<b>Coital Frequency Menstrual None: Check of Lunar Days for Marrieds (low value) _0</b><br/>
+This test assigns an extremely low value to lunar days, which should result in sex occurring almost every day.<br/>
+<a href="../../tests/Coital/CoitalFrequencyMenstrualNonem.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyMenstrualNonem.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyMenstrualNonem_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyMenstrualNonem_0.ares">Results</a><br/>
+</div>
+</td>
+<td>38</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 298.9412326803631 &lt; 499
+Average Adult Sex Partners in Lifetime 0.7329192546583851 &lt; 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1289325312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1289325312'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 298.9412326803631 &lt; 499
+Average Adult Sex Partners in Lifetime 0.7329192546583851 &lt; 1
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])()'>runModel<br/>
+<a href="#Output-313242479" onClick='toggleBox("Output-313242479", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-313242479" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-313242479">
+<b>Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) _0</b><br/>
+This test assigns an extremely low value to lunar days, which should result in no change in sex occurance relative to baseline.<br/>
+<a href="../../tests/Coital/CoitalFrequencyMenstrualNone.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyMenstrualNone.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyMenstrualNone_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyMenstrualNone_0.ares">Results</a><br/>
+</div>
+</td>
+<td>51</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 932.8472652218783 &gt; 688
+Average Adult Sex Partners in Lifetime 0.911936704506364 &lt; 12.5
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace313242479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace313242479'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 932.8472652218783 &gt; 688
+Average Adult Sex Partners in Lifetime 0.911936704506364 &lt; 12.5
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Moderate Freq None Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitNonem])()'>runModel<br/>
+<a href="#Output-609482911" onClick='toggleBox("Output-609482911", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-609482911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-609482911">
+<b>Coital Frequency Moderate Freq None Married: Check of Married Medium CoitFreq Thresholds _0</b><br/>
+This test assigns all married agents to the medium coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.<br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitNonem.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitNonem.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyModCoitNonem_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyModCoitNonem_0.ares">Results</a><br/>
+</div>
+</td>
+<td>38</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Moderate Frequency Coital Behavior Type 3042.0 &lt; 4186
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace609482911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace609482911'><pre>java.lang.AssertionError: 
+Count Adult Moderate Frequency Coital Behavior Type 3042.0 &lt; 4186
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])()'>runModel<br/>
+<a href="#Output-295308366" onClick='toggleBox("Output-295308366", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-295308366" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-295308366">
+<b>Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds _0</b><br/>
+This test assigns all unmarried agents to the moderate coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should have no effect on Baseline.<br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitDaily.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitDaily.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyModCoitDaily_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyModCoitDaily_0.ares">Results</a><br/>
+</div>
+</td>
+<td>92</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 922.6229790161678 &gt; 688
+Average Adult Sex Partners in Lifetime 0.913312693498452 &lt; 12.5
+Count Adult Moderate Frequency Coital Behavior Type 5792.0 &lt; 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace295308366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace295308366'><pre>java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 922.6229790161678 &gt; 688
+Average Adult Sex Partners in Lifetime 0.913312693498452 &lt; 12.5
+Count Adult Moderate Frequency Coital Behavior Type 5792.0 &lt; 5814
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)[CoitalFrequencyNoInitial])()'>runModel<br/>
+<a href="#Output-795956333" onClick='toggleBox("Output-795956333", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-795956333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-795956333">
+<b>Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)_0</b><br/>
+This test sets the initial-sex coefficient equal to zero for the unmarried analysis, which should have the effect of eliminating all sex.<br/>
+<a href="../../tests/Coital/CoitalFrequencyNoInitial.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyNoInitial.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyNoInitial_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyNoInitial_0.ares">Results</a><br/>
+</div>
+</td>
+<td>34</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult P Sex Initial 0.007911936704506364 &gt; 0.0
+Average Adult Sex Count in Lifetime 2.842793257653939 &gt; 0
+Average Adult Sex Partners in Lifetime 0.007223942208462332 &gt; 0
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace795956333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace795956333'><pre>java.lang.AssertionError: 
+Average Adult P Sex Initial 0.007911936704506364 &gt; 0.0
+Average Adult Sex Count in Lifetime 2.842793257653939 &gt; 0
+Average Adult Sex Partners in Lifetime 0.007223942208462332 &gt; 0
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency No Initial: Check of Initial-Sex Parameter (married)[CoitalFrequencyNoInitialm])()'>runModel<br/>
+<a href="#Output-1488350311" onClick='toggleBox("Output-1488350311", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1488350311" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1488350311">
+<b>Coital Frequency No Initial: Check of Initial-Sex Parameter (married)_0</b><br/>
+This test sets the initial-sex coefficient equal to zero for the unmarried analysis, which should have no effect on coital frequency among marrieds (since this parameter should apply only to unmarrieds).<br/>
+<a href="../../tests/Coital/CoitalFrequencyNoInitialm.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyNoInitialm.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyNoInitialm_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyNoInitialm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>24</td>
+<td><div><pre>java.lang.AssertionError: 
+Average Adult P Sex 0.7224080267558528 &lt; 1.0
+Average Adult P Sex Initial 0.7224080267558528 &lt; 1.0
+Average Adult Sex Count in Lifetime 291.7735308170091 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7224080267558528 &lt; 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1488350311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1488350311'><pre>java.lang.AssertionError: 
+Average Adult P Sex 0.7224080267558528 &lt; 1.0
+Average Adult P Sex Initial 0.7224080267558528 &lt; 1.0
+Average Adult Sex Count in Lifetime 291.7735308170091 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7224080267558528 &lt; 1
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Very Low Married: Functionality of Very Low Married Sexual-Proclivity Baseline[CoitalFrequencyVeryLowm])()'>runModel<br/>
+<a href="#Output-1183925756" onClick='toggleBox("Output-1183925756", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1183925756" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1183925756">
+<b>Coital Frequency Very Low Married: Functionality of Very Low Married Sexual-Proclivity Baseline_0</b><br/>
+This test quadruples the baseline value of the very low married sexual-proclivity baseline factor. Since all demographic predictors are set equal to zero, this should roughly result in a quadrupling of the number of married sexual very lows.<br/>
+<a href="../../tests/Coital/CoitalFrequencyVeryLowm.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyVeryLowm.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyVeryLowm_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyVeryLowm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>9</td>
+<td><div><pre>java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 4067.0 &gt; 1764
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1183925756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1183925756'><pre>java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 4067.0 &gt; 1764
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.GeneratedMethodAccessor1271.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency 4: Spot Check of Covariates - Race (very low unmarried)[CoitalFrequencyNoSES])()'>runModel<br/>
+<a href="#Output-1720256230" onClick='toggleBox("Output-1720256230", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1720256230" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1720256230">
+<b>Coital Frequency 4: Spot Check of Covariates - Race (very low unmarried)_0</b><br/>
+This test spot checks the race-related demographic predictors of Coital Frequency within the very low unmarried equation by setting all relevant covariates equal to (-1*baseline factor), which should result in no agents falling into this proclivity category.<br/>
+<a href="../../tests/Coital/CoitalFrequencyNoSES.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyNoSES.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyNoSES_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyNoSES_0.ares">Results</a><br/>
+</div>
+</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossUnmarried])()'>runModel<br/>
+<a href="#Output-312877053" onClick='toggleBox("Output-312877053", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-312877053" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-312877053">
+<b>Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters_0</b><br/>
+This test cross checks to ensure that the values of the married parameters have no effect on the distribution of coital frequency among unmarrieds. This is achieved by setting the relevant parameters equal to extremely large values and testing that it has no effect on the distribution of coital frequency types among unmarrieds.<br/>
+<a href="../../tests/Coital/CoitalFrequencyCrossUnmarried.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyCrossUnmarried.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyCrossUnmarried_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyCrossUnmarried_0.ares">Results</a><br/>
+</div>
+</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline[CoitalFrequencyDoubleMod])()'>runModel<br/>
+<a href="#Output-1030493168" onClick='toggleBox("Output-1030493168", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1030493168" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1030493168">
+<b>Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline_0</b><br/>
+This test doubles the baseline value of the moderate unmarried sexual-proclivity baseline factor. Since all demographic predictors are set equal to zero, this should roughly result in a doubling of the number of unmarried sexual moderates.<br/>
+<a href="../../tests/Coital/CoitalFrequencyDoubleMod.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyDoubleMod.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyDoubleMod_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyDoubleMod_0.ares">Results</a><br/>
+</div>
+</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) [CoitalFrequencyHighCoitHighThresh])()'>runModel<br/>
+<a href="#Output-1642401520" onClick='toggleBox("Output-1642401520", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1642401520" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1642401520">
+<b>Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) _0</b><br/>
+This test sets the relationship probability to 100%, assigns all unmarried agents to the high coitfreq category, and then sets the Minimum and Maximum thresholds for that category equal to 1.  If Coital Frequency is working properly then sex count in lifetime should have a Maximum of no more than the number of periods, which is 50.<br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitHighThresh.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyHighCoitHighThresh.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyHighCoitHighThresh_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyHighCoitHighThresh_0.ares">Results</a><br/>
+</div>
+</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Low Coit Threshold None Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitNonem])()'>runModel<br/>
+<a href="#Output-380038960" onClick='toggleBox("Output-380038960", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-380038960" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-380038960">
+<b>Coital Frequency Low Coit Threshold None Married: Check of Married Low CoitFreq Thresholds _0</b><br/>
+This test assigns all married agents to the low coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.<br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitNonem.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitNonem.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyLowCoitNonem_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyLowCoitNonem_0.ares">Results</a><br/>
+</div>
+</td>
+<td>26</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Low Coital Threshold: Check of Unmarried Coital Frequency (Very Low Threshold) [CoitalFrequencyLowCoitMax])()'>runModel<br/>
+<a href="#Output-1529569335" onClick='toggleBox("Output-1529569335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1529569335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1529569335">
+<b>Coital Frequency Low Coital Threshold: Check of Unmarried Coital Frequency (Very Low Threshold) _0</b><br/>
+This test sets the relationship probability to 100%, assigns all unmarried agents to the low coitfreq category, and then sets the Minimum and Maximum thresholds for that category equal to 1.  If Coital Frequency is working properly then sex count in lifetime should have a Maximum of no more than the number of periods, which is 50.<br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitMax.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyLowCoitMax.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyLowCoitMax_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyLowCoitMax_0.ares">Results</a><br/>
+</div>
+</td>
+<td>11</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Menstrual High Married (high value) [CoitalFrequencyMenstrualHighm])()'>runModel<br/>
+<a href="#Output-1151525707" onClick='toggleBox("Output-1151525707", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1151525707" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1151525707">
+<b>Coital Frequency Menstrual High Married (high value) _0</b><br/>
+This test assigns an extremely high value to lunar days, which should result in little or no sex occurring -- we can't really test that here as it causes an exception in fecundity index but we can test other aspects.<br/>
+<a href="../../tests/Coital/CoitalFrequencyMenstrualHighm.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyMenstrualHighm.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyMenstrualHighm_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyMenstrualHighm_0.ares">Results</a><br/>
+</div>
+</td>
+<td>32</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Menstrual High Unmarried (high value) [CoitalFrequencyMenstrualHigh])()'>runModel<br/>
+<a href="#Output-1120034661" onClick='toggleBox("Output-1120034661", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1120034661" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1120034661">
+<b>Coital Frequency Menstrual High Unmarried (high value) _0</b><br/>
+This test assigns an extremely high value to lunar days, which should result in little or no sex occurring.<br/>
+<a href="../../tests/Coital/CoitalFrequencyMenstrualHigh.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyMenstrualHigh.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyMenstrualHigh_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyMenstrualHigh_0.ares">Results</a><br/>
+</div>
+</td>
+<td>38</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) [CoitalFrequencyModCoitMax])()'>runModel<br/>
+<a href="#Output-1149414639" onClick='toggleBox("Output-1149414639", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1149414639" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1149414639">
+<b>Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) _0</b><br/>
+This test sets the relationship probability to 100%, assigns all unmarried agents to the medium coitfreq category, and then sets the Minimum and Maximum thresholds for that category equal to 1.  If Coital Frequency is working properly then sex count in lifetime should have a Maximum of no more than the number of periods, which is 50.<br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitMax.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyModCoitMax.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyModCoitMax_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyModCoitMax_0.ares">Results</a><br/>
+</div>
+</td>
+<td>11</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency No Age Married: Spot Check of Covariates - Age (moderate married)[CoitalFrequencyNoAgem])()'>runModel<br/>
+<a href="#Output-1468160896" onClick='toggleBox("Output-1468160896", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1468160896" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1468160896">
+<b>Coital Frequency No Age Married: Spot Check of Covariates - Age (moderate married)_0</b><br/>
+This test spot checks the age-related demographic predictors of Coital Frequency within the moderate married equation by setting all relevant covariates equal to (-1*baseline factor), which should result in no agents falling into this proclivity category.<br/>
+<a href="../../tests/Coital/CoitalFrequencyNoAgem.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyNoAgem.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyNoAgem_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyNoAgem_0.ares">Results</a><br/>
+</div>
+</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried)[CoitalFrequencyNoEdu])()'>runModel<br/>
+<a href="#Output-550195637" onClick='toggleBox("Output-550195637", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-550195637" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-550195637">
+<b>Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried)_0</b><br/>
+This test spot checks the education-related demographic predictors of Coital Frequency within the moderate unmarried equation by setting all relevant covariates equal to (-1*baseline factor), which should result in no agents falling into this proclivity category.<br/>
+<a href="../../tests/Coital/CoitalFrequencyNoEdu.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyNoEdu.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyNoEdu_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyNoEdu_0.ares">Results</a><br/>
+</div>
+</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Unmarried Once Daily[CoitalFrequencyUnmarriedOnceDaily])()'>runModel<br/>
+<a href="#Output-1820445449" onClick='toggleBox("Output-1820445449", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1820445449" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1820445449">
+<b>Coital Frequency Unmarried Once Daily_0</b><br/>
+This check ensures that no unmarrieds are having sex more than once a day.<br/>
+<a href="../../tests/Coital/CoitalFrequencyUnmarriedOnceDaily.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyUnmarriedOnceDaily.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyUnmarriedOnceDaily_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyUnmarriedOnceDaily_0.ares">Results</a><br/>
+</div>
+</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline[CoitalFrequencyVeryLow])()'>runModel<br/>
+<a href="#Output-1566266627" onClick='toggleBox("Output-1566266627", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1566266627" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1566266627">
+<b>Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline_0</b><br/>
+This test quadruples the baseline value of the very low unmarried sexual-proclivity baseline factor. Since all demographic predictors are set equal to zero, this should roughly result in a quadrupling of the number of unmarried sexual very lows.<br/>
+<a href="../../tests/Coital/CoitalFrequencyVeryLow.atest">Test File</a><br/>
+<a href="../../tests/Coital/CoitalFrequencyVeryLow.apar">Parameters</a><br/>
+<a href="../logs/CoitalFrequencyVeryLow_0.log">Log</a><br/>
+<a href="../results/CoitalFrequencyVeryLow_0.ares">Results</a><br/>
+</div>
+</td>
+<td>1</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

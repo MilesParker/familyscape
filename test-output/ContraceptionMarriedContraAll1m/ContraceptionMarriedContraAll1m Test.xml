@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ContraceptionMarriedContraAll1m Test" failures="1" tests="1" time="0.091" errors="0">
+  <properties/>
+  <testcase name="runModel (bsa;lhContraception All 1m: Check of Contraceptive Efficacy of All Methods Among Marrieds )" time="0.0090" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.RuntimeException" message="No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Contraception/Married/Baseline/Baseline.apar&quot;.apar">
+      <![CDATA[java.lang.RuntimeException: No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Contraception/Married/Baseline/Baseline.apar".apar
+	at org.eclipse.amp.escape.ide.ParameterReader.<init>(ParameterReader.java:95)
+	at org.eclipse.amp.escape.ide.ParameterReader.getRelative(ParameterReader.java:189)
+	at org.eclipse.amp.escape.ide.ParameterReader.pvsFromFile(ParameterReader.java:256)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:248)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

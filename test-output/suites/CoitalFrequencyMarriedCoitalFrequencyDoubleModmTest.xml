@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" skipfailedinvocationCounts="false" verbose="1" name="CoitalFrequencyMarriedCoitalFrequencyDoubleModm" junit="false" parallel="methods" >
+  <listeners>
+    <listener class-name="org.testng.reporters.JUnitXMLReporter"/>
+  </listeners>
+  <test name="CoitalFrequencyMarriedCoitalFrequencyDoubleModm Test" junit="false">
+    <parameter name="projectLocation" value="/Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape"/>
+    <parameter name="testCount" value="1"/>
+    <parameter name="testDir" value=""/>
+    <parameter name="projectName" value="edu.brook.parent.escape"/>
+    <parameter name="testFiles" value="tests/CoitalFrequency/Married/CoitalFrequencyDoubleModm"/>
+    <classes>
+      <class name="org.eclipse.amp.escape.testng.ParameterTestFactory"/>
+    </classes>
+  </test>
+</suite>

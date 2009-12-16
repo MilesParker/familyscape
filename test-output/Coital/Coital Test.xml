@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Coital Test" failures="20" tests="33" time="154.568" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold: Check of Unmarried Coital Frequency (Very Low Threshold) [CoitalFrequencyLowCoitMax])" time="11.012" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) [CoitalFrequencyModCoitMax])" time="11.098" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline[CoitalFrequencyVeryLow])" time="1.798" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) [CoitalFrequencyHighCoitHighThresh])" time="6.49" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Marrieds (low value) [CoitalFrequencyMenstrualNonem])" time="38.44" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 298.9412326803631 &lt; 499
+Average Adult Sex Partners in Lifetime 0.7329192546583851 &lt; 1">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 298.9412326803631 < 499
+Average Adult Sex Partners in Lifetime 0.7329192546583851 < 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency High Coital Threshold: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitDailym])" time="38.457" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 299.25274725274727 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7338748208313426 &lt; 1
+Count Adult High Frequency Coital Behavior Type 3072.0 &lt; 4186">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 299.25274725274727 < 500
+Average Adult Sex Partners in Lifetime 0.7338748208313426 < 1
+Count Adult High Frequency Coital Behavior Type 3072.0 < 4186
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Moderate Freq None Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitNonem])" time="38.622" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Moderate Frequency Coital Behavior Type 3042.0 &lt; 4186">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Moderate Frequency Coital Behavior Type 3042.0 < 4186
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency MOd Coit Threshold Married: Check of Married Medium CoitFreq Thresholds [CoitalFrequencyModCoitDailym])" time="39.825" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 298.41949354992835 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7329192546583851 &lt; 1
+Count Adult Moderate Frequency Coital Behavior Type 3068.0 &lt; 4186">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 298.41949354992835 < 500
+Average Adult Sex Partners in Lifetime 0.7329192546583851 < 1
+Count Adult Moderate Frequency Coital Behavior Type 3068.0 < 4186
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency 4: Spot Check of Covariates - Race (very low unmarried)[CoitalFrequencyNoSES])" time="1.851" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried)[CoitalFrequencyNoEdu])" time="1.774" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossUnmarried])" time="1.471" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitNone])" time="42.022" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 1.4389404884760921 &gt; 0
+Average Adult Sex Partners in Lifetime 0.003783969728242174 &gt; 0
+Count Adult High Frequency Coital Behavior Type 5806.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.4389404884760921 > 0
+Average Adult Sex Partners in Lifetime 0.003783969728242174 > 0
+Count Adult High Frequency Coital Behavior Type 5806.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency No Age Married: Spot Check of Covariates - Age (moderate married)[CoitalFrequencyNoAgem])" time="6.652" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds [CoitalFrequencyModCoitNone])" time="37.032" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 1.215342277261782 &gt; 0
+Average Adult Sex Partners in Lifetime 0.0041279669762641896 &gt; 0
+Count Adult Moderate Frequency Coital Behavior Type 5797.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.215342277261782 > 0
+Average Adult Sex Partners in Lifetime 0.0041279669762641896 > 0
+Count Adult Moderate Frequency Coital Behavior Type 5797.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency 4m: Spot Check of Covariates - SES (very low married)[CoitalFrequencyNoSESm])" time="10.59" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Very Low Frequency Coital Behavior Type 4024.0 &gt; 0">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 4024.0 > 0
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Menstrual High Unmarried (high value) [CoitalFrequencyMenstrualHigh])" time="38.125" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Married Sexual-Proclivity Baseline[CoitalFrequencyDoubleModm])" time="10.179" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Moderate Frequency Coital Behavior Type 92.0 &lt; 2391">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Moderate Frequency Coital Behavior Type 92.0 < 2391
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Unmarried Once Daily[CoitalFrequencyUnmarriedOnceDaily])" time="10.258" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline[CoitalFrequencyDoubleMod])" time="4.916" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Menstrual High Married (high value) [CoitalFrequencyMenstrualHighm])" time="32.99" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitNone])" time="38.686" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 1.826625386996904 &gt; 0
+Average Adult Sex Partners in Lifetime 0.004815961472308222 &gt; 0
+Count Adult Very Low Frequency Coital Behavior Type 5789.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.826625386996904 > 0
+Average Adult Sex Partners in Lifetime 0.004815961472308222 > 0
+Count Adult Very Low Frequency Coital Behavior Type 5789.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitDailym])" time="38.168" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 295.79646440516007 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7319636884854276 &lt; 1">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 295.79646440516007 < 500
+Average Adult Sex Partners in Lifetime 0.7319636884854276 < 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency 7m High Threshold None Married: Check of Married High CoitFreq Thresholds [CoitalFrequencyHighCoitNonem])" time="35.045" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult High Frequency Coital Behavior Type 3068.0 &lt; 4186">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult High Frequency Coital Behavior Type 3068.0 < 4186
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Cross Married: Cross Check of Covariates - Married Parameters[CoitalFrequencyCrossMarried])" time="8.629" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult High Frequency Coital Behavior Type 102.0 &lt; 2417
+Count Adult Moderate Frequency Coital Behavior Type 53.0 &lt; 1168
+Count Adult Very Low Frequency Coital Behavior Type 4031.0 &gt; 475">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult High Frequency Coital Behavior Type 102.0 < 2417
+Count Adult Moderate Frequency Coital Behavior Type 53.0 < 1168
+Count Adult Very Low Frequency Coital Behavior Type 4031.0 > 475
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds [CoitalFrequencyModCoitDaily])" time="92.396" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 922.6229790161678 &gt; 688
+Average Adult Sex Partners in Lifetime 0.913312693498452 &lt; 12.5
+Count Adult Moderate Frequency Coital Behavior Type 5792.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 922.6229790161678 > 688
+Average Adult Sex Partners in Lifetime 0.913312693498452 < 12.5
+Count Adult Moderate Frequency Coital Behavior Type 5792.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency No Initial: Check of Initial-Sex Parameter (married)[CoitalFrequencyNoInitialm])" time="24.585" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult P Sex 0.7224080267558528 &lt; 1.0
+Average Adult P Sex Initial 0.7224080267558528 &lt; 1.0
+Average Adult Sex Count in Lifetime 291.7735308170091 &lt; 500
+Average Adult Sex Partners in Lifetime 0.7224080267558528 &lt; 1">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult P Sex 0.7224080267558528 < 1.0
+Average Adult P Sex Initial 0.7224080267558528 < 1.0
+Average Adult Sex Count in Lifetime 291.7735308170091 < 500
+Average Adult Sex Partners in Lifetime 0.7224080267558528 < 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried)[CoitalFrequencyNoInitial])" time="34.935" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult P Sex Initial 0.007911936704506364 &gt; 0.0
+Average Adult Sex Count in Lifetime 2.842793257653939 &gt; 0
+Average Adult Sex Partners in Lifetime 0.007223942208462332 &gt; 0">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult P Sex Initial 0.007911936704506364 > 0.0
+Average Adult Sex Count in Lifetime 2.842793257653939 > 0
+Average Adult Sex Partners in Lifetime 0.007223942208462332 > 0
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Very Low Married: Functionality of Very Low Married Sexual-Proclivity Baseline[CoitalFrequencyVeryLowm])" time="9.82" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Very Low Frequency Coital Behavior Type 4067.0 &gt; 1764">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 4067.0 > 1764
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Married Once Daily[CoitalFrequencyMarriedOnceDaily])" time="14.93" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Minimum Adult Sex Count in Lifetime 0.0 &lt; 100
+Minimum Adult Sex Partners in Lifetime 0.0 &lt; 1">
+      <![CDATA[java.lang.AssertionError: 
+Minimum Adult Sex Count in Lifetime 0.0 < 100
+Minimum Adult Sex Partners in Lifetime 0.0 < 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds [CoitalFrequencyLowCoitDaily])" time="82.968" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Very Low Frequency Coital Behavior Type 5784.0 &lt; 5814
+Average Adult Sex Count in Lifetime 927.0278637770898 &gt; 688
+Average Adult Sex Partners in Lifetime 0.891296869625043 &lt; 12.5">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 5784.0 < 5814
+Average Adult Sex Count in Lifetime 927.0278637770898 > 688
+Average Adult Sex Partners in Lifetime 0.891296869625043 < 12.5
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Low Coit Threshold None Married: Check of Married Low CoitFreq Thresholds [CoitalFrequencyLowCoitNonem])" time="26.509" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds [CoitalFrequencyHighCoitDaily])" time="73.915" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 932.9095287237702 &gt; 688
+Average Adult Sex Partners in Lifetime 0.91296869625043 &lt; 12.5
+Count Adult High Frequency Coital Behavior Type 5799.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 932.9095287237702 > 688
+Average Adult Sex Partners in Lifetime 0.91296869625043 < 12.5
+Count Adult High Frequency Coital Behavior Type 5799.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) [CoitalFrequencyMenstrualNone])" time="51.381" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 932.8472652218783 &gt; 688
+Average Adult Sex Partners in Lifetime 0.911936704506364 &lt; 12.5">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 932.8472652218783 > 688
+Average Adult Sex Partners in Lifetime 0.911936704506364 < 12.5
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

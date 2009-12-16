@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BaselineBaselineZeroUnmarried Test" failures="1" tests="1" time="2.115" errors="0">
+  <properties/>
+  <testcase name="runModel (BaselineZeroUnmarried)" time="2.08" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Condom High Intender Contraception Method 117.0 &lt; 121">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Condom High Intender Contraception Method 117.0 < 121
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CoitalFrequencyMarriedCoitalFrequencyDoubleModm Test" failures="1" tests="1" time="0.797" errors="0">
+  <properties/>
+  <testcase name="runModel (bsa;lhnull)" time="0.114" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.IllegalStateException" message="Workspace is closed.">
+      <![CDATA[java.lang.IllegalStateException: Workspace is closed.
+	at org.eclipse.core.resources.ResourcesPlugin.getWorkspace(ResourcesPlugin.java:340)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:207)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

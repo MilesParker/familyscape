@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Unmarried Test" failures="12" tests="19" time="78.11" errors="0">
+  <properties/>
+  <testcase name="runModel (Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline)" time="7.245" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Moderate Coital Max: Check of Unmarried Coital Frequency (Moderate Threshold) )" time="13.093" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold: Check of Unmarried Coital Frequency (Very Low Threshold) )" time="13.897" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Married Once Daily)" time="14.752" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Minimum Adult Sex Count in Lifetime 0.0 &lt; 100
+Minimum Adult Sex Partners in Lifetime 0.0 &lt; 1">
+      <![CDATA[java.lang.AssertionError: 
+Minimum Adult Sex Count in Lifetime 0.0 < 100
+Minimum Adult Sex Partners in Lifetime 0.0 < 1
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Unmarried Once Daily)" time="11.462" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline)" time="1.118" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters)" time="1.082" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds )" time="44.827" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 1.891296869625043 &gt; 0
+Average Adult Sex Partners in Lifetime 0.004815961472308222 &gt; 0
+Count Adult Very Low Frequency Coital Behavior Type 5787.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.891296869625043 > 0
+Average Adult Sex Partners in Lifetime 0.004815961472308222 > 0
+Count Adult Very Low Frequency Coital Behavior Type 5787.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency 4: Spot Check of Covariates - Race (very low unmarried))" time="0.04" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.RuntimeException" message="No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Baseline.apar">
+      <![CDATA[java.lang.RuntimeException: No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Baseline.apar
+	at org.eclipse.amp.escape.ide.ParameterReader.<init>(ParameterReader.java:95)
+	at org.eclipse.amp.escape.ide.ParameterReader.getRelative(ParameterReader.java:189)
+	at org.eclipse.amp.escape.ide.ParameterReader.pvsFromFile(ParameterReader.java:256)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:249)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency No Edu: Spot Check of Covariates - Education (moderate unmarried))" time="0.023" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.RuntimeException" message="No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Baseline.apar">
+      <![CDATA[java.lang.RuntimeException: No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Baseline.apar
+	at org.eclipse.amp.escape.ide.ParameterReader.<init>(ParameterReader.java:95)
+	at org.eclipse.amp.escape.ide.ParameterReader.getRelative(ParameterReader.java:189)
+	at org.eclipse.amp.escape.ide.ParameterReader.pvsFromFile(ParameterReader.java:256)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:249)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency High Coit Threshold: Check of Unmarried Coital Frequency (High Threshold) )" time="0.059" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.RuntimeException" message="No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Baseline.apar">
+      <![CDATA[java.lang.RuntimeException: No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Baseline.apar
+	at org.eclipse.amp.escape.ide.ParameterReader.<init>(ParameterReader.java:95)
+	at org.eclipse.amp.escape.ide.ParameterReader.getRelative(ParameterReader.java:189)
+	at org.eclipse.amp.escape.ide.ParameterReader.pvsFromFile(ParameterReader.java:256)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:249)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency No Initial Married: Check of Initial-Sex Parameter (unmarried))" time="0.017" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.RuntimeException" message="No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Baseline.apar">
+      <![CDATA[java.lang.RuntimeException: No file exists at system path: /Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape/tests/Baseline.apar
+	at org.eclipse.amp.escape.ide.ParameterReader.<init>(ParameterReader.java:95)
+	at org.eclipse.amp.escape.ide.ParameterReader.getRelative(ParameterReader.java:189)
+	at org.eclipse.amp.escape.ide.ParameterReader.pvsFromFile(ParameterReader.java:256)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:249)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Menstrual High Unmarried (high value) )" time="36.047" classname="org.eclipse.amp.escape.testng.ParameterTest"/>
+  <testcase name="runModel (Coital Frequency 8 Medium Threshold: Check of Unmarried Medium CoitFreq Thresholds )" time="35.253" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 1.9208806329549364 &gt; 0
+Average Adult Sex Partners in Lifetime 0.004471964224286206 &gt; 0
+Count Adult Moderate Frequency Coital Behavior Type 5800.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 1.9208806329549364 > 0
+Average Adult Sex Partners in Lifetime 0.004471964224286206 > 0
+Count Adult Moderate Frequency Coital Behavior Type 5800.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency 7 High CoitFrew Threhsold: Check of Unmarried High CoitFreq Thresholds )" time="34.562" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 3.519779841761266 &gt; 0
+Average Adult Sex Partners in Lifetime 0.007911936704506364 &gt; 0
+Count Adult High Frequency Coital Behavior Type 5797.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 3.519779841761266 > 0
+Average Adult Sex Partners in Lifetime 0.007911936704506364 > 0
+Count Adult High Frequency Coital Behavior Type 5797.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds )" time="74.878" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 952.8180254557964 &gt; 688
+Average Adult Sex Partners in Lifetime 0.913312693498452 &lt; 12.5
+Count Adult Moderate Frequency Coital Behavior Type 5781.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 952.8180254557964 > 688
+Average Adult Sex Partners in Lifetime 0.913312693498452 < 12.5
+Count Adult Moderate Frequency Coital Behavior Type 5781.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Low Coital Threshold daily: Check of Unmarried Low CoitFreq Thresholds )" time="75.511" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Count Adult Very Low Frequency Coital Behavior Type 5789.0 &lt; 5814
+Average Adult Sex Count in Lifetime 938.5070519435844 &gt; 688
+Average Adult Sex Partners in Lifetime 0.9167526659786722 &lt; 12.5">
+      <![CDATA[java.lang.AssertionError: 
+Count Adult Very Low Frequency Coital Behavior Type 5789.0 < 5814
+Average Adult Sex Count in Lifetime 938.5070519435844 > 688
+Average Adult Sex Partners in Lifetime 0.9167526659786722 < 12.5
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency Menstrual None: Check of Lunar Days for Unmarrieds (low value) )" time="75.55" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 936.8510491916064 &gt; 688
+Average Adult Sex Partners in Lifetime 0.9181286549707602 &lt; 12.5">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 936.8510491916064 > 688
+Average Adult Sex Partners in Lifetime 0.9181286549707602 < 12.5
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runModel (Coital Frequency High Coital Thresholds: Check of Unmarried High CoitFreq Thresholds )" time="63.305" classname="org.eclipse.amp.escape.testng.ParameterTest">
+    <failure type="java.lang.AssertionError" message="
+Average Adult Sex Count in Lifetime 938.9005847953216 &gt; 688
+Average Adult Sex Partners in Lifetime 0.9164086687306502 &lt; 12.5
+Count Adult High Frequency Coital Behavior Type 5796.0 &lt; 5814">
+      <![CDATA[java.lang.AssertionError: 
+Average Adult Sex Count in Lifetime 938.9005847953216 > 688
+Average Adult Sex Partners in Lifetime 0.9164086687306502 < 12.5
+Count Adult High Frequency Coital Behavior Type 5796.0 < 5814
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

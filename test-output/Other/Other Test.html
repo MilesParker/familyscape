@@ -1,0 +1,313 @@
+<html>
+<head>
+<title>TestNG:  Other Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Other Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 15 16:53:13 PDT 2009</td>
+</tr>
+<tr><td>Total time:</td><td>143 seconds (143005 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='3' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Minimum Age 1: Check of Minimum Age Parameter for Unmarrieds )()'>runModel<br/>
+<a href="#Output-733003674" onClick='toggleBox("Output-733003674", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-733003674" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-733003674">
+<b>Minimum Age 1: Check of Minimum Age Parameter for Unmarrieds _0</b><br/>
+This test ensures that value the minimum-age parameter has no effect on the model's outcomes for unmarrieds by setting Minimum age equal to an extremely high value and comparing results to baseline.<br/>
+<a href="../../tests/Other/Unmarried/MinAge1.atest">Test File</a><br/>
+<a href="../../tests/Other/Unmarried/MinAge1.apar">Parameters</a><br/>
+<a href="../logs/MinAge1_0.log">Log</a><br/>
+<a href="../results/MinAge1_0.ares">Results</a><br/>
+</div>
+</td>
+<td>78</td>
+<td><div><pre>java.lang.AssertionError: 	Count Adult In Relationship 4680.0 &gt; 3176	Sum Adult Married Code 40.0 &gt; 0	Sum Adult Unmarried Code 5774.0 &lt; 5814	Count Adult Married Marital Status 4677.0 &gt; 0	Count Adult Single Marital Status 1137.0 &lt; 5814	Average Adult Sex Count in Lifetime 931.0196078431372 &gt; 688	Average Adult Sex Partners in Lifetime 0.9222566219470244 &lt; 12.5	Sum Adult Pregnancies in Lifetime 1265.0 &gt; 1231
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace733003674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace733003674'><pre>java.lang.AssertionError: 	Count Adult In Relationship 4680.0 &gt; 3176	Sum Adult Married Code 40.0 &gt; 0	Sum Adult Unmarried Code 5774.0 &lt; 5814	Count Adult Married Marital Status 4677.0 &gt; 0	Count Adult Single Marital Status 1137.0 &lt; 5814	Average Adult Sex Count in Lifetime 931.0196078431372 &gt; 688	Average Adult Sex Partners in Lifetime 0.9222566219470244 &lt; 12.5	Sum Adult Pregnancies in Lifetime 1265.0 &gt; 1231
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Minimum Age 2: Check of Minimum Age Parameter for Marrieds )()'>runModel<br/>
+<a href="#Output-1307553982" onClick='toggleBox("Output-1307553982", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1307553982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1307553982">
+<b>Minimum Age 2: Check of Minimum Age Parameter for Marrieds _0</b><br/>
+This test ensures that value the minimum-age parameter has no effect on the model's outcomes for marrieds by setting Minimum age equal to an extremely high value and comparing results to baseline.<br/>
+<a href="../../tests/Other/Married/MinAge1m.atest">Test File</a><br/>
+<a href="../../tests/Other/Married/MinAge1m.apar">Parameters</a><br/>
+<a href="../logs/MinAge1m_0.log">Log</a><br/>
+<a href="../results/MinAge1m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>93</td>
+<td><div><pre>java.lang.AssertionError: 	Count Adult In Relationship 2.0 &lt; 4186	Count Adult None Contraception Method 2092.0 &gt; 1238	Count Adult Pill Contraception Method 0.0 &lt; 472	Count Adult Condom Medium Intender Contraception Method 0.0 &lt; 262	Count Adult Condom High Intender Contraception Method 0.0 &lt; 76	Count Adult High Frequency Coital Behavior Type 1.0 &lt; 2417	Count Adult Moderate Frequency Coital Behavior Type 1.0 &lt; 1168	Count Adult Very Low Frequency Coital Behavior Type 4184.0 &gt; 475	Average Adult P Sex 4.7778308647873863E-4 &lt; 1	Average Adult Sex Count in Lifetime 0.6521739130434783 &lt; 1365	Average Adult Sex Partners in Lifetime 4.7778308647873863E-4 &lt; 1	Sum Adult Pregnancies in Lifetime 0.0 &lt; 869	Sum Adult Abortions in Lifetime 0.0 &lt; 270	Sum Adult Miscarriages in Lifetime 0.0 &lt; 254	Sum Adult Births in Lifetime 0.0 &lt; 222	Sum Adult Poor Births in Lifetime 0.0 &lt; 106
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1307553982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1307553982'><pre>java.lang.AssertionError: 	Count Adult In Relationship 2.0 &lt; 4186	Count Adult None Contraception Method 2092.0 &gt; 1238	Count Adult Pill Contraception Method 0.0 &lt; 472	Count Adult Condom Medium Intender Contraception Method 0.0 &lt; 262	Count Adult Condom High Intender Contraception Method 0.0 &lt; 76	Count Adult High Frequency Coital Behavior Type 1.0 &lt; 2417	Count Adult Moderate Frequency Coital Behavior Type 1.0 &lt; 1168	Count Adult Very Low Frequency Coital Behavior Type 4184.0 &gt; 475	Average Adult P Sex 4.7778308647873863E-4 &lt; 1	Average Adult Sex Count in Lifetime 0.6521739130434783 &lt; 1365	Average Adult Sex Partners in Lifetime 4.7778308647873863E-4 &lt; 1	Sum Adult Pregnancies in Lifetime 0.0 &lt; 869	Sum Adult Abortions in Lifetime 0.0 &lt; 270	Sum Adult Miscarriages in Lifetime 0.0 &lt; 254	Sum Adult Births in Lifetime 0.0 &lt; 222	Sum Adult Poor Births in Lifetime 0.0 &lt; 106
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds )()'>runModel<br/>
+<a href="#Output-1438963092" onClick='toggleBox("Output-1438963092", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1438963092" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1438963092">
+<b>Periods In Year 1: Check of Periods in Year Parameter for Unmarrieds _0</b><br/>
+This test ensures that value the periods in year parameter has no effect on the model's outcomes for unmarrieds by setting periods in year equal to an extremely high value and comparing results to baseline.<br/>
+<a href="../../tests/Other/Unmarried/PdsinYr1.atest">Test File</a><br/>
+<a href="../../tests/Other/Unmarried/PdsinYr1.apar">Parameters</a><br/>
+<a href="../logs/PdsinYr1_0.log">Log</a><br/>
+<a href="../results/PdsinYr1_0.ares">Results</a><br/>
+</div>
+</td>
+<td>77</td>
+<td><div><pre>java.lang.AssertionError: 	Count Adult In Relationship 4678.0 &gt; 3176	Sum Adult Married Code 40.0 &gt; 0	Sum Adult Unmarried Code 5774.0 &lt; 5814	Count Adult Married Marital Status 4673.0 &gt; 0	Count Adult Single Marital Status 1141.0 &lt; 5814	Average Adult Sex Count in Lifetime 934.5214998280014 &gt; 688	Average Adult Sex Partners in Lifetime 0.9078087375300997 &lt; 12.5	Sum Adult Pregnancies in Lifetime 1281.0 &gt; 1231
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1438963092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1438963092'><pre>java.lang.AssertionError: 	Count Adult In Relationship 4678.0 &gt; 3176	Sum Adult Married Code 40.0 &gt; 0	Sum Adult Unmarried Code 5774.0 &lt; 5814	Count Adult Married Marital Status 4673.0 &gt; 0	Count Adult Single Marital Status 1141.0 &lt; 5814	Average Adult Sex Count in Lifetime 934.5214998280014 &gt; 688	Average Adult Sex Partners in Lifetime 0.9078087375300997 &lt; 12.5	Sum Adult Pregnancies in Lifetime 1281.0 &gt; 1231
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Periods In Year 1m: Check of Periods in Year Parameter for Marrieds )()'>runModel<br/>
+<a href="#Output-632845183" onClick='toggleBox("Output-632845183", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-632845183" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-632845183">
+<b>Periods In Year 1m: Check of Periods in Year Parameter for Marrieds _0</b><br/>
+This test ensures that value the periods in year parameter has no effect on the model's outcomes for marrieds by setting periods in year equal to an extremely high value and comparing results to baseline.<br/>
+<a href="../../tests/Other/Married/PdsinYr1m.atest">Test File</a><br/>
+<a href="../../tests/Other/Married/PdsinYr1m.apar">Parameters</a><br/>
+<a href="../logs/PdsinYr1m_0.log">Log</a><br/>
+<a href="../results/PdsinYr1m_0.ares">Results</a><br/>
+</div>
+</td>
+<td>93</td>
+<td><div><pre>java.lang.AssertionError: 	Count Adult In Relationship 2.0 &lt; 4186	Count Adult None Contraception Method 2092.0 &gt; 1238	Count Adult Pill Contraception Method 0.0 &lt; 472	Count Adult Condom Medium Intender Contraception Method 0.0 &lt; 262	Count Adult Condom High Intender Contraception Method 0.0 &lt; 76	Count Adult High Frequency Coital Behavior Type 1.0 &lt; 2417	Count Adult Moderate Frequency Coital Behavior Type 1.0 &lt; 1168	Count Adult Very Low Frequency Coital Behavior Type 4184.0 &gt; 475	Average Adult P Sex 4.7778308647873863E-4 &lt; 1	Average Adult Sex Count in Lifetime 0.6521739130434783 &lt; 1365	Average Adult Sex Partners in Lifetime 4.7778308647873863E-4 &lt; 1	Sum Adult Pregnancies in Lifetime 0.0 &lt; 869	Sum Adult Abortions in Lifetime 0.0 &lt; 270	Sum Adult Miscarriages in Lifetime 0.0 &lt; 254	Sum Adult Births in Lifetime 0.0 &lt; 222	Sum Adult Poor Births in Lifetime 0.0 &lt; 106
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace632845183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace632845183'><pre>java.lang.AssertionError: 	Count Adult In Relationship 2.0 &lt; 4186	Count Adult None Contraception Method 2092.0 &gt; 1238	Count Adult Pill Contraception Method 0.0 &lt; 472	Count Adult Condom Medium Intender Contraception Method 0.0 &lt; 262	Count Adult Condom High Intender Contraception Method 0.0 &lt; 76	Count Adult High Frequency Coital Behavior Type 1.0 &lt; 2417	Count Adult Moderate Frequency Coital Behavior Type 1.0 &lt; 1168	Count Adult Very Low Frequency Coital Behavior Type 4184.0 &gt; 475	Average Adult P Sex 4.7778308647873863E-4 &lt; 1	Average Adult Sex Count in Lifetime 0.6521739130434783 &lt; 1365	Average Adult Sex Partners in Lifetime 4.7778308647873863E-4 &lt; 1	Sum Adult Pregnancies in Lifetime 0.0 &lt; 869	Sum Adult Abortions in Lifetime 0.0 &lt; 270	Sum Adult Miscarriages in Lifetime 0.0 &lt; 254	Sum Adult Births in Lifetime 0.0 &lt; 222	Sum Adult Poor Births in Lifetime 0.0 &lt; 106
+	at org.testng.Assert.fail(Assert.java:84)
+	at org.eclipse.amp.escape.testng.ParameterTest.runModel(ParameterTest.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:478)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:617)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:885)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.internal.thread.ThreadUtil$CountDownLatchedRunnable.run(ThreadUtil.java:132)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:637)
+</pre></div></td>
+</tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Preg Duration 1: Check of Minimum Age Parameter for Unmarrieds )()'>runModel<br/>
+<a href="#Output-1427582905" onClick='toggleBox("Output-1427582905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1427582905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1427582905">
+<b>Preg Duration 1: Check of Minimum Age Parameter for Unmarrieds _0</b><br/>
+This test changes the duration of pregnancies for abortions and births among unmarrieds such that there can be no more than one per run.  This can then be tested by looking at the number of births/abortions and verifying that the number of pregnancies is smaller than under baseline.<br/>
+<a href="../../tests/Other/Unmarried/PregDuration1.atest">Test File</a><br/>
+<a href="../../tests/Other/Unmarried/PregDuration1.apar">Parameters</a><br/>
+<a href="../logs/PregDuration1_0.log">Log</a><br/>
+<a href="../results/PregDuration1_0.ares">Results</a><br/>
+</div>
+</td>
+<td>77</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Preg Duration 2: Check of Minimum Age Parameter for Marrieds )()'>runModel<br/>
+<a href="#Output-1524522201" onClick='toggleBox("Output-1524522201", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1524522201" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1524522201">
+<b>Preg Duration 2: Check of Minimum Age Parameter for Marrieds _0</b><br/>
+This test changes the duration of pregnancies for abortions and births among marrieds such that there can be no more than one per run.  This can then be tested by looking at the number of births/abortions and verifying that the number of pregnancies is smaller than under baseline.<br/>
+<a href="../../tests/Other/Unmarried/PregDuration2.atest">Test File</a><br/>
+<a href="../../tests/Other/Unmarried/PregDuration2.apar">Parameters</a><br/>
+<a href="../logs/PregDuration2_0.log">Log</a><br/>
+<a href="../results/PregDuration2_0.ares">Results</a><br/>
+</div>
+</td>
+<td>58</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Relationship Status 1: Check of p(rel begin) and p(rel end) parameters)()'>runModel<br/>
+<a href="#Output-2036384282" onClick='toggleBox("Output-2036384282", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2036384282" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2036384282">
+<b>Relationship Status 1: Check of p(rel begin) and p(rel end) parameters_0</b><br/>
+This test changes the probability of entering into a relationship to one and the probability of ending one to zero.  By period 2000, virtually all agents should therefore be in a relationship.<br/>
+<a href="../../tests/Other/Unmarried/RelStat1.atest">Test File</a><br/>
+<a href="../../tests/Other/Unmarried/RelStat1.apar">Parameters</a><br/>
+<a href="../logs/RelStat1_0.log">Log</a><br/>
+<a href="../results/RelStat1_0.ares">Results</a><br/>
+</div>
+</td>
+<td>91</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.eclipse.amp.escape.testng.ParameterTest.runModel (Relationship Status 1: Second check of p(rel begin) and p(rel end) parameters)()'>runModel<br/>
+<a href="#Output-1534797586" onClick='toggleBox("Output-1534797586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1534797586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1534797586">
+<b>Relationship Status 1: Second check of p(rel begin) and p(rel end) parameters_0</b><br/>
+This test changes the probability of entering into a relationship to zero.  This should result in no agents being in a relationship.<br/>
+<a href="../../tests/Other/Unmarried/RelStat2.atest">Test File</a><br/>
+<a href="../../tests/Other/Unmarried/RelStat2.apar">Parameters</a><br/>
+<a href="../logs/RelStat2_0.log">Log</a><br/>
+<a href="../results/RelStat2_0.ares">Results</a><br/>
+</div>
+</td>
+<td>142</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

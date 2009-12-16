@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" skipfailedinvocationCounts="false" verbose="1" name="Other" junit="false" parallel="methods" >
+  <test name="Other Test" junit="false">
+    <parameter name="projectLocation" value="/Volumes/Resources/Developer/repos/brook/edu.brook.parent.escape"/>
+    <parameter name="testCount" value="1"/>
+    <parameter name="testDir" value=""/>
+    <parameter name="projectName" value="edu.brook.parent.escape"/>
+    <parameter name="testFiles" value="tests/Other/Married/MinAge1m tests/Other/Married/PdsinYr1m tests/Other/Unmarried/MinAge1 tests/Other/Unmarried/PdsinYr1 tests/Other/Unmarried/PregDuration1 tests/Other/Unmarried/PregDuration2 tests/Other/Unmarried/RelStat1 tests/Other/Unmarried/RelStat2"/>
+    <classes>
+      <class name="org.eclipse.amp.escape.testng.ParameterTestFactory"/>
+    </classes>
+  </test>
+</suite>
