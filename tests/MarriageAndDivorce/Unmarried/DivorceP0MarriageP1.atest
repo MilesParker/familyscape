@@ -1,5 +1,5 @@
 "Divorce P 0.0 Marriage P 1.0"
-«This test sets the marriage probabilty to 1.0 and checks to see that most people in relationships are married. Note that everyone hould be married or single. (Traditional family values taken to an extreme.)»
+«This test sets the marriage probabilty to 1.0 and checks to see that most people in relationships are married. Note that in the current version of the model, this lags by one period so there will be some people in a relationship who are not yet married, but this shoul approach equvalence for longer periods.»
 Count("Adult"."In Relationship")=[220,280]
 Count("Adult"."Marital Status"="Single")=[5600,5700]
 Count("Adult"."Marital Status"="Married")=[130,180]
