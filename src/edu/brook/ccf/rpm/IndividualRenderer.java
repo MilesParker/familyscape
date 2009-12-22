@@ -67,16 +67,16 @@ public class IndividualRenderer implements IRenderer {
 
         float bodyWidth = 0.4f * scale;
         float bodyDepth = 0.3f * scale;
-        float bodyHeight = -0.4f * scale;
+        float bodyHeight = 0.4f * scale;
         float legWidth = 0.1f * scale;
-        float legHeight = -0.6f * scale;
-        float skirtHeight = -0.3f * scale;
+        float legHeight = 0.6f * scale;
+        float skirtHeight = 0.3f * scale;
         float headWidth = 0.3f * scale;
-        float headHeight = -0.2f * scale;
+        float headHeight = 0.2f * scale;
         totalHeight = legHeight + bodyHeight + headHeight;
 
         // base
-        g3d.glTranslatef(0.5f, .5f, 0);
+        g3d.glTranslatef(-0.5f, -.5f, 0);
 
         colorForGenderAndAge(g3d, adult);
 
@@ -111,16 +111,17 @@ public class IndividualRenderer implements IRenderer {
         // colorForRace(g3d, adult);
         drawCylinder(g3d, headWidth, headHeight, true);
 
-        g3d.glTranslatef(0.0f, 0.0f, -(legHeight + bodyHeight));
+        g3d.glTranslatef(0.5f, 0.5f, -(legHeight + bodyHeight));
 
         drawForSexOccurred(g3d, adult, totalHeight);
         drawForRelationship(g3d, adult);
 
-        g3d.glTranslatef(-.5f, -.5f, -(legHeight + bodyHeight));
+        g3d.glTranslatef(.0f, .0f, -(legHeight + bodyHeight));
         g3d.glEnd();
     }
 
     private void drawForRelationship(Graphics3D g3d, Adult adult) {
+        g3d.glTranslatef(-0.5f, -0.5f, 0.0f);
         if (adult.isInRelationship()) {
             if (adult.getMaritalStatus() == MaritalStatusEnum.married) {
                 g3d.glColor(RACE_HISPANIC, 255);
@@ -134,14 +135,15 @@ public class IndividualRenderer implements IRenderer {
             g3d.glColor(ColorFeature.RED, 150);
             drawCylinder(g3d, 1.0f, 0.05f, true);
         }
+        g3d.glTranslatef(0.5f, 0.5f, .0f);
     }
 
     private void drawForSexOccurred(Graphics3D g3d, Adult adult, float scale) {
         if (adult.getDayofLastSex() == adult.getScape().getPeriod()) {
-            g3d.glTranslatef(0, 0, .05f);
+            g3d.glTranslatef(-0.5f, -0.5f, .05f);
             g3d.glColor(ColorFeature.YELLOW, 100);
             drawCylinder(g3d, 1.0f, totalHeight, true);
-            g3d.glTranslatef(0, 0, -.05f);
+            g3d.glTranslatef(0.5f, 0.5f, -.05f);
         }
     }
 
