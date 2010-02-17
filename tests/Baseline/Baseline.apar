@@ -14,9 +14,9 @@ model	"|RelationshipsAndPregnancyData.metaabm"
 "Typical Birth Period End"=360
 //"Fecundity by Day in Cycle"=0.0001,0.0003,0.0006,0.0011,0.0022,0.0043,0.0085,0.0169,0.0333,0.0658,0.1299,0.2565,0.5065,1.0000,0.5065,0.0574,0.0138,0.0033,0.0008,0.0002,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
 //"Fecundity By Age"=0.854,0.832,0.81,0.788,0.766,0.744,0.722,0.7,0.678,0.656,0.634,0.612,0.59,0.568,0.546,0.524,0.502,0.48,0.458,0.436,0.414,0.392,0.37,0.348,0.326,0.304,0.282,0.26,0.238,0.216
-"Condom Failure Rate"=0.15
-"Pill Failure Rate"=0.05
-"Pill Condom Failure Rate"=0.0075
+"P Condom Failure Factor Base"=0.15
+"P Pill Failure Factor Base"=0.05
+"P Pill Condom Failure Factor Base"=0.0075
 "Walk Toward Age"=1
 "Agent Vision"=6
 "P Marriage Minimum Base"=0.0

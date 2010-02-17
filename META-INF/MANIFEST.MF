@@ -3,5 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Plugin Plug-in
 Bundle-SymbolicName: edu.brook.parent.escape
 Bundle-Version: 1.0.0
-Require-Bundle: org.eclipse.amp.escape.runtime;bundle-version="0.5.0"
+Require-Bundle: org.eclipse.amp.escape.runtime;bundle-version="0.5.0",
+ org.eclipse.amp.escape.amf.ide;bundle-version="0.5.0";visibility:=reexport
 Bundle-ActivationPolicy: lazy

@@ -81,7 +81,7 @@ public class IndividualRenderer implements IRenderer {
         colorForGenderAndAge(g3d, adult);
 
         // legs
-        // colorForEdu(g3d, adult);
+        colorForEdu(g3d, adult);
         g3d.glTranslatef(bodyWidth * .25f, bodyDepth / 2.0f, 0);
         drawCylinder(g3d, legWidth, legHeight, false);
         g3d.glTranslatef(bodyWidth * .5f, 0, 0);
@@ -97,7 +97,7 @@ public class IndividualRenderer implements IRenderer {
         }
 
         // body
-        // colorForSES(g3d, adult);
+        colorForSES(g3d, adult);
         drawCube(g3d, bodyWidth, bodyDepth, bodyHeight);
         // if (adult.isPregnant()) {
         // g3d.glTranslatef(bodyWidth * 0.5f, bodyDepth * 0.5f, 0);
@@ -108,7 +108,7 @@ public class IndividualRenderer implements IRenderer {
         g3d.glTranslatef(bodyWidth / 2.0f, bodyDepth / 2.0f, bodyHeight);
 
         // head
-        // colorForRace(g3d, adult);
+        colorForRace(g3d, adult);
         drawCylinder(g3d, headWidth, headHeight, true);
 
         g3d.glTranslatef(0.5f, 0.5f, -(legHeight + bodyHeight));

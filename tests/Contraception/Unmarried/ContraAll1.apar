@@ -1,7 +1,7 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"Condom Failure Rate"=1.0
-"Pill Failure Rate"=1.0
-"Pill Condom Failure Rate"=1.0
+"P Condom Failure Factor Base"=1.0
+"P Pill Failure Factor Base"=1.0
+"P Pill Condom Failure Factor Base"=1.0
 "Stop Period"=1365
 "Input Data File"="|data/NSFG_Unmarried.txt"

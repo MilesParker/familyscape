@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metaabm:SContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:act="http://metaabm.org/act" xmlns:function="http://metaabm.org/function" xmlns:metaabm="http://metaabm.org/metaabm.org/structure" label="Relationships And Pregnancy" ID="relationshipsAndPregnancy" pluralLabel="Relationships And Pregnancies">
+<metaabm:SContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:act="http://metaabm.org/act" xmlns:function="http://metaabm.org/function" xmlns:metaabm="http://metaabm.org/structure" label="Relationships And Pregnancy" ID="relationshipsAndPregnancy" pluralLabel="Relationships And Pregnancies">
   <attributes label="Adult Count" ID="adultCount" pluralLabel="Adult Counts" description="The number of adults to create." sType="INTEGER" defaultValue="500" units="500"/>
   <attributes label="Minimum Age" ID="minimumAge" pluralLabel="Minimum Ages" sType="INTEGER" defaultValue="15"/>
-  <attributes label="Typical Abortion Period Start" ID="typicalAbortionPeriodStart" pluralLabel="Typical Abortion Period Starts" description="The first day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. " sType="INTEGER" defaultValue="60" units="Days"/>
+  <attributes label="Typical Abortion Period Start" ID="typicalAbortionPeriodStart" pluralLabel="Typical Abortion Period Start" description="The first day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. " sType="INTEGER" defaultValue="60" units="Days"/>
   <attributes label="Typical Abortion Period End" ID="typicalAbortionPeriodEnd" pluralLabel="Typical Abortion Period Ends" description="The last day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. " sType="INTEGER" defaultValue="200" units="Days"/>
   <attributes label="Typical Birth Period Start" ID="typicalBirthPeriodStart" pluralLabel="Typical Birth Period Starts" description="The first day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. " sType="INTEGER" defaultValue="300" units=""/>
   <attributes label="Typical Birth Period End" ID="typicalBirthPeriodEnd" pluralLabel="Typical Birth Period Ends" description="The last day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. " sType="INTEGER" defaultValue="360"/>
   <attributes xsi:type="metaabm:SAttributeArray" label="Fecundity by Day in Cycle" ID="fecunditybyDayinCycle" pluralLabel="Fecundity by Day in Cycles" description="The probability that a woman having unprotected sex (not using contraception) will concieve as a function of the day in her mentural cycle." sType="REAL" defaultValue="0.0001,0.0003,0.0006,0.0011,0.0022,0.0043,0.0085,0.0169,0.0333,0.0658,0.1299,0.2565,0.5065,1.0000,0.5065,0.0574,0.0138,0.0033,0.0008,0.0002,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000" size="28"/>
-  <attributes label="Condom Failure Rate" ID="condomFailureRate" pluralLabel="Condom Failure Rates" description="The rate at which condoms fail to prevent a pregnancy from occuring. (1 - efficacy.)" sType="REAL" defaultValue=".15" units="Multiplier"/>
-  <attributes label="Pill Failure Rate" ID="pillFailureRate" pluralLabel="Pill Failure Rates" description="The rate at which oral contraception fails to prevent a pregnancy from occuring. (1 - efficacy.)" sType="REAL" defaultValue=".05" units="Multiplier"/>
-  <attributes label="Pill Condom Failure Rate" ID="pillCondomFailureRate" pluralLabel="Pill Condom Failure Rates" description="The rate at which condom and oral contraception used together fail to prevent a given pregnancy from occuring. (1 - efficacy.)" sType="REAL" defaultValue=".0075" units="Multiplier"/>
   <attributes xsi:type="metaabm:SAttributeArray" label="Fecundity By Age" ID="fecundityByAge" pluralLabel="Fecundity By Ages" sType="REAL" defaultValue="0.854,0.832,0.81,0.788,0.766,0.744,0.722,0.7,0.678,0.656,0.634,0.612,0.59,0.568,0.546,0.524,0.502,0.48,0.458,0.436,0.414,0.392,0.37,0.348,0.326,0.304,0.282,0.26,0.238,0.216" size="-1"/>
   <attributes label="Walk Toward Age" ID="walkTowardAge" pluralLabel="Walk Toward Ages" sType="INTEGER" defaultValue="1" units=""/>
   <attributes xsi:type="metaabm:SAttributeArray" label="Rhythm Method Bias for Day" ID="rhythmMethodBiasforDay" pluralLabel="Rhythm Method Bias for Days" description="Given all other factors, the effect of a timing strategy on intercourse proclivity as a function of day of mentural cycle." sType="REAL" defaultValue="1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1" size="-1"/>
@@ -519,6 +516,21 @@
   <attributes label="P Marriage Not Pregnant Maximum" ID="pMarriageNotPregnantMaximum" pluralLabel="P Marriage Not Pregnant Maximums" sType="REAL"/>
   <attributes label="P Marriage Pregnant Minimum" ID="pMarriagePregnantMinimum" pluralLabel="P Marriage Pregnant Minimums" sType="REAL"/>
   <attributes label="P Marriage Pregnant Maximum" ID="pMarriagePregnantMaximum" pluralLabel="P Marriage Pregnant Maximums" sType="REAL"/>
+  <attributes label="P Pill Failure Factor Base" ID="pPillFailureFactorBase" pluralLabel="P Pill Failure Factor Bases" sType="REAL" defaultValue=".05"/>
+  <attributes label="P Pill Failure Other Factor" ID="pPillFailureOtherFactor" pluralLabel="P Pill Failure Other Factors" sType="REAL"/>
+  <attributes label="P Pill Failure Black Factor" ID="pPillFailureBlackFactor" pluralLabel="P Pill Failure Black Factors" sType="REAL"/>
+  <attributes label="P Pill Failure Hispanic Factor" ID="pPillFailureHispanicFactor" pluralLabel="P Pill Failure Hispanic Factors" sType="REAL"/>
+  <attributes label="P Pill Failure White Factor" ID="pPillFailureWhiteFactor" pluralLabel="P Pill Failure White Factors" sType="REAL"/>
+  <attributes label="P Condom Failure Factor Base" ID="pCondomFailureFactorBase" pluralLabel="P Condom Failure Factor Bases" sType="REAL" defaultValue=".15"/>
+  <attributes label="P Condom Failure Other Factor" ID="pCondomFailureOtherFactor" pluralLabel="P Condom Failure Other Factors" sType="REAL"/>
+  <attributes label="P Condom Failure Black Factor" ID="pCondomFailureBlackFactor" pluralLabel="P Condom Failure Black Factors" sType="REAL"/>
+  <attributes label="P Condom Failure Hispanic Factor" ID="pCondomFailureHispanicFactor" pluralLabel="P Condom Failure Hispanic Factors" sType="REAL"/>
+  <attributes label="P Condom Failure White Factor" ID="pCondomFailureWhiteFactor" pluralLabel="P Condom Failure White Factors" sType="REAL"/>
+  <attributes label="P Pill Condom Failure Factor Base" ID="pPillCondomFailureFactorBase" pluralLabel="P Pill Condom Failure Factor Bases" sType="REAL" defaultValue=".0075"/>
+  <attributes label="P Pill Condom Failure Other Factor" ID="pPillCondomFailureOtherFactor" pluralLabel="P Pill Condom Failure Other Factors" sType="REAL"/>
+  <attributes label="P Pill Condom Failure Black Factor" ID="pPillCondomFailureBlackFactor" pluralLabel="P Pill Condom Failure Black Factors" sType="REAL"/>
+  <attributes label="P Pill Condom Failure Hispanic Factor" ID="pPillCondomFailureHispanicFactor" pluralLabel="P Pill Condom Failure Hispanic Factors" sType="REAL"/>
+  <attributes label="P Pill Condom Failure White Factor" ID="pPillCondomFailureWhiteFactor" pluralLabel="P Pill Condom Failure White Factors" sType="REAL"/>
   <rootActivity xsi:type="act:AGroup" label="Root Act" ID="rootAct" pluralLabel="Root Acts">
     <members xsi:type="act:ABuild" label="Build Model" ID="buildModel" targets="//@rootActivity/@members[ID='buildGrid'] //@rootActivity/@members[ID='createNetwork'] //@rootActivity/@members[ID='loadfromFile'] //@rootActivity/@members[ID='outputData']" selected="//@rootActivity/@members[ID='buildModel']" agent="/" pluralLabel="Build Models"/>
     <members xsi:type="act:ABuildGrid" label="Build Grid" ID="buildGrid" sources="//@rootActivity/@members[ID='buildModel']" selected="//@rootActivity/@members[ID='buildModel']" pluralLabel="Build Grids" agents="//@agents[ID='adult']" projection="//@projections[ID='neighborhood']" fillAgent="//@agents[ID='neighborhoodCell']"/>
@@ -532,8 +544,8 @@
       <options label="Female" ID="female" pluralLabel="Females"/>
       <options label="Male" ID="male" pluralLabel="Males"/>
     </attributes>
-    <attributes label="Age in Years" ID="ageinYears" pluralLabel="Age in Yearss" sType="INTEGER" units="Years"/>
-    <attributes label="Age in Years Index" ID="ageinYearsIndex" pluralLabel="Age in Years Indexs" sType="INTEGER"/>
+    <attributes label="Age in Years" ID="ageinYears" pluralLabel="Age in Years" description="" sType="INTEGER" units="Years"/>
+    <attributes label="Age in Years Index" ID="ageinYearsIndex" pluralLabel="Age in Years Indexes" sType="INTEGER"/>
     <attributes xsi:type="metaabm:SState" label="Age Group" ID="ageGroup" pluralLabel="Age Groups" sType="SYMBOL" gatherData="true" defaultValue="15 to 19" units="Range" defaultOption="//@agents[ID='adult']/@attributes[ID='ageGroup']/@options.0">
       <options label="15 to 19" ID="years15to19" pluralLabel="15 to 19s"/>
       <options label="20 to 24" ID="years20to24" pluralLabel="20 to 24s"/>
@@ -775,7 +787,7 @@
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='increment']"/>
       </members>
       <members xsi:type="act:ASet" label="Set Incremented Pregnancy" ID="setIncrementedPregnancy" sources="//@agents[ID='adult']/@rootActivity/@members[ID='incrementPregnancies']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']" parameter="//@agents[ID='adult']/@rootActivity/@members[ID='incrementPregnancies']"/>
-      <members xsi:type="act:AEvaluate" label="Pregnancy Draw" ID="pregnancyDraw" sources="//@agents[ID='adult']/@rootActivity/@members[ID='sexEventContraceptionMethodDifferentSterilizedQuery']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='basePregnancyProbability']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AEvaluate" label="Pregnancy Draw" ID="pregnancyDraw" sources="//@agents[ID='adult']/@rootActivity/@members[ID='sexEventContraceptionMethodDifferentSterilizedQuery']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='fecundityinCycle']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='random']/@functions[ID='randomUnit']"/>
       </members>
       <members xsi:type="act:AEvaluate" label="Outcome Draw" ID="outcomeDraw" sources="//@agents[ID='adult']/@rootActivity/@members[ID='dayofPregnancy']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pAbortionMarried']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']">
@@ -850,7 +862,7 @@
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='increment']"/>
       </members>
       <members xsi:type="act:ASet" label="Set Day in Cycle" ID="setDayinCycle" sources="//@agents[ID='adult']/@rootActivity/@members[ID='cycleNotEnded']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='updateDates']" attribute="//@agents[ID='adult']/@attributes[ID='dayinCycle']" parameter="//@agents[ID='adult']/@rootActivity/@members[ID='cyclefromAgeinDays']"/>
-      <members xsi:type="act:AEvaluate" label="Base Pregnancy Probability" ID="basePregnancyProbability" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='fecundityForAge']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AEvaluate" label="Fecundity in Cycle" ID="fecundityinCycle" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='fecundityForAge']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@attributes[ID='fecunditybyDayinCycle']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@attributes[ID='dayinCycle']"/>
         <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='list']/@functions[ID='item']"/>
@@ -894,59 +906,59 @@
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']" value="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.1"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='different']"/>
       </members>
-      <members xsi:type="act:AQuery" label="Pill User" ID="pillUser" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityforAge']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pillOnlyUsers'] //@agents[ID='adult']/@rootActivity/@members[ID='pillAndCondomUsers'] //@agents[ID='adult']/@rootActivity/@members[ID='nonPillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='noContraception']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AQuery" label="Pill User" ID="pillUser" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyAgeandCycle']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pillOnlyUsers'] //@agents[ID='adult']/@rootActivity/@members[ID='pillAndCondomUsers'] //@agents[ID='adult']/@rootActivity/@members[ID='nonPillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='noContraception']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.2"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identical']"/>
       </members>
-      <members xsi:type="act:AQuery" label="Medium Condom Intender" ID="mediumCondomIntender" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityforAge']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pillOnlyUsers'] //@agents[ID='adult']/@rootActivity/@members[ID='condomIntender'] //@agents[ID='adult']/@rootActivity/@members[ID='noContraception']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']">
+      <members xsi:type="act:AQuery" label="Medium Condom Intender" ID="mediumCondomIntender" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyAgeandCycle']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pillOnlyUsers'] //@agents[ID='adult']/@rootActivity/@members[ID='condomIntender'] //@agents[ID='adult']/@rootActivity/@members[ID='noContraception']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']" value="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']" value="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.3"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identical']"/>
       </members>
-      <members xsi:type="act:AAll" label="Pill Only Users" ID="pillOnlyUsers" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='mediumCondomIntender']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityPillOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
-      <members xsi:type="act:AEvaluate" label="Pregnancy Probability Pill Only" ID="pregnancyProbabilityPillOnly" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pillOnlyUsers']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityforAge']"/>
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@attributes[ID='pillFailureRate']"/>
+      <members xsi:type="act:AAll" label="Pill Only Users" ID="pillOnlyUsers" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='mediumCondomIntender']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pPillFailure']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
+      <members xsi:type="act:AEvaluate" label="P Pregnancy Pill Only" ID="pPregnancyPillOnly" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pPillFailure']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyAgeandCycle']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPillFailure']"/>
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='mul']"/>
       </members>
-      <members xsi:type="act:AQuery" label="Pregnant Pill Only" ID="pregnantPillOnly" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityPillOnly']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AQuery" label="Pregnant Pill Only" ID="pregnantPillOnly" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyPillOnly']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']"/>
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityPillOnly']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyPillOnly']"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='lesser']"/>
       </members>
-      <members xsi:type="act:AQuery" label="High Condom Intender" ID="highCondomIntender" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityforAge']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pillAndCondomUsers'] //@agents[ID='adult']/@rootActivity/@members[ID='condomIntender'] //@agents[ID='adult']/@rootActivity/@members[ID='noContraception']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']">
+      <members xsi:type="act:AQuery" label="High Condom Intender" ID="highCondomIntender" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyAgeandCycle']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pillAndCondomUsers'] //@agents[ID='adult']/@rootActivity/@members[ID='condomIntender'] //@agents[ID='adult']/@rootActivity/@members[ID='noContraception']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']" value="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='malePartner']" value="//@agents[ID='adult']/@attributes[ID='contraceptionMethod']/@options.4"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identical']"/>
       </members>
-      <members xsi:type="act:AAll" label="Pill And Condom Users" ID="pillAndCondomUsers" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='highCondomIntender']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityWithPillCondom']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
-      <members xsi:type="act:AEvaluate" label="Pregnancy Probability With Pill Condom" ID="pregnancyProbabilityWithPillCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pillAndCondomUsers']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillCondom']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityforAge']"/>
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@attributes[ID='pillCondomFailureRate']"/>
+      <members xsi:type="act:AAll" label="Pill And Condom Users" ID="pillAndCondomUsers" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='highCondomIntender']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pPillCondomFailure']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
+      <members xsi:type="act:AEvaluate" label="P Pregnancy Pill and Condom" ID="pPregnancyPillandCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pPillCondomFailure']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillCondom']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyAgeandCycle']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPillCondomFailure']"/>
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='mul']"/>
       </members>
       <members xsi:type="act:ANone" label="Non Pill User" ID="nonPillUser" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pillUser']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='condomOnlyUsers']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
       <members xsi:type="act:AAny" label="Condom Intender" ID="condomIntender" sources="//@agents[ID='adult']/@rootActivity/@members[ID='mediumCondomIntender'] //@agents[ID='adult']/@rootActivity/@members[ID='highCondomIntender']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='condomOnlyUsers']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
-      <members xsi:type="act:AEvaluate" label="Pregnancy Probability Condom Only" ID="pregnancyProbabilityCondomOnly" sources="//@agents[ID='adult']/@rootActivity/@members[ID='condomOnlyUsers']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnantCondom']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityforAge']"/>
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@attributes[ID='condomFailureRate']"/>
+      <members xsi:type="act:AEvaluate" label="P Pregnancy Condom Only" ID="pPregnancyCondomOnly" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pCondomFailure']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnantCondom']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyAgeandCycle']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pCondomFailure']"/>
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='mul']"/>
       </members>
-      <members xsi:type="act:AQuery" label="Pregnant Pill Condom" ID="pregnantPillCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityWithPillCondom']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AQuery" label="Pregnant Pill Condom" ID="pregnantPillCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyPillandCondom']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']"/>
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityWithPillCondom']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyPillandCondom']"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='lesser']"/>
       </members>
-      <members xsi:type="act:AAll" label="Condom Only Users" ID="condomOnlyUsers" sources="//@agents[ID='adult']/@rootActivity/@members[ID='nonPillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='condomIntender']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityCondomOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
+      <members xsi:type="act:AAll" label="Condom Only Users" ID="condomOnlyUsers" sources="//@agents[ID='adult']/@rootActivity/@members[ID='nonPillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='condomIntender']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pCondomFailure']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']"/>
       <members xsi:type="act:AQuery" label="Pregnant No Contraception" ID="pregnantNoContraception" sources="//@agents[ID='adult']/@rootActivity/@members[ID='noContraception']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']"/>
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityforAge']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyAgeandCycle']"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='lesser']"/>
       </members>
-      <members xsi:type="act:AQuery" label="Pregnant Condom" ID="pregnantCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityCondomOnly']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AQuery" label="Pregnant Condom" ID="pregnantCondom" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyCondomOnly']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='setPregnancyStatusToPregnant']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyDraw']"/>
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityCondomOnly']"/>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyCondomOnly']"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='lesser']"/>
       </members>
       <members xsi:type="act:ASet" label="Set Pregnancy Status To Pregnant" ID="setPregnancyStatusToPregnant" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pregnantCondom'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnantNoContraception'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillCondom'] //@agents[ID='adult']/@rootActivity/@members[ID='pregnantPillOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" attribute="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']" parameter="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.1"/>
@@ -998,12 +1010,12 @@
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.0"/>
         <function xsi:type="function:FLogicalOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='logicalOperators']/@functions[ID='identical']"/>
       </members>
-      <members xsi:type="act:AEvaluate" label="Pregnancy Probability for Age" ID="pregnancyProbabilityforAge" sources="//@agents[ID='adult']/@rootActivity/@members[ID='fecundityForAge']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='mediumCondomIntender'] //@agents[ID='adult']/@rootActivity/@members[ID='highCondomIntender']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
-        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='basePregnancyProbability']"/>
+      <members xsi:type="act:AEvaluate" label="P Pregnancy Age and Cycle" ID="pPregnancyAgeandCycle" sources="//@agents[ID='adult']/@rootActivity/@members[ID='fecundityForAge']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pillUser'] //@agents[ID='adult']/@rootActivity/@members[ID='mediumCondomIntender'] //@agents[ID='adult']/@rootActivity/@members[ID='highCondomIntender']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='fecundityinCycle']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='fecundityForAge']"/>
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='mul']"/>
       </members>
-      <members xsi:type="act:AEvaluate" label="Fecundity For Age" ID="fecundityForAge" sources="//@agents[ID='adult']/@rootActivity/@members[ID='basePregnancyProbability']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyProbabilityforAge']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+      <members xsi:type="act:AEvaluate" label="Fecundity For Age" ID="fecundityForAge" sources="//@agents[ID='adult']/@rootActivity/@members[ID='fecundityinCycle']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyAgeandCycle']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@attributes[ID='fecundityByAge']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@attributes[ID='ageinYearsIndex']"/>
         <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='list']/@functions[ID='item']"/>
@@ -1997,6 +2009,33 @@
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pDivorce']"/>
         <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='pregnancyEvent']" value="//@attributes[ID='pDivorceYearlytoDailyConversion']"/>
         <function xsi:type="function:FOperator" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='operators']/@subs[ID='numericOperators']/@functions[ID='mul']"/>
+      </members>
+      <members xsi:type="act:AEvaluate" label="P Pill Failure" ID="pPillFailure" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pillOnlyUsers']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyPillOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPillFailure']/@inputs.0/@literal">
+          <literal xsi:type="act:AMultiValue" label="P Probability Pill Only States" ID="pProbabilityPillOnlyStates" values="//@agents[ID='adult']/@attributes[ID='race']"/>
+        </inputs>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPillFailure']/@inputs.1/@literal">
+          <literal xsi:type="act:AMultiValue" label="P Pill Failure Factor" ID="pPillFailureFactor" values="//@attributes[ID='pPillFailureFactorBase'] //@attributes[ID='pPillFailureOtherFactor'] //@attributes[ID='pPillFailureBlackFactor'] //@attributes[ID='pPillFailureHispanicFactor'] //@attributes[ID='pPillFailureWhiteFactor']"/>
+        </inputs>
+        <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='distribution']/@functions[ID='additiveDistribution']"/>
+      </members>
+      <members xsi:type="act:AEvaluate" label="P Pill Condom Failure" ID="pPillCondomFailure" sources="//@agents[ID='adult']/@rootActivity/@members[ID='pillAndCondomUsers']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyPillandCondom']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPillCondomFailure']/@inputs.0/@literal">
+          <literal xsi:type="act:AMultiValue" label="P Pill Condom Failure States" ID="pPillCondomFailureStates" values="//@agents[ID='adult']/@attributes[ID='race']"/>
+        </inputs>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pPillCondomFailure']/@inputs.1/@literal">
+          <literal xsi:type="act:AMultiValue" label="P Pill Condom Failure Factor" ID="pPillCondomFailureFactor" values="//@attributes[ID='pPillCondomFailureFactorBase'] //@attributes[ID='pPillCondomFailureOtherFactor'] //@attributes[ID='pPillCondomFailureBlackFactor'] //@attributes[ID='pPillCondomFailureHispanicFactor'] //@attributes[ID='pPillCondomFailureWhiteFactor']"/>
+        </inputs>
+        <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='distribution']/@functions[ID='additiveDistribution']"/>
+      </members>
+      <members xsi:type="act:AEvaluate" label="P Condom Failure" ID="pCondomFailure" sources="//@agents[ID='adult']/@rootActivity/@members[ID='condomOnlyUsers']" targets="//@agents[ID='adult']/@rootActivity/@members[ID='pPregnancyCondomOnly']" selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']">
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pCondomFailure']/@inputs.0/@literal">
+          <literal xsi:type="act:AMultiValue" label="P Condom Failure States" ID="pCondomFailureStates" values="//@agents[ID='adult']/@attributes[ID='race']"/>
+        </inputs>
+        <inputs selected="//@agents[ID='adult']/@rootActivity/@members[ID='sexEvent']" value="//@agents[ID='adult']/@rootActivity/@members[ID='pCondomFailure']/@inputs.1/@literal">
+          <literal xsi:type="act:AMultiValue" label="P Condom Failure Factor" ID="pCondomFailureFactor" values="//@attributes[ID='pCondomFailureFactorBase'] //@attributes[ID='pCondomFailureOtherFactor'] //@attributes[ID='pCondomFailureBlackFactor'] //@attributes[ID='pCondomFailureHispanicFactor'] //@attributes[ID='pCondomFailureWhiteFactor']"/>
+        </inputs>
+        <function xsi:type="function:FGenericFunction" href="http://metaabm.org/core_library.metaabm#//@library[ID='coreFunctions']/@subs[ID='distribution']/@functions[ID='additiveDistribution']"/>
       </members>
     </rootActivity>
     <implementation className="Adult" srcDir=""/>

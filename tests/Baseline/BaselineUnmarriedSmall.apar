@@ -2,4 +2,5 @@ model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"BaselineUnmarried.apar"
 "Neighborhood Height"=50
 "Neighborhood Width"=50
+"Stop Period"=5
 "Input Data File"="|data/NSFG_Unmarried_Small.txt"
