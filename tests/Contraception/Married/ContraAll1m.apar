@@ -5,3 +5,4 @@ incorporates	"../../Baseline/Baseline.apar"
 "P Pill Condom Failure Factor Base"=1.0
 "Stop Period"=1365
 "Input Data File"="|data/NSFG_Married.txt"
+"Stop Period"=100
