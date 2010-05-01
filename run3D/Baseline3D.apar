@@ -1,11 +1,12 @@
-model	"|RPP3D.metaabm"
-"Input Data File"="|data/NSFG_Married.txt"
+model	"|RPP3D.metaabm" 
+initializes
+"Adult Count"=100
 "Output Data"=true
 "All Output File"=""
 "Output Run File"="|run-output/Parameters.txt"
 "Output Period File"="|run-output/Results.txt"
 "Write Periods"=1365
-"Stop Period"=1365
+"Stop Period"=1365  
 "Neighborhood Height"=225
 "Neighborhood Width"=225
 "Typical Abortion Period Start"=60

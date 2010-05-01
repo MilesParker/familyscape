@@ -1,5 +1,6 @@
 model	"|RPP3D.metaabm"
-incorporates	"Baseline3D.apar"
+incorporates "Baseline3D.apar"
+initializes
 "Stop Period"=1365
 "Input Data File"="|data/NSFG_Married.txt"
 "P Relationship Begin Maximum"=0
