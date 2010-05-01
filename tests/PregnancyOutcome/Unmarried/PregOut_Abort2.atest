@@ -1,7 +1,7 @@
 "Pregnancy Outcome Abortion 2: Second Check of Baseline Factor for Abortion among Unmarrieds"
 «This test sets the baseline factor in the unmarried abortion equation equal to one, which should eliminate births and miscarriages and increase the number of abortions relative to baseline. We expect slightly more pregnancies due to differences in period pregnant.»
-Sum("Adult"."Abortions in Lifetime")=[1000,1400]	
-Sum("Adult"."Pregnancies in Lifetime")=[1000,1450]
-Sum("Adult"."Miscarriages in Lifetime")=[0,0]
-Sum("Adult"."Births in Lifetime")=[0,0]
-Sum("Adult"."Poor Births in Lifetime")=[0,0]	
+Sum(Adult.AbortionsinLifetime)=[1000,1400]	
+Sum(Adult.PregnanciesinLifetime)=[1000,1450]
+Sum(Adult.MiscarriagesinLifetime)=[0,0]
+Sum(Adult.BirthsinLifetime)=[0,0]
+Sum(Adult.PoorBirthsinLifetime)=[0,0]	

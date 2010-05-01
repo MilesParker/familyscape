@@ -1,7 +1,7 @@
 "Divorce P 1.0 Marriage P 0.0  (Married)"
-Count("Adult"."In Relationship")=[0,0]
-Count("Adult"."Marital Status"="Married")=[0,0]
-Count("Adult"."Marital Status"="Divorced")=[4186,4186]
-Count("Adult"."Marital Status"="Single")=[0,0]
-Average("Adult"."P Marriage")=[0.0, 0.0]
-Average("Adult"."P Divorce")=[1.0, 1.0]
+Count(Adult.InRelationship)=[0,0]
+Count(Adult.MaritalStatus=Married)=[0,0]
+Count(Adult.MaritalStatus=Divorced)=[4186,4186]
+Count(Adult.MaritalStatus=Single)=[0,0]
+Average(Adult.PMarriage)=[0.0, 0.0]
+Average(Adult.PDivorce)=[1.0, 1.0]

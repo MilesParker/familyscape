@@ -1,4 +1,4 @@
 "Contraception Condom 1m: Check of Baseline Factor for Medium Condom Equation Among Marrieds "
 «This test doubles the baseline factor for the medium condom equation among marrieds, which should have the effect of roughly doubling the number of men who are medium condom intenders relative to baseline.»
-Count("Adult"."Contraception Method"="Condom Medium Intender")=[580,780]
-Count("Adult"."Contraception Method"="Condom High Intender")=[76,127]	
+Count(Adult.ContraceptionMethod=CondomMediumIntender)=[580,780]
+Count(Adult.ContraceptionMethod=CondomHighIntender)=[76,127]	

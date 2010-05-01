@@ -1,4 +1,4 @@
 "Coital Frequency Married Once Daily"
 «This check ensures that no unmarrieds are having sex more than once a day.»
-Minimum("Adult"."Sex Count in Lifetime")=[100,100]
-Minimum("Adult"."Sex Partners in Lifetime")=[1,1]
+Minimum(Adult.SexCountinLifetime)=[100,100]
+Minimum(Adult.SexPartnersinLifetime)=[1,1]

@@ -1,5 +1,5 @@
 "Contraception Sterilization Women Men: Spot Check of Partner Sterilization Covariate for Male Sterilization Equation Among Marrieds "
 «This test sets the partner sterilization factor equal to (-1*baseline) in the female sterilization equation among marrieds and male sterilization level to 1, which should make all males sterilized and half of women sterilized.»
-Count("Adult"."Contraception Method"="Sterilized")=[2802,3011]	
+Count(Adult.ContraceptionMethod=Sterilized)=[2802,3011]	
 	
 	

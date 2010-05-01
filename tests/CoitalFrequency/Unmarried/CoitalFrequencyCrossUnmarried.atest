@@ -1,5 +1,5 @@
 "Coital Frequency 6 Crosschect Married: Cross Check of Covariates - Married Parameters"
-«This test cross checks to ensure that the values of the married parameters have no effect on the distribution of coital frequency among unmarrieds. This is achieved by setting the relevant parameters equal to extremely large values and testing that it has no effect on the distribution of coital frequency types among unmarrieds.»
-Count("Adult"."Coital Behavior Type"="High Frequency")=[3313.6,3662.4]
-Count("Adult"."Coital Behavior Type"="Moderate Frequency")=[1656.705,1831.095]	
-Count("Adult"."Coital Behavior Type"="Very Low Frequency")=[542,611]
+«This test cross checks to ensure that the values of the married parameters have no effect on the distribution of coital frequency among unmarrieds. This is achieved by setting the relevant parameters equal to extremely large values and testing that it has no effect on the distribution of coital frequency types amongunmarrieds.»
+Count(Adult.CoitalBehaviorType=HighFrequency)=[3313.6,3662.4]
+Count(Adult.CoitalBehaviorType=ModerateFrequency)=[1656.705,1831.095]	
+Count(Adult.CoitalBehaviorType=VeryLowFrequency)=[542,611]

@@ -1,7 +1,7 @@
 "Pregnancy Outcome Abortion Miscarriage 2m: Check Hypothesis that Miscarriages at .5 and Abortion at .5 Causes no births to occur and overall number of abortions and miscarriages to go up."
 «This test sets the baseline factor in the married abortion equation equal to zero, which should eliminate abortions increase pregnancies somewhat, and increase the number of births and miscarriages relative to baseline.»
-Sum("Adult"."Pregnancies in Lifetime")=[900,1800]
-Sum("Adult"."Abortions in Lifetime")=[450,750]	
-Sum("Adult"."Miscarriages in Lifetime")=[450,1000]	
-Sum("Adult"."Births in Lifetime")=[0,0]	
-Sum("Adult"."Poor Births in Lifetime")=[0,0]	
+Sum(Adult.PregnanciesinLifetime)=[900,1800]
+Sum(Adult.AbortionsinLifetime)=[450,750]	
+Sum(Adult.MiscarriagesinLifetime)=[450,1000]	
+Sum(Adult.BirthsinLifetime)=[0,0]	
+Sum(Adult.PoorBirthsinLifetime)=[0,0]	

@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"P Poor Birth Unmarried Factor Base"=0.0
-"Stop Period"=1365
-"Input Data File"="|data/NSFG_Unmarried.txt"
+PPoorBirthUnmarriedFactorBase=0.0
+StopPeriod=1365
+InputDataFile="|data/NSFG_Unmarried.txt"

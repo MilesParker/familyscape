@@ -1,5 +1,5 @@
 "Coital Frequency 9 Low Coital Threshold None: Check of Unmarried Low CoitFreq Thresholds "
 «This test assigns all unmarried agents to the low coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.»
-Maximum("Adult"."Sex Count in Lifetime")=[0,0]
-Maximum("Adult"."Sex Partners in Lifetime")=[0,0]
-Count("Adult"."Coital Behavior Type"="Very Low Frequency")=[5814,5814]	
+Maximum(Adult.SexCountinLifetime)=[0,0]
+Maximum(Adult.SexPartnersinLifetime)=[0,0]
+Count(Adult.CoitalBehaviorType=VeryLowFrequency)=[5814,5814]	

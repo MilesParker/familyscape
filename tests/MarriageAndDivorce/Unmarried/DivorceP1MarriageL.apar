@@ -1,14 +1,14 @@
-"Divorce P 1.0 Marriage P Low"
+"DivorceP1.0MarriagePLow"
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"P Marriage Minimum Base"=0.1
-"P Marriage Maximum Base"=0.15
-"P Divorce Minimum Base"=1.0
-"P Divorce Maximum Base"=1.0
-"P Relationship Begin Minimum"=1.0
-"P Relationship Begin Maximum"=1.0
-"P Relationship End Minimum"=0.0
-"P Relationship End Maximum"=0.0
-"P Marriage Yearly to Daily Conversion"=1.0
-"P Divorce Yearly to Daily Conversion"=1.0
-"Stop Period"=10
+PMarriageMinimumBase=0.1
+PMarriageMaximumBase=0.15
+PDivorceMinimumBase=1.0
+PDivorceMaximumBase=1.0
+PRelationshipBeginMinimum=1.0
+PRelationshipBeginMaximum=1.0
+PRelationshipEndMinimum=0.0
+PRelationshipEndMaximum=0.0
+PMarriageYearlytoDailyConversion=1.0
+PDivorceYearlytoDailyConversion=1.0
+StopPeriod=10

@@ -1,4 +1,4 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"Baseline.apar"
-"Input Data File"="|data/NSFG_Unmarried.txt"
-"P Marriage Maximum Base"=0.0
+InputDataFile="|data/NSFG_Unmarried.txt"
+PMarriageMaximumBase=0.0

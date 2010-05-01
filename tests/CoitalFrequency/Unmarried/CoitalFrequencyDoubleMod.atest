@@ -1,3 +1,3 @@
 "Coital Frequency Double Moderate: Functionality of Moderate Unmarried Sexual-Proclivity Baseline (moderate)"
-«This test doubles the baseline value of the moderate unmarried sexual-proclivity baseline factor. Since all demographic predictors are set equal to zero, this should roughly result in a doubling of the number of unmarried sexual moderates.»
-Count("Adult"."Coital Behavior Type"="Moderate Frequency")=[3313,3662]	
+«This test doubles the baseline value of the moderate unmarried sexual-proclivity baseline factor. Since all demographic predictors are set equal to zero, this should roughly result in a doubling of the number of unmarried sexualmoderates.»
+Count(Adult.CoitalBehaviorType=ModerateFrequency)=[3313,3662]	

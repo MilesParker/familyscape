@@ -1,8 +1,8 @@
 "Divorce P 0.5 Marriage P 0.0 (Married)"
 «This test sets the marriage probabilty for Marrieds to 1.0 and base staus adjustment for married and divorced to 1.0 and then checks to see that all (or almost all) people in relationships are married. Note that everyone hould be married as relationships cannot end. We should have no divorces either. (Traditional family values worst case!)»
-Count("Adult"."In Relationship")=[1000,1100]
-Count("Adult"."Marital Status"="Married")=[1000,1100]
-Count("Adult"."Marital Status"="Divorced")=[3100,3200]
-Count("Adult"."Marital Status"="Single")=[0,0]
-Average("Adult"."P Marriage")=[0.0, 0.0]
-Average("Adult"."P Divorce")=[0.5, 0.5]
+Count(Adult.InRelationship)=[1000,1100]
+Count(Adult.MaritalStatus=Married)=[1000,1100]
+Count(Adult.MaritalStatus=Divorced)=[3100,3200]
+Count(Adult.MaritalStatus=Single)=[0,0]
+Average(Adult.PMarriage)=[0.0, 0.0]
+Average(Adult.PDivorce)=[0.5, 0.5]

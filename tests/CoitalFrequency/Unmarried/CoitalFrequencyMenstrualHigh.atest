@@ -1,5 +1,5 @@
 "Coital Frequency Menstrual High Unmarried (high value)"
 «This test assigns an extremely high value to lunar days, which should result in little or no sex occurring.»
-Average("Adult"."Sex Count in Lifetime")=[0,1]
-Average("Adult"."Sex Partners in Lifetime")=[0,1]	   
-Average("Adult"."P Sex")=[0.0,0.01]
+Average(Adult.SexCountinLifetime)=[0,1]
+Average(Adult.SexPartnersinLifetime)=[0,1]	   
+Average(Adult.PSex)=[0.0,0.01]

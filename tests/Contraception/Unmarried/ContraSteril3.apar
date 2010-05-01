@@ -1,10 +1,10 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"P Sterilize Female Unmarried Very Low Frequency Factor"=-0.5
-"P Sterilize Female Unmarried Moderate Frequency Factor"=-0.5
-"P Sterilize Female Unmarried High Frequency Factor"=-0.5
-"P Sterilize Male Unmarried Very Low Frequency Factor"=-0.5
-"P Sterilize Male Unmarried Moderate Frequency Factor"=-0.5
-"P Sterilize Male Unmarried High Frequency Factor"=-0.5
-"Stop Period"=1
-"Input Data File"="|data/NSFG_Unmarried.txt"
+PSterilizeFemaleUnmarriedVeryLowFrequencyFactor=-0.5
+PSterilizeFemaleUnmarriedModerateFrequencyFactor=-0.5
+PSterilizeFemaleUnmarriedHighFrequencyFactor=-0.5
+PSterilizeMaleUnmarriedVeryLowFrequencyFactor=-0.5
+PSterilizeMaleUnmarriedModerateFrequencyFactor=-0.5
+PSterilizeMaleUnmarriedHighFrequencyFactor=-0.5
+StopPeriod=1
+InputDataFile="|data/NSFG_Unmarried.txt"

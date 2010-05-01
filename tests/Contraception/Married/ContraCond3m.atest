@@ -1,3 +1,3 @@
 "Contraception Condom 3m: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds "
 «This test sets all sexual proclivity factors equal to (-1*baseline) in the medium condom equation among marrieds, which should have the effect of eliminating medium condom intenders from the simulation.»
-Count("Adult"."Contraception Method"="Condom Medium Intender")=[0,0]
+Count(Adult.ContraceptionMethod=CondomMediumIntender)=[0,0]

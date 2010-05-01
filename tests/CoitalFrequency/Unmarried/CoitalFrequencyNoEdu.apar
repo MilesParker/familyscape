@@ -1,7 +1,7 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"P Coital Frequency Moderate Unmarried NHS Factor"=-0.3
-"P Coital Frequency Moderate Unmarried PHS Factor"=-0.3
-"P Coital Frequency Moderate Unmarried HS Factor"=-0.3
-"Stop Period"=0
-"Input Data File"="|data/NSFG_Unmarried.txt"
+PCoitalFrequencyModerateUnmarriedNHSFactor=-0.3
+PCoitalFrequencyModerateUnmarriedPHSFactor=-0.3
+PCoitalFrequencyModerateUnmarriedHSFactor=-0.3
+StopPeriod=0
+InputDataFile="|data/NSFG_Unmarried.txt"

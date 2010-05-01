@@ -1,6 +1,6 @@
 "Coital Frequency Moderate Threshold: Check of Unmarried Moderate CoitFreq Thresholds "
 «This test assigns all unmarried agents to the moderate coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should have no effect on Baseline.»
-Average("Adult"."Sex Count in Lifetime")=[655,688]
-Average("Adult"."Sex Partners in Lifetime")=[12.5,13.5]	
-Count("Adult"."Coital Behavior Type"="Moderate Frequency")=[5814,5814]	
+Average(Adult.SexCountinLifetime)=[655,688]
+Average(Adult.SexPartnersinLifetime)=[12.5,13.5]	
+Count(Adult.CoitalBehaviorType=ModerateFrequency)=[5814,5814]	
 

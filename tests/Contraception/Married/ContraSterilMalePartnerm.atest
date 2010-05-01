@@ -1,3 +1,3 @@
 "Contraception Sterilization Male Partner m: Check that partner sterilization count is working correctly"
-Count("Adult"."Partner Contraception Method"="Partner Sterilized")=[2093,2093]
-Count("Adult"."Contraception Method"="Sterilized")=[2093,2093]
+Count(Adult.PartnerContraceptionMethod=PartnerSterilized)=[2093,2093]
+Count(Adult.ContraceptionMethod=Sterilized)=[2093,2093]

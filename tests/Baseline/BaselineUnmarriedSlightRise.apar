@@ -1,4 +1,4 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"BaselineUnmarried.apar"
-"P Pill Use Unmarried Factor Base"=0.47
-"P Medium Condom Use Unmarried Factor Base"=0.37
+PPillUseUnmarriedFactorBase=0.47
+PMediumCondomUseUnmarriedFactorBase=0.37

@@ -1,7 +1,7 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
-"P Medium Condom Use Married Very Low Frequency Factor"=-0.4
-"P Medium Condom Use Married Moderate Frequency Factor"=-0.4
-"P Medium Condom Use Married High Frequency Factor"=-0.4
-"Stop Period"=1
-"Input Data File"="|data/NSFG_Married.txt"
+PMediumCondomUseMarriedVeryLowFrequencyFactor=-0.4
+PMediumCondomUseMarriedModerateFrequencyFactor=-0.4
+PMediumCondomUseMarriedHighFrequencyFactor=-0.4
+StopPeriod=1
+InputDataFile="|data/NSFG_Married.txt"

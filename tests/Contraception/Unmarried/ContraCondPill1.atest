@@ -1,9 +1,9 @@
 "Contraception Condom Pill 1: Check of CondomandPill Efficacy Among Unmarrieds "
 «This test makes all men high condom intenders, all women pill users, and sets condom-pill efficacy to 100%, which should have the effect of eliminating all pregnancies inthe model.»
-Count("Adult"."Contraception Method"="Condom High Intender")=[2819,2819]
-Count("Adult"."Contraception Method"="Pill")=[2995,2995]	
-Sum("Adult"."Pregnancies in Lifetime")=[0,0]
-Sum("Adult"."Abortions in Lifetime")=[0,0]
-Sum("Adult"."Miscarriages in Lifetime")=[0,0]
-Sum("Adult"."Births in Lifetime")=[0,0]
-Sum("Adult"."Poor Births in Lifetime")=[0,0]
+Count(Adult.ContraceptionMethod=CondomHighIntender)=[2819,2819]
+Count(Adult.ContraceptionMethod=Pill)=[2995,2995]	
+Sum(Adult.PregnanciesinLifetime)=[0,0]
+Sum(Adult.AbortionsinLifetime)=[0,0]
+Sum(Adult.MiscarriagesinLifetime)=[0,0]
+Sum(Adult.BirthsinLifetime)=[0,0]
+Sum(Adult.PoorBirthsinLifetime)=[0,0]

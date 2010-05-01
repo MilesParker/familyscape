@@ -1,8 +1,8 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
-"P Medium Condom Use Married Other Factor"=-0.4
-"P Medium Condom Use Married Black Factor"=-0.4
-"P Medium Condom Use Married Hispanic Factor"=-0.4
-"P Medium Condom Use Married White Factor"=-0.4
-"Stop Period"=1
-"Input Data File"="|data/NSFG_Married.txt"
+PMediumCondomUseMarriedOtherFactor=-0.4
+PMediumCondomUseMarriedBlackFactor=-0.4
+PMediumCondomUseMarriedHispanicFactor=-0.4
+PMediumCondomUseMarriedWhiteFactor=-0.4
+StopPeriod=1
+InputDataFile="|data/NSFG_Married.txt"

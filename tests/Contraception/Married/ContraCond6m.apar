@@ -1,9 +1,9 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
-"P Sterilize Male Married Factor Base"=0.0
-"P Medium Condom Use Married Factor Base"=0.0
-"P High Condom Use Married Factor Base"=1.0
-"P Condom Failure Factor Base"=0.0
-"P Pill Condom Failure Factor Base"=0.0
-"Stop Period"=1000
-"Input Data File"="|data/NSFG_Married.txt"
+PSterilizeMaleMarriedFactorBase=0.0
+PMediumCondomUseMarriedFactorBase=0.0
+PHighCondomUseMarriedFactorBase=1.0
+PCondomFailureFactorBase=0.0
+PPillCondomFailureFactorBase=0.0
+StopPeriod=1000
+InputDataFile="|data/NSFG_Married.txt"

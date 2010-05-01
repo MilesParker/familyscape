@@ -1,5 +1,5 @@
 "Coital Frequency Moderate Freq None Married: Check of Married Medium CoitFreq Thresholds "
 «This test assigns all married agents to the medium coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to zero, which should result in nobody having sex in the model.»
-Average("Adult"."Sex Count in Lifetime")=[0,0]
-Average("Adult"."Sex Partners in Lifetime")=[0,0]
-Count("Adult"."Coital Behavior Type"="Moderate Frequency")=[4186,4186]	
+Average(Adult.SexCountinLifetime)=[0,0]
+Average(Adult.SexPartnersinLifetime)=[0,0]
+Count(Adult.CoitalBehaviorType=ModerateFrequency)=[4186,4186]	

@@ -1,8 +1,8 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
-"P Miscarriage Married Other Factor"=-0.33333
-"P Miscarriage Married Black Factor"=-0.33333
-"P Miscarriage Married Hispanic Factor"=-0.33333
-"P Miscarriage Married White Factor"=-0.33333
-"Stop Period"=1365
-"Input Data File"="|data/NSFG_Married.txt"
+PMiscarriageMarriedOtherFactor=-0.33333
+PMiscarriageMarriedBlackFactor=-0.33333
+PMiscarriageMarriedHispanicFactor=-0.33333
+PMiscarriageMarriedWhiteFactor=-0.33333
+StopPeriod=1365
+InputDataFile="|data/NSFG_Married.txt"

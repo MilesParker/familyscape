@@ -1,3 +1,3 @@
-"Coital Frequency No Age Married: Spot Check of Covariates - Age Coital Behavior Type (moderate married)"
+"Coital Frequency No Age Married: Spot Check of Covariates - Age CoitalBehaviorType (moderate married)"
 «This test spot checks the age-related demographic predictors of Coital Frequency within the moderate married equation by setting all relevant covariates equal to (-1*baseline factor), which should result in no agents falling into this proclivity category.»
-Count("Adult"."Coital Behavior Type"="Moderate Frequency")=[0,0]
+Count(Adult.CoitalBehaviorType=ModerateFrequency)=[0,0]

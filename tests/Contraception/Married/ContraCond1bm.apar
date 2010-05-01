@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
-"P High Condom Use Married Factor Base"=0.2
-"Stop Period"=1
-"Input Data File"="|data/NSFG_Married.txt"
+PHighCondomUseMarriedFactorBase=0.2
+StopPeriod=1
+InputDataFile="|data/NSFG_Married.txt"

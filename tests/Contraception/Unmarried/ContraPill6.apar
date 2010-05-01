@@ -1,7 +1,7 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"P Pill Use Unmarried Factor Base"=1.0
-"P Sterilize Female Unmarried Factor Base"=0.0
-"P Pill Failure Factor Base"=0.0
-"Stop Period"=1
-"Input Data File"="|data/NSFG_Unmarried.txt"
+PPillUseUnmarriedFactorBase=1.0
+PSterilizeFemaleUnmarriedFactorBase=0.0
+PPillFailureFactorBase=0.0
+StopPeriod=1
+InputDataFile="|data/NSFG_Unmarried.txt"

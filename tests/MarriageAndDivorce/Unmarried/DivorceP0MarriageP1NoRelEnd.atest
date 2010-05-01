@@ -1,8 +1,8 @@
 "Divorce P 0.0 Marriage P 1.0 No Rel End"
 «This test sets the marriage probabilty to 1.0 and checks to see that most people in relationships are married. Note that everyone hould be married or single. (Traditional family values taken to an extreme.)»
-Count("Adult"."In Relationship")=[220,280]
-Count("Adult"."Marital Status"="Single")=[5600,5700]
-Count("Adult"."Marital Status"="Married")=[130,180]
-Count("Adult"."Marital Status"="Divorced")=[0,0]
-Average("Adult"."P Marriage")=[1.0, 1.0]
-Average("Adult"."P Divorce")=[0.0, 0.0]
+Count(Adult.InRelationship)=[220,280]
+Count(Adult.MaritalStatus=Single)=[5600,5700]
+Count(Adult.MaritalStatus=Married)=[130,180]
+Count(Adult.MaritalStatus=Divorced)=[0,0]
+Average(Adult.PMarriage)=[1.0, 1.0]
+Average(Adult.PDivorce)=[0.0, 0.0]

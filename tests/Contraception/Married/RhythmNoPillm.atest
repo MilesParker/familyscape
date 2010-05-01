@@ -1,4 +1,4 @@
 "Rhythm Method No Pill Married: Sets all married women to be pill users and no pill users to be rhythm method users, which should cause no women to be rhythm method users"
-Count("Adult"."Contraception Method"="Pill")=[0,0]
-Count("Adult"."Rhythm Method User")=[0,0]
-Average("Adult"."Sex Count in Lifetime")=[1365,1365]	
+Count(Adult.ContraceptionMethod=Pill)=[0,0]
+Count(Adult.RhythmMethodUser)=[0,0]
+Average(Adult.SexCountinLifetime)=[1365,1365]	

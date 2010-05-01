@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"Lunar Days"=1
-"Stop Period"=1365
-"Input Data File"="|data/NSFG_Unmarried.txt"
+LunarDays=1
+StopPeriod=1365
+InputDataFile="|data/NSFG_Unmarried.txt"

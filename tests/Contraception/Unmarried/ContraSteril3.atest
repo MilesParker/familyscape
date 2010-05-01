@@ -1,4 +1,4 @@
 "Contraception Sterilization 3: Spot Check of Sexual Frequency Covariates for Sterilization Equation2 Among Unmarrieds "
 «This test sets all sexual proclivity factors equal to (-1*baseline) in the sterilization equations among unmarrieds, which should have the effect of eliminating sterilization in the simulation.»
-Count("Adult"."Contraception Method"="Sterilized")=[0,0]
+Count(Adult.ContraceptionMethod=Sterilized)=[0,0]
 	

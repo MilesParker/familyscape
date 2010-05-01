@@ -1,7 +1,7 @@
 "Pregnancy Outcome Miscarriage 4: Cross Check of Baseline Factor for Miscarriage among Unmarrieds"
 «This test sets all covariates in the married miscarriage equation equal extremely high values, which should have no effect on pregnancy outcomes among unmarrieds.	»
-Sum("Adult"."Pregnancies in Lifetime")=[904,1231]
-Sum("Adult"."Abortions in Lifetime")=[270,462]
-Sum("Adult"."Miscarriages in Lifetime")=[254,406]
-Sum("Adult"."Births in Lifetime")=[222,357]
-Sum("Adult"."Poor Births in Lifetime")=[106,196]	
+Sum(Adult.PregnanciesinLifetime)=[904,1231]
+Sum(Adult.AbortionsinLifetime)=[270,462]
+Sum(Adult.MiscarriagesinLifetime)=[254,406]
+Sum(Adult.BirthsinLifetime)=[222,357]
+Sum(Adult.PoorBirthsinLifetime)=[106,196]	

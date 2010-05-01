@@ -1,4 +1,4 @@
 "Contraception Pill 1m: Check of Baseline Factor for Pill Equation Among Marrieds "
 «This test doubles the baseline factor for the pill equation among marrieds, which should have the effect of roughly doubling the number of women who are on the pill relative to baseline.»
-Count("Adult"."Contraception Method"="Pill")=[900,1400]
+Count(Adult.ContraceptionMethod=Pill)=[900,1400]
 	

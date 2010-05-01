@@ -1,10 +1,10 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineMarried.apar"
-"P Marriage Minimum Base"=0.2
-"P Marriage Maximum Base"=0.2
-"P Divorce Minimum Base"=0.4
-"P Divorce Maximum Base"=0.4
-"P Marriage Yearly to Daily Conversion"=0.01
-"P Divorce Yearly to Daily Conversion"=0.005
-"Stop Period"=0
+PMarriageMinimumBase=0.2
+PMarriageMaximumBase=0.2
+PDivorceMinimumBase=0.4
+PDivorceMaximumBase=0.4
+PMarriageYearlytoDailyConversion=0.01
+PDivorceYearlytoDailyConversion=0.005
+StopPeriod=0
 

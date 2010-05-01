@@ -1,7 +1,7 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineMarried.apar"
-"P Relationship Begin Maximum"=1.0
-"P Relationship Begin Minimum"=1.0
-"P Relationship End Maximum"=1.0
-"P Relationship End Minimum"=1.0
-"Stop Period"=100
+PRelationshipBeginMaximum=1.0
+PRelationshipBeginMinimum=1.0
+PRelationshipEndMaximum=1.0
+PRelationshipEndMinimum=1.0
+StopPeriod=100

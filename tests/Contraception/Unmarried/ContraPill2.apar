@@ -1,8 +1,8 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"P Pill Use Unmarried 15 to 19 Factor"=-0.5
-"P Pill Use Unmarried 20 to 24 Factor"=-0.5
-"P Pill Use Unmarried 25 to 29 Factor"=-0.5
-"P Pill Use Unmarried 30 to 44 Factor"=-0.5
-"Stop Period"=1
-"Input Data File"="|data/NSFG_Unmarried.txt"
+PPillUseUnmarried15to19Factor=-0.5
+PPillUseUnmarried20to24Factor=-0.5
+PPillUseUnmarried25to29Factor=-0.5
+PPillUseUnmarried30to44Factor=-0.5
+StopPeriod=1
+InputDataFile="|data/NSFG_Unmarried.txt"

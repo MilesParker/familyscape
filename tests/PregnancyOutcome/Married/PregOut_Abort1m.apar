@@ -1,3 +1,3 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineMarried.apar"
-"P Abortion Married Factor Base"=0.0
+PAbortionMarriedFactorBase=0.0

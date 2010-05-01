@@ -1,3 +1,3 @@
 "Contraception Cond 5m: Cross Check of Married Covariates for Medium Condom Equation Among Marrieds "
 «This test sets all values for the pill covariates in the unmarried medium condom equation equal to an extremely high number, which should have no effect on the number of medium condom intenders among marrieds.»
-Count("Adult"."Contraception Method"="Condom Medium Intender")=[299,348]	
+Count(Adult.ContraceptionMethod=CondomMediumIntender)=[299,348]	

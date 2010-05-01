@@ -1,8 +1,8 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"P Miscarriage Unmarried 15 to 19 Factor"=-0.33333
-"P Miscarriage Unmarried 20 to 24 Factor"=-0.33333
-"P Miscarriage Unmarried 25 to 29 Factor"=-0.33333
-"P Miscarriage Unmarried 30 to 44 Factor"=-0.33333
-"Stop Period"=1365
-"Input Data File"="|data/NSFG_Unmarried.txt"
+PMiscarriageUnmarried15to19Factor=-0.33333
+PMiscarriageUnmarried20to24Factor=-0.33333
+PMiscarriageUnmarried25to29Factor=-0.33333
+PMiscarriageUnmarried30to44Factor=-0.33333
+StopPeriod=1365
+InputDataFile="|data/NSFG_Unmarried.txt"

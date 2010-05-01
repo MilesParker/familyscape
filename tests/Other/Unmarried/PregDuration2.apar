@@ -1,8 +1,8 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"Typical Abortion Period Start"=1370
-"Typical Abortion Period End"=1370
-"Typical Birth Period Start"=1370
-"Typical Birth Period End"=1370
-"Stop Period"=1365
-"Input Data File"="|data/NSFG_Married.txt"
+TypicalAbortionPeriodStart=1370
+TypicalAbortionPeriodEnd=1370
+TypicalBirthPeriodStart=1370
+TypicalBirthPeriodEnd=1370
+StopPeriod=1365
+InputDataFile="|data/NSFG_Married.txt"

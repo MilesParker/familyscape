@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
-"P Sterilize Male Unmarried Factor Base"=1.0
-"P Sterilize Female Unmarried Factor Base"=1.0
-"Stop Period"=50
+PSterilizeMaleUnmarriedFactorBase=1.0
+PSterilizeFemaleUnmarriedFactorBase=1.0
+StopPeriod=50

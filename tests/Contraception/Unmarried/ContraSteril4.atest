@@ -1,4 +1,4 @@
 "Contraception Sterilization 4: Cross Check of Married Covariates for Sterilization Equations Among Unmarrieds "
 «This test sets all values for the pill covariates in the married sterilization equations equal to an extremely high number, which should have no effect on sterilization among unmarrieds.»
-Count("Adult"."Contraception Method"="Sterilized")=[2778.18,3070.62]	
+Count(Adult.ContraceptionMethod=Sterilized)=[2778.18,3070.62]	
 	

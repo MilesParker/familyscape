@@ -1,9 +1,9 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
-"P Coital Frequency Very Low Married Factor Base"=0.0
-"P Coital Frequency Moderate Married Factor Base"=0.0
-"Coital Days Married High Frequency Minimum"=0
-"Coital Days Married High Frequency Maximum"=0
-"Stop Period"=500
-"Input Data File"="|data/NSFG_Married.txt"
+PCoitalFrequencyVeryLowMarriedFactorBase=0.0
+PCoitalFrequencyModerateMarriedFactorBase=0.0
+CoitalDaysMarriedHighFrequencyMinimum=0
+CoitalDaysMarriedHighFrequencyMaximum=0
+StopPeriod=500
+InputDataFile="|data/NSFG_Married.txt"
 

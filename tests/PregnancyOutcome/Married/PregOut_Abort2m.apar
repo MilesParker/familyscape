@@ -1,5 +1,5 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/BaselineMarried.apar"
-"P Abortion Married Factor Base"=1.0
-"Typical Abortion Period Start"=300
-"Typical Abortion Period End"=360
+PAbortionMarriedFactorBase=1.0
+TypicalAbortionPeriodStart=300
+TypicalAbortionPeriodEnd=360

@@ -1,4 +1,4 @@
 "Pregnancy Outcome Poor Birth 2m: Second Check of Baseline Factor for Poor Birth among Marrieds"
 «This test sets the baseline factor in the married poor birth equation equal to one, which should make all births poor births.»
-Sum("Adult"."Births in Lifetime")=[260,320]	
-Sum("Adult"."Poor Births in Lifetime")=[260,320]
+Sum(Adult.BirthsinLifetime)=[260,320]	
+Sum(Adult.PoorBirthsinLifetime)=[260,320]

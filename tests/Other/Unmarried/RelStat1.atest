@@ -1,4 +1,4 @@
 "Relationship Status 1: Check of p(rel begin) and p(rel end) parameters"
 «This test changes the probability of entering into a relationship to one and the probability of ending one to zero.  By period 2000, virtually all agents should therefore be in a relationship.»
-Count("Adult"."In Relationship")=[4900,5814]	
+Count(Adult.InRelationship)=[4900,5814]	
 	

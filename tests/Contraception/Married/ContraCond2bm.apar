@@ -1,7 +1,7 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
-"P High Condom Use Married NHS Factor"=-0.1
-"P High Condom Use Married PHS Factor"=-0.1
-"P High Condom Use Married HS Factor"=-0.1
-"Stop Period"=1
-"Input Data File"="|data/NSFG_Married.txt"
+PHighCondomUseMarriedNHSFactor=-0.1
+PHighCondomUseMarriedPHSFactor=-0.1
+PHighCondomUseMarriedHSFactor=-0.1
+StopPeriod=1
+InputDataFile="|data/NSFG_Married.txt"

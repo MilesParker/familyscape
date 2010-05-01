@@ -1,4 +1,4 @@
 "Contraception Condom 3bm: Spot Check of Sexual Frequency Covariates for Medium Equation Among Marrieds "
 «This test sets all sexual-proclivity factors equal to (-1*baseline) in the high condom equation among marrieds, which should have the effect of eliminating high condom intenders from the simulation and turning that number of people into medium intenders.»
-Count("Adult"."Contraception Method"="Condom Medium Intender")=[350,500]
-Count("Adult"."Contraception Method"="Condom High Intender")=[0,0]
+Count(Adult.ContraceptionMethod=CondomMediumIntender)=[350,500]
+Count(Adult.ContraceptionMethod=CondomHighIntender)=[0,0]

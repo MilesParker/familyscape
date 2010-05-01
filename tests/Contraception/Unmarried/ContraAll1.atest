@@ -1,8 +1,8 @@
 "Contraception All 1: Check of Contraceptive Efficacy of All Methods Among Unmarrieds "
 «This test sets contraceptive efficacy for the pill, condom, and pill+condom to one, which should have the effect of increasing the number of pregnancies relative to baseline.»
-Sum("Adult"."Pregnancies in Lifetime")=[1155,136500]
-Sum("Adult"."Abortions in Lifetime")=[369,136500]
-Sum("Adult"."Miscarriages in Lifetime")=[353,136500]
-Sum("Adult"."Births in Lifetime")=[295,136500]
-Sum("Adult"."Poor Births in Lifetime")=[153,136500]
+Sum(Adult.PregnanciesinLifetime)=[1155,136500]
+Sum(Adult.AbortionsinLifetime)=[369,136500]
+Sum(Adult.MiscarriagesinLifetime)=[353,136500]
+Sum(Adult.BirthsinLifetime)=[295,136500]
+Sum(Adult.PoorBirthsinLifetime)=[153,136500]
 	

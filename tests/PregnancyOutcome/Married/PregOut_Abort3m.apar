@@ -1,8 +1,8 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
-"P Abortion Married Category 1 Factor"=-0.33333
-"P Abortion Married Category 3 Factor"=-0.33333
-"P Abortion Married Category 2 Factor"=-0.33333
-"P Abortion Married Category 4 Factor"=-0.33333
-"Stop Period"=1365
-"Input Data File"="|data/NSFG_Married.txt"
+PAbortionMarriedCategory1Factor=-0.33333
+PAbortionMarriedCategory3Factor=-0.33333
+PAbortionMarriedCategory2Factor=-0.33333
+PAbortionMarriedCategory4Factor=-0.33333
+StopPeriod=1365
+InputDataFile="|data/NSFG_Married.txt"

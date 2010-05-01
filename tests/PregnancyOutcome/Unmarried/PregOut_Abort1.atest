@@ -1,4 +1,4 @@
 "Pregnancy Outcome Abortion 1: First Check of Baseline Factor for Abortion among Unmarrieds"
 «This test sets the baseline factor in the unmarried abortion equation equal to zero, which should eliminate abortions and increase the number of births and miscarriages relative to baseline.»
-Sum("Adult"."Abortions in Lifetime")=[0,0]	
-Sum("Adult"."Births in Lifetime")=[295,1300]
+Sum(Adult.AbortionsinLifetime)=[0,0]	
+Sum(Adult.BirthsinLifetime)=[295,1300]

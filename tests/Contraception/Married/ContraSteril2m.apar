@@ -1,12 +1,12 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
-"P Sterilize Female Married Category 1 Factor"=-0.5
-"P Sterilize Female Married Category 3 Factor"=-0.5
-"P Sterilize Female Married Category 2 Factor"=-0.5
-"P Sterilize Female Married Category 4 Factor"=-0.5
-"P Sterilize Male Married Category 1 Factor"=-0.5
-"P Sterilize Male Married Category 3 Factor"=-0.5
-"P Sterilize Male Married Category 2 Factor"=-0.5
-"P Sterilize Male Married Category 4 Factor"=-0.5
-"Stop Period"=1
-"Input Data File"="|data/NSFG_Married.txt"
+PSterilizeFemaleMarriedCategory1Factor=-0.5
+PSterilizeFemaleMarriedCategory3Factor=-0.5
+PSterilizeFemaleMarriedCategory2Factor=-0.5
+PSterilizeFemaleMarriedCategory4Factor=-0.5
+PSterilizeMaleMarriedCategory1Factor=-0.5
+PSterilizeMaleMarriedCategory3Factor=-0.5
+PSterilizeMaleMarriedCategory2Factor=-0.5
+PSterilizeMaleMarriedCategory4Factor=-0.5
+StopPeriod=1
+InputDataFile="|data/NSFG_Married.txt"

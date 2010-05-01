@@ -1,3 +1,3 @@
 "Coital Frequency Very Low: Functionality of Very Low Unmarried Sexual - Proclivity Baseline (very low)"
-«This test quadruples the baseline value of the very low unmarried sexual-proclivity baseline factor. Since all demographic predictors are set equal to zero, this should roughly result in a quadrupling of the number of unmarried sexual very lows.»
-Count("Adult"."Coital Behavior Type"="Very Low Frequency")=[2168,2445]	
+«This test quadruples the baseline value of the very low unmarried sexual-proclivity baseline factor. Since all demographic predictors are set equal to zero, this should roughly result in a quadrupling of the number of unmarried sexual verylows.»
+Count(Adult.CoitalBehaviorType=VeryLowFrequency)=[2168,2445]	

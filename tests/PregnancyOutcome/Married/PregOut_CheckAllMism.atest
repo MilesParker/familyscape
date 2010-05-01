@@ -1,6 +1,6 @@
 "Pregnancy Outcome Miscarriage 1m Check: Cross-check to ensure that miscarraiges ae assigned"
 «By setting total gestational period to 1 we eliminate issues of bias toward any given category caused by time spent pregnant.»
-Sum("Adult"."Pregnancies in Lifetime")=[5200,7000]
-Sum("Adult"."Abortions in Lifetime")=[0,0]
-Sum("Adult"."Miscarriages in Lifetime")=[5200,7000]	
-Sum("Adult"."Births in Lifetime")=[0,0]	
+Sum(Adult.PregnanciesinLifetime)=[5200,7000]
+Sum(Adult.AbortionsinLifetime)=[0,0]
+Sum(Adult.MiscarriagesinLifetime)=[5200,7000]	
+Sum(Adult.BirthsinLifetime)=[0,0]	

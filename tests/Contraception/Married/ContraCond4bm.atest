@@ -1,5 +1,5 @@
 "Contraception Condom 4bm: Spot Check of Partner Sterilization Covariate for Medium Condom Equation Among Marrieds "
 «This test sets the partner sterilization factor equal to (-1*baseline) in the high condom equation among marrieds, and making all females sterilized, which should have the effect of making all high intenders medium intenders.»
-Count("Adult"."Partner Contraception Method"="Partner Sterilized")=[2500,4186]	
-Count("Adult"."Contraception Method"="Condom High Intender")=[0,0]	
-Count("Adult"."Contraception Method"="Condom Medium Intender")=[374,479]
+Count(Adult.PartnerContraceptionMethod=PartnerSterilized)=[2500,4186]	
+Count(Adult.ContraceptionMethod=CondomHighIntender)=[0,0]	
+Count(Adult.ContraceptionMethod=CondomMediumIntender)=[374,479]

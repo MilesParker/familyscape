@@ -1,8 +1,8 @@
 "Contraception Pill 6m: Check of Pill Efficacy Among Marrieds "
 «This test puts all women on the pill and sets efficacy to one, which should have the effect of generating no pregnancies.»
-Count("Adult"."Contraception Method"="Pill")=[2093,2093]
-Sum("Adult"."Pregnancies in Lifetime")=[0,0]
-Sum("Adult"."Abortions in Lifetime")=[0,0]
-Sum("Adult"."Miscarriages in Lifetime")=[0,0]
-Sum("Adult"."Births in Lifetime")=[0,0]
-Sum("Adult"."Poor Births in Lifetime")=[0,0]
+Count(Adult.ContraceptionMethod=Pill)=[2093,2093]
+Sum(Adult.PregnanciesinLifetime)=[0,0]
+Sum(Adult.AbortionsinLifetime)=[0,0]
+Sum(Adult.MiscarriagesinLifetime)=[0,0]
+Sum(Adult.BirthsinLifetime)=[0,0]
+Sum(Adult.PoorBirthsinLifetime)=[0,0]

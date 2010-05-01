@@ -1,7 +1,7 @@
 "Contraception All 1m: Check of Contraceptive Efficacy of All Methods Among Marrieds "
 «This test sets contraceptive failure rate for the pill, condom, and pill+condom to one, which should have the effect of increasing the number of pregnancies relative to baseline.»
-Sum("Adult"."Pregnancies in Lifetime")=[1212,136500]
-Sum("Adult"."Abortions in Lifetime")=[372,136500]
-Sum("Adult"."Miscarriages in Lifetime")=[368,136500]
-Sum("Adult"."Births in Lifetime")=[314,136500]
-Sum("Adult"."Poor Births in Lifetime")=[167,136500]	
+Sum(Adult.PregnanciesinLifetime)=[1212,136500]
+Sum(Adult.AbortionsinLifetime)=[372,136500]
+Sum(Adult.MiscarriagesinLifetime)=[368,136500]
+Sum(Adult.BirthsinLifetime)=[314,136500]
+Sum(Adult.PoorBirthsinLifetime)=[167,136500]	

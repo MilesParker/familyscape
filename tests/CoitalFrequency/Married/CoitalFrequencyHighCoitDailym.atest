@@ -1,6 +1,6 @@
 "Coital Frequency High Coital Threshold: Check of Married High CoitFreq Thresholds "
 «This test assigns all married agents to the high coitfreq category and then sets the Minimum and Maximum thresholds for that category equal to 1, which should result in every agent having sex once a day.  This test also tests for whether married agents ever have sex more than once per day.»
-Maximum("Adult"."Sex Count in Lifetime")=[500,500]
-Average("Adult"."Sex Count in Lifetime")=[500,500]
-Average("Adult"."Sex Partners in Lifetime")=[1,1]
-Count("Adult"."Coital Behavior Type"="High Frequency")=[4186,4186]	
+Maximum(Adult.SexCountinLifetime)=[500,500]
+Average(Adult.SexCountinLifetime)=[500,500]
+Average(Adult.SexPartnersinLifetime)=[1,1]
+Count(Adult.CoitalBehaviorType=HighFrequency)=[4186,4186]	

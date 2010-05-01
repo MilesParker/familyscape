@@ -1,7 +1,7 @@
 "Coital Frequency Menstrual High Married (high value)"
 «This test assigns an extremely high value to lunar days, which should result in little or no sex occurring -- we can't really test that here as it causes an exception in fecundity index but we can test other aspects.»
-Average("Adult"."Sex Count in Lifetime")=[0,1]
-Average("Adult"."Sex Partners in Lifetime")=[0,1]
-Minimum("Adult"."Day in Cycle")=[500,280000000]
-Average("Adult"."Day in Cycle")=[130000000,150000000]
-Average("Adult"."P Sex")=[0.0,0.01]
+Average(Adult.SexCountinLifetime)=[0,1]
+Average(Adult.SexPartnersinLifetime)=[0,1]
+Minimum(Adult.DayinCycle)=[500,280000000]
+Average(Adult.DayinCycle)=[130000000,150000000]
+Average(Adult.PSex)=[0.0,0.01]
