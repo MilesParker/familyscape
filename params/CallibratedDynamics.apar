@@ -1,10 +1,14 @@
 "Base Model"
 model	"|RelationshipsAndPregnancyData.metaabm"
 "All Output File"="|data/AllOutput.txt"
-"Output Data"=true
-"Output Run File"="|data/RunOut.txt"
-"Output Period File"="|data/RunPeriod.txt"
+"Output Data"=false
+"Output Run File"=""
+"Output Period File"=""
+//"Output Data"=true
+//"Output Run File"="|data/RunOut.txt"
+//"Output Period File"="|data/RunPeriod.txt"
 "Input Data File"="|data/NSFG_Combined.txt"
+"Stop Period"=1365
 //"Write Periods"=1000,1365,4650
 "Adult Count"=500
 "Minimum Age"=15
@@ -20,8 +24,8 @@ model	"|RelationshipsAndPregnancyData.metaabm"
 "Walk Toward Age"=1
 //"Rhythm Method Bias for Day"=1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1
 "Agent Vision"=6
-"P Marriage Minimum Base"=0.0
-"P Marriage Maximum Base"=0.0
+"P Marriage Minimum Base"=0.002
+"P Marriage Maximum Base"=0.005
 "P Marriage Female Minimum"=0.0
 "P Marriage Female Maximum"=0.0
 "P Marriage Male Minimum"=0.0
@@ -56,8 +60,8 @@ model	"|RelationshipsAndPregnancyData.metaabm"
 "P Marriage Category 2 Maximum"=0.0
 "P Marriage Category 4 Minimum"=0.0
 "P Marriage Category 4 Maximum"=0.0
-"P Divorce Minimum Base"=0.0
-"P Divorce Maximum Base"=0.0
+"P Divorce Minimum Base"=0.001
+"P Divorce Maximum Base"=0.003
 "P Divorce Female Minimum"=0.0
 "P Divorce Female Maximum"=0.0
 "P Divorce Male Minimum"=0.0
