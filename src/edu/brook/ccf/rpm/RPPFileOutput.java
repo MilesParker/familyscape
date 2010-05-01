@@ -12,13 +12,18 @@ public class RPPFileOutput {
                 }
             };
             model.getAdultScape().addView(dataView);
-            System.err.println(model.getOutputRunFile());
             try {
-                dataView.setRunFile(new java.io.File(org.apache.commons.lang.StringUtils.replace(model
-                                                                                                 .getOutputRunFile(), ".txt", model.getName() + ".txt")));
+                String outputRunFile = model.getOutputRunFile().replace("\\.txt",
+                                                                        model.getName() + ".txt");
+                System.err.println(outputRunFile);
+                dataView.setRunFile(new java.io.File(outputRunFile));
                 if (!model.getOutputPeriodFile().equals("")) {
-                    dataView.setPeriodFile(new java.io.File(org.apache.commons.lang.StringUtils.replace(model
-                                                                                                        .getOutputPeriodFile(), ".txt", model.getName() + ".txt")));
+                    String outputPeriodFile = model.getOutputPeriodFile().replace(
+                                                                                  "\\.txt",
+                                                                                  model.getName()
+                                                                                  + ".txt");
+                    System.err.println(outputPeriodFile);
+                    dataView.setPeriodFile(new java.io.File(outputPeriodFile));
                 }
             } catch (java.io.IOException e) {
                 System.err.println("Can't output data because a file problem occurred: " + e.getLocalizedMessage());
@@ -28,8 +33,9 @@ public class RPPFileOutput {
             SnapshotView allView = new SnapshotView();
             model.getAdultScape().addView(allView);
             try {
-                allView.setRunFile(new java.io.File(org.apache.commons.lang.StringUtils.replace(model
-                                                                                                .getOutputRunFile(), ".txt", model.getName() + ".txt")));
+                String outputRunFile = model.getOutputRunFile().replace(".txt", model.getName() + ".txt");
+                allView
+                .setRunFile(new java.io.File(outputRunFile));
             } catch (java.io.IOException e) {
                 System.err.println("Can't output all data because a file problem occurred: " + e.getLocalizedMessage());
             }

@@ -1,9 +1,13 @@
 package edu.brook.ccf.rpm;
-public class RelationshipsAndPregnancyPartFactory
-		extends
-			org.eclipse.amp.escape.ascape.adapt.AscapePartFactory {
 
-	protected org.eclipse.gef.EditPart getPartForElement(Object model) {
+import org.ascape.model.HostCell;
+import org.eclipse.amp.escape.ascape.adapt.AscapePartFactory;
+import org.eclipse.gef.EditPart;
+import org.eclipse.amp.escape.ascape.gef.DefaultHostCellEditPart;
+
+public class RelationshipsAndPregnancyPartFactory extends AscapePartFactory {
+
+	protected EditPart getPartForElement(Object model) {
 
 		if (model instanceof Adult) {
 			return new edu.brook.ccf.rpm.GenderStyle();
