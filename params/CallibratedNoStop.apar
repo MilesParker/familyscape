@@ -1,8 +1,8 @@
 model	"|RelationshipsAndPregnancyData.metaabm"
-incorporates	"|Callibrated.apar"
-"All Output File"="|data/AllOutput.txt"
-"Output Data"=true
-"Output Run File"="|data/RunOut.txt"
-"Input Data File"="|data/NSFG_Combined.txt"
-"Stop Period"=20
-"Output Period File"="|data/RunPeriod.txt"
+incorporates	"Callibrated.apar"
+AllOutputFile="|data/AllOutput.txt"
+OutputData=true
+OutputRunFile="|data/RunOut.txt"
+InputDataFile="|data/NSFG_Combined.txt"
+StopPeriod=20
+OutputPeriodFile="|data/RunPeriod.txt"
