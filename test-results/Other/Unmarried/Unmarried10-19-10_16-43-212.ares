@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ares:RunSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aBase="http://www.eclipse.org/amp/amf/abase/ABase" xmlns:ares="http://eclipse.org.eclipse.amp/ares" result="SUCCESS">
+  <runs result="SUCCESS" started="2010-10-19T16:43:56.392-0700" finished="2010-10-19T16:44:19.622-0700">
+    <model href="../../../FamilyScape.metaabm#/"/>
+    <test href="../../../tests/Other/Unmarried/PregDuration2.atest#/"/>
+    <parameterization href="../../../tests/Other/Unmarried/PregDuration2.apar#/"/>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='typicalAbortionPeriodStart']"/>
+      <value xsi:type="aBase:IntValue" value="1370"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='typicalAbortionPeriodEnd']"/>
+      <value xsi:type="aBase:IntValue" value="1370"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='typicalBirthPeriodStart']"/>
+      <value xsi:type="aBase:IntValue" value="1370"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='typicalBirthPeriodEnd']"/>
+      <value xsi:type="aBase:IntValue" value="1370"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aBase:IntValue" value="1365"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aBase:StringValue" value="|data/NSFG_Married.txt"/>
+    </parameters>
+    <constraints measure="Sum">
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="1000"/>
+    </constraints>
+    <constraints measure="Maximum">
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="1"/>
+    </constraints>
+    <constraints measure="Maximum">
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="1"/>
+    </constraints>
+    <constraints measure="Maximum">
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="1"/>
+    </constraints>
+    <results constraint="//@runs.0/@constraints.0" issue="NONE" actualValue="583.0"/>
+    <results constraint="//@runs.0/@constraints.1" issue="NONE"/>
+    <results constraint="//@runs.0/@constraints.2" issue="NONE"/>
+    <results constraint="//@runs.0/@constraints.3" issue="NONE"/>
+  </runs>
+  <runs result="SUCCESS" started="2010-10-19T16:43:56.394-0700" finished="2010-10-19T16:45:03.471-0700">
+    <model href="../../../FamilyScape.metaabm#/"/>
+    <test href="../../../tests/Other/Unmarried/PregDuration1.atest#/"/>
+    <parameterization href="../../../tests/Other/Unmarried/PregDuration1.apar#/"/>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='typicalAbortionPeriodStart']"/>
+      <value xsi:type="aBase:IntValue" value="1370"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='typicalAbortionPeriodEnd']"/>
+      <value xsi:type="aBase:IntValue" value="1370"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='typicalBirthPeriodStart']"/>
+      <value xsi:type="aBase:IntValue" value="1370"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='typicalBirthPeriodEnd']"/>
+      <value xsi:type="aBase:IntValue" value="1370"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aBase:IntValue" value="1365"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aBase:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints measure="Sum">
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="900"/>
+    </constraints>
+    <constraints measure="Maximum">
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="1"/>
+    </constraints>
+    <constraints measure="Maximum">
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="1"/>
+    </constraints>
+    <constraints measure="Maximum">
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="1"/>
+    </constraints>
+    <results constraint="//@runs.1/@constraints.0" issue="NONE" actualValue="825.0"/>
+    <results constraint="//@runs.1/@constraints.1" issue="NONE"/>
+    <results constraint="//@runs.1/@constraints.2" issue="NONE"/>
+    <results constraint="//@runs.1/@constraints.3" issue="NONE"/>
+  </runs>
+  <runs result="SUCCESS" started="2010-10-19T16:43:56.419-0700" finished="2010-10-19T16:45:05.466-0700">
+    <model href="../../../FamilyScape.metaabm#/"/>
+    <test href="../../../tests/Other/Unmarried/RelStat1.atest#/"/>
+    <parameterization href="../../../tests/Other/Unmarried/RelStat1.apar#/"/>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pRelationshipEndMinimum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pRelationshipEndMaximum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pRelationshipBeginMinimum']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pRelationshipBeginMaximum']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aBase:IntValue" value="2000"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aBase:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='inRelationship']"/>
+      <minValue xsi:type="aBase:IntValue" value="4900"/>
+      <maxValue xsi:type="aBase:IntValue" value="5814"/>
+    </constraints>
+    <results constraint="//@runs.2/@constraints.0" issue="NONE" actualValue="5022.0"/>
+  </runs>
+  <runs result="SUCCESS" started="2010-10-19T16:43:56.392-0700" finished="2010-10-19T16:46:00.659-0700">
+    <model href="../../../FamilyScape.metaabm#/"/>
+    <test href="../../../tests/Other/Unmarried/RelStat2.atest#/"/>
+    <parameterization href="../../../tests/Other/Unmarried/RelStat2.apar#/"/>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pRelationshipEndMinimum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pRelationshipEndMaximum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pRelationshipBeginMinimum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pRelationshipBeginMaximum']"/>
+      <value xsi:type="aBase:RealValue" value="0.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aBase:IntValue" value="2000"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aBase:StringValue" value="|data/NSFG_Unmarried.txt"/>
+    </parameters>
+    <constraints>
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='inRelationship']"/>
+      <minValue xsi:type="aBase:IntValue" value="0"/>
+      <maxValue xsi:type="aBase:IntValue" value="0"/>
+    </constraints>
+    <results constraint="//@runs.3/@constraints.0" issue="NONE"/>
+  </runs>
+</ares:RunSet>

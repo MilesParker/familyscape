@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
 CoitalFrequencyInitialModification=0
 StopPeriod=500

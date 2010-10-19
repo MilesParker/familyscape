@@ -134,7 +134,7 @@ public class SnapshotView extends DataOutputView {
         // TODO Auto-generated method stub
         super.scapeAdded(scapeEvent);
         try {
-            RelationshipsAndPregnancy rpp = (RelationshipsAndPregnancy) getScape().getScape();
+            FamilyScape rpp = (FamilyScape) getScape().getScape();
             setRunFile(new java.io.File(rpp.getAllOutputFile()));
         } catch (java.io.IOException e) {
             System.err.println("Can't output all data because a file problem occurred: " + e.getLocalizedMessage());
@@ -153,7 +153,7 @@ public class SnapshotView extends DataOutputView {
 
     public void scapeIterated(ScapeEvent scapeEvent) {
         super.scapeIterated(scapeEvent);
-        if (isPeriod(((RelationshipsAndPregnancy) getScape().getScape()).getWritePeriods(), getScape().getPeriod())
+        if (isPeriod(((FamilyScape) getScape().getScape()).getWritePeriods(), getScape().getPeriod())
                 && runDataStream != null) {
             try {
                 writeRunData();

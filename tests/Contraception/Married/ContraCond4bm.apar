@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"../../Baseline/BaselineMarried.apar"
 PHighCondomUseMarriedPartnerSterilizedFactor=-0.1
 PSterilizeFemaleMarriedFactorBase=1.0

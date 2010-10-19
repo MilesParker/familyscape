@@ -1,5 +1,5 @@
 "Base Model"
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates "Callibrated.apar"
 PMarriageMinimumBase=0.002
 PMarriageMaximumBase=0.005

@@ -1,5 +1,5 @@
 "DivorcesOn"
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"DivorcePPregnancyBaseline.apar"
 PDivorceMinimumBase=1.0
 PDivorceMaximumBase=1.0

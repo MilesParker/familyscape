@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
 PCoitalFrequencyModerateMarriedFactorBase=0.6
 StopPeriod=0

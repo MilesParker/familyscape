@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
 PCoitalFrequencyVeryLowUnmarriedBlackFactor=-0.1
 PCoitalFrequencyVeryLowUnmarriedWhiteFactor=-0.1

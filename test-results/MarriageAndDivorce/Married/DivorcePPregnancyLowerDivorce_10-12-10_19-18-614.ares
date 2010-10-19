@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="ASCII"?>
 <ares:RunSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aBase="http://www.eclipse.org/amp/amf/abase/ABase" xmlns:ares="http://eclipse.org.eclipse.amp/ares" result="FAILURE">
   <runs result="FAILURE" started="2010-10-12T19:18:36.726-0700" finished="2010-10-12T19:18:39.206-0700">
-    <model href="../../../RelationshipsAndPregnancyData.metaabm#/"/>
+    <model href="../../../FamilyScape.metaabm#/"/>
     <test href="../../../tests/MarriageAndDivorce/Married/DivorcePPregnancyLowerDivorce.atest#/"/>
     <parameterization href="../../../tests/MarriageAndDivorce/Married/DivorcePPregnancyLowerDivorce.apar#/"/>
     <parameters>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorceMinimumBase']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pDivorceMinimumBase']"/>
       <value xsi:type="aBase:RealValue" value=".9999"/>
     </parameters>
     <parameters>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorceMaximumBase']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pDivorceMaximumBase']"/>
       <value xsi:type="aBase:RealValue" value=".9999"/>
     </parameters>
     <parameters>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorcePregnantMinimum']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pDivorcePregnantMinimum']"/>
       <value xsi:type="aBase:RealValue" value="-1.00001"/>
     </parameters>
     <parameters>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorcePregnantMaximum']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pDivorcePregnantMaximum']"/>
       <value xsi:type="aBase:RealValue" value="-1.0"/>
     </parameters>
     <parameters>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorceNotPregnantMinimum']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pDivorceNotPregnantMinimum']"/>
       <value xsi:type="aBase:RealValue" value="0.0"/>
     </parameters>
     <parameters>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pDivorceNotPregnantMaximum']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@attributes[ID='pDivorceNotPregnantMaximum']"/>
       <value xsi:type="aBase:RealValue" value="0.0"/>
     </parameters>
     <constraints>
-      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
-      <qualifier href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.0"/>
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
+      <qualifier href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.0"/>
       <minValue xsi:type="aBase:IntValue" value="4186"/>
       <maxValue xsi:type="aBase:IntValue" value="4186"/>
     </constraints>
     <constraints>
-      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
-      <qualifier href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.2"/>
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
+      <qualifier href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.2"/>
       <minValue xsi:type="aBase:IntValue" value="0"/>
       <maxValue xsi:type="aBase:IntValue" value="0"/>
     </constraints>
     <constraints>
-      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
-      <qualifier href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.1"/>
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']"/>
+      <qualifier href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='maritalStatus']/@options.1"/>
       <minValue xsi:type="aBase:IntValue" value="0"/>
       <maxValue xsi:type="aBase:IntValue" value="0"/>
     </constraints>
     <constraints measure="Average">
-      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pDivorce']"/>
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='pDivorce']"/>
       <minValue xsi:type="aBase:RealValue" value=".00"/>
       <maxValue xsi:type="aBase:RealValue" value=".00"/>
     </constraints>
     <constraints>
-      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnancyStatus']"/>
-      <qualifier href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.1"/>
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='pregnancyStatus']"/>
+      <qualifier href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='pregnancyStatus']/@options.1"/>
       <minValue xsi:type="aBase:IntValue" value="2093"/>
       <maxValue xsi:type="aBase:IntValue" value="2093"/>
     </constraints>
     <constraints>
-      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
-      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnancyStatusCouple']"/>
-      <qualifier href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnancyStatusCouple']/@options.1"/>
+      <agent href="../../../FamilyScape.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='pregnancyStatusCouple']"/>
+      <qualifier href="../../../FamilyScape.metaabm#//@agents[ID='adult']/@attributes[ID='pregnancyStatusCouple']/@options.1"/>
       <minValue xsi:type="aBase:IntValue" value="4186"/>
       <maxValue xsi:type="aBase:IntValue" value="4186"/>
     </constraints>

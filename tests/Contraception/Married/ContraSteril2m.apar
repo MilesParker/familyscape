@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
 PSterilizeFemaleMarriedCategory1Factor=-0.5
 PSterilizeFemaleMarriedCategory3Factor=-0.5

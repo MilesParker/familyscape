@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"../../Baseline/BaselineMarried.apar"
 TypicalBirthPeriodStart=1
 TypicalBirthPeriodEnd=20

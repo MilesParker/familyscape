@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"Baseline.apar"
 StopPeriod=1365
 InputDataFile="|data/NSFG_Married.txt"

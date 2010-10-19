@@ -1,5 +1,5 @@
 "DivorceP1.0MarriagePLow"
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
 PMarriageMinimumBase=0.1
 PMarriageMaximumBase=0.15

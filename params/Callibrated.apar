@@ -1,5 +1,5 @@
 "Base Model"
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 AllOutputFile="|data/AllOutput.txt"
 OutputData=true
 OutputRunFile="|data/RunOut.txt"

@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"../../Baseline/BaselineUnmarried.apar"
 PMediumCondomUseUnmarriedFactorBase=0.0
 PHighCondomUseUnmarriedFactorBase=1.0

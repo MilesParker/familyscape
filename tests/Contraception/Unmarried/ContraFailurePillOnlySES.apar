@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"ContraFailureSESBase.apar"
 PPillUseUnmarriedFactorBase=1.0
 PHighCondomUseUnmarriedFactorBase=0.0

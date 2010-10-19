@@ -1,5 +1,5 @@
 "BaseModel"
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 OutputData=true
 AllOutputFile=""
 OutputRunFile="|run-output/params/P_.txt"

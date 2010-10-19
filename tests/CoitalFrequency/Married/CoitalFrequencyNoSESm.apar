@@ -1,4 +1,4 @@
-model	"|RelationshipsAndPregnancyData.metaabm"
+model	"|FamilyScape.metaabm"
 incorporates	"../../Baseline/Baseline.apar"
 PCoitalFrequencyVeryLowMarriedCategory1Factor=-0.1
 PCoitalFrequencyVeryLowMarriedCategory3Factor=-0.1
