@@ -1,8 +1,0 @@
-"Divorce P 1.0 Marriage P1.0"
-«This test sets base divorce and marriage probabilty to 1.0 and checks that most indivudals have been divorced. About half of those in relationship should be married or divorced in any given period. Of course an equal number of married and in relationship is expected»
-Count(Adult.MaritalStatus=Single)=[5600,5700]
-Count(Adult.MaritalStatus=Married)=[65,85]
-Count(Adult.MaritalStatus=Divorced)=[65,85]
-Count(Adult.InRelationship)=[171,200]
-Average(Adult.PMarriage)=[1.0, 1.0]
-Average(Adult.PDivorce)=[1.0, 1.0]

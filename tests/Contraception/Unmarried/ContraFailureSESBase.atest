@@ -1,0 +1,4 @@
+"Contraception Pill SES Base"
+«Tests baseline of pill failure rates at 0 to make sure that we still have pregnancies.»
+Sum(Adult.PregnanciesinLifetime)=[0,0]
+	

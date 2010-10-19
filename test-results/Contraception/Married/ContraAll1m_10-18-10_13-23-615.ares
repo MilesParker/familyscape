@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ares:RunSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aBase="http://www.eclipse.org/amp/amf/abase/ABase" xmlns:ares="http://eclipse.org.eclipse.amp/ares" result="SUCCESS">
+  <runs result="SUCCESS" started="2010-10-18T13:23:11.810-0700" finished="2010-10-18T13:23:26.013-0700">
+    <model href="../../../RelationshipsAndPregnancyData.metaabm#/"/>
+    <test href="../../../tests/Contraception/Married/ContraAll1m.atest#/"/>
+    <parameterization href="../../../tests/Contraception/Married/ContraAll1m.apar#/"/>
+    <parameters>
+      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pCondomFailureFactorBase']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillFailureFactorBase']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='pPillCondomFailureFactorBase']"/>
+      <value xsi:type="aBase:RealValue" value="1.0"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aBase:IntValue" value="1365"/>
+    </parameters>
+    <parameters>
+      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@attributes[ID='inputDataFile']"/>
+      <value xsi:type="aBase:StringValue" value="|data/NSFG_Married.txt"/>
+    </parameters>
+    <parameters>
+      <attribute href="http://metaabm.org/Engine.metaabm#//@attributes[ID='stopPeriod']"/>
+      <value xsi:type="aBase:IntValue" value="100"/>
+    </parameters>
+    <constraints measure="Sum">
+      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='pregnanciesinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="1212"/>
+      <maxValue xsi:type="aBase:IntValue" value="136500"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='abortionsinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="372"/>
+      <maxValue xsi:type="aBase:IntValue" value="136500"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='miscarriagesinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="368"/>
+      <maxValue xsi:type="aBase:IntValue" value="136500"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='birthsinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="314"/>
+      <maxValue xsi:type="aBase:IntValue" value="136500"/>
+    </constraints>
+    <constraints measure="Sum">
+      <agent href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']"/>
+      <attribute href="../../../RelationshipsAndPregnancyData.metaabm#//@agents[ID='adult']/@attributes[ID='poorBirthsinLifetime']"/>
+      <minValue xsi:type="aBase:IntValue" value="167"/>
+      <maxValue xsi:type="aBase:IntValue" value="136500"/>
+    </constraints>
+    <results constraint="//@runs.0/@constraints.0" issue="NONE" actualValue="3219.0"/>
+    <results constraint="//@runs.0/@constraints.1" issue="NONE" actualValue="925.0"/>
+    <results constraint="//@runs.0/@constraints.2" issue="NONE" actualValue="947.0"/>
+    <results constraint="//@runs.0/@constraints.3" issue="NONE" actualValue="867.0"/>
+    <results constraint="//@runs.0/@constraints.4" issue="NONE" actualValue="400.0"/>
+  </runs>
+</ares:RunSet>

@@ -1,0 +1,7 @@
+"Divorce Pregnancy Divorce no effect"
+«This sets divorce rate high and makes no change to effect of pregnancy on divorce rate»
+Count(Adult.MaritalStatus=Married)=[500,600]
+Count(Adult.MaritalStatus=Divorced)=[3500,3700]
+Count(Adult.MaritalStatus=Single)=[0,0]
+Average(Adult.PDivorce)=[.00999, .01111]
+Count(Adult.PregnancyStatus=Pregnant)=[2000,2093]

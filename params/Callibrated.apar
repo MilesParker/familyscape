@@ -1,14 +1,11 @@
 "Base Model"
 model	"|RelationshipsAndPregnancyData.metaabm"
 AllOutputFile="|data/AllOutput.txt"
-OutputData=false
-OutputRunFile=""
-OutputPeriodFile=""
-//OutputData=true
-//OutputRunFile="|data/RunOut.txt"
-//OutputPeriodFile="|data/RunPeriod.txt"
+OutputData=true
+OutputRunFile="|data/RunOut.txt"
+OutputPeriodFile="|data/RunPeriod.txt"
 InputDataFile="|data/NSFG_Combined.txt"
-StopPeriod=1365
+//StopPeriod=10
 //WritePeriods=1000,1365,4650
 AdultCount=500
 MinimumAge=15

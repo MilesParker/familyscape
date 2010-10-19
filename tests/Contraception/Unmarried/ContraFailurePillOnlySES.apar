@@ -1,0 +1,10 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"ContraFailureSESBase.apar"
+PPillUseUnmarriedFactorBase=1.0
+PHighCondomUseUnmarriedFactorBase=0.0
+PMediumCondomUseUnmarriedFactorBase=0.0
+PPillFailureNHSFactor=1.0
+PPillFailureHSFactor=1.0
+PPillFailurePHSFactor=1.0
+StopPeriod=136
+InputDataFile="|data/NSFG_Unmarried.txt"

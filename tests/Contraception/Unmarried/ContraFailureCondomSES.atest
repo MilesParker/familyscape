@@ -1,0 +1,9 @@
+"Contraception Condom SES"
+«Tests against Bae to ensure that we have failrues after setting from SES.»
+Count(Adult.ContraceptionMethod=Pill)=[0,0]
+Count(Adult.ContraceptionMethod=None)=[2995,2995]
+Count(Adult.ContraceptionMethod=CondomHighIntender)=[2819,2819]
+Count(Adult.ContraceptionMethod=CondomMediumIntender)=[0,0]
+Count(Adult.ContraceptionMethod=Sterilized)=[0,0]
+Sum(Adult.PregnanciesinLifetime)=[1450,1520]
+Count(Adult.RhythmMethodUser)=[0,0]

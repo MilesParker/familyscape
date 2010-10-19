@@ -1,0 +1,8 @@
+"Divorce P Pregnancy Lower Divorce Rate"
+«This test sets dviorce rate high and effect of pregnancy on divorce rat to reduce the divorce erate which should lead to sharply reduced divorce rate»
+Count(Adult.MaritalStatus=Married)=[4186,4186]
+Count(Adult.MaritalStatus=Divorced)=[0,0]
+Count(Adult.MaritalStatus=Single)=[0,0]
+Average(Adult.PDivorce)=[.00, .00]
+Count(Adult.PregnancyStatus=Pregnant)=[2093,2093]
+Count(Adult.PregnancyStatusCouple=Pregnant)=[4186,4186]

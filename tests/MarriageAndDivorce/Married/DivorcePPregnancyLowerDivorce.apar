@@ -1,0 +1,14 @@
+"DivorcesOn"
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"DivorcePPregnancyBaseline.apar"
+PDivorceMinimumBase=0.5
+PDivorceMaximumBase=0.5
+PDivorcePregnantMinimum=-.5
+PDivorcePregnantMaximum=-.5
+PDivorceNotPregnantMinimum=-.5
+PDivorceNotPregnantMaximum=-.5
+PDivorceNotInCoupleMinimum=0.0
+PDivorceNotInCoupleMaximum=0.0
+PRelationshipEndMinimum=0.0
+PRelationshipEndMaximum=0.0
+

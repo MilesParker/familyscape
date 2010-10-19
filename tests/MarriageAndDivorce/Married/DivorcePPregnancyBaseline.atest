@@ -1,0 +1,12 @@
+"Divorce P 0 Plus Pregnancy"
+«This test sets the marriage probaility to 1 and the divorece probability to 0»
+Count(Adult.InRelationship)=[4186,4186]
+Count(Adult.MaritalStatus=Married)=[4186,4186]
+Count(Adult.MaritalStatus=Divorced)=[0,0]
+Count(Adult.MaritalStatus=Single)=[0,0]
+Average(Adult.PMarriage)=[0.0, 0.0]
+Average(Adult.PDivorce)=[0.0, 0.0]
+Average(Adult.PSex)=[1.0,1.0]
+Count(Adult.PregnancyStatus=Pregnant)=[2093,2093]
+Count(Adult.PregnancyStatusCouple=Pregnant)=[4186,4186]
+Average(Adult.SexCountinLifetime)=[100,100]

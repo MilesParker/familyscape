@@ -1,0 +1,11 @@
+model	"|RelationshipsAndPregnancyData.metaabm"
+incorporates	"../../Baseline/BaselineUnmarried.apar"
+PMediumCondomUseUnmarriedFactorBase=0.0
+PHighCondomUseUnmarriedFactorBase=1.0
+PCondomFailureFactorBase=0.0
+PPillFailureFactorBase=0.0
+PPillCondomFailureFactorBase=0.0
+PSterilizeFemaleUnmarriedFactorBase=0.0
+PSterilizeMaleUnmarriedFactorBase=0.0
+StopPeriod=136
+InputDataFile="|data/NSFG_Unmarried.txt"
