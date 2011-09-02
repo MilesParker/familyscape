@@ -1,0 +1,1982 @@
+
+		<HTML>
+			<HEAD>
+				<TITLE>FamilyScape</TITLE>
+			</HEAD>
+			<BODY>
+				<H1>FamilyScape</H1>
+				
+				<P>A model of unintended pregnancies and poor births. Covers most if not all key dynamics, including relationship and marriage formation, coital activity, contraception efficacy, and pregnancy outcome. Extensive work has been done to dock and callibrate this agent-based model with statistical models. This model will be the subject of a forthcoming paper by Thomas et. al. Current results should not be taken as definitive and are not intended for publication.
+
+Model Design: Miles Parker and Adam Thomas (miles@metascapeabm.com, athomas@brookings.edu)
+Model and Software Development: Miles Parker
+Basic Research and Statistical Model: Adam Thomas and Emily Monea
+
+Supported by The William and Flora Hewlett Foundation</P>
+					<h2>Parameters</h2>
+						
+		
+				<H5>Adult Count  (int, default: 500)</H5>
+				<i>The number of adults to create.</i><BR/>
+		
+				<H5>Minimum Age  (int, default: 15)</H5>
+				<i></i><BR/>
+		
+				<H5>Typical Abortion Period Start  (int, default: 60)</H5>
+				<i>The first day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </i><BR/>
+		
+				<H5>Typical Abortion Period End  (int, default: 200)</H5>
+				<i>The last day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </i><BR/>
+		
+				<H5>Typical Birth Period Start  (int, default: 300)</H5>
+				<i>The first day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </i><BR/>
+		
+				<H5>Typical Birth Period End  (int, default: 360)</H5>
+				<i>The last day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </i><BR/>
+		
+				<H5>Fecundity by Day in Cycle  (double[], default: 0.0001,0.0003,0.0006,0.0011,0.0022,0.0043,0.0085,0.0169,0.0333,0.0658,0.1299,0.2565,0.5065,1.0000,0.5065,0.0574,0.0138,0.0033,0.0008,0.0002,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000)</H5>
+				<i>The probability that a woman having unprotected sex (not using contraception) will concieve as a function of the day in her mentural cycle.</i><BR/>
+		
+				<H5>Fecundity By Age  (double[], default: 0.854,0.832,0.81,0.788,0.766,0.744,0.722,0.7,0.678,0.656,0.634,0.612,0.59,0.568,0.546,0.524,0.502,0.48,0.458,0.436,0.414,0.392,0.37,0.348,0.326,0.304,0.282,0.26,0.238,0.216)</H5>
+				<i></i><BR/>
+		
+				<H5>Walk Toward Age  (int, default: 1)</H5>
+				<i></i><BR/>
+		
+				<H5>Rhythm Method Bias for Day  (double[], default: 1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1)</H5>
+				<i>Given all other factors, the effect of a timing strategy on intercourse proclivity as a function of day of mentural cycle.</i><BR/>
+		
+				<H5>Agent Vision  (int, default: 6)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married Factor Base  (double, default: .33333)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Married Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Input Data File  (String, default: data/NSFG_Unmarried.txt)</H5>
+				<i></i><BR/>
+		
+				<H5>P Relationship End Minimum  (double, default: 0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Relationship End Maximum  (double, default: .02)</H5>
+				<i></i><BR/>
+		
+				<H5>P Relationship Begin Minimum  (double, default: .0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Relationship Begin Maximum  (double, default: 1)</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Frequency Initial Modification  (double, default: 1.0)</H5>
+				<i>The effect on likelihood of sex given that the couple has never had sex. For example, if an Adult's P Sex is 0.1 and this value is 0.2, then the probability of having sex on any given day is .02.</i><BR/>
+		
+				<H5>Lunar Days  (int, default: 28)</H5>
+				<i></i><BR/>
+		
+				<H5>Output Run File  (String, default: data/RunOut.txt)</H5>
+				<i></i><BR/>
+		
+				<H5>Output Period File  (String, default: data/RunPeriod.txt)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Factor Base  (double, default: 0.1)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Female Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Male Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married NHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married PHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married HS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Other Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Black Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Hispanic Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married White Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Category 1 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Category 3 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Category 2 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Married Category 4 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Factor Base  (double, default: 0.3)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Female Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Male Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married NHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married PHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married HS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Other Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Black Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Hispanic Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married White Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Category 1 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Category 3 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Category 2 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Married Category 4 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Factor Base  (double, default: 0.1)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Female Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Male Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried NHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried PHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried HS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Other Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Black Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Hispanic Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried White Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Category 1 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Category 3 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Category 2 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Very Low Unmarried Category 4 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married Factor Base  (double, default: .33333)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married NHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married PHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married HS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married Other Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married Black Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married Hispanic Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married White Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married Category 1 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married Category 3 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married Category 2 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Married Category 4 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried Factor Base  (double, default: .33333)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried NHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried PHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried HS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried Other Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried Black Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried Hispanic Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried White Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried Category 1 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried Category 3 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried Category 2 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Abortion Unmarried Category 4 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried Factor Base  (double, default: .33333)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried NHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried PHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried HS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried Other Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried Black Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried Hispanic Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried White Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried Category 1 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried Category 3 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried Category 2 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Miscarriage Unmarried Category 4 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married Factor Base  (double, default: .5)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married NHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married PHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married HS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married Other Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married Black Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married Hispanic Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married White Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married Category 1 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married Category 3 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married Category 2 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Married Category 4 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried Factor Base  (double, default: .5)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried NHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried PHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried HS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried Other Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried Black Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried Hispanic Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried White Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried Category 1 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried Category 3 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried Category 2 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Poor Birth Unmarried Category 4 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Factor Base  (double, default: 0.3)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Female Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Male Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried 15 to 19 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried 20 to 24 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried 25 to 29 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried 30 to 44 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried NHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried PHS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried HS Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Other Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Black Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Hispanic Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried White Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Category 1 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Category 3 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Category 2 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>P Coital Frequency Moderate Unmarried Category 4 Factor  (double, default: 0.0)</H5>
+				<i></i><BR/>
+		
+				<H5>All Output File  (String, default: data/AllOutput.txt)</H5>
+				<i></i><BR/>
+		
+				<H5>Output Data  (boolean, default: true)</H5>
+				<i></i><BR/>
+		
+				<H5>Write Periods  (String, default: 1365)</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Married Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Married Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Male Unmarried Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sterilize Female Unmarried Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Married Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Use Unmarried Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Value  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Unmarried Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Married Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Medium Condom Use Unmarried Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Married Minimum Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Married Maximum Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Married Very Low Frequency Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Married Very Low Frequency Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Married High Frequency Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Married High Frequency Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Married Moderate Frequency Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Married Moderate Frequency Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Unmarried Minimum Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Unmarried Maximum Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Unmarried Very Low Frequency Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Unmarried Very Low Frequency Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Unmarried High Frequency Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Unmarried High Frequency Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Unmarried Moderate Frequency Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Coital Days Unmarried Moderate Frequency Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Factor Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Partner Sterilized Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Other Contraception Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Very Low Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married High Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P High Condom Use Married Moderate Frequency Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Married None  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Married Sterilized  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Married Pill  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Married Condom Medium Intender  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Married Condom High Intender  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Single None  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Single Sterilized  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Single Pill  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Single Condom Medium Intender  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Single Condom High Intender  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Divorced None  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Divorced Sterilized  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Divorced Pill  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Divorced Condom Medium Intender  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Rhythm Method Divorced Condom High Intender  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Marriage And Divorce Start Day  (int, default: 0)</H5>
+				<i>This specifies the model iteration (day) when we first start allowing marriages and divorces to occur. This is designed to allow model behavior (e.g. relationship formation) to go through transition period before beginning marriage dynamics.</i><BR/>
+		
+				<H5>P Marriage Yearly to Daily Conversion  (double, default: .01)</H5>
+				<i>A factor to convert from yearly probability of marriage to daily probability.</i><BR/>
+		
+				<H5>P Divorce Yearly to Daily Conversion  (double, default: .01)</H5>
+				<i>A factor to convert from yearly probability of divorce to daily probability.</i><BR/>
+		
+				<H5>P Marriage Minimum Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Maximum Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Female Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Female Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Male Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Male Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage 15 to 19 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage 15 to 19 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage 20 to 24 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage 20 to 24 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage 25 to 29 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage 25 to 29 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage 30 to 44 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage 30 to 44 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage NHS Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage NHS Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage PHS Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage PHS Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage HS Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage HS Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Other Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Other Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Black Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Black Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Hispanic Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Hispanic Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage White Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage White Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Category 1 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Category 1 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Category 3 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Category 3 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Category 2 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Category 2 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Category 4 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Category 4 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Not Pregnant Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Not Pregnant Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Pregnant Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Marriage Pregnant Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Fecundity Adjustment  (double, default: 0.0)</H5>
+				<i>If non-zero, allows adding an arbitrary fecundity value to the fecundity probabilities for all women. This is useful for testing when we want to abstract away fecundity distribution issues.</i><BR/>
+		
+				<H5>P Divorce Minimum Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Maximum Base  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Female Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Female Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Male Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Male Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce 15 to 19 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce 15 to 19 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce 20 to 24 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce 20 to 24 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce 25 to 29 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce 25 to 29 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce 30 to 44 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce 30 to 44 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce NHS Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce NHS Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce PHS Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce PHS Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce HS Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce HS Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Other Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Other Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Black Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Black Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Hispanic Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Hispanic Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce White Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce White Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Category 1 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Category 1 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Category 3 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Category 3 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Category 2 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Category 2 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Category 4 Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Category 4 Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Not Pregnant Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Not Pregnant Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Pregnant Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Pregnant Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Not In Couple Minimum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Divorce Not In Couple Maximum  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Factor Base  (double, default: .05)</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Married Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Single Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Divorced Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Failure Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Factor Base  (double, default: .0075)</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Married Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Single Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Divorced Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Pill Condom Failure Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Factor Base  (double, default: .15)</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure 15 to 19 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure 20 to 24 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure 25 to 29 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure 30 to 44 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure NHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure PHS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure HS Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Married Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Single Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Divorced Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Other Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Black Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Hispanic Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure White Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Category 1 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Category 3 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Category 2 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Condom Failure Category 4 Factor  (double, default: )</H5>
+				<i></i><BR/>
+		
+
+					<h2><ul>Agents</ul></h2>
+						
+							<H3>Adult</H3>
+							
+							<H4>Attributes</H4>
+							
+		
+				<H5>Gender  (GenderEnum, default: Female)</H5>
+				<i></i><BR/>
+		
+				<H5>Age in Years  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Age in Years Index  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Age Group  (AgeGroupEnum, default: 15 to 19)</H5>
+				<i></i><BR/>
+		
+				<H5>Education  (EducationEnum, default: HS)</H5>
+				<i></i><BR/>
+		
+				<H5>In Relationship  (boolean, default: false)</H5>
+				<i></i><BR/>
+		
+				<H5>Marital Status  (MaritalStatusEnum, default: Single)</H5>
+				<i></i><BR/>
+		
+				<H5>Contraception Method  (ContraceptionMethodEnum, default: None)</H5>
+				<i></i><BR/>
+		
+				<H5>Rhythm Method User  (boolean, default: false)</H5>
+				<i></i><BR/>
+		
+				<H5>Projected Day of Birth  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Projected Day of Miscarriage  (int, default: )</H5>
+				<i>The day on which last miscarriage occurs or will occur. Zero if no such event.</i><BR/>
+		
+				<H5>Projected Day of Abortion  (int, default: )</H5>
+				<i>The day on which last abortion occurred or will occur. Zero if no such event.</i><BR/>
+		
+				<H5>P Relationship Initial  (double, default: )</H5>
+				<i>My desire to enter into a relationship with a member of the opposite sex, given that I am not currently in a relationship. </i><BR/>
+		
+				<H5>P End Relationship  (double, default: )</H5>
+				<i>Given that I am currently in a relationship, the likelihood that I wish to remain in that relationship for the current period.</i><BR/>
+		
+				<H5>P Marriage  (double, default: )</H5>
+				<i>The probability that this agent will become married on a given day, ignoring pregnancy status.</i><BR/>
+		
+				<H5>P Divorce  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>P Sex  (double, default: )</H5>
+				<i>Given that I am in a relationship with a partner with whom I have not had sex, the likilihood that I wish to engage in sex with that partner during given period.</i><BR/>
+		
+				<H5>P Sex Initial  (double, default: )</H5>
+				<i>Given that I continue in a relationship with whom I've had sex, the likilihood that I wish to engage in sex with that same partner during given period.</i><BR/>
+		
+				<H5>Sex Count in Relationship  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Day in Cycle  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Sex Count in Lifetime  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Days in Current Relationship  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Sex Partners in Lifetime  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Day of Last Sex  (int, default: -1)</H5>
+				<i>The last day in which sex occurred.  Zero if no such event.</i><BR/>
+		
+				<H5>Pregnancies in Lifetime  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Births in Lifetime  (int, default: )</H5>
+				<i>The total number of live birth events.</i><BR/>
+		
+				<H5>Abortions in Lifetime  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Miscarriages in Lifetime  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Ratio Pregnancies to Sex Events  (double, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Poor Births in Lifetime  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Race  (RaceEnum, default: White)</H5>
+				<i></i><BR/>
+		
+				<H5>SES  (SESEnum, default: Category 4)</H5>
+				<i>Socio-Economic Category. Currently defined by mother's education level, i.e. high school, high-school degree, some college, at least a college degree.</i><BR/>
+		
+				<H5>Coital Behavior Type  (CoitalBehaviorTypeEnum, default: Very Low Frequency)</H5>
+				<i></i><BR/>
+		
+				<H5>Married Code  (int, default: -1)</H5>
+				<i></i><BR/>
+		
+				<H5>Unmarried Code  (int, default: -1)</H5>
+				<i></i><BR/>
+		
+				<H5>ID  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Spouse ID  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Male Code  (int, default: -1)</H5>
+				<i>0 for female, 1 for male.</i><BR/>
+		
+				<H5>Female Code  (int, default: -1)</H5>
+				<i></i><BR/>
+		
+				<H5>Partner Contraception Method  (PartnerContraceptionMethodEnum, default: Other Contraception)</H5>
+				<i></i><BR/>
+		
+				<H5>Sterilization Choices  (int, default: )</H5>
+				<i></i><BR/>
+		
+				<H5>Pregnancy Status  (PregnancyStatusEnum, default: Not Pregnant)</H5>
+				<i></i><BR/>
+		
+				<H5>Pregnancy Status Couple  (PregnancyStatusCoupleEnum, default: Not Pregnant)</H5>
+				<i></i><BR/>
+		
+
+							<H4>Behaviors</H4>
+							
+		
+				<H5>Initialize Location</H5>
+				<i>Initialize Location Initialization. Executed once at the beginning of each model run.</i><BR/>
+		
+				<H5>Initialize Behavior Values</H5>
+				<i>Initialize Behavior Values Initialization. Executed once at the beginning of each model run.</i><BR/>
+		
+				<H5>Initialize Ages</H5>
+				<i>Initialize Ages Initialization. Executed once at the beginning of each model run.</i><BR/>
+		
+				<H5>Initialize Marital State</H5>
+				<i>Initialize Marital State Initialization. Executed once at the beginning of each model run.</i><BR/>
+		
+				<H5>Movement</H5>
+				<i>Movement Rule. Executed every period.</i><BR/>
+		
+				<H5>Update Dates</H5>
+				<i>Update Dates Rule. Executed every period.</i><BR/>
+		
+				<H5>Update Relationship</H5>
+				<i>Update Relationship Rule. Executed every period.</i><BR/>
+		
+				<H5>Seek Partner</H5>
+				<i>Seek Partner Rule. Executed every period.</i><BR/>
+		
+				<H5>Pregnancy Outcome</H5>
+				<i>Pregnancy Outcome Rule. Executed every period.</i><BR/>
+		
+				<H5>Sex Potential</H5>
+				<i>Sex Potential Rule. Executed every period.</i><BR/>
+		
+				<H5>Sex Event</H5>
+				<i>Watch for changes in Sex Count in Lifetime.</i><BR/>
+		
+				<H5>Sex in Relationship Event</H5>
+				<i>Watch for changes in Sex Count in Relationship.</i><BR/>
+		
+				<H5>Watch In Relationship</H5>
+				<i>Watch for changes in In Relationship.</i><BR/>
+		
+				<H5>Birth Event</H5>
+				<i>Watch for changes in Births in Lifetime.</i><BR/>
+		
+				<H5>Watch P Sex</H5>
+				<i>Watch for changes in P Sex.</i><BR/>
+		
+				<H5>Watch Coital Behavior Type</H5>
+				<i>Watch for changes in Coital Behavior Type.</i><BR/>
+		
+				<H5>Watch Gender</H5>
+				<i>Watch for changes in Gender.</i><BR/>
+		
+				<H5>Watch Contraception Method</H5>
+				<i>Watch for changes in Contraception Method.</i><BR/>
+		
+				<H5>Update Marital Probabilities</H5>
+				<i>Update Marital Probabilities.</i><BR/>
+		
+				<H5>Pregnancy Begin</H5>
+				<i>Pregnancy Begin.</i><BR/>
+		
+				<H5>Pregnancy End</H5>
+				<i>Pregnancy End.</i><BR/>
+		
+
+						
+							<H3>Neighborhood Cell</H3>
+							
+							<H4>Attributes</H4>
+							
+		
+
+							<H4>Behaviors</H4>
+							
+		
+
+						
+						
+					<H2>Projections</H2>
+					
+		
+				<H5>Neighborhood  (2-Dimensional Grid)</H5>
+				<i></i><BR/>
+		
+				<H5>Partners  (Network)</H5>
+				<i></i><BR/>
+		
+				<H5>Past Partners  (Network)</H5>
+				<i></i><BR/>
+		
+
+			    
+				<P>Generated by AMF.</P>
+			</BODY>
+		</HTML>
+	

@@ -5,5 +5,7 @@ Bundle-SymbolicName: edu.brook.parent.escape
 Bundle-Version: 1.0.0
 Require-Bundle: org.eclipse.amp.escape.runtime,
  org.eclipse.amp.agf.zest;bundle-version="0.7.0",
- org.eclipse.ui;bundle-version="3.5.2"
+ org.eclipse.ui;bundle-version="3.5.2",
+ org.eclipse.amp.escape.amf.ide3d;bundle-version="0.9.0",
+ org.lwjgl;bundle-version="2.7.1"
 Bundle-ActivationPolicy: lazy

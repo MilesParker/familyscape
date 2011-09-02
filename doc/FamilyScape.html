@@ -1,0 +1,2761 @@
+		<HTML>
+			<HEAD>
+				<TITLE>FamilyScape</TITLE>
+				<STYLE TYPE="text/css">
+					body,
+					html {
+    					margin:0;
+    					padding:0;
+    					
+    					color:#000;
+    				}
+    				body {
+    					min-width:750px;
+    				}
+					#wrap {
+    					
+    					margin:0 auto;
+    					width:1024px;
+    				}
+    				#header {
+    					border-bottom: solid 1px #BEBFAA;   						
+    					left: 220px;
+    				}
+					#nav {
+    					
+    				}
+					#nav ul{
+   						margin:0;
+    					padding:0;
+    					list-style:none;
+    				}
+					#nav li{
+    					display:inline;
+    					margin:0;
+    					padding:0;
+    				}
+    				#main {
+    					border-left: solid 1px #BEBFAA;   						
+    					
+    					float:left;
+    					width:800px;
+    				}
+					#sidebarfake {
+      					float:left;
+    					width:200px;
+    				}
+					#sidebar {
+  						position: fixed;
+      					float:left;
+    					width:200px;
+    				}
+					#footer {
+    					border-top: solid 1px #BEBFAA;   						
+    					
+    					clear:both;
+    				}
+    				
+					#section {
+  						background: #FFFFDC;
+   						border-bottom: solid 1px black;
+   						border-left: solid 1px #BEBFAA;
+   						border-right: solid 1px black;
+   						border-top: solid 1px #BEBFAA;
+   						margin: 2em 1em 1em 2em;
+   						padding: 0.5em 2em 2em 2em;
+   						text-align: justify;
+					}
+					#section h1 {
+   						text-align: left;
+   						font-family: sans-serif;
+					}
+					#section p {
+   						text-indent: 2em;
+					}
+					#section p.noindent {
+   						text-indent: 0;
+					}
+					
+					#agent {
+  						border-bottom: solid 1px black;
+   						border-left: solid 1px #BEBFAA;
+   						border-right: solid 1px black;
+   						border-top: solid 1px #BEBFAA;
+   						margin: 2em 1em 1em 2em;
+   						padding: 0.5em 2em 2em 2em;
+   						text-align: justify;
+					}
+
+					#agents {
+						border-bottom: solid 1px black;
+						border-left: solid 1px #BEBFAA;
+						border-right: solid 1px black;
+						border-top: solid 1px #BEBFAA;
+						margin: 2em 1em 1em 2em;
+						padding: 0.5em 2em 2em 2em;
+						text-align: justify;
+					}
+				</STYLE>
+			</HEAD>
+			<BODY>
+			<div id="wrap">
+    			<div id="header">
+    				<H1>FamilyScape</H1>
+					<P>A model of unintended pregnancies and poor births. Covers most if not all key dynamics, including relationship and marriage formation, coital activity, contraception efficacy, and pregnancy outcome. Extensive work has been done to dock and callibrate this agent-based model with statistical models. This model will be the subject of a forthcoming paper by Thomas et. al. Current results should not be taken as definitive and are not intended for publication.
+
+Model Design: Miles Parker and Adam Thomas (miles@metascapeabm.com, athomas@brookings.edu)
+Model and Software Development: Miles Parker
+Basic Research and Statistical Model: Adam Thomas and Emily Monea
+
+Supported by The William and Flora Hewlett Foundation</P>
+    			</div>
+    			<div id="sidebarfake">
+    				<H1>   </H1>
+    			</div>
+    			<div id="sidebar">
+			    <ul>
+    					<li><a href="#parlink">Parameters</a></li>
+    					<li><a href="#behaviorlink">Behaviors</a></li>
+    					<li><a href="#agentslink">Agents</a>
+    					<ul>
+    					<li><a href="#adultlink">Adult</a></li>
+    					<li><a href="#neighborhoodCelllink">Neighborhood Cell</a></li>
+    					</ul></li>
+    					<li><a href="#projlink">Projections</a></li>
+    				</ul>    				
+    			</div>
+    			<div id="main">
+    					<div id="agent">
+
+    					<h3><a name="parlink">Parameters</a></h3>
+		<table CELLPADDING="10px" rules="groups">
+			<thead align="left"><tr><th>Name</th><th>Type</th><th>Default Value</th></tr></thead>
+					<tbody ><tr><td>Adult Count</td>
+						<td>Integer</td>
+						<td>500</td></tr>
+					<tr><td colspan="3"><i>The number of adults to create.</i></td></tr></tbody>
+					<tbody ><tr><td>Minimum Age</td>
+						<td>Integer</td>
+						<td>15</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Typical Abortion Period Start</td>
+						<td>Integer</td>
+						<td>60</td></tr>
+					<tr><td colspan="3"><i>The first day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </i></td></tr></tbody>
+					<tbody ><tr><td>Typical Abortion Period End</td>
+						<td>Integer</td>
+						<td>200</td></tr>
+					<tr><td colspan="3"><i>The last day of the period of time in which typical elective abortions occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </i></td></tr></tbody>
+					<tbody ><tr><td>Typical Birth Period Start</td>
+						<td>Integer</td>
+						<td>300</td></tr>
+					<tr><td colspan="3"><i>The first day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </i></td></tr></tbody>
+					<tbody ><tr><td>Typical Birth Period End</td>
+						<td>Integer</td>
+						<td>360</td></tr>
+					<tr><td colspan="3"><i>The last day of the period of time in which typical live briths occur. Note that this is the actual day following conception, not the date as usually given from start of last cycle. </i></td></tr></tbody>
+					<tbody ><tr><td>Fecundity by Day in Cycle</td>
+						<td>Real</td>
+						<td>0.0001,0.0003,0.0006,0.0011,0.0022,0.0043,0.0085,0.0169,0.0333,0.0658,0.1299,0.2565,0.5065,1.0000,0.5065,0.0574,0.0138,0.0033,0.0008,0.0002,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000</td></tr>
+					<tr><td colspan="3"><i>The probability that a woman having unprotected sex (not using contraception) will concieve as a function of the day in her mentural cycle.</i></td></tr></tbody>
+					<tbody ><tr><td>Fecundity By Age</td>
+						<td>Real</td>
+						<td>0.854,0.832,0.81,0.788,0.766,0.744,0.722,0.7,0.678,0.656,0.634,0.612,0.59,0.568,0.546,0.524,0.502,0.48,0.458,0.436,0.414,0.392,0.37,0.348,0.326,0.304,0.282,0.26,0.238,0.216</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Walk Toward Age</td>
+						<td>Integer</td>
+						<td>1</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Rhythm Method Bias for Day</td>
+						<td>Real</td>
+						<td>1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1</td></tr>
+					<tr><td colspan="3"><i>Given all other factors, the effect of a timing strategy on intercourse proclivity as a function of day of mentural cycle.</i></td></tr></tbody>
+					<tbody ><tr><td>Agent Vision</td>
+						<td>Integer</td>
+						<td>6</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married Factor Base</td>
+						<td>Real</td>
+						<td>.33333</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Married Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Input Data File</td>
+						<td>Symbol</td>
+						<td>data/NSFG_Unmarried.txt</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Relationship End Minimum</td>
+						<td>Real</td>
+						<td>0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Relationship End Maximum</td>
+						<td>Real</td>
+						<td>.02</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Relationship Begin Minimum</td>
+						<td>Real</td>
+						<td>.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Relationship Begin Maximum</td>
+						<td>Real</td>
+						<td>1</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Frequency Initial Modification</td>
+						<td>Real</td>
+						<td>1.0</td></tr>
+					<tr><td colspan="3"><i>The effect on likelihood of sex given that the couple has never had sex. For example, if an Adult's P Sex is 0.1 and this value is 0.2, then the probability of having sex on any given day is .02.</i></td></tr></tbody>
+					<tbody ><tr><td>Lunar Days</td>
+						<td>Integer</td>
+						<td>28</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Output Run File</td>
+						<td>Symbol</td>
+						<td>data/RunOut.txt</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Output Period File</td>
+						<td>Symbol</td>
+						<td>data/RunPeriod.txt</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Factor Base</td>
+						<td>Real</td>
+						<td>0.1</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Female Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Male Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married NHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married PHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married HS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Other Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Black Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Hispanic Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married White Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Category 1 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Category 3 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Category 2 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Married Category 4 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Factor Base</td>
+						<td>Real</td>
+						<td>0.3</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Female Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Male Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married NHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married PHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married HS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Other Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Black Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Hispanic Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married White Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Category 1 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Category 3 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Category 2 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Married Category 4 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Factor Base</td>
+						<td>Real</td>
+						<td>0.1</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Female Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Male Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried HS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Other Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Black Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried White Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Very Low Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married Factor Base</td>
+						<td>Real</td>
+						<td>.33333</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married NHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married PHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married HS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married Other Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married Black Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married Hispanic Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married White Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married Category 1 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married Category 3 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married Category 2 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Married Category 4 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried Factor Base</td>
+						<td>Real</td>
+						<td>.33333</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried HS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried Other Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried Black Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried White Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Abortion Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried Factor Base</td>
+						<td>Real</td>
+						<td>.33333</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried HS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried Other Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried Black Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried White Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Miscarriage Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married Factor Base</td>
+						<td>Real</td>
+						<td>.5</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married NHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married PHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married HS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married Other Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married Black Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married Hispanic Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married White Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married Category 1 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married Category 3 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married Category 2 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Married Category 4 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried Factor Base</td>
+						<td>Real</td>
+						<td>.5</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried HS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried Other Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried Black Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried White Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Poor Birth Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Factor Base</td>
+						<td>Real</td>
+						<td>0.3</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Female Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Male Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried HS Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Other Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Black Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried White Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Coital Frequency Moderate Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>All Output File</td>
+						<td>Symbol</td>
+						<td>data/AllOutput.txt</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Output Data</td>
+						<td>Boolean</td>
+						<td>true</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Write Periods</td>
+						<td>Symbol</td>
+						<td>1365</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Married Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Married Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Male Unmarried Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sterilize Female Unmarried Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Married Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Use Unmarried Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Value</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Unmarried Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Married Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Medium Condom Use Unmarried Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Married Minimum Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Married Maximum Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Married Very Low Frequency Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Married Very Low Frequency Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Married High Frequency Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Married High Frequency Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Married Moderate Frequency Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Married Moderate Frequency Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Unmarried Minimum Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Unmarried Maximum Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Unmarried Very Low Frequency Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Unmarried Very Low Frequency Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Unmarried High Frequency Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Unmarried High Frequency Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Unmarried Moderate Frequency Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Coital Days Unmarried Moderate Frequency Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Factor Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Partner Sterilized Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Other Contraception Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Very Low Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married High Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P High Condom Use Married Moderate Frequency Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Married None</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Married Sterilized</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Married Pill</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Married Condom Medium Intender</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Married Condom High Intender</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Single None</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Single Sterilized</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Single Pill</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Single Condom Medium Intender</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Single Condom High Intender</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Divorced None</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Divorced Sterilized</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Divorced Pill</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Divorced Condom Medium Intender</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Rhythm Method Divorced Condom High Intender</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Marriage And Divorce Start Day</td>
+						<td>Integer</td>
+						<td>0</td></tr>
+					<tr><td colspan="3"><i>This specifies the model iteration (day) when we first start allowing marriages and divorces to occur. This is designed to allow model behavior (e.g. relationship formation) to go through transition period before beginning marriage dynamics.</i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Yearly to Daily Conversion</td>
+						<td>Real</td>
+						<td>.01</td></tr>
+					<tr><td colspan="3"><i>A factor to convert from yearly probability of marriage to daily probability.</i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Yearly to Daily Conversion</td>
+						<td>Real</td>
+						<td>.01</td></tr>
+					<tr><td colspan="3"><i>A factor to convert from yearly probability of divorce to daily probability.</i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Minimum Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Maximum Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Female Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Female Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Male Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Male Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage 15 to 19 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage 15 to 19 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage 20 to 24 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage 20 to 24 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage 25 to 29 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage 25 to 29 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage 30 to 44 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage 30 to 44 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage NHS Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage NHS Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage PHS Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage PHS Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage HS Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage HS Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Other Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Other Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Black Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Black Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Hispanic Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Hispanic Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage White Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage White Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Category 1 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Category 1 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Category 3 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Category 3 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Category 2 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Category 2 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Category 4 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Category 4 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Not Pregnant Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Not Pregnant Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Pregnant Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage Pregnant Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Fecundity Adjustment</td>
+						<td>Real</td>
+						<td>0.0</td></tr>
+					<tr><td colspan="3"><i>If non-zero, allows adding an arbitrary fecundity value to the fecundity probabilities for all women. This is useful for testing when we want to abstract away fecundity distribution issues.</i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Minimum Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Maximum Base</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Female Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Female Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Male Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Male Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce 15 to 19 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce 15 to 19 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce 20 to 24 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce 20 to 24 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce 25 to 29 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce 25 to 29 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce 30 to 44 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce 30 to 44 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce NHS Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce NHS Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce PHS Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce PHS Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce HS Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce HS Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Other Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Other Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Black Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Black Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Hispanic Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Hispanic Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce White Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce White Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Category 1 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Category 1 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Category 3 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Category 3 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Category 2 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Category 2 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Category 4 Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Category 4 Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Not Pregnant Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Not Pregnant Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Pregnant Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Pregnant Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Not In Couple Minimum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce Not In Couple Maximum</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Factor Base</td>
+						<td>Real</td>
+						<td>.05</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Married Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Single Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Divorced Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Failure Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Factor Base</td>
+						<td>Real</td>
+						<td>.0075</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Married Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Single Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Divorced Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Pill Condom Failure Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Factor Base</td>
+						<td>Real</td>
+						<td>.15</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure 15 to 19 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure 20 to 24 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure 25 to 29 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure 30 to 44 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure NHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure PHS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure HS Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Married Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Single Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Divorced Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Other Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Black Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Hispanic Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure White Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Category 1 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Category 3 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Category 2 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Condom Failure Category 4 Factor</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+		</table>
+    					<h3><a name="behaviorlink">Behaviors</a></h3>
+		<table CELLPADDING="10px">
+			<thead align="left"><tr><th>Act</th><th>Description</th></tr></thead>
+					<tr>
+						<td><i>Build Model</i></td>
+						<td>Build the FamilyScape.</td>
+					</tr>
+					<tr>
+						<td><i>Initialize</i></td>
+						<td>Initialize Initialization. Executed once at the beginning of each model run.</td>
+					</tr>
+		</table>
+						</div>
+    					<div id="agents">
+    					<h1><a name="agentslink">Agents</a></h1>
+								<div id="agent">
+									<H2><a name="adultlink"/>Adult</a></H2>
+									<H3>Attributes</H3>
+		<table CELLPADDING="10px" rules="groups">
+			<thead align="left"><tr><th>Name</th><th>Type</th><th>Default Value</th></tr></thead>
+					<tbody ><tr><td>Gender</td>
+						<td>Symbol</td>
+						<td>Female</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Age in Years</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Age in Years Index</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Age Group</td>
+						<td>Symbol</td>
+						<td>15 to 19</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Education</td>
+						<td>Symbol</td>
+						<td>HS</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>In Relationship</td>
+						<td>Boolean</td>
+						<td>false</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Marital Status</td>
+						<td>Symbol</td>
+						<td>Single</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Contraception Method</td>
+						<td>Symbol</td>
+						<td>None</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Rhythm Method User</td>
+						<td>Boolean</td>
+						<td>false</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Projected Day of Birth</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Projected Day of Miscarriage</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i>The day on which last miscarriage occurs or will occur. Zero if no such event.</i></td></tr></tbody>
+					<tbody ><tr><td>Projected Day of Abortion</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i>The day on which last abortion occurred or will occur. Zero if no such event.</i></td></tr></tbody>
+					<tbody ><tr><td>P Relationship Initial</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i>My desire to enter into a relationship with a member of the opposite sex, given that I am not currently in a relationship. </i></td></tr></tbody>
+					<tbody ><tr><td>P End Relationship</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i>Given that I am currently in a relationship, the likelihood that I wish to remain in that relationship for the current period.</i></td></tr></tbody>
+					<tbody ><tr><td>P Marriage</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i>The probability that this agent will become married on a given day, ignoring pregnancy status.</i></td></tr></tbody>
+					<tbody ><tr><td>P Divorce</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>P Sex</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i>Given that I am in a relationship with a partner with whom I have not had sex, the likilihood that I wish to engage in sex with that partner during given period.</i></td></tr></tbody>
+					<tbody ><tr><td>P Sex Initial</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i>Given that I continue in a relationship with whom I've had sex, the likilihood that I wish to engage in sex with that same partner during given period.</i></td></tr></tbody>
+					<tbody ><tr><td>Sex Count in Relationship</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Day in Cycle</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Sex Count in Lifetime</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Days in Current Relationship</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Sex Partners in Lifetime</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Day of Last Sex</td>
+						<td>Integer</td>
+						<td>-1</td></tr>
+					<tr><td colspan="3"><i>The last day in which sex occurred.  Zero if no such event.</i></td></tr></tbody>
+					<tbody ><tr><td>Pregnancies in Lifetime</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Births in Lifetime</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i>The total number of live birth events.</i></td></tr></tbody>
+					<tbody ><tr><td>Abortions in Lifetime</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Miscarriages in Lifetime</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Ratio Pregnancies to Sex Events</td>
+						<td>Real</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Poor Births in Lifetime</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Race</td>
+						<td>Symbol</td>
+						<td>White</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>SES</td>
+						<td>Symbol</td>
+						<td>Category 4</td></tr>
+					<tr><td colspan="3"><i>Socio-Economic Category. Currently defined by mother's education level, i.e. high school, high-school degree, some college, at least a college degree.</i></td></tr></tbody>
+					<tbody ><tr><td>Coital Behavior Type</td>
+						<td>Symbol</td>
+						<td>Very Low Frequency</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Married Code</td>
+						<td>Integer</td>
+						<td>-1</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Unmarried Code</td>
+						<td>Integer</td>
+						<td>-1</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>ID</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Spouse ID</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Male Code</td>
+						<td>Integer</td>
+						<td>-1</td></tr>
+					<tr><td colspan="3"><i>0 for female, 1 for male.</i></td></tr></tbody>
+					<tbody ><tr><td>Female Code</td>
+						<td>Integer</td>
+						<td>-1</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Partner Contraception Method</td>
+						<td>Symbol</td>
+						<td>Other Contraception</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Sterilization Choices</td>
+						<td>Integer</td>
+						<td></td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Pregnancy Status</td>
+						<td>Symbol</td>
+						<td>Not Pregnant</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+					<tbody ><tr><td>Pregnancy Status Couple</td>
+						<td>Symbol</td>
+						<td>Not Pregnant</td></tr>
+					<tr><td colspan="3"><i></i></td></tr></tbody>
+		</table>
+									<H3>Behaviors</H3>
+		<table CELLPADDING="10px">
+			<thead align="left"><tr><th>Act</th><th>Description</th></tr></thead>
+					<tr>
+						<td><i>Initialize Location</i></td>
+						<td>Initialize Location Initialization. Executed once at the beginning of each model run.</td>
+					</tr>
+					<tr>
+						<td><i>Initialize Behavior Values</i></td>
+						<td>Initialize Behavior Values Initialization. Executed once at the beginning of each model run.</td>
+					</tr>
+					<tr>
+						<td><i>Initialize Ages</i></td>
+						<td>Initialize Ages Initialization. Executed once at the beginning of each model run.</td>
+					</tr>
+					<tr>
+						<td><i>Initialize Marital State</i></td>
+						<td>Initialize Marital State Initialization. Executed once at the beginning of each model run.</td>
+					</tr>
+					<tr>
+						<td><i>Movement</i></td>
+						<td>Movement Rule. Executed every period.</td>
+					</tr>
+					<tr>
+						<td><i>Update Dates</i></td>
+						<td>Update Dates Rule. Executed every period.</td>
+					</tr>
+					<tr>
+						<td><i>Update Relationship</i></td>
+						<td>Update Relationship Rule. Executed every period.</td>
+					</tr>
+					<tr>
+						<td><i>Seek Partner</i></td>
+						<td>Seek Partner Rule. Executed every period.</td>
+					</tr>
+					<tr>
+						<td><i>Pregnancy Outcome</i></td>
+						<td>Pregnancy Outcome Rule. Executed every period.</td>
+					</tr>
+					<tr>
+						<td><i>Sex Potential</i></td>
+						<td>Sex Potential Rule. Executed every period.</td>
+					</tr>
+					<tr>
+						<td><i>Sex Event</i></td>
+						<td>Watch for changes in Sex Count in Lifetime.</td>
+					</tr>
+					<tr>
+						<td><i>Sex in Relationship Event</i></td>
+						<td>Watch for changes in Sex Count in Relationship.</td>
+					</tr>
+					<tr>
+						<td><i>Watch In Relationship</i></td>
+						<td>Watch for changes in In Relationship.</td>
+					</tr>
+					<tr>
+						<td><i>Birth Event</i></td>
+						<td>Watch for changes in Births in Lifetime.</td>
+					</tr>
+					<tr>
+						<td><i>Watch P Sex</i></td>
+						<td>Watch for changes in P Sex.</td>
+					</tr>
+					<tr>
+						<td><i>Watch Coital Behavior Type</i></td>
+						<td>Watch for changes in Coital Behavior Type.</td>
+					</tr>
+					<tr>
+						<td><i>Watch Gender</i></td>
+						<td>Watch for changes in Gender.</td>
+					</tr>
+					<tr>
+						<td><i>Watch Contraception Method</i></td>
+						<td>Watch for changes in Contraception Method.</td>
+					</tr>
+					<tr>
+						<td><i>Update Marital Probabilities</i></td>
+						<td>Update Marital Probabilities.</td>
+					</tr>
+					<tr>
+						<td><i>Pregnancy Begin</i></td>
+						<td>Pregnancy Begin.</td>
+					</tr>
+					<tr>
+						<td><i>Pregnancy End</i></td>
+						<td>Pregnancy End.</td>
+					</tr>
+		</table>
+								</div>
+								<div id="agent">
+									<H2><a name="neighborhoodCelllink"/>Neighborhood Cell</a></H2>
+									<H3>Attributes</H3>
+		<table CELLPADDING="10px" rules="groups">
+			<thead align="left"><tr><th>Name</th><th>Type</th><th>Default Value</th></tr></thead>
+		</table>
+									<H3>Behaviors</H3>
+		<table CELLPADDING="10px">
+			<thead align="left"><tr><th>Act</th><th>Description</th></tr></thead>
+		</table>
+								</div>
+						</div>
+					<div id="section">
+						<H2><a name="projlink"/>Projections:</a></H2>
+		<table CELLPADDING="10px">
+			<thead align="left"><tr><th>Name</th><th>Description</th><th>Type</th></tr></thead>
+					<tr>
+						<td><i>Neighborhood</i></td>
+						<td></td>
+						<td>2-Dimensional Grid</td>
+					</tr>
+					<tr>
+						<td><i>Partners</i></td>
+						<td></td>
+						<td>Network</td>
+					</tr>
+					<tr>
+						<td><i>Past Partners</i></td>
+						<td></td>
+						<td>Network</td>
+					</tr>
+		</table>
+					</div>			    			
+    			</div>
+			    
+    			<div id="footer">
+					<P>Generated by AMF.</P>
+    			</div>
+			</div>
+			</BODY>
+		</HTML>
+	
